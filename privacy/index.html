@@ -35,7 +35,7 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0}
   <li><b>Профиль Telegram</b>: числовой идентификатор, имя, username и язык интерфейса. Нужны, чтобы бот отвечал вам, считал минуты и показывал историю.</li>
   <li><b>Аудио и видео</b>, которые вы присылаете или на которые даёте ссылку. Файл нужен только для распознавания речи и удаляется сразу после него.</li>
   <li><b>Расшифровки, конспекты, задачи и ответы на вопросы</b>, полученные из ваших записей. Хранятся 30 дней, чтобы работали кнопки под сообщением, команда /history и вопросы по записи, потом удаляются автоматически.</li>
-  <li><b>Служебные события</b>: когда вы запустили бота, с какой ссылки пришли, отправили файл, нажали кнопку, купили пакет. Это обезличенные счётчики для улучшения бота, тексты сообщений в них не попадают.</li>
+  <li><b>Служебные события</b>: когда вы запустили бота, с какой ссылки пришли, отправили файл, нажали кнопку, купили пакет. Они привязаны к вашему идентификатору Telegram, нужны для подсчёта воронки и улучшения бота, тексты сообщений и файлы в них не попадают. Хранятся 180 дней.</li>
   <li><b>Покупки</b>: идентификатор покупки и пакет минут, которые передаёт платёжный сервис. Данные карты бот не получает и не хранит.</li>
   <li><b>Ответы на вопросы бота</b> (например, для чего вам расшифровка) и текст, который вы отправили через /feedback.</li>
 </ul>
@@ -59,7 +59,8 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0}
   <li>Аудио и видео: удаляются сразу после распознавания, обычно в течение минуты.</li>
   <li>Тексты расшифровок и результаты: 30 дней, затем автоматическое удаление.</li>
   <li>Профиль, баланс минут и история покупок: пока вы пользуетесь ботом.</li>
-  <li>Команда <b>/delete</b> удаляет все ваши расшифровки, конспекты и ответы немедленно, баланс при этом сохраняется. Чтобы удалить и профиль с балансом, напишите <a href="https://t.me/uluk001">@uluk001</a>.</li>
+  <li>Служебные события: 180 дней, затем автоматическое удаление. Текст из /feedback: пока нужен для разбора, по запросу удаляется.</li>
+  <li>Команда <b>/delete</b> удаляет все ваши расшифровки, конспекты и ответы немедленно, баланс при этом сохраняется. Чтобы удалить и профиль с балансом и событиями, напишите <a href="https://t.me/uluk001">@uluk001</a>.</li>
 </ul>
 
 <h2>Сообщения от бота</h2>
@@ -74,7 +75,7 @@ hr{border:0;border-top:1px solid var(--line);margin:40px 0}
 <hr>
 <p class="meta" id="en">English summary</p>
 <h2>Privacy policy (summary)</h2>
-<p>@Voicepad_bot processes your Telegram id, name, username and language, the audio or video you send, and the transcripts and summaries made from them. Audio is deleted right after transcription. Transcripts and AI results are kept for 30 days so the buttons, /history and follow-up questions work, then deleted automatically. Speech recognition runs on ElevenLabs and Groq, summaries on Anthropic Claude; these API providers do not train on API data. Payments go through Tribute; the bot never sees card details. Usage events (start, file received, button pressed, purchase) are stored as anonymous counters. The bot sends at most one message per week (an onboarding hint, a free minutes reset notice or a single reactivation). /delete removes all your transcripts at once; to delete the profile and balance write to <a href="https://t.me/uluk001">@uluk001</a>. The website is static and sets no cookies.</p>
+<p>@Voicepad_bot processes your Telegram id, name, username and language, the audio or video you send, and the transcripts and summaries made from them. Audio is deleted right after transcription. Transcripts and AI results are kept for 30 days so the buttons, /history and follow-up questions work, then deleted automatically. Speech recognition runs on ElevenLabs and Groq, summaries on Anthropic Claude; these API providers do not train on API data. Payments go through Tribute; the bot never sees card details. Usage events (start, file received, button pressed, purchase) are tied to your Telegram id, contain no message text, and are kept for 180 days. The bot sends at most one message per week (an onboarding hint, a free minutes reset notice or a single reactivation). /delete removes all your transcripts at once; to delete the profile and balance write to <a href="https://t.me/uluk001">@uluk001</a>. The website is static and sets no cookies.</p>
 
 <p class="note"><a href="/">Voicepad</a>: голосовые, аудио и видео в текст в Telegram. 15 минут в месяц бесплатно.</p>
 </div>
