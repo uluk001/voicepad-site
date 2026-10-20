@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meeting recording to notes and action items: Voicepad bot for Telegram</title>
+<meta name="description" content="Upload a Zoom, Google Meet or phone recording up to 2 GB to the Voicepad bot in Telegram and get a transcript by speaker, meeting notes and a list of action items with owners and deadlines. 15 free minutes a month.">
+<link rel="canonical" href="https://voicepad.qupport.io/en/meeting-notes/">
+<link rel="alternate" hreflang="ru" href="https://voicepad.qupport.io/zapis-vstrechi-v-protokol/">
+<link rel="alternate" hreflang="en" href="https://voicepad.qupport.io/en/meeting-notes/">
+<link rel="icon" type="image/png" href="/favicon.png">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Meeting recording to notes and action items">
+<meta property="og:description" content="Transcript by speaker, meeting notes and a task list from a call recording. Telegram bot, 15 free minutes a month.">
+<meta property="og:url" content="https://voicepad.qupport.io/en/meeting-notes/">
+<meta property="og:image" content="https://voicepad.qupport.io/cover.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to turn a meeting recording into notes and action items",
+  "step": [
+    {"@type": "HowToStep", "name": "Record the call", "text": "Zoom and Google Meet have built-in recording; for other calls a screen recording with audio or a phone recorder will do."},
+    {"@type": "HowToStep", "name": "Send the file", "text": "Send the recording to @Voicepad_bot. Any audio or video format up to 2 GB works, no sign-up."},
+    {"@type": "HowToStep", "name": "Wait for the transcript", "text": "Processing time grows with the length of the recording. The text arrives with timestamps and speaker labels."},
+    {"@type": "HowToStep", "name": "Tap Tasks and Summary", "text": "Tasks gives the action items, Summary gives the notes, DOCX gives a document to send to the participants."}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Does the bot know who is speaking?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, lines are labelled Speaker 1, Speaker 2 and so on. Replace the labels with names in the DOCX before sending the notes out."}},
+    {"@type": "Question", "name": "What goes into the action items?", "acceptedAnswer": {"@type": "Answer", "text": "What people promised, took on or asked someone to do, with the owner and the deadline when they were mentioned in the call."}},
+    {"@type": "Question", "name": "Which recording formats are accepted?", "acceptedAnswer": {"@type": "Answer", "text": "Any audio or video file up to 2 GB: MP4, M4A, MP3, WAV and others. Send it to the bot as a file."}},
+    {"@type": "Question", "name": "Can I ask a question about the meeting?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, the Question button answers from the recording. One question per recording on the free plan."}},
+    {"@type": "Question", "name": "How long does an hour-long recording take?", "acceptedAnswer": {"@type": "Answer", "text": "Longer than a short clip, roughly in proportion to the length. A short recording is ready in about a minute."}},
+    {"@type": "Question", "name": "Is it safe for work recordings?", "acceptedAnswer": {"@type": "Answer", "text": "There is no sign-up and the bot asks for nothing but the recording itself. /delete removes your transcripts whenever you want."}}
+  ]
+}
+</script>
+<style>
+:root{--bg:#0f1117;--card:#171a23;--text:#e8eaf0;--muted:#9aa0ae;--accent:#7c5cff;--line:#262a36}
+@media (prefers-color-scheme: light){:root{--bg:#fafafc;--card:#ffffff;--text:#15171e;--muted:#5d6472;--line:#e4e6ee}}
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,sans-serif;background:var(--bg);color:var(--text)}
+a{color:var(--accent)}
+.wrap{max-width:800px;margin:0 auto;padding:40px 20px 60px}
+h1{font-size:2rem;line-height:1.2;margin:0 0 10px}
+h2{font-size:1.35rem;margin:36px 0 10px}
+.meta{color:var(--muted);font-size:.95rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:14px 0}
+.cta{display:inline-block;margin-top:12px;padding:12px 22px;border-radius:12px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+ol li{margin-bottom:8px}
+details{border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:10px;background:var(--card)}
+summary{cursor:pointer;font-weight:600}
+details p{margin:10px 0 0;color:var(--muted)}
+pre{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;white-space:pre-wrap;font-size:.95rem;color:var(--muted)}
+.note{color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="meta"><a href="/en/">Voicepad</a> · meeting notes</p>
+<h1>Meeting recording to notes and action items</h1>
+<p>An hour-long call ends, and everyone leaves with a slightly different idea of who agreed to what. The recording exists, but nobody will watch it again. The Voicepad bot in Telegram turns that recording into a transcript by speaker, short meeting notes and a list of action items with owners and deadlines where they were said out loud.</p>
+
+<h2>How to do it</h2>
+<ol>
+  <li>Record the call. Zoom and Google Meet have built-in recording; for Telegram or FaceTime calls a screen recording with audio or a phone recorder next to the speaker will do.</li>
+  <li>Send the file to <a href="https://t.me/Voicepad_bot?start=src_en_meeting">@Voicepad_bot</a>. Any audio or video format up to 2 GB works. No sign-up.</li>
+  <li>Wait for the transcript. Processing time grows with the length of the recording, so an hour-long call takes longer than a quick voice note.</li>
+  <li>Read the text with timestamps and speaker labels. Tap "Tasks" for the action items and "Summary" for the notes. The DOCX button gives you a document to send to the participants.</li>
+</ol>
+<div class="card">What the Tasks button returns for a weekly planning call:
+<pre>Speaker 1
+• Send the revised estimate to the client (by Thursday)
+• Call the contractor about the installation dates
+Speaker 2
+• Rewrite the landing page copy with the new wording (by Tuesday)
+Everyone
+• Next sync on Monday at 11:00</pre>
+<a class="cta" href="https://t.me/Voicepad_bot?start=src_en_meeting">Transcribe a meeting recording</a></div>
+
+<h2>If your calls happen in a team chat</h2>
+<p>Add the bot to the team chat. Voice messages up to three minutes are transcribed automatically for everyone. Under longer recordings and video links a button appears, and each participant opens the full transcript, notes and tasks in a private chat with the bot, so the group stays readable. The chat gets 30 free minutes a month, and an admin can turn auto mode off with /mute.</p>
+
+<h2>Accuracy and what affects it</h2>
+<p>Speakers are labelled Speaker 1, Speaker 2 and so on, with a timestamp on every line. A Zoom recording with everyone on a headset comes out clean. A phone lying on the table in a meeting room gives more gaps, and when two people talk over each other the boundary between their lines can shift by a word. English and Russian are detected automatically, and a team that switches between the two mid-sentence is fine. Recognition runs on ElevenLabs Scribe v2: in our test on a Russian clip with technical terms it made roughly half the errors of Whisper-based bots. Check names and numbers before sending the notes around.</p>
+
+<h2>Pricing</h2>
+<p>15 minutes every month are free, including the summary and one question per recording. A typical hour-long meeting needs a pack: 60 minutes for 199 RUB, 300 minutes for 690 RUB, 1000 minutes for 1990 RUB. Minutes never expire, you pay for the actual length of the recording. Payment by any bank card in the browser through Tribute, the /buy command in the bot.</p>
+
+<h2>FAQ</h2>
+<details open><summary>Does the bot know who is speaking?</summary><p>Yes, lines are labelled Speaker 1, Speaker 2 and so on. Replace the labels with names in the DOCX before sending the notes out.</p></details>
+<details><summary>What goes into the action items?</summary><p>What people promised, took on or asked someone to do, with the owner and the deadline when they were mentioned in the call.</p></details>
+<details><summary>Which recording formats are accepted?</summary><p>Any audio or video file up to 2 GB: MP4, M4A, MP3, WAV and others. Send it to the bot as a file.</p></details>
+<details><summary>Can I ask a question about the meeting?</summary><p>Yes, the Question button answers from the recording, for example "what did we decide about the launch date?". One question per recording on the free plan.</p></details>
+<details><summary>How long does an hour-long recording take?</summary><p>Longer than a short clip, roughly in proportion to the length. A short recording is ready in about a minute.</p></details>
+<details><summary>Is it safe for work recordings?</summary><p>There is no sign-up and the bot asks for nothing but the recording itself. /delete removes your transcripts whenever you want.</p></details>
+
+<h2>Other guides</h2>
+<p><a href="/en/voice-message-to-text/">Telegram voice message to text</a>, <a href="/en/youtube-to-text/">YouTube video to text with chapters</a>. This guide in Russian: <a href="/zapis-vstrechi-v-protokol/">запись встречи в протокол</a>.</p>
+
+<p class="note"><a href="/en/">Voicepad</a>: voice, audio, video and YouTube to text in Telegram. 15 free minutes every month.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Расшифровка интервью по спикерам: текст с таймкодами, бот Voicepad</title>
+<meta name="description" content="Запись интервью в текст с разметкой по спикерам и таймкодами. Для журналистов, исследователей и HR: файл до 2 ГБ или ссылка, DOCX на выходе. Бот в Telegram, 15 минут в месяц бесплатно.">
+<link rel="canonical" href="https://voicepad.qupport.io/rasshifrovka-intervyu/">
+<link rel="icon" type="image/png" href="/favicon.png">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Расшифровка интервью по спикерам">
+<meta property="og:description" content="Текст с таймкодами и разметкой, кто говорит, из записи интервью. Бот в Telegram.">
+<meta property="og:url" content="https://voicepad.qupport.io/rasshifrovka-intervyu/">
+<meta property="og:image" content="https://voicepad.qupport.io/cover.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Как расшифровать интервью по спикерам",
+  "step": [
+    {"@type": "HowToStep", "name": "Откройте бота", "text": "Откройте @Voicepad_bot в Telegram и нажмите «Начать»."},
+    {"@type": "HowToStep", "name": "Отправьте запись", "text": "Отправьте запись интервью файлом до 2 ГБ в любом аудио или видео формате либо ссылку, если интервью опубликовано на YouTube или VK Видео."},
+    {"@type": "HowToStep", "name": "Подождите", "text": "Короткая запись обрабатывается около минуты, часовая пропорционально дольше."},
+    {"@type": "HowToStep", "name": "Получите текст", "text": "Реплики помечены как Спикер 1 и Спикер 2, у каждой таймкод. Кнопка DOCX отдаёт документ для правок."}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Бот различает интервьюера и собеседника?", "acceptedAnswer": {"@type": "Answer", "text": "Да, реплики размечаются как Спикер 1 и Спикер 2, и дальше, если участников больше. Метки заменяются на имена одной заменой в DOCX."}},
+    {"@type": "Question", "name": "Можно ли получить текст интервью в Word?", "acceptedAnswer": {"@type": "Answer", "text": "Да, кнопка DOCX под расшифровкой. Есть также TXT и SRT."}},
+    {"@type": "Question", "name": "Как быстро найти нужную цитату?", "acceptedAnswer": {"@type": "Answer", "text": "По таймкодам в тексте или кнопкой «Вопрос»: спросите, где собеседник говорил о конкретной теме, и получите ответ по записи."}},
+    {"@type": "Question", "name": "Интервью на английском подойдёт?", "acceptedAnswer": {"@type": "Answer", "text": "Да. Язык определяется автоматически, лучше всего русский и английский, смешанная речь тоже распознаётся."}},
+    {"@type": "Question", "name": "Запись из Zoom подойдёт?", "acceptedAnswer": {"@type": "Answer", "text": "Любой аудио или видео файл до 2 ГБ, формат не важен. Отправьте его боту в личку как файл."}},
+    {"@type": "Question", "name": "Что с конфиденциальностью записей?", "acceptedAnswer": {"@type": "Answer", "text": "Регистрации нет, бот не запрашивает ничего, кроме самой записи. Команда /delete удаляет ваши расшифровки."}}
+  ]
+}
+</script>
+<style>
+:root{--bg:#0f1117;--card:#171a23;--text:#e8eaf0;--muted:#9aa0ae;--accent:#7c5cff;--line:#262a36}
+@media (prefers-color-scheme: light){:root{--bg:#fafafc;--card:#ffffff;--text:#15171e;--muted:#5d6472;--line:#e4e6ee}}
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,sans-serif;background:var(--bg);color:var(--text)}
+a{color:var(--accent)}
+.wrap{max-width:800px;margin:0 auto;padding:40px 20px 60px}
+h1{font-size:2rem;line-height:1.2;margin:0 0 10px}
+h2{font-size:1.35rem;margin:36px 0 10px}
+.meta{color:var(--muted);font-size:.95rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:14px 0}
+.cta{display:inline-block;margin-top:12px;padding:12px 22px;border-radius:12px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+ol li{margin-bottom:8px}
+details{border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:10px;background:var(--card)}
+summary{cursor:pointer;font-weight:600}
+details p{margin:10px 0 0;color:var(--muted)}
+pre{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;white-space:pre-wrap;font-size:.95rem;color:var(--muted)}
+.note{color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="meta"><a href="/">Voicepad</a> · интервью в текст</p>
+<h1>Расшифровка интервью по спикерам</h1>
+<p>Час интервью это тридцать с лишним страниц текста, если набирать вручную, и день работы, если делать аккуратно. Журналисту нужны точные цитаты с привязкой ко времени, исследователю разметка, где вопрос, а где ответ, HR короткая сводка по кандидату после собеседования. Бот Voicepad в Telegram принимает запись и отдаёт текст, в котором реплики разделены по говорящим и у каждой стоит таймкод.</p>
+
+<h2>Как расшифровать интервью</h2>
+<ol>
+  <li>Откройте <a href="https://t.me/Voicepad_bot?start=src_interview">@Voicepad_bot</a> и нажмите «Начать». Регистрации нет.</li>
+  <li>Отправьте запись файлом: с диктофона, из Zoom, с телефона, любой аудио или видео формат до 2 ГБ. Если интервью опубликовано на YouTube или VK Видео, подойдёт ссылка.</li>
+  <li>Подождите: короткая запись обрабатывается около минуты, часовая пропорционально дольше.</li>
+  <li>Получите текст. Реплики помечены как Спикер 1 и Спикер 2, у каждой таймкод. Кнопка DOCX отдаёт документ для правок, TXT простой текст.</li>
+</ol>
+<div class="card">Как выглядит фрагмент расшифровки:
+<pre>12:40 Спикер 1
+Когда вы поняли, что первая гипотеза не подтверждается?
+12:48 Спикер 2
+Месяца через три, когда пришли данные по второй группе. До этого мы честно в неё верили.</pre>
+<a class="cta" href="https://t.me/Voicepad_bot?start=src_interview">Расшифровать интервью</a></div>
+
+<h2>Для кого это</h2>
+<p>Журналистам: цитату можно сверить с записью по таймкоду, а кнопка «Статья» делает черновик материала по разговору, который дальше правится руками. Исследователям, которые проводят серии интервью: кнопка «Вопрос» отвечает по содержанию конкретной записи, например «что респондент говорил о цене», в бесплатном тарифе такой вопрос один на запись. HR и рекрутерам: «Конспект» даёт короткую сводку по собеседованию, которую можно приложить к карточке кандидата, а полный текст остаётся на случай спора о том, что именно было сказано.</p>
+
+<h2>Качество и ограничения</h2>
+<p>Два человека, диктофон на столе между ними, тихая комната: такой вариант распознаётся хорошо, и правки сводятся к именам и редким терминам. Интервью в кафе с телефоном в кармане даст пропуски. Когда собеседники говорят одновременно, граница между репликами может сдвинуться на слово. Распознавание на ElevenLabs Scribe v2: в нашем тесте на русском клипе с терминами оно допустило примерно вдвое меньше ошибок, чем боты на Whisper (у тех «бэкенд» стал «бэкингом»). Язык определяется автоматически, интервью на английском или с переходами между русским и английским тоже подойдёт. Расшифровки удаляются командой /delete, регистрации и личных данных бот не просит, нужен только Telegram.</p>
+
+<h2>Сколько стоит час интервью</h2>
+<p>15 минут в месяц бесплатно, этого хватает на короткий разговор или на проверку качества на фрагменте. Пакеты: 60 минут за 199 ₽, 300 минут за 690 ₽, 1000 минут за 1990 ₽, минуты не сгорают. Оплата любой банковской картой в браузере через Tribute, команда /buy.</p>
+
+<h2>Вопросы</h2>
+<details open><summary>Бот различает интервьюера и собеседника?</summary><p>Да, реплики размечаются как Спикер 1 и Спикер 2, и дальше, если участников больше. Метки заменяются на имена одной заменой в DOCX.</p></details>
+<details><summary>Можно ли получить текст в Word?</summary><p>Да, кнопка DOCX под расшифровкой. Есть также TXT и SRT.</p></details>
+<details><summary>Как быстро найти нужную цитату?</summary><p>По таймкодам в тексте или кнопкой «Вопрос»: спросите, где собеседник говорил о конкретной теме, и получите ответ по записи.</p></details>
+<details><summary>Интервью на английском подойдёт?</summary><p>Да. Язык определяется автоматически, лучше всего русский и английский, смешанная речь тоже распознаётся.</p></details>
+<details><summary>Запись из Zoom подойдёт?</summary><p>Любой аудио или видео файл до 2 ГБ, формат не важен. Отправьте его боту в личку как файл.</p></details>
+<details><summary>Что с конфиденциальностью?</summary><p>Регистрации нет, бот не запрашивает ничего, кроме самой записи. Команда /delete удаляет ваши расшифровки.</p></details>
+
+<h2>Другие инструкции</h2>
+<p><a href="/zapis-vstrechi-v-protokol/">Запись встречи в протокол</a>, <a href="/podcast-v-tekst/">расшифровка подкаста</a>, <a href="/golosovoe-v-tekst/">голосовое в текст</a>, <a href="/kruzhochek-v-tekst/">кружочек в текст</a>, <a href="/youtube-v-tekst/">видео с YouTube в конспект</a>, <a href="/compare/">сравнение ботов для расшифровки</a>.</p>
+
+<p class="note"><a href="/">Voicepad</a>: голосовые, аудио и видео в текст в Telegram. 15 минут в месяц бесплатно.</p>
+</div>
+</body>
+</html>
