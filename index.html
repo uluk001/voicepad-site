@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voicepad: бот для транскрибации голосовых, аудио и видео в Telegram</title>
+<meta name="description" content="Telegram-бот Voicepad переводит голосовые, кружочки, аудио, видео и ролики с YouTube в текст с таймкодами и спикерами, делает конспект и список задач. 15 минут в месяц бесплатно.">
+<link rel="canonical" href="https://voicepad.qupport.io/">
+<link rel="icon" type="image/png" href="/favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Voicepad: голосовые, аудио и видео в текст в Telegram">
+<meta property="og:description" content="Транскрибация голосовых, видео и YouTube с таймкодами и спикерами, конспект, задачи, DOCX. 15 минут в месяц бесплатно.">
+<meta property="og:url" content="https://voicepad.qupport.io/">
+<meta property="og:image" content="https://voicepad.qupport.io/cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Voicepad",
+  "alternateName": "@Voicepad_bot",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Telegram",
+  "url": "https://t.me/Voicepad_bot",
+  "image": "https://voicepad.qupport.io/avatar.png",
+  "description": "Telegram-бот для транскрибации голосовых сообщений, аудио, видео и роликов с YouTube в текст с таймкодами и спикерами, с конспектом, списком задач и экспортом в DOCX, TXT и SRT.",
+  "inLanguage": ["ru", "en"],
+  "offers": [
+    {"@type": "Offer", "price": "0", "priceCurrency": "RUB", "description": "15 минут в месяц бесплатно"},
+    {"@type": "Offer", "price": "199", "priceCurrency": "RUB", "description": "Пакет 60 минут"},
+    {"@type": "Offer", "price": "690", "priceCurrency": "RUB", "description": "Пакет 300 минут"},
+    {"@type": "Offer", "price": "1990", "priceCurrency": "RUB", "description": "Пакет 1000 минут"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Что умеет бот Voicepad?", "acceptedAnswer": {"@type": "Answer", "text": "Переводит в текст голосовые сообщения, кружочки, аудио и видео файлы до 2 ГБ и ролики по ссылке с YouTube, VK, RuTube и TikTok. Текст приходит с таймкодами и разметкой по спикерам, под ним кнопки: конспект, задачи, статья, пост, вопрос по записи, файлы DOCX, TXT и SRT."}},
+    {"@type": "Question", "name": "Сколько стоит транскрибация в Voicepad?", "acceptedAnswer": {"@type": "Answer", "text": "Каждый месяц 15 минут бесплатно, включая конспект и задачи. Пакеты минут: 60 минут за 199 ₽, 300 минут за 690 ₽, 1000 минут за 1990 ₽. Минуты не сгорают, списывается фактическая длительность записи, неудачные расшифровки не списываются."}},
+    {"@type": "Question", "name": "Какие языки поддерживает бот?", "acceptedAnswer": {"@type": "Answer", "text": "Русский, английский и ещё десятки языков с автоматическим определением, настраивать ничего не нужно. Смешанная речь тоже распознаётся."}},
+    {"@type": "Question", "name": "Чем Voicepad отличается от встроенной расшифровки в Telegram Premium?", "acceptedAnswer": {"@type": "Answer", "text": "Встроенная расшифровка работает только с короткими голосовыми и только у подписчиков Premium. Voicepad расшифровывает файлы до 2 ГБ и видео по ссылкам, размечает спикеров, ставит таймкоды, делает конспект и список задач, отдаёт файлы DOCX, TXT и SRT и работает в групповых чатах."}},
+    {"@type": "Question", "name": "Как расшифровать видео с YouTube?", "acceptedAnswer": {"@type": "Answer", "text": "Отправьте боту ссылку на видео. В ответ придёт текст с таймкодами, а конспект будет заканчиваться главами, где каждая метка времени открывает видео на нужном моменте."}},
+    {"@type": "Question", "name": "Что происходит с моими данными?", "acceptedAnswer": {"@type": "Answer", "text": "Аудио и видео удаляются сразу после распознавания, тексты хранятся 30 дней, чтобы работали кнопки под расшифровкой. Команда /delete удаляет все ваши расшифровки немедленно."}},
+    {"@type": "Question", "name": "Как использовать бота в группе?", "acceptedAnswer": {"@type": "Answer", "text": "Добавьте @Voicepad_bot в чат. Он автоматически расшифровывает голосовые и кружочки, под ссылками на видео предлагает кнопку с конспектом, а по команде /text расшифрует любую запись в ответе. Каждому чату даются бесплатные минуты в месяц."}}
+  ]
+}
+</script>
+<style>
+:root{--bg:#0f1117;--card:#171a23;--text:#e8eaf0;--muted:#9aa0ae;--accent:#7c5cff;--accent2:#ff8a3d;--line:#262a36}
+@media (prefers-color-scheme: light){:root{--bg:#fafafc;--card:#ffffff;--text:#15171e;--muted:#5d6472;--line:#e4e6ee}}
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,sans-serif;background:var(--bg);color:var(--text)}
+a{color:var(--accent)}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+header{padding:56px 0 24px;text-align:center}
+header img{width:96px;height:96px;border-radius:24px}
+h1{font-size:2.1rem;line-height:1.2;margin:18px 0 10px}
+.lead{font-size:1.15rem;color:var(--muted);max-width:640px;margin:0 auto}
+.cta{display:inline-block;margin:26px 8px 0;padding:14px 26px;border-radius:14px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;text-decoration:none;font-weight:600}
+.cta.secondary{background:var(--card);color:var(--text);border:1px solid var(--line)}
+.note{font-size:.9rem;color:var(--muted);margin-top:10px}
+section{padding:36px 0;border-top:1px solid var(--line)}
+h2{font-size:1.5rem;margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.card h3{margin:0 0 8px;font-size:1.05rem}
+.card p{margin:0;color:var(--muted);font-size:.97rem}
+ol.steps{padding-left:22px}
+ol.steps li{margin-bottom:8px}
+.price{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+.price .card strong{font-size:1.3rem;display:block}
+details{border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:10px;background:var(--card)}
+summary{cursor:pointer;font-weight:600}
+details p{margin:10px 0 0;color:var(--muted)}
+footer{padding:36px 0 56px;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+.en{margin-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <img src="/avatar.png" alt="Voicepad" width="96" height="96">
+  <h1>Voicepad: голосовые, аудио и видео в&nbsp;текст прямо в&nbsp;Telegram</h1>
+  <p class="lead">Бот расшифровывает голосовые, кружочки, файлы до 2 ГБ и ролики с YouTube, ставит таймкоды, размечает спикеров и в одно нажатие делает конспект и список задач.</p>
+  <a class="cta" href="https://t.me/Voicepad_bot?start=src_site" rel="noopener">Открыть @Voicepad_bot</a>
+  <a class="cta secondary" href="https://t.me/Voicepad_bot?startgroup=true" rel="noopener">Добавить в чат</a>
+  <p class="note">15 минут в месяц бесплатно, без регистрации и карты.</p>
+</header>
+
+<section id="features">
+  <h2>Что умеет</h2>
+  <div class="grid">
+    <div class="card"><h3>Голосовые и кружочки</h3><p>Перешлите голосовое из любого чата, через несколько секунд придёт текст с таймкодами.</p></div>
+    <div class="card"><h3>YouTube, VK, RuTube, TikTok</h3><p>Отправьте ссылку на лекцию, подкаст или интервью. Конспект заканчивается главами, каждая метка времени открывает видео на нужном месте.</p></div>
+    <div class="card"><h3>Файлы до 2 ГБ</h3><p>Записи встреч, лекции, созвоны в MP3, M4A, MP4, WAV и других форматах, а также ссылки на Яндекс Диск и Google Drive.</p></div>
+    <div class="card"><h3>Спикеры и таймкоды</h3><p>Диалог размечается по участникам: видно, кто что сказал и когда.</p></div>
+    <div class="card"><h3>Конспект, задачи, статья, пост</h3><p>Кнопки под каждой расшифровкой. «Задачи» собирают, кто что обещал и к какому сроку. Можно задать вопрос по записи.</p></div>
+    <div class="card"><h3>DOCX, TXT, SRT</h3><p>Файл для реферата, протокол встречи или субтитры для видео одним нажатием.</p></div>
+    <div class="card"><h3>Русский и английский</h3><p>Язык определяется автоматически, смешанная речь тоже распознаётся. Движок ElevenLabs Scribe v2, примерно вдвое меньше ошибок, чем у Whisper.</p></div>
+    <div class="card"><h3>Работает в группах</h3><p>В чате бот сам расшифровывает голосовые для всех участников, а под ссылками на видео предлагает конспект. Каждому чату даются бесплатные минуты.</p></div>
+  </div>
+</section>
+
+<section id="how">
+  <h2>Как это работает</h2>
+  <ol class="steps">
+    <li>Откройте <a href="https://t.me/Voicepad_bot?start=src_site">@Voicepad_bot</a> и нажмите «Начать».</li>
+    <li>Отправьте голосовое, файл или ссылку на видео.</li>
+    <li>Получите текст с таймкодами и кнопки: конспект, задачи, вопрос, DOCX. Прошлые записи всегда под рукой: /history.</li>
+  </ol>
+</section>
+
+<section id="for">
+  <h2>Для кого</h2>
+  <div class="grid">
+    <div class="card"><h3>Студентам</h3><p>Трёхчасовая лекция с YouTube превращается в конспект с главами, а голосовое от преподавателя в текст, который можно искать.</p></div>
+    <div class="card"><h3>Командам и фрилансерам</h3><p>Запись созвона на час превращается в протокол и список задач с ответственными и сроками. Голосовые в рабочем чате читают все.</p></div>
+    <div class="card"><h3>Авторам подкастов и каналов</h3><p>Текст выпуска для поста и статьи, субтитры SRT для видео.</p></div>
+    <div class="card"><h3>Тем, кто учит английский</h3><p>Интервью и подкасты на английском с разметкой по спикерам и ответами на вопросы по содержанию.</p></div>
+  </div>
+</section>
+
+<section id="pricing">
+  <h2>Цены</h2>
+  <div class="price">
+    <div class="card"><strong>0 ₽</strong>15 минут каждый месяц: расшифровка, конспект, задачи и один вопрос по записи</div>
+    <div class="card"><strong>199 ₽</strong>60 минут</div>
+    <div class="card"><strong>690 ₽</strong>300 минут, выгода 31%</div>
+    <div class="card"><strong>1990 ₽</strong>1000 минут, выгода 40%</div>
+  </div>
+  <p class="note">Оплата банковской картой через Tribute, минуты не сгорают. Списывается фактическая длительность записи; если распознать не удалось, минуты не списываются. Любой пакет открывает статьи, посты и до 10 вопросов по записи.</p>
+</section>
+
+<section id="faq">
+  <h2>Вопросы и ответы</h2>
+  <details open><summary>Чем Voicepad отличается от встроенной расшифровки в Telegram Premium?</summary><p>Встроенная расшифровка работает только с короткими голосовыми и только у подписчиков Premium. Voicepad берёт файлы до 2 ГБ и видео по ссылкам, размечает спикеров, ставит таймкоды, делает конспект и список задач, отдаёт DOCX, TXT и SRT и работает в групповых чатах.</p></details>
+  <details><summary>Какие форматы и лимиты?</summary><p>Голосовые, кружочки, аудио и видео файлы до 2 ГБ, записи до 3 часов, ссылки на YouTube, VK, RuTube, TikTok, Яндекс Диск, Google Drive и прямые ссылки на файлы.</p></details>
+  <details><summary>Какие языки поддерживаются?</summary><p>Русский, английский и ещё десятки языков с автоматическим определением. Настраивать язык не нужно.</p></details>
+  <details><summary>Как расшифровать видео с YouTube?</summary><p>Отправьте боту ссылку. Придёт текст с таймкодами, а в конспекте будут главы со ссылками на нужный момент видео.</p></details>
+  <details><summary>Что происходит с моими данными?</summary><p>Аудио и видео удаляются сразу после распознавания, тексты хранятся 30 дней, чтобы работали кнопки под расшифровкой. Команда /delete удаляет все ваши расшифровки немедленно.</p></details>
+  <details><summary>Как добавить бота в группу?</summary><p>Нажмите «Добавить в чат» выше или добавьте @Voicepad_bot как участника. Голосовые и кружочки расшифровываются автоматически, видео по ссылкам по кнопке, любая запись по команде /text в ответе. Админы выключают авто-режим командой /mute.</p></details>
+  <details><summary>Как оплатить из-за рубежа?</summary><p>Пакеты оплачиваются банковской картой в браузере через Tribute: рубли, доллары или евро, карты любых стран.</p></details>
+</section>
+
+<footer>
+  <p><strong>Voicepad</strong> · <a href="https://t.me/Voicepad_bot?start=src_site">t.me/Voicepad_bot</a> · 15 минут в месяц бесплатно</p>
+  <p class="en"><strong>Voicepad in English.</strong> A Telegram bot that turns voice messages, audio and video files up to 2 GB and YouTube links into text with timestamps and speaker labels, then writes a summary, action items, an article or a post, answers questions about the recording and exports DOCX, TXT and SRT. Russian and English are detected automatically. 15 free minutes every month, minute packs from 199 RUB paid by card. Works in group chats too.</p>
+</footer>
+</div>
+</body>
+</html>
