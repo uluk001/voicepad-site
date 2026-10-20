@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Политика конфиденциальности Voicepad</title>
+<meta name="description" content="Какие данные обрабатывает бот Voicepad, сколько хранит расшифровки, кому передаёт аудио для распознавания и как удалить всё одной командой.">
+<link rel="canonical" href="https://voicepad.qupport.io/privacy/">
+<link rel="icon" type="image/png" href="/favicon.png">
+<meta name="robots" content="index,follow">
+<style>
+:root{--bg:#0f1117;--card:#171a23;--text:#e8eaf0;--muted:#9aa0ae;--accent:#7c5cff;--line:#262a36}
+@media (prefers-color-scheme: light){:root{--bg:#fafafc;--card:#ffffff;--text:#15171e;--muted:#5d6472;--line:#e4e6ee}}
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,sans-serif;background:var(--bg);color:var(--text)}
+a{color:var(--accent)}
+.wrap{max-width:800px;margin:0 auto;padding:40px 20px 60px}
+h1{font-size:2rem;line-height:1.2;margin:0 0 10px}
+h2{font-size:1.35rem;margin:36px 0 10px}
+.meta{color:var(--muted);font-size:.95rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:14px 0}
+ul li{margin-bottom:8px}
+.note{color:var(--muted);font-size:.9rem}
+hr{border:0;border-top:1px solid var(--line);margin:40px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="meta"><a href="/">Voicepad</a> · политика конфиденциальности · обновлено 21 октября 2026</p>
+<h1>Политика конфиденциальности</h1>
+<p>Эта политика описывает, какие данные обрабатывает Telegram-бот <a href="https://t.me/Voicepad_bot">@Voicepad_bot</a> (далее «бот») и сайт voicepad.qupport.io, зачем, сколько хранит и как их удалить. Бота разрабатывает и поддерживает частное лицо, Улукман Жыргалбек уулу (Казахстан). Вопросы: команда /feedback в боте или сообщение в Telegram <a href="https://t.me/uluk001">@uluk001</a>.</p>
+
+<h2>Какие данные обрабатываются</h2>
+<ul>
+  <li><b>Профиль Telegram</b>: числовой идентификатор, имя, username и язык интерфейса. Нужны, чтобы бот отвечал вам, считал минуты и показывал историю.</li>
+  <li><b>Аудио и видео</b>, которые вы присылаете или на которые даёте ссылку. Файл нужен только для распознавания речи и удаляется сразу после него.</li>
+  <li><b>Расшифровки, конспекты, задачи и ответы на вопросы</b>, полученные из ваших записей. Хранятся 30 дней, чтобы работали кнопки под сообщением, команда /history и вопросы по записи, потом удаляются автоматически.</li>
+  <li><b>Служебные события</b>: когда вы запустили бота, с какой ссылки пришли, отправили файл, нажали кнопку, купили пакет. Это обезличенные счётчики для улучшения бота, тексты сообщений в них не попадают.</li>
+  <li><b>Покупки</b>: идентификатор покупки и пакет минут, которые передаёт платёжный сервис. Данные карты бот не получает и не хранит.</li>
+  <li><b>Ответы на вопросы бота</b> (например, для чего вам расшифровка) и текст, который вы отправили через /feedback.</li>
+</ul>
+
+<h2>Кому передаются данные</h2>
+<div class="card">
+<ul>
+  <li><b>Распознавание речи</b>: аудио отправляется провайдерам ElevenLabs и Groq. Они возвращают текст и по своим условиям не используют данные API для обучения моделей.</li>
+  <li><b>Конспекты, задачи и ответы</b>: текст расшифровки передаётся в Anthropic (модели Claude). Данные API у Anthropic не используются для обучения.</li>
+  <li><b>Оплата</b>: платежи проводит сервис Tribute. Боту приходят только факт оплаты, идентификатор покупки и пакет.</li>
+  <li><b>Telegram</b>: доставка сообщений и файлов идёт через Bot API Telegram по его правилам.</li>
+</ul>
+Другим лицам данные не продаются и не передаются. Рекламы в боте нет.
+</div>
+
+<h2>В группах</h2>
+<p>Если бота добавили в чат, он обрабатывает только голосовые, кружочки, файлы и ссылки, а обычные текстовые сообщения не сохраняет. Админ чата может выключить авто-режим командой /mute. Удалить расшифровки чата можно командой /delete в самом чате.</p>
+
+<h2>Сроки хранения и удаление</h2>
+<ul>
+  <li>Аудио и видео: удаляются сразу после распознавания, обычно в течение минуты.</li>
+  <li>Тексты расшифровок и результаты: 30 дней, затем автоматическое удаление.</li>
+  <li>Профиль, баланс минут и история покупок: пока вы пользуетесь ботом.</li>
+  <li>Команда <b>/delete</b> удаляет все ваши расшифровки, конспекты и ответы немедленно, баланс при этом сохраняется. Чтобы удалить и профиль с балансом, напишите <a href="https://t.me/uluk001">@uluk001</a>.</li>
+</ul>
+
+<h2>Сообщения от бота</h2>
+<p>Бот может прислать не чаще одного сообщения в неделю: подсказку, если вы запустили бота и ничего не отправили, уведомление о том, что бесплатные минуты месяца снова доступны, или одно напоминание после долгого перерыва. Если заблокировать бота, сообщения прекращаются.</p>
+
+<h2>Сайт</h2>
+<p>Сайт voicepad.qupport.io статический, без форм, без куки и без собственных счётчиков. Хостинг GitHub Pages ведёт стандартные журналы обращений по правилам GitHub. Ссылки на бота содержат метку источника (например, src_site), по ней бот понимает, с какой страницы вы пришли.</p>
+
+<h2>Изменения</h2>
+<p>Новая редакция публикуется на этой странице с датой обновления. Существенные изменения бот сообщит отдельным сообщением.</p>
+
+<hr>
+<p class="meta" id="en">English summary</p>
+<h2>Privacy policy (summary)</h2>
+<p>@Voicepad_bot processes your Telegram id, name, username and language, the audio or video you send, and the transcripts and summaries made from them. Audio is deleted right after transcription. Transcripts and AI results are kept for 30 days so the buttons, /history and follow-up questions work, then deleted automatically. Speech recognition runs on ElevenLabs and Groq, summaries on Anthropic Claude; these API providers do not train on API data. Payments go through Tribute; the bot never sees card details. Usage events (start, file received, button pressed, purchase) are stored as anonymous counters. The bot sends at most one message per week (an onboarding hint, a free minutes reset notice or a single reactivation). /delete removes all your transcripts at once; to delete the profile and balance write to <a href="https://t.me/uluk001">@uluk001</a>. The website is static and sets no cookies.</p>
+
+<p class="note"><a href="/">Voicepad</a>: голосовые, аудио и видео в текст в Telegram. 15 минут в месяц бесплатно.</p>
+</div>
+</body>
+</html>
