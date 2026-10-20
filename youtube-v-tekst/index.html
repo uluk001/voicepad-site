@@ -93,5 +93,15 @@ pre{background:var(--card);border:1px solid var(--line);border-radius:12px;paddi
 
 <p class="note"><a href="/">Voicepad</a>: голосовые, аудио и видео в текст в Telegram. 15 минут в месяц бесплатно.</p>
 </div>
+<script>
+(function () {
+  var params = new URLSearchParams(location.search);
+  var raw = (params.get("ref") || params.get("utm_source") || "").toLowerCase().replace(/[^a-z0-9_]/g, "");
+  if (!raw || raw.length > 24) return;
+  document.querySelectorAll('a[href*="t.me/Voicepad_bot?start=src_"]').forEach(function (link) {
+    link.href = link.href.replace(/start=src_[a-z0-9_]+/, "start=src_" + raw);
+  });
+})();
+</script>
 </body>
 </html>

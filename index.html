@@ -170,5 +170,15 @@ footer{padding:36px 0 56px;border-top:1px solid var(--line);color:var(--muted);f
   <p class="en"><strong>Voicepad in English.</strong> A Telegram bot that turns voice messages, audio and video files up to 2 GB and YouTube links into text with timestamps and speaker labels, then writes a summary, action items, an article or a post, answers questions about the recording and exports DOCX, TXT and SRT. Russian and English are detected automatically. 15 free minutes every month, minute packs from 199 RUB paid by card. Works in group chats too.</p>
 </footer>
 </div>
+<script>
+(function () {
+  var params = new URLSearchParams(location.search);
+  var raw = (params.get("ref") || params.get("utm_source") || "").toLowerCase().replace(/[^a-z0-9_]/g, "");
+  if (!raw || raw.length > 24) return;
+  document.querySelectorAll('a[href*="t.me/Voicepad_bot?start=src_"]').forEach(function (link) {
+    link.href = link.href.replace(/start=src_[a-z0-9_]+/, "start=src_" + raw);
+  });
+})();
+</script>
 </body>
 </html>
