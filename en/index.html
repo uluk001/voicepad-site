@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voicepad: Telegram transcription bot for voice messages, audio, video and YouTube</title>
+<meta name="description" content="Voicepad turns Telegram voice messages, audio and video files up to 2 GB and YouTube links into text with timestamps and speaker labels, then writes a summary and action items. 15 free minutes a month.">
+<link rel="canonical" href="https://voicepad.qupport.io/en/">
+<link rel="alternate" hreflang="ru" href="https://voicepad.qupport.io/">
+<link rel="alternate" hreflang="en" href="https://voicepad.qupport.io/en/">
+<link rel="icon" type="image/png" href="/favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Voicepad: voice, audio, video and YouTube to text in Telegram">
+<meta property="og:description" content="Transcription bot with timestamps, speaker labels, summaries and action items. 15 free minutes a month.">
+<meta property="og:url" content="https://voicepad.qupport.io/en/">
+<meta property="og:image" content="https://voicepad.qupport.io/cover.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Voicepad",
+  "alternateName": "@Voicepad_bot",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Telegram",
+  "url": "https://t.me/Voicepad_bot",
+  "image": "https://voicepad.qupport.io/avatar.png",
+  "description": "Telegram bot that transcribes voice messages, audio, video and YouTube links into text with timestamps and speaker labels, with summaries, action items and DOCX, TXT and SRT export.",
+  "inLanguage": ["en", "ru"],
+  "offers": [
+    {"@type": "Offer", "price": "0", "priceCurrency": "RUB", "description": "15 free minutes every month"},
+    {"@type": "Offer", "price": "199", "priceCurrency": "RUB", "description": "60 minutes"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What can Voicepad transcribe?", "acceptedAnswer": {"@type": "Answer", "text": "Voice messages, video notes, audio and video files up to 2 GB, and links from YouTube, VK, RuTube and TikTok. The text comes with timestamps and speaker labels, with buttons for a summary, action items, an article, a post, questions about the recording and DOCX, TXT and SRT files."}},
+    {"@type": "Question", "name": "Which languages are supported?", "acceptedAnswer": {"@type": "Answer", "text": "English, Russian and dozens of other languages, detected automatically. Mixed-language recordings work too."}},
+    {"@type": "Question", "name": "How much does it cost?", "acceptedAnswer": {"@type": "Answer", "text": "15 minutes every month are free, including the summary and action items. Minute packs start at 199 RUB for 60 minutes, paid by card in rubles, dollars or euros. Minutes never expire."}},
+    {"@type": "Question", "name": "Does it work in group chats?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Add @Voicepad_bot to a chat and it transcribes voice messages for everyone, offers a summary under video links and transcribes anything on request with the /text command."}}
+  ]
+}
+</script>
+<style>
+:root{--bg:#0f1117;--card:#171a23;--text:#e8eaf0;--muted:#9aa0ae;--accent:#7c5cff;--accent2:#ff8a3d;--line:#262a36}
+@media (prefers-color-scheme: light){:root{--bg:#fafafc;--card:#ffffff;--text:#15171e;--muted:#5d6472;--line:#e4e6ee}}
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,sans-serif;background:var(--bg);color:var(--text)}
+a{color:var(--accent)}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+header{padding:56px 0 24px;text-align:center}
+header img{width:96px;height:96px;border-radius:24px}
+h1{font-size:2.1rem;line-height:1.2;margin:18px 0 10px}
+.lead{font-size:1.15rem;color:var(--muted);max-width:640px;margin:0 auto}
+.cta{display:inline-block;margin:26px 8px 0;padding:14px 26px;border-radius:14px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;text-decoration:none;font-weight:600}
+.note{font-size:.9rem;color:var(--muted);margin-top:10px}
+section{padding:36px 0;border-top:1px solid var(--line)}
+h2{font-size:1.5rem;margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.card h3{margin:0 0 8px;font-size:1.05rem}
+.card p{margin:0;color:var(--muted);font-size:.97rem}
+details{border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:10px;background:var(--card)}
+summary{cursor:pointer;font-weight:600}
+details p{margin:10px 0 0;color:var(--muted)}
+footer{padding:36px 0 56px;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <img src="/avatar.png" alt="Voicepad" width="96" height="96">
+  <h1>Voicepad: voice, audio, video and YouTube to text in Telegram</h1>
+  <p class="lead">A transcription bot that turns voice messages, files up to 2 GB and YouTube links into text with timestamps and speaker labels, then writes a summary and action items in one tap.</p>
+  <a class="cta" href="https://t.me/Voicepad_bot?start=src_en" rel="noopener">Open @Voicepad_bot</a>
+  <p class="note">15 free minutes every month, no sign-up, no card.</p>
+</header>
+
+<section>
+  <h2>What it does</h2>
+  <div class="grid">
+    <div class="card"><h3>Voice messages</h3><p>Forward a voice message from any chat and get the text with timestamps in seconds.</p></div>
+    <div class="card"><h3>YouTube and other links</h3><p>Send a link to a lecture, podcast or interview. The summary ends with chapters, each timestamp opens the video at that moment.</p></div>
+    <div class="card"><h3>Files up to 2 GB</h3><p>Meeting recordings, lectures and calls in MP3, M4A, MP4, WAV and more, or links to Google Drive.</p></div>
+    <div class="card"><h3>Speakers and timestamps</h3><p>Dialogues are labelled by speaker, so you can see who said what and when.</p></div>
+    <div class="card"><h3>Summary, tasks, article, post</h3><p>Buttons under every transcript. "Tasks" lists who promised what and by when. Ask any question about the recording.</p></div>
+    <div class="card"><h3>DOCX, TXT, SRT</h3><p>A document for your notes, meeting minutes to send around, or subtitles for a video.</p></div>
+    <div class="card"><h3>English and Russian</h3><p>Language is detected automatically, mixed speech works. Speech recognition by ElevenLabs Scribe v2, about half the error rate of Whisper.</p></div>
+    <div class="card"><h3>Group chats</h3><p>In a chat the bot transcribes voice messages for everyone and offers a summary under video links. Each chat gets free minutes.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Pricing</h2>
+  <p>15 minutes every month are free, including the summary, action items and one question per recording. Packs: 60 minutes for 199 RUB, 300 for 690 RUB, 1000 for 1990 RUB, paid by card in rubles, dollars or euros. Minutes never expire and failed transcriptions are never charged.</p>
+</section>
+
+<section>
+  <h2>FAQ</h2>
+  <details open><summary>How is this different from Telegram Premium's built-in transcription?</summary><p>Premium transcribes only short voice messages and only for subscribers. Voicepad handles files up to 2 GB and video links, labels speakers, adds timestamps, writes summaries and action items, exports DOCX, TXT and SRT and works in group chats.</p></details>
+  <details><summary>Which languages are supported?</summary><p>English, Russian and dozens of others, detected automatically.</p></details>
+  <details><summary>What happens to my data?</summary><p>Audio and video are deleted right after recognition, texts are kept for 30 days so the buttons keep working, and /delete wipes everything at once.</p></details>
+  <details><summary>How do I use it in a group?</summary><p>Add @Voicepad_bot to the chat. Voice messages are transcribed automatically, video links get a button, and /text in a reply transcribes anything else. Admins can switch auto mode off with /mute.</p></details>
+</section>
+
+<footer>
+  <p><strong>Voicepad</strong> · <a href="https://t.me/Voicepad_bot?start=src_en">t.me/Voicepad_bot</a> · <a href="/">Русская версия</a></p>
+</footer>
+</div>
+</body>
+</html>

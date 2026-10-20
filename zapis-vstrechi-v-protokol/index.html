@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Расшифровка записи встречи: протокол созвона и список задач за минуту</title>
+<meta name="description" content="Загрузите запись созвона в бота Voicepad в Telegram: текст по спикерам, конспект встречи и список задач с ответственными и сроками. Zoom, Google Meet, Telegram, файлы до 2 ГБ. 15 минут в месяц бесплатно.">
+<link rel="canonical" href="https://voicepad.qupport.io/zapis-vstrechi-v-protokol/">
+<link rel="icon" type="image/png" href="/favicon.png">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Запись встречи в протокол и задачи">
+<meta property="og:description" content="Текст по спикерам, конспект и задачи из записи созвона. Бот в Telegram.">
+<meta property="og:url" content="https://voicepad.qupport.io/zapis-vstrechi-v-protokol/">
+<meta property="og:image" content="https://voicepad.qupport.io/cover.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Как записать созвон, чтобы потом расшифровать?", "acceptedAnswer": {"@type": "Answer", "text": "В Zoom и Google Meet есть встроенная запись, в Telegram и FaceTime подойдёт запись экрана со звуком или диктофон рядом с динамиком. Боту нужен любой аудио или видео файл до 2 ГБ, формат не важен."}},
+    {"@type": "Question", "name": "Бот различает, кто говорит?", "acceptedAnswer": {"@type": "Answer", "text": "Да, реплики размечаются как Спикер 1, Спикер 2 и так далее. Если участники представляются по имени, конспект и задачи используют имена."}},
+    {"@type": "Question", "name": "Что попадает в список задач?", "acceptedAnswer": {"@type": "Answer", "text": "Всё, что кто-то пообещал, взял на себя или попросил сделать, с ответственным и сроком, если они прозвучали. Если задач не было, бот так и скажет."}},
+    {"@type": "Question", "name": "Это безопасно для рабочих записей?", "acceptedAnswer": {"@type": "Answer", "text": "Аудио удаляется сразу после распознавания, текст хранится 30 дней для кнопок под расшифровкой, команда /delete стирает всё немедленно."}}
+  ]
+}
+</script>
+<style>
+:root{--bg:#0f1117;--card:#171a23;--text:#e8eaf0;--muted:#9aa0ae;--accent:#7c5cff;--line:#262a36}
+@media (prefers-color-scheme: light){:root{--bg:#fafafc;--card:#ffffff;--text:#15171e;--muted:#5d6472;--line:#e4e6ee}}
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,sans-serif;background:var(--bg);color:var(--text)}
+a{color:var(--accent)}
+.wrap{max-width:800px;margin:0 auto;padding:40px 20px 60px}
+h1{font-size:2rem;line-height:1.2;margin:0 0 10px}
+h2{font-size:1.35rem;margin:36px 0 10px}
+.meta{color:var(--muted);font-size:.95rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:14px 0}
+.cta{display:inline-block;margin-top:12px;padding:12px 22px;border-radius:12px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+ol li{margin-bottom:8px}
+details{border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:10px;background:var(--card)}
+summary{cursor:pointer;font-weight:600}
+details p{margin:10px 0 0;color:var(--muted)}
+pre{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;white-space:pre-wrap;font-size:.95rem;color:var(--muted)}
+.note{color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="meta"><a href="/">Voicepad</a> · записи встреч</p>
+<h1>Запись встречи в протокол и список задач</h1>
+<p>Созвон на час, после него все расходятся с разным пониманием, кто что обещал. Запись есть, но пересматривать её никто не будет. Бот превращает запись в текст по спикерам, короткий протокол и список задач с ответственными и сроками, прямо в Telegram.</p>
+
+<h2>Как сделать</h2>
+<ol>
+  <li>Запишите созвон: в Zoom и Google Meet есть встроенная запись, для Telegram и FaceTime подойдёт запись экрана со звуком.</li>
+  <li>Отправьте файл в <a href="https://t.me/Voicepad_bot?start=src_meeting">@Voicepad_bot</a>. Подходят любые аудио и видео до 2 ГБ, ссылки на Яндекс Диск и Google Drive тоже.</li>
+  <li>Получите текст с таймкодами и спикерами. Нажмите «Задачи» для списка поручений и «Конспект» для протокола. Кнопка DOCX отдаёт документ для рассылки участникам.</li>
+</ol>
+<div class="card">Пример ответа кнопки «Задачи» по записи планёрки:
+<pre>Артём
+• Подготовить смету по второму варианту (до пятницы)
+• Созвониться с подрядчиком по срокам монтажа
+Лена
+• Переписать текст лендинга с учётом правок (до среды)
+Общее
+• Следующая встреча в четверг в 15:00</pre>
+<a class="cta" href="https://t.me/Voicepad_bot?start=src_meeting">Расшифровать запись встречи</a></div>
+
+<h2>Если созвоны проходят в рабочем чате</h2>
+<p>Добавьте бота в чат команды. Голосовые он расшифрует сам, а любую запись расшифрует по команде /text в ответе на файл. Конспект и задачи каждый участник открывает в личке по кнопке под расшифровкой, чат не засоряется.</p>
+
+<h2>Вопросы</h2>
+<details open><summary>Бот различает, кто говорит?</summary><p>Да, реплики размечаются как Спикер 1, Спикер 2 и дальше. Если участники представляются, конспект и задачи используют имена.</p></details>
+<details><summary>Что попадает в список задач?</summary><p>Всё, что кто-то пообещал, взял на себя или попросил сделать, с ответственным и сроком, если они прозвучали. Если задач не было, бот так и напишет.</p></details>
+<details><summary>Сколько стоит час записи?</summary><p>15 минут в месяц бесплатно, дальше 60 минут за 199 ₽, 300 за 690 ₽, 1000 за 1990 ₽. Списывается фактическая длительность.</p></details>
+<details><summary>Это безопасно для рабочих записей?</summary><p>Аудио удаляется сразу после распознавания, текст хранится 30 дней, команда /delete стирает всё немедленно.</p></details>
+
+<p class="note">Смотрите также: <a href="/golosovoe-v-tekst/">голосовые в текст</a>, <a href="/youtube-v-tekst/">видео с YouTube в конспект</a>, <a href="/compare/">сравнение ботов для расшифровки</a>.</p>
+</div>
+</body>
+</html>
