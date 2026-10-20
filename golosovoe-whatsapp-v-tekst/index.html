@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Голосовое из WhatsApp в текст: сохранить аудио и расшифровать в Telegram, бот Voicepad</title>
+<meta name="description" content="Как перевести голосовое сообщение из WhatsApp в текст: сохраните аудио (.opus или .m4a) через «Поделиться» и отправьте его боту Voicepad в Telegram. Текст с таймкодами, 15 минут в месяц бесплатно.">
+<link rel="canonical" href="https://voicepad.qupport.io/golosovoe-whatsapp-v-tekst/">
+<link rel="icon" type="image/png" href="/favicon.png">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Голосовое из WhatsApp в текст">
+<meta property="og:description" content="Сохраните голосовое из WhatsApp файлом и отправьте боту в Telegram. Текст с таймкодами через минуту, 15 минут в месяц бесплатно.">
+<meta property="og:url" content="https://voicepad.qupport.io/golosovoe-whatsapp-v-tekst/">
+<meta property="og:image" content="https://voicepad.qupport.io/cover.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Как перевести голосовое из WhatsApp в текст",
+  "step": [
+    {"@type": "HowToStep", "name": "Откройте бота", "text": "Один раз откройте @Voicepad_bot в Telegram и нажмите «Начать», чтобы чат с ботом появился в списке."},
+    {"@type": "HowToStep", "name": "Сохраните голосовое", "text": "В WhatsApp удерживайте голосовое и выберите «Поделиться»: на iPhone через «Переслать» и значок со стрелкой, на Android через меню из трёх точек."},
+    {"@type": "HowToStep", "name": "Отправьте в Telegram", "text": "В списке приложений выберите Telegram и чат с @Voicepad_bot. Файл .opus или .m4a конвертировать не нужно."},
+    {"@type": "HowToStep", "name": "Получите текст", "text": "Примерно через минуту придёт текст с таймкодами. Под ним кнопки: Конспект, Задачи, Вопрос, DOCX, TXT."}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Бот работает в WhatsApp?", "acceptedAnswer": {"@type": "Answer", "text": "Нет, только в Telegram. Голосовое из WhatsApp нужно сохранить файлом и отправить боту в Telegram."}},
+    {"@type": "Question", "name": "Какой формат у голосового из WhatsApp и подходит ли он?", "acceptedAnswer": {"@type": "Answer", "text": "Обычно .opus, иногда .m4a. Оба принимаются, конвертировать не нужно."}},
+    {"@type": "Question", "name": "Что делать, если пункта «Поделиться» нет?", "acceptedAnswer": {"@type": "Answer", "text": "Откройте меню чата и выберите «Экспорт чата» с медиафайлами. В архиве голосовые лежат файлами .opus, нужный отправьте боту."}},
+    {"@type": "Question", "name": "Это бесплатно?", "acceptedAnswer": {"@type": "Answer", "text": "15 минут в месяц без регистрации и карты. На шестиминутное голосовое хватит с запасом."}},
+    {"@type": "Question", "name": "Можно ли вернуть текст в WhatsApp?", "acceptedAnswer": {"@type": "Answer", "text": "Да, скопируйте его из ответа бота или возьмите файл TXT и отправьте в чат WhatsApp обычным сообщением."}},
+    {"@type": "Question", "name": "Голосовое на английском или вперемешку?", "acceptedAnswer": {"@type": "Answer", "text": "Подойдёт, язык определяется автоматически. Русский и английский распознаются лучше всего, смешанная речь тоже."}}
+  ]
+}
+</script>
+<style>
+:root{--bg:#0f1117;--card:#171a23;--text:#e8eaf0;--muted:#9aa0ae;--accent:#7c5cff;--line:#262a36}
+@media (prefers-color-scheme: light){:root{--bg:#fafafc;--card:#ffffff;--text:#15171e;--muted:#5d6472;--line:#e4e6ee}}
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,sans-serif;background:var(--bg);color:var(--text)}
+a{color:var(--accent)}
+.wrap{max-width:800px;margin:0 auto;padding:40px 20px 60px}
+h1{font-size:2rem;line-height:1.2;margin:0 0 10px}
+h2{font-size:1.35rem;margin:36px 0 10px}
+.meta{color:var(--muted);font-size:.95rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:14px 0}
+.cta{display:inline-block;margin-top:12px;padding:12px 22px;border-radius:12px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+ol li{margin-bottom:8px}
+details{border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:10px;background:var(--card)}
+summary{cursor:pointer;font-weight:600}
+details p{margin:10px 0 0;color:var(--muted)}
+pre{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;white-space:pre-wrap;font-size:.95rem;color:var(--muted)}
+.note{color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="meta"><a href="/">Voicepad</a> · голосовые из WhatsApp</p>
+<h1>Голосовое из WhatsApp в текст</h1>
+<p>В WhatsApp прислали голосовое на шесть минут, слушать негде, а что в нём, нужно знать сейчас. Бот Voicepad работает только в Telegram, внутри WhatsApp его нет, но само голосовое оттуда достаётся файлом за несколько нажатий. Дальше его отправляют боту, и через минуту приходит текст с таймкодами. Ниже два пути: с телефона через «Поделиться» и с компьютера через скачивание файла.</p>
+
+<h2>Как достать голосовое из WhatsApp и отправить боту</h2>
+<ol>
+  <li>Сначала один раз откройте <a href="https://t.me/Voicepad_bot?start=src_whatsapp">@Voicepad_bot</a> в Telegram и нажмите «Начать», чтобы чат с ботом появился в списке. Регистрации нет.</li>
+  <li>В WhatsApp нажмите и удерживайте голосовое. На iPhone выберите «Переслать», затем значок «Поделиться» со стрелкой внизу экрана. На Android откройте меню из трёх точек и выберите «Поделиться». Откроется список приложений.</li>
+  <li>Выберите Telegram, а в нём чат с @Voicepad_bot. Голосовое уйдёт как аудиофайл .opus или .m4a, конвертировать его не нужно: OGG, OPUS и M4A бот принимает напрямую.</li>
+  <li>Примерно через минуту придёт текст с таймкодами. Если в голосовом звучит несколько человек, реплики размечены как Спикер 1 и Спикер 2.</li>
+</ol>
+<div class="card">Под текстом кнопки: «Конспект», «Задачи» (если в голосовом перечисляли поручения), «Вопрос» по содержанию, «Статья», «Пост», файлы DOCX, TXT и SRT. Текст можно скопировать из ответа бота и отправить в тот же чат WhatsApp обычным сообщением. Последние десять расшифровок лежат в /history.
+<br><a class="cta" href="https://t.me/Voicepad_bot?start=src_whatsapp">Перевести голосовое в текст</a></div>
+
+<h2>С компьютера</h2>
+<p>В WhatsApp на компьютере или в браузере наведите курсор на голосовое, откройте меню стрелкой в углу сообщения и выберите «Скачать». Сохранённый файл перетащите в окно чата с ботом в Telegram на компьютере. Формат менять не нужно. Этот путь удобен, когда голосовых много: скачали несколько, отправили боту одно за другим.</p>
+
+<h2>Почему не внутри WhatsApp</h2>
+<p>Voicepad это Telegram-бот, и добавить его в чат WhatsApp нельзя: ни в личный, ни в групповой. Пересылать голосовое на какой-то номер тоже не нужно, такой схемы нет. Единственный путь: сохранить аудио и отправить его в Telegram. Если голосовые из WhatsApp приходят каждый день, держите чат с ботом в начале списка в Telegram, тогда при «Поделиться» он находится за секунду. В самих группах Telegram бот умеет больше: добавленный в чат, он расшифровывает голосовые до трёх минут автоматически для всех участников.</p>
+
+<h2>Качество и языки</h2>
+<p>Голосовые в WhatsApp сжимаются сильнее, чем файл с диктофона, но распознаванию это обычно не мешает: куда важнее, где записывали. Голосовое из тихой комнаты выходит почти без правок, голосовое из машины или с улицы с ветром даст несколько угаданных слов. Распознавание на ElevenLabs Scribe v2: в нашем тесте на русском клипе с терминами ошибок примерно вдвое меньше, чем у ботов на Whisper, которые превратили «бэкенд» в «бэкинг». Язык определяется автоматически, русский и английский лучше всего, голосовое на двух языках сразу тоже распознаётся.</p>
+
+<h2>Сколько стоит</h2>
+<p>15 минут в месяц бесплатно, это около тридцати голосовых по полминуты или пара длинных монологов. В бесплатный тариф входят конспект и один вопрос по записи. Если голосовых больше, пакеты: 60 минут за 199 ₽, 300 минут за 690 ₽, 1000 минут за 1990 ₽, минуты не сгорают. Оплата любой банковской картой в браузере, команда /buy.</p>
+
+<h2>Вопросы</h2>
+<details open><summary>Бот работает в WhatsApp?</summary><p>Нет, только в Telegram. Голосовое из WhatsApp нужно сохранить файлом и отправить боту в Telegram, схема описана выше.</p></details>
+<details><summary>Какой формат у голосового из WhatsApp и подходит ли он?</summary><p>Обычно .opus, иногда .m4a. Оба принимаются, конвертировать не нужно.</p></details>
+<details><summary>Что делать, если пункта «Поделиться» нет?</summary><p>Откройте меню чата и выберите «Экспорт чата» с медиафайлами. В архиве голосовые лежат файлами .opus, нужный отправьте боту.</p></details>
+<details><summary>Это бесплатно?</summary><p>15 минут в месяц без регистрации и карты. На шестиминутное голосовое хватит с запасом.</p></details>
+<details><summary>Можно ли вернуть текст в WhatsApp?</summary><p>Да, скопируйте его из ответа бота или возьмите файл TXT и отправьте в чат WhatsApp обычным сообщением.</p></details>
+<details><summary>Голосовое на английском или вперемешку?</summary><p>Подойдёт, язык определяется автоматически. Русский и английский распознаются лучше всего, смешанная речь тоже.</p></details>
+
+<h2>Другие инструкции</h2>
+<p><a href="/golosovoe-v-tekst/">Голосовое в текст в Telegram</a>, <a href="/kruzhochek-v-tekst/">кружочек в текст</a>, <a href="/audio-v-tekst-onlayn/">аудио в текст онлайн</a>, <a href="/zapis-vstrechi-v-protokol/">запись встречи в протокол</a>, <a href="/compare/">сравнение ботов для расшифровки</a>.</p>
+
+<p class="note"><a href="/">Voicepad</a>: голосовые, аудио и видео в текст в Telegram. 15 минут в месяц бесплатно.</p>
+</div>
+</body>
+</html>

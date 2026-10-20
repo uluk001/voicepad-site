@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Субтитры для Reels, Shorts и TikTok из короткого видео: бот Voicepad</title>
+<meta name="description" content="Короткий вертикальный ролик в файл субтитров SRT за пару минут: отправьте видео или ссылку на TikTok боту Voicepad в Telegram. Текст с таймкодами по фразам, 15 минут в месяц бесплатно.">
+<link rel="canonical" href="https://voicepad.qupport.io/subtitry-dlya-reels-i-shorts/">
+<link rel="icon" type="image/png" href="/favicon.png">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Субтитры для Reels, Shorts и TikTok из короткого видео">
+<meta property="og:description" content="Вертикальный ролик или ссылка на TikTok на вход, файл SRT с таймкодами на выход. Бот в Telegram, 15 минут в месяц бесплатно.">
+<meta property="og:url" content="https://voicepad.qupport.io/subtitry-dlya-reels-i-shorts/">
+<meta property="og:image" content="https://voicepad.qupport.io/cover.jpg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Как сделать субтитры для Reels, Shorts и TikTok",
+  "step": [
+    {"@type": "HowToStep", "name": "Откройте бота", "text": "Откройте @Voicepad_bot в Telegram и нажмите «Начать». Регистрации нет."},
+    {"@type": "HowToStep", "name": "Отправьте ролик", "text": "Отправьте ролик файлом MP4 или MOV до 2 ГБ либо ссылку на опубликованное видео в TikTok или на YouTube."},
+    {"@type": "HowToStep", "name": "Дождитесь текста", "text": "Ролик на минуту обрабатывается около минуты. Придёт текст с таймкодами."},
+    {"@type": "HowToStep", "name": "Нажмите SRT", "text": "Под расшифровкой нажмите кнопку SRT и сохраните файл субтитров для импорта в видеоредактор."}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Можно ли сделать субтитры для Reels бесплатно?", "acceptedAnswer": {"@type": "Answer", "text": "Да, 15 минут записи в месяц, это полтора десятка роликов по минуте. Кнопка SRT есть под каждой расшифровкой, в бесплатном тарифе тоже."}},
+    {"@type": "Question", "name": "Бот принимает ссылку на Reels?", "acceptedAnswer": {"@type": "Answer", "text": "Нет, ссылки из Instagram не поддерживаются. Отправьте файл ролика. Ссылки на TikTok, YouTube, VK Видео и RuTube принимаются."}},
+    {"@type": "Question", "name": "Вертикальное видео подойдёт?", "acceptedAnswer": {"@type": "Answer", "text": "Да, ориентация и разрешение не важны, бот берёт только звук. Подойдёт MP4, MOV и другие форматы, которые понимает ffmpeg."}},
+    {"@type": "Question", "name": "Как вставить субтитры в ролик?", "acceptedAnswer": {"@type": "Answer", "text": "Импортируйте SRT в видеоредактор с загрузкой субтитров. Если редактор в приложении импорт не умеет, скопируйте фразы из текста вручную, по таймкодам."}},
+    {"@type": "Question", "name": "Ролик на английском подойдёт?", "acceptedAnswer": {"@type": "Answer", "text": "Да, язык определяется автоматически. Русский и английский распознаются лучше всего, смешанная речь тоже."}},
+    {"@type": "Question", "name": "Нужно ли править SRT после бота?", "acceptedAnswer": {"@type": "Answer", "text": "Таймкоды обычно нет. Текст стоит просмотреть: имена, названия и сленг иногда распознаются неточно, особенно при музыке на фоне."}}
+  ]
+}
+</script>
+<style>
+:root{--bg:#0f1117;--card:#171a23;--text:#e8eaf0;--muted:#9aa0ae;--accent:#7c5cff;--line:#262a36}
+@media (prefers-color-scheme: light){:root{--bg:#fafafc;--card:#ffffff;--text:#15171e;--muted:#5d6472;--line:#e4e6ee}}
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,sans-serif;background:var(--bg);color:var(--text)}
+a{color:var(--accent)}
+.wrap{max-width:800px;margin:0 auto;padding:40px 20px 60px}
+h1{font-size:2rem;line-height:1.2;margin:0 0 10px}
+h2{font-size:1.35rem;margin:36px 0 10px}
+.meta{color:var(--muted);font-size:.95rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:14px 0}
+.cta{display:inline-block;margin-top:12px;padding:12px 22px;border-radius:12px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+ol li{margin-bottom:8px}
+details{border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:10px;background:var(--card)}
+summary{cursor:pointer;font-weight:600}
+details p{margin:10px 0 0;color:var(--muted)}
+pre{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;white-space:pre-wrap;font-size:.95rem;color:var(--muted)}
+.note{color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="meta"><a href="/">Voicepad</a> · субтитры для коротких видео</p>
+<h1>Субтитры для Reels, Shorts и TikTok из короткого видео</h1>
+<p>Вертикальный ролик на сорок секунд смотрят в ленте без звука, и если в кадре человек говорит, без субтитров его пролистают на третьей секунде. Набить текст вручную и подогнать каждую фразу по времени для одного ролика терпимо, для пяти в неделю уже нет. Бот Voicepad в Telegram делает из короткого видео файл SRT, где каждая фраза стоит на своём таймкоде, и заодно отдаёт обычный текст на случай, если субтитры вы накладываете во встроенном редакторе приложения.</p>
+
+<h2>Как сделать субтитры для ролика</h2>
+<ol>
+  <li>Откройте <a href="https://t.me/Voicepad_bot?start=src_shorts">@Voicepad_bot</a> и нажмите «Начать». Регистрации нет, нужен только Telegram.</li>
+  <li>Отправьте ролик файлом (MP4, MOV или другой формат, который понимает ffmpeg, до 2 ГБ) или ссылку, если он уже опубликован в TikTok или на YouTube. Вертикальная ориентация не мешает: бот работает со звуковой дорожкой.</li>
+  <li>Дождитесь текста. Ролик на минуту обрабатывается около минуты.</li>
+  <li>Нажмите SRT под расшифровкой и сохраните файл. Дальше импорт субтитров в видеоредакторе, или скопируйте фразы из текста в редактор субтитров приложения, таймкоды подскажут, какая фраза где.</li>
+</ol>
+<div class="card">Что внутри SRT: пронумерованные фразы, у каждой время начала и конца. Для короткого ролика фразы получаются короткими, это как раз то, что нужно в кадре: субтитры меняются вслед за речью, а не висят абзацем. Если в ролике говорят двое, в тексте реплики размечены как Спикер 1 и Спикер 2.
+<br><a class="cta" href="https://t.me/Voicepad_bot?start=src_shorts">Сделать субтитры для ролика</a></div>
+
+<h2>Ссылка или файл</h2>
+<p>TikTok: отправьте ссылку на опубликованный ролик, скачивать его не нужно. YouTube Shorts: это обычная ссылка на YouTube, она тоже подходит. Reels: ссылки из Instagram бот не берёт, поэтому отправьте исходный файл ролика, тот, который собираетесь загружать. На практике это удобнее: субтитры нужны до публикации, а не после. Ещё одна деталь: если под роликом громкий трек, отправьте версию до наложения музыки. Голос поверх бита распознаётся хуже, чем чистый.</p>
+
+<h2>Что с качеством на коротких роликах</h2>
+<p>Короткие ролики часто снимают на телефон, в шумном месте, с быстрой речью и сленгом, и это трудный случай для любого распознавания. Бот работает на ElevenLabs Scribe v2: в нашем тесте на русском клипе с терминами ошибок примерно вдвое меньше, чем у ботов на Whisper, у которых «бэкенд» стал «бэкингом». Язык определяется автоматически, лучше всего русский и английский, английские слова внутри русской фразы тоже проходят. Перед публикацией откройте файл и пройдитесь по названиям брендов, никнеймам и цифрам: их бот иногда слышит по-своему. Таймкоды обычно править не нужно.</p>
+
+<h2>Сколько стоит</h2>
+<p>Бесплатно 15 минут в месяц. Для роликов по 30 или 60 секунд это от 15 до 30 роликов, так что многим авторам хватит бесплатного тарифа. Если снимаете больше или заодно расшифровываете длинные видео, есть пакеты: 60 минут за 199 ₽, 300 минут за 690 ₽, 1000 минут за 1990 ₽. Минуты не сгорают, списывается длительность ролика. Оплата любой банковской картой в браузере, команда /buy в боте.</p>
+
+<h2>Вопросы</h2>
+<details open><summary>Можно ли сделать субтитры для Reels бесплатно?</summary><p>Да, 15 минут записи в месяц, это полтора десятка роликов по минуте. Кнопка SRT есть под каждой расшифровкой, в бесплатном тарифе тоже.</p></details>
+<details><summary>Бот принимает ссылку на Reels?</summary><p>Нет, ссылки из Instagram не поддерживаются. Отправьте файл ролика. Ссылки на TikTok, YouTube, VK Видео и RuTube принимаются.</p></details>
+<details><summary>Вертикальное видео подойдёт?</summary><p>Да, ориентация и разрешение не важны, бот берёт только звук. Подойдёт MP4, MOV и другие форматы, которые понимает ffmpeg.</p></details>
+<details><summary>Как вставить субтитры в ролик?</summary><p>Импортируйте SRT в видеоредактор с загрузкой субтитров. Если редактор в приложении импорт не умеет, скопируйте фразы из текста вручную, по таймкодам.</p></details>
+<details><summary>Ролик на английском подойдёт?</summary><p>Да, язык определяется автоматически. Русский и английский распознаются лучше всего, смешанная речь тоже.</p></details>
+<details><summary>Нужно ли править SRT после бота?</summary><p>Таймкоды обычно нет. Текст стоит просмотреть: имена, названия и сленг иногда распознаются неточно, особенно при музыке на фоне.</p></details>
+
+<h2>Другие инструкции</h2>
+<p><a href="/subtitry-srt-iz-video/">Субтитры SRT из видео и аудио</a>, <a href="/vk-video-v-tekst/">видео из VK Видео и RuTube в текст</a>, <a href="/youtube-v-tekst/">видео с YouTube в текст и конспект</a>, <a href="/kruzhochek-v-tekst/">кружочек в текст</a>, <a href="/podcast-v-tekst/">расшифровка подкаста</a>, <a href="/compare/">сравнение ботов для расшифровки</a>.</p>
+
+<p class="note"><a href="/">Voicepad</a>: голосовые, аудио и видео в текст в Telegram. 15 минут в месяц бесплатно.</p>
+</div>
+</body>
+</html>
