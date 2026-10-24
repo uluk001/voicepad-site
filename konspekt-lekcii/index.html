@@ -3,108 +3,307 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Конспект лекции из записи или видео с YouTube: бот Voicepad в Telegram</title>
-<meta name="description" content="Запись лекции с диктофона или ссылка на YouTube превращается в текст с таймкодами и конспект с главами. Для студентов, без регистрации, 15 минут в месяц бесплатно.">
+<title>Конспект лекции из записи или видео с YouTube: Voicepad</title>
+<meta name="description" content="Запись лекции с диктофона или ссылка на YouTube в текст с таймкодами и конспект с главами. Файл на сайте или в боте Voicepad, 15 минут в месяц бесплатно.">
 <link rel="canonical" href="https://voicepad.qupport.io/konspekt-lekcii/">
 <link rel="alternate" hreflang="ru" href="https://voicepad.qupport.io/konspekt-lekcii/">
 <link rel="alternate" hreflang="en" href="https://voicepad.qupport.io/en/lecture-notes-from-video/">
-<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="alternate" hreflang="x-default" href="https://voicepad.qupport.io/konspekt-lekcii/">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f3eee4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#191713" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="article">
+<meta property="og:site_name" content="Voicepad">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:locale:alternate" content="en_US">
 <meta property="og:title" content="Конспект лекции из записи на диктофон или видео с YouTube">
-<meta property="og:description" content="Запись или ссылка на вход, текст с таймкодами и конспект с главами на выход. Бот в Telegram.">
+<meta property="og:description" content="Запись или ссылка на вход, текст с таймкодами и конспект с главами на выход. На сайте или в Telegram-боте.">
 <meta property="og:url" content="https://voicepad.qupport.io/konspekt-lekcii/">
-<meta property="og:image" content="https://voicepad.qupport.io/cover.jpg">
+<meta property="og:image" content="https://voicepad.qupport.io/assets/cover.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Voicepad: голосовые, аудио и видео в текст с таймкодами и спикерами">
+<meta property="article:published_time" content="2026-10-20">
+<meta property="article:modified_time" content="2026-10-24">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://voicepad.qupport.io/assets/cover.jpg">
+<meta name="twitter:image:alt" content="Voicepad: голосовые, аудио и видео в текст с таймкодами и спикерами">
+<link rel="preload" href="/assets/fonts/literata.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "Как сделать конспект лекции из записи или видео",
-  "step": [
-    {"@type": "HowToStep", "name": "Откройте бота", "text": "Откройте @Voicepad_bot в Telegram и нажмите «Начать». Регистрации нет."},
-    {"@type": "HowToStep", "name": "Отправьте лекцию", "text": "Отправьте запись файлом до 20 МБ, ссылку на Яндекс Диск или Google Drive, если файл тяжелее, или ссылку на лекцию с YouTube, VK Видео или RuTube."},
-    {"@type": "HowToStep", "name": "Дождитесь текста", "text": "Короткая запись готова примерно за минуту, полуторачасовая лекция обрабатывается пропорционально дольше."},
-    {"@type": "HowToStep", "name": "Нажмите «Конспект»", "text": "Придёт краткое содержание с тезисами. Для лекции по ссылке конспект заканчивается главами с таймкодами, каждая метка открывает видео на нужном моменте."}
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://voicepad.qupport.io/konspekt-lekcii/#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://voicepad.qupport.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Конспект лекции",
+          "item": "https://voicepad.qupport.io/konspekt-lekcii/"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://voicepad.qupport.io/konspekt-lekcii/#article",
+      "url": "https://voicepad.qupport.io/konspekt-lekcii/",
+      "inLanguage": "ru",
+      "description": "Запись лекции с диктофона или ссылка на YouTube в текст с таймкодами и конспект с главами. Файл на сайте или в боте Voicepad, 15 минут в месяц бесплатно.",
+      "datePublished": "2026-10-20",
+      "dateModified": "2026-10-24",
+      "image": "https://voicepad.qupport.io/assets/cover.jpg",
+      "isPartOf": {
+        "@id": "https://voicepad.qupport.io/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://voicepad.qupport.io/konspekt-lekcii/#breadcrumbs"
+      },
+      "headline": "Конспект лекции из записи на диктофон или видео с YouTube",
+      "mainEntityOfPage": "https://voicepad.qupport.io/konspekt-lekcii/",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://voicepad.qupport.io/#organization",
+        "name": "Voicepad",
+        "url": "https://voicepad.qupport.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://voicepad.qupport.io/assets/logo-512.png",
+          "width": 512,
+          "height": 512
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://voicepad.qupport.io/#organization",
+        "name": "Voicepad",
+        "url": "https://voicepad.qupport.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://voicepad.qupport.io/assets/logo-512.png",
+          "width": 512,
+          "height": 512
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://voicepad.qupport.io/konspekt-lekcii/#faq",
+      "url": "https://voicepad.qupport.io/konspekt-lekcii/",
+      "inLanguage": "ru",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Можно ли сделать конспект лекции бесплатно?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В боте 15 минут записи каждый месяц бесплатно, кнопка «Конспект» есть под каждой расшифровкой. Этого хватит на короткое видео или фрагмент лекции, на полную пару нужен пакет минут."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Полуторачасовая лекция подойдёт?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, записи принимаются до 3 часов. Ссылку отправьте боту, файл до 20 МБ тоже, а запись тяжелее загрузите на сайте: до 200 МБ после входа через Telegram."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Будут ли главы, если лекция записана на диктофон?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Главы с таймкодами получает конспект лекции с YouTube. У записи с диктофона таймкоды стоят в тексте, по ним можно найти место в файле вручную."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли задать вопрос по лекции?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, кнопка «Вопрос» под расшифровкой в боте."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Лекция на английском подойдёт?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, язык определяется автоматически."
+          }
+        }
+      ]
+    }
   ]
 }
 </script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "Можно ли сделать конспект лекции бесплатно?", "acceptedAnswer": {"@type": "Answer", "text": "15 минут записи в месяц бесплатно, включая конспект. Этого хватит на короткое видео или фрагмент лекции, на полную пару нужен пакет минут."}},
-    {"@type": "Question", "name": "Полуторачасовая лекция подойдёт?", "acceptedAnswer": {"@type": "Answer", "text": "Да, файлом до 20 МБ, а тяжелее ссылкой на Яндекс Диск, Google Drive или YouTube. Обработка займёт пропорционально больше времени, чем короткий ролик."}},
-    {"@type": "Question", "name": "Будут ли главы, если лекция записана на диктофон?", "acceptedAnswer": {"@type": "Answer", "text": "Переходы на нужный момент работают для видео по ссылке. У записи с диктофона в тексте стоят таймкоды, по ним можно найти место в файле вручную."}},
-    {"@type": "Question", "name": "Можно ли задать вопрос по лекции?", "acceptedAnswer": {"@type": "Answer", "text": "Да, кнопка «Вопрос» под расшифровкой. Один вопрос на запись в бесплатном тарифе."}},
-    {"@type": "Question", "name": "Лекция на английском подойдёт?", "acceptedAnswer": {"@type": "Answer", "text": "Язык определяется автоматически, английский распознаётся наравне с русским. Если лектор переходит с одного языка на другой, это тоже обрабатывается."}}
-  ]
-}
-</script>
-<style>
-:root{--bg:#0f1117;--card:#171a23;--text:#e8eaf0;--muted:#9aa0ae;--accent:#7c5cff;--line:#262a36}
-@media (prefers-color-scheme: light){:root{--bg:#fafafc;--card:#ffffff;--text:#15171e;--muted:#5d6472;--line:#e4e6ee}}
-*{box-sizing:border-box}
-body{margin:0;font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,sans-serif;background:var(--bg);color:var(--text)}
-a{color:var(--accent)}
-.wrap{max-width:800px;margin:0 auto;padding:40px 20px 60px}
-h1{font-size:2rem;line-height:1.2;margin:0 0 10px}
-h2{font-size:1.35rem;margin:36px 0 10px}
-.meta{color:var(--muted);font-size:.95rem}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:14px 0}
-.cta{display:inline-block;margin-top:12px;padding:12px 22px;border-radius:12px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
-ol li{margin-bottom:8px}
-details{border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:10px;background:var(--card)}
-summary{cursor:pointer;font-weight:600}
-details p{margin:10px 0 0;color:var(--muted)}
-pre{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;white-space:pre-wrap;font-size:.95rem;color:var(--muted)}
-.note{color:var(--muted);font-size:.9rem}
-</style>
 </head>
 <body>
-<div class="wrap">
-<p class="meta"><a href="/">Voicepad</a> · конспект лекции</p>
-<h1>Конспект лекции из записи на диктофон или видео с YouTube</h1>
-<p>Лекция записана на телефон, но переслушивать полтора часа перед зачётом некогда. Или курс целиком выложен на YouTube, и хочется конспект, по которому можно готовиться, а не пересматривать всё подряд. Бот Voicepad в Telegram превращает запись или ссылку в текст с таймкодами и конспект, а для видео по ссылке добавляет главы с переходом на нужную минуту.</p>
+<a class="skip" href="#main">Перейти к тексту</a>
 
-<h2>Как сделать конспект</h2>
-<ol>
-  <li>Откройте <a href="https://t.me/Voicepad_bot?start=src_lecture">@Voicepad_bot</a> и нажмите «Начать». Регистрации нет, нужен только Telegram.</li>
-  <li>Отправьте запись лекции файлом (аудио или видео до 20 МБ, тяжелее ссылкой на Яндекс Диск или Google Drive) или вставьте ссылку на лекцию с YouTube, VK Видео или RuTube.</li>
-  <li>Дождитесь текста. Короткая запись готова примерно за минуту, полуторачасовая лекция обрабатывается пропорционально дольше.</li>
-  <li>Нажмите «Конспект». Придёт краткое содержание с основными тезисами. Для лекции по ссылке конспект заканчивается главами с таймкодами, каждая метка открывает видео на нужном моменте.</li>
-</ol>
-<div class="card">Пример глав в конце конспекта по лекции с YouTube:
-<pre>Главы
-00:00 Причины реформ 1860-х годов
-11:25 Условия выкупа земли крестьянами
-28:40 Земская и судебная реформы
-47:10 Что будет на семинаре</pre>
-<a class="cta" href="https://t.me/Voicepad_bot?start=src_lecture">Сделать конспект лекции</a></div>
+<header class="masthead">
+  <div class="shell">
+    <div class="col masthead__row">
+      <a class="brand" href="/" aria-label="Voicepad, главная">
+        <svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg>
+        <span>Voicepad</span>
+      </a>
+      <nav class="chapters" aria-label="Разделы страницы">
+        <ol>
+          <li><a href="#how">Как сделать</a></li>
+          <li><a href="#prepare">Подготовка</a></li>
+          <li><a href="#recorder">Диктофон</a></li>
+          <li><a href="#price">Цены</a></li>
+          <li><a href="#faq">Вопросы</a></li>
+        </ol>
+      </nav>
+      <div class="masthead__aside">
+        <a class="lang" href="/en/lecture-notes-from-video/" hreflang="en" lang="en">EN</a>
+        <a class="btn" href="https://t.me/Voicepad_bot?start=src_lecture" rel="noopener">Открыть бота</a>
+      </div>
+    </div>
+  </div>
+</header>
 
-<h2>Как готовиться по тексту</h2>
-<p>Конспект даёт общую картину, а детали лучше искать в полном тексте: в нём стоят таймкоды, по которым легко вернуться к нужному месту записи. Кнопка «Вопрос» отвечает по содержанию лекции: «что преподаватель сказал про критерии зачёта» или «какие три примера приводились во второй половине». В бесплатном тарифе один вопрос на запись. DOCX пригодится для реферата, TXT для заметок в любом редакторе. Прошлые расшифровки лежат в /history, там последние десять.</p>
+<main id="main">
+  <article class="guide" aria-labelledby="page-title">
+    <header class="hero">
+      <div class="shell">
+        <div class="col">
+          <nav class="crumbs" aria-label="Навигационная цепочка">
+            <ol>
+              <li><a href="/">Главная</a></li>
+              <li aria-current="page">Конспект лекции</li>
+            </ol>
+          </nav>
+          <h1 id="page-title">Конспект лекции из&nbsp;записи на&nbsp;диктофон или видео с&nbsp;YouTube</h1>
+          <p class="lead">Лекция записана на телефон, но переслушивать полтора часа перед зачётом некогда. Или курс целиком выложен на YouTube, и хочется конспект, по которому можно готовиться. Voicepad превращает запись или ссылку в текст с таймкодами, а бот делает из него конспект; у лекции с YouTube он заканчивается главами.</p>
+          <p class="page-meta">Инструкция · обновлено <time datetime="2026-10-24">24 октября 2026</time></p>
+          <p class="buy">
+            <a class="btn" href="https://t.me/Voicepad_bot?start=src_lecture" rel="noopener"><span>Открыть бота<span class="wide-only"> в&nbsp;Telegram</span></span></a>
+            <a class="btn btn-line" href="/#tool">Загрузить запись на сайте</a>
+          </p>
+        </div>
+      </div>
+    </header>
 
-<h2>Запись с диктофона: что учесть</h2>
-<p>Качество конспекта упирается в качество записи. Телефон на первой парте даёт чистый голос лектора и хороший текст. Запись с задних рядов, с шуршанием и разговорами соседей, даст текст с пропусками, и часть терминов придётся восстанавливать по памяти. Формулы, схемы и всё, что писали на доске, в запись не попадают: конспект строится только по речи. Распознавание на ElevenLabs Scribe v2, и с терминологией оно справляется заметно лучше ботов на Whisper: в нашем тесте на русском клипе с техническими терминами ошибок было примерно вдвое меньше. Язык определяется автоматически, лекция на английском тоже подойдёт.</p>
+    <div class="shell">
+      <div class="col">
+        <div class="prose">
+          <h2 id="how">Как сделать конспект</h2>
+          <p>Удобнее всего в боте: он принимает ссылку на лекцию сразу и под текстом даёт кнопку «Конспект». Запись можно загрузить и в <a href="/#tool">форме на главной</a>: без входа сайт расшифрует первые 3&nbsp;минуты, после входа через Telegram всю лекцию, и она попадёт в историю бота.</p>
+          <ol>
+            <li>Откройте <a href="https://t.me/Voicepad_bot?start=src_lecture" rel="noopener">@Voicepad_bot</a> и нажмите «Начать».</li>
+            <li>Отправьте ссылку на лекцию с YouTube, VK Видео или RuTube либо запись файлом до 20&nbsp;МБ. Запись тяжелее загрузите на сайте: до 200&nbsp;МБ после входа через Telegram, расшифровка попадёт в историю бота.</li>
+            <li>Дождитесь текста с таймкодами.</li>
+            <li>Нажмите «Конспект». Придёт краткое содержание с основными тезисами, а у лекции с YouTube в конце будут главы с таймкодами.</li>
+          </ol>
+          <p>Пример глав в конце конспекта по лекции с YouTube:</p>
+          <table>
+            <thead><tr><th scope="col">Время</th><th scope="col">Глава</th></tr></thead>
+            <tbody>
+              <tr><td><span class="tc">00:00</span></td><td>Причины реформ 1860-х годов</td></tr>
+              <tr><td><span class="tc">11:25</span></td><td>Условия выкупа земли крестьянами</td></tr>
+              <tr><td><span class="tc">28:40</span></td><td>Земская и судебная реформы</td></tr>
+              <tr><td><span class="tc">47:10</span></td><td>Что будет на семинаре</td></tr>
+            </tbody>
+          </table>
 
-<h2>Сколько стоит</h2>
-<p>15 минут в месяц бесплатно, в них входят конспект и один вопрос по записи. На полную лекцию бесплатных минут не хватит, поэтому есть пакеты: 60 минут за 199 ₽, 300 минут за 690 ₽ (три лекции по полтора часа с запасом), 1000 минут за 1990 ₽. Минуты не сгорают, списывается длительность записи. Оплата любой банковской картой в браузере через Tribute, команда /buy.</p>
+          <h2 id="prepare">Как готовиться по тексту</h2>
+          <p>Конспект даёт общую картину, а детали лучше искать в полном тексте: в нём стоят таймкоды, по которым легко вернуться к нужному месту записи. Кнопка «Вопрос» отвечает по содержанию лекции: «что преподаватель сказал про критерии зачёта» или «какие три примера приводились во второй половине». DOCX пригодится для реферата, TXT для заметок в любом редакторе. Прошлые расшифровки лежат в <code>/history</code>.</p>
 
-<h2>Если лекции обсуждают в учебном чате</h2>
-<p>Добавьте бота в чат группы. Голосовые до трёх минут, например вопросы к семинару, он расшифрует автоматически для всех. Под ссылкой на лекцию и под длинной записью появится кнопка, и каждый откроет полную расшифровку у бота в личке. У чата свои 30 бесплатных минут в месяц, админ может выключить авторежим командой /mute.</p>
+          <h2 id="recorder">Запись с диктофона: что учесть</h2>
+          <p>Качество конспекта упирается в качество записи. Телефон на первой парте даёт чистый голос лектора и хороший текст. Запись с задних рядов, с шуршанием и разговорами соседей, даст текст с пропусками, и часть терминов придётся восстанавливать по памяти. Формулы, схемы и всё, что писали на доске, в запись не попадают: конспект строится только по речи. Речь распознаёт ElevenLabs Scribe v2, язык определяется автоматически, так что лекция на английском тоже подойдёт.</p>
 
-<h2>Вопросы</h2>
-<details open><summary>Можно ли сделать конспект лекции бесплатно?</summary><p>15 минут записи в месяц бесплатно, включая конспект. Этого хватит на короткое видео или фрагмент лекции, на полную пару нужен пакет минут.</p></details>
-<details><summary>Полуторачасовая лекция подойдёт?</summary><p>Да, файлом до 20 МБ, а тяжелее ссылкой на Яндекс Диск, Google Drive или YouTube. Обработка займёт пропорционально больше времени, чем короткий ролик.</p></details>
-<details><summary>Будут ли главы, если лекция записана на диктофон?</summary><p>Переходы на нужный момент работают для видео по ссылке. У записи с диктофона в тексте стоят таймкоды, по ним можно найти место в файле вручную.</p></details>
-<details><summary>Можно ли задать вопрос по лекции?</summary><p>Да, кнопка «Вопрос» под расшифровкой. Один вопрос на запись в бесплатном тарифе.</p></details>
-<details><summary>Лекция на английском?</summary><p>Язык определяется автоматически, английский распознаётся наравне с русским. Если лектор переходит с одного языка на другой, это тоже обрабатывается.</p></details>
+          <h2 id="price">Сколько стоит</h2>
+          <p>В боте и на сайте после входа 15&nbsp;минут каждый месяц бесплатно. На полную лекцию их не хватит, поэтому есть пакеты:</p>
+          <ul>
+            <li>60&nbsp;минут за 199&nbsp;₽;</li>
+            <li>300&nbsp;минут за 690&nbsp;₽, это три лекции по полтора часа с запасом, на&nbsp;31% дешевле за минуту;</li>
+            <li>1000&nbsp;минут за 1990&nbsp;₽, на&nbsp;40% дешевле за минуту.</li>
+          </ul>
+          <p>Минуты не сгорают, списывается фактическая длительность записи, а если распознать не удалось, минуты не списываются. Оплата банковской картой через Tribute, в боте команда <code>/buy</code>.</p>
 
-<h2>Другие инструкции</h2>
-<p><a href="/youtube-v-tekst/">Видео с YouTube в текст и конспект</a>, <a href="/vk-video-v-tekst/">видео из VK Видео и RuTube в текст</a>, <a href="/golosovoe-v-tekst/">голосовое в текст</a>, <a href="/podcast-v-tekst/">расшифровка подкаста</a>, <a href="/subtitry-srt-iz-video/">субтитры SRT из видео</a>, <a href="/rasshifrovka-vebinara/">расшифровка вебинара</a>, <a href="/audio-v-tekst-onlayn/">аудио в текст онлайн</a>, <a href="/compare/">сравнение ботов для расшифровки</a>. In English: <a href="/en/lecture-notes-from-video/">lecture notes from video</a>.</p>
+          <h2 id="group">Если лекции обсуждают в учебном чате</h2>
+          <p>Добавьте бота в чат группы. Голосовые и кружочки до 3&nbsp;минут, например вопросы к семинару, он расшифрует автоматически для всех. Каждому чату даётся 30&nbsp;бесплатных минут в месяц, дальше минуты списываются с баланса автора записи. Админ выключает авторасшифровку командой <code>/mute</code> и включает командой <code>/unmute</code>. Подробнее в инструкции <a href="/bot-v-gruppovom-chate/">бот в групповом чате</a>.</p>
 
-<p class="note"><a href="/">Voicepad</a>: голосовые, аудио и видео в текст в Telegram. 15 минут в месяц бесплатно.</p>
-</div>
+          <h2 id="faq">Вопросы и ответы</h2>
+          <details open>
+            <summary>Можно ли сделать конспект лекции бесплатно?</summary>
+            <p>В боте 15 минут записи каждый месяц бесплатно, кнопка «Конспект» есть под каждой расшифровкой. Этого хватит на короткое видео или фрагмент лекции, на полную пару нужен пакет минут.</p>
+          </details>
+          <details>
+            <summary>Полуторачасовая лекция подойдёт?</summary>
+            <p>Да, записи принимаются до 3 часов. Ссылку отправьте боту, файл до 20 МБ тоже, а запись тяжелее загрузите на сайте: до 200 МБ после входа через Telegram.</p>
+          </details>
+          <details>
+            <summary>Будут ли главы, если лекция записана на диктофон?</summary>
+            <p>Главы с таймкодами получает конспект лекции с YouTube. У записи с диктофона таймкоды стоят в тексте, по ним можно найти место в файле вручную.</p>
+          </details>
+          <details>
+            <summary>Можно ли задать вопрос по лекции?</summary>
+            <p>Да, кнопка «Вопрос» под расшифровкой в боте.</p>
+          </details>
+          <details>
+            <summary>Лекция на английском подойдёт?</summary>
+            <p>Да, язык определяется автоматически.</p>
+          </details>
+
+          <h2 id="related">Другие инструкции</h2>
+          <ul>
+            <li><a href="/transkribaciya-audio-v-tekst/">Транскрибация аудио в текст онлайн</a>: что на самом деле значит «бесплатно» и где заканчиваются 15&nbsp;минут.</li>
+            <li><a href="/youtube-v-tekst/">YouTube-видео в конспект</a>: ссылка на вход, текст с таймкодами и главы на выход.</li>
+            <li><a href="/rasshifrovka-vebinara/">Расшифровка вебинара</a>: запись из Zoom, Meet или Телемоста в конспект и список вопросов.</li>
+            <li><a href="/vk-video-v-tekst/">VK Видео и RuTube в текст</a>: ссылки VK, RuTube и TikTok принимаются так же, как YouTube.</li>
+          </ul>
+          <p lang="en">In English: <a href="/en/lecture-notes-from-video/" hreflang="en">lecture notes from video</a>.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <section class="outro" aria-labelledby="outro-title">
+    <div class="shell">
+      <div class="col">
+        <h2 id="outro-title">Остальное удобнее в&nbsp;Telegram</h2>
+        <p>История расшифровок, конспекты, задачи и ответы на вопросы по записи живут в боте.</p>
+        <p class="cta-pair">
+          <a class="btn" href="https://t.me/Voicepad_bot?start=src_lecture" rel="noopener">Открыть @Voicepad_bot</a>
+          <a class="btn btn-line" href="/#tool">Расшифровать на сайте</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="colophon">
+  <div class="shell">
+    <div class="col">
+      <p class="colophon__brand"><svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg><strong>Voicepad</strong><span>Расшифровка голосовых, аудио и видео в текст онлайн и в Telegram.</span></p>
+      <ul class="colophon__links">
+        <li><a href="https://t.me/Voicepad_bot?start=src_lecture" rel="noopener">t.me/Voicepad_bot</a></li>
+        <li><a href="https://t.me/Voicepad_bot?startgroup=true" rel="noopener">Добавить в чат</a></li>
+        <li><a href="/privacy/">Политика конфиденциальности</a></li>
+        <li><a href="/en/" hreflang="en" lang="en">English</a></li>
+      </ul>
+      <p class="colophon__note">Речь распознаёт ElevenLabs Scribe v2. Набрано шрифтами Literata и IBM Plex Mono.</p>
+      <p class="colophon__en" lang="en"><strong>Voicepad in English:</strong> <a href="/en/" hreflang="en">web tool and Telegram bot</a>, <a href="/en/voice-message-to-text/" hreflang="en">voice message to text</a>, <a href="/en/youtube-to-text/" hreflang="en">YouTube to text</a>, <a href="/en/meeting-notes/" hreflang="en">meeting notes</a>, <a href="/en/podcast-transcript/" hreflang="en">podcast transcript</a>, <a href="/en/lecture-notes-from-video/" hreflang="en">lecture notes</a>, <a href="/en/transcribe-telegram-voice-without-premium/" hreflang="en">Telegram voice messages without Premium</a>, <a href="/en/whatsapp-voice-message-to-text/" hreflang="en">WhatsApp voice message to text</a>.</p>
+    </div>
+  </div>
+</footer>
+
 <script>
 (function () {
   var params = new URLSearchParams(location.search);

@@ -3,124 +3,632 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Voicepad: Telegram transcription bot for voice messages, audio, video and YouTube</title>
-<meta name="description" content="Voicepad turns Telegram voice messages, audio and video files up to 20 MB (larger files as a Google Drive or Yandex Disk link) and YouTube links into text with timestamps and speaker labels, then writes a summary and action items. 15 free minutes a month.">
+<title>Voicepad: voice, audio, video and YouTube to text online</title>
+<meta name="description" content="Voice messages, audio, video and YouTube links to text with timestamps and speaker labels. 3 free tries a day without a login, 15 free minutes a month.">
 <link rel="canonical" href="https://voicepad.qupport.io/en/">
 <link rel="alternate" hreflang="ru" href="https://voicepad.qupport.io/">
 <link rel="alternate" hreflang="en" href="https://voicepad.qupport.io/en/">
-<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="alternate" hreflang="x-default" href="https://voicepad.qupport.io/">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f3eee4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#191713" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Voicepad: voice, audio, video and YouTube to text in Telegram">
-<meta property="og:description" content="Transcription bot with timestamps, speaker labels, summaries and action items. 15 free minutes a month.">
+<meta property="og:site_name" content="Voicepad">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="og:title" content="Voice, audio, video and YouTube to text: in your browser and in Telegram">
+<meta property="og:description" content="Record your voice or upload a file and get text with timestamps and speaker labels. 3 free transcriptions a day without a login, summaries in @Voicepad_bot.">
 <meta property="og:url" content="https://voicepad.qupport.io/en/">
-<meta property="og:image" content="https://voicepad.qupport.io/cover.jpg">
+<meta property="og:image" content="https://voicepad.qupport.io/assets/cover.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Voicepad: voice messages, audio and video to text with timestamps and speaker labels">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://voicepad.qupport.io/assets/cover.jpg">
+<meta name="twitter:image:alt" content="Voicepad: voice messages, audio and video to text with timestamps and speaker labels">
+<link rel="preload" href="/assets/fonts/literata.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://bot.voicepad.qupport.io" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Voicepad",
-  "alternateName": "@Voicepad_bot",
-  "applicationCategory": "UtilitiesApplication",
-  "operatingSystem": "Telegram",
-  "url": "https://t.me/Voicepad_bot",
-  "image": "https://voicepad.qupport.io/avatar.png",
-  "description": "Telegram bot that transcribes voice messages, audio, video and YouTube links into text with timestamps and speaker labels, with summaries, action items and DOCX, TXT and SRT export.",
-  "inLanguage": ["en", "ru"],
-  "offers": [
-    {"@type": "Offer", "price": "0", "priceCurrency": "RUB", "description": "15 free minutes every month"},
-    {"@type": "Offer", "price": "199", "priceCurrency": "RUB", "description": "60 minutes"}
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://voicepad.qupport.io/#organization",
+      "name": "Voicepad",
+      "url": "https://voicepad.qupport.io/",
+      "logo": {"@type": "ImageObject", "url": "https://voicepad.qupport.io/assets/logo-512.png", "width": 512, "height": 512},
+      "sameAs": ["https://t.me/Voicepad_bot"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://voicepad.qupport.io/#website",
+      "url": "https://voicepad.qupport.io/",
+      "name": "Voicepad",
+      "inLanguage": ["ru", "en"],
+      "publisher": {"@id": "https://voicepad.qupport.io/#organization"}
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://voicepad.qupport.io/en/#webpage",
+      "url": "https://voicepad.qupport.io/en/",
+      "name": "Voicepad: voice, audio, video and YouTube to text online",
+      "inLanguage": "en",
+      "isPartOf": {"@id": "https://voicepad.qupport.io/#website"},
+      "about": {"@id": "https://voicepad.qupport.io/#app"},
+      "breadcrumb": {"@id": "https://voicepad.qupport.io/en/#breadcrumb"},
+      "primaryImageOfPage": {"@type": "ImageObject", "url": "https://voicepad.qupport.io/assets/cover.jpg", "width": 1200, "height": 630}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://voicepad.qupport.io/en/#breadcrumb",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Voicepad", "item": "https://voicepad.qupport.io/"},
+        {"@type": "ListItem", "position": 2, "name": "English", "item": "https://voicepad.qupport.io/en/"}
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://voicepad.qupport.io/#app",
+      "name": "Voicepad",
+      "alternateName": "@Voicepad_bot",
+      "url": "https://voicepad.qupport.io/en/",
+      "sameAs": ["https://t.me/Voicepad_bot"],
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Telegram, Web",
+      "image": "https://voicepad.qupport.io/assets/cover.jpg",
+      "description": "Online transcription and a Telegram bot: voice messages, video notes, audio and video files and links from YouTube, VK Video, RuTube and TikTok to text with timestamps and speaker labels, with summaries, tasks and DOCX, TXT and SRT export.",
+      "inLanguage": ["en", "ru"],
+      "publisher": {"@id": "https://voicepad.qupport.io/#organization"},
+      "offers": [
+        {"@type": "Offer", "price": "0", "priceCurrency": "RUB", "description": "15 free minutes every month"},
+        {"@type": "Offer", "price": "199", "priceCurrency": "RUB", "description": "60 minute pack"},
+        {"@type": "Offer", "price": "690", "priceCurrency": "RUB", "description": "300 minute pack"},
+        {"@type": "Offer", "price": "1990", "priceCurrency": "RUB", "description": "1000 minute pack"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://voicepad.qupport.io/en/#faq",
+      "url": "https://voicepad.qupport.io/en/",
+      "inLanguage": "en",
+      "isPartOf": {"@id": "https://voicepad.qupport.io/#website"},
+      "mainEntity": [
+        {"@type": "Question", "name": "Which files can I transcribe, and how long can they be?", "acceptedAnswer": {"@type": "Answer", "text": "Voice messages, video notes, audio and video in MP3, M4A, WAV, OGG, OPUS, MP4, MOV, WEBM and other formats, up to 3 hours long. In the bot a file can be up to 20 MB; on the site, up to 50 MB without a login and up to 200 MB after one. Recording in the browser after a login runs up to 30 minutes."}},
+        {"@type": "Question", "name": "What if my file is larger than 20 MB?", "acceptedAnswer": {"@type": "Answer", "text": "That limit comes from Telegram itself: the bot can't receive a file over 20 MB. Upload it on this page instead: up to 50 MB without a login, up to 200 MB after a Telegram login. A video from YouTube, VK Video, RuTube or TikTok can go to the bot as a link."}},
+        {"@type": "Question", "name": "Can I transcribe a recording without signing up?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, on this page: 3 transcriptions a day, files up to 50 MB, one at a time. A file with no sound counts as a try, and a failure on our side gives the try back. If a recording is longer than 3 minutes, the first 3 minutes are transcribed, and the full text is available after a Telegram login or in the bot. Logging in takes one button, and in the bot you just tap Start."}},
+        {"@type": "Question", "name": "How do I transcribe a video from a link?", "acceptedAnswer": {"@type": "Answer", "text": "Send the link to the bot: it accepts YouTube, VK Video, RuTube and TikTok. On the site links work after a Telegram login, and besides those four, Vimeo, Dzen, OK and Twitch work too when the video has a known duration. The summary of a YouTube video ends with chapters and timecodes."}},
+        {"@type": "Question", "name": "Do I need to choose the language?", "acceptedAnswer": {"@type": "Answer", "text": "No, the language is detected automatically. Speech is recognised by ElevenLabs Scribe v2."}},
+        {"@type": "Question", "name": "How is Voicepad different from Telegram's own transcription?", "acceptedAnswer": {"@type": "Answer", "text": "Without Premium, Telegram transcribes only a few short voice messages a week. Premium removes that cap but still handles only voice and video messages: no files, no links, no speaker labels, summaries or export. Voicepad also takes audio and video files and video links, adds timestamps and speaker labels, writes a summary and a task list, exports DOCX, TXT and SRT, and works on the site and in group chats."}},
+        {"@type": "Question", "name": "How do I buy minutes?", "acceptedAnswer": {"@type": "Answer", "text": "In the bot, with the /buy command. Packs: 60 minutes for 199 RUB, 300 minutes for 690 RUB, 1000 minutes for 1990 RUB, paid by card through Tribute. Minutes never expire, and 15 minutes are free every month."}},
+        {"@type": "Question", "name": "What happens to my recordings?", "acceptedAnswer": {"@type": "Answer", "text": "Audio and video are deleted right after recognition. Transcripts in the bot are kept for 30 days, and /delete removes them at once. A result on the site without a login lives only in server memory, for one hour."}},
+        {"@type": "Question", "name": "How do I add the bot to a group chat?", "acceptedAnswer": {"@type": "Answer", "text": "Add @Voicepad_bot to the chat: it transcribes voice messages and video notes up to 3 minutes for every member automatically. Each chat gets 30 free minutes a month, after that minutes come from the balance of whoever sent the recording. Admins switch automatic transcription off and on with /mute and /unmute."}},
+        {"@type": "Question", "name": "What does chat premium include?", "acceptedAnswer": {"@type": "Answer", "text": "An admin sends /premium in the chat and subscribes for 500 Telegram Stars a month. The bot's replies become bare text, voice messages of any length are transcribed, and the chat gets 300 minutes a month."}}
+      ]
+    }
   ]
 }
 </script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "What can Voicepad transcribe?", "acceptedAnswer": {"@type": "Answer", "text": "Voice messages, video notes, audio and video files up to 20 MB (larger files as a Google Drive or Yandex Disk link), and links from YouTube, VK, RuTube and TikTok. The text comes with timestamps and speaker labels, with buttons for a summary, action items, an article, a post, questions about the recording and DOCX, TXT and SRT files."}},
-    {"@type": "Question", "name": "Which languages are supported?", "acceptedAnswer": {"@type": "Answer", "text": "English, Russian and dozens of other languages, detected automatically. Mixed-language recordings work too."}},
-    {"@type": "Question", "name": "How much does it cost?", "acceptedAnswer": {"@type": "Answer", "text": "15 minutes every month are free, including the summary and action items. Minute packs start at 199 RUB for 60 minutes, paid by card in rubles, dollars or euros. Minutes never expire."}},
-    {"@type": "Question", "name": "Does it work in group chats?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Add @Voicepad_bot to a chat and it transcribes voice messages for everyone, offers a summary under video links and transcribes anything on request with the /text command."}}
-  ]
-}
-</script>
-<style>
-:root{--bg:#0f1117;--card:#171a23;--text:#e8eaf0;--muted:#9aa0ae;--accent:#7c5cff;--accent2:#ff8a3d;--line:#262a36}
-@media (prefers-color-scheme: light){:root{--bg:#fafafc;--card:#ffffff;--text:#15171e;--muted:#5d6472;--line:#e4e6ee}}
-*{box-sizing:border-box}
-body{margin:0;font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,sans-serif;background:var(--bg);color:var(--text)}
-a{color:var(--accent)}
-.wrap{max-width:860px;margin:0 auto;padding:0 20px}
-header{padding:56px 0 24px;text-align:center}
-header img{width:96px;height:96px;border-radius:24px}
-h1{font-size:2.1rem;line-height:1.2;margin:18px 0 10px}
-.lead{font-size:1.15rem;color:var(--muted);max-width:640px;margin:0 auto}
-.cta{display:inline-block;margin:26px 8px 0;padding:14px 26px;border-radius:14px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;text-decoration:none;font-weight:600}
-.note{font-size:.9rem;color:var(--muted);margin-top:10px}
-section{padding:36px 0;border-top:1px solid var(--line)}
-h2{font-size:1.5rem;margin:0 0 18px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
-.card h3{margin:0 0 8px;font-size:1.05rem}
-.card p{margin:0;color:var(--muted);font-size:.97rem}
-details{border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:10px;background:var(--card)}
-summary{cursor:pointer;font-weight:600}
-details p{margin:10px 0 0;color:var(--muted)}
-footer{padding:36px 0 56px;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
-</style>
 </head>
 <body>
-<div class="wrap">
-<header>
-  <img src="/avatar.png" alt="Voicepad" width="96" height="96">
-  <h1>Voicepad: voice, audio, video and YouTube to text in Telegram</h1>
-  <p class="lead">A transcription bot that turns voice messages, files up to 20 MB (larger files as a Google Drive or Yandex Disk link) and YouTube links into text with timestamps and speaker labels, then writes a summary and action items in one tap.</p>
-  <a class="cta" href="https://t.me/Voicepad_bot?start=src_en" rel="noopener">Open @Voicepad_bot</a>
-  <p class="note">15 free minutes every month, no sign-up, no card.</p>
+<a class="skip" href="#tool">Skip to transcription</a>
+
+<header class="masthead">
+  <div class="shell">
+    <div class="col masthead__row">
+      <a class="brand" href="/en/" aria-label="Voicepad, home">
+        <svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg>
+        <span>Voicepad</span>
+      </a>
+      <nav class="chapters" aria-label="Page sections">
+        <ol>
+          <li><a href="#features">What it handles</a></li>
+          <li><a href="#how">Site or bot</a></li>
+          <li><a href="#groups">Groups</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#guides">Guides</a></li>
+        </ol>
+      </nav>
+      <div class="masthead__aside">
+        <a class="lang" href="/" hreflang="ru" lang="ru">RU</a>
+        <a class="btn" href="https://t.me/Voicepad_bot?start=src_en" rel="noopener">Open the bot</a>
+      </div>
+    </div>
+  </div>
 </header>
 
-<section>
-  <h2>What it does</h2>
-  <div class="grid">
-    <div class="card"><h3>Voice messages</h3><p>Forward a voice message from any chat and get the text with timestamps in seconds.</p></div>
-    <div class="card"><h3>YouTube and other links</h3><p>Send a link to a lecture, podcast or interview. The summary ends with chapters, each timestamp opens the video at that moment.</p></div>
-    <div class="card"><h3>Files and cloud links</h3><p>Meeting recordings, lectures and calls in MP3, M4A, MP4, WAV and more, or links to Google Drive.</p></div>
-    <div class="card"><h3>Speakers and timestamps</h3><p>Dialogues are labelled by speaker, so you can see who said what and when.</p></div>
-    <div class="card"><h3>Summary, tasks, article, post</h3><p>Buttons under every transcript. "Tasks" lists who promised what and by when. Ask any question about the recording.</p></div>
-    <div class="card"><h3>DOCX, TXT, SRT</h3><p>A document for your notes, meeting minutes to send around, or subtitles for a video.</p></div>
-    <div class="card"><h3>English and Russian</h3><p>Language is detected automatically, mixed speech works. Speech recognition by ElevenLabs Scribe v2, about half the error rate of Whisper.</p></div>
-    <div class="card"><h3>Group chats</h3><p>In a chat the bot transcribes voice messages for everyone and offers a summary under video links. Each chat gets free minutes.</p></div>
+<main id="main">
+  <section class="hero" aria-labelledby="page-title">
+    <div class="shell">
+      <div class="col">
+        <p class="slug"><span>3&nbsp;free transcriptions a day, no login</span><span>15&nbsp;free minutes a month with Telegram</span></p>
+        <h1 id="page-title">Voice, audio, video and YouTube to&nbsp;text: <span class="h1__tail">in your browser and in&nbsp;Telegram</span></h1>
+        <p class="lead">Record your voice, upload a file or paste a video link, and get the text with timestamps and speaker labels. Voice messages and video notes from Telegram go straight to the bot, <a href="https://t.me/Voicepad_bot?start=src_en" rel="noopener">@Voicepad_bot</a>.</p>
+
+        <div class="hero__grid">
+          <div class="desk" id="tool">
+            <div class="desk__head">
+              <h2 id="tool-title">Transcribe a recording online</h2>
+              <p>The text appears below: copy it or download TXT, SRT, DOCX.</p>
+            </div>
+            <div id="vp-tool" data-api="https://bot.voicepad.qupport.io" data-lang="en" data-source="site_en"><noscript><p class="vp-fallback">The transcription form needs JavaScript. Without it, send your recording to <a href="https://t.me/Voicepad_bot?start=src_en">@Voicepad_bot</a> in Telegram: a voice message, a video note, a file or a video link.</p></noscript></div>
+          </div>
+
+          <div class="hero__aside">
+          <figure class="sample" aria-labelledby="sample-caption">
+            <figcaption class="sample__meta" id="sample-caption">
+              <span>Sample transcript</span>
+              <span>0&nbsp;min 31&nbsp;sec · EN · 2&nbsp;speakers</span>
+            </figcaption>
+            <div class="player" aria-hidden="true">
+              <span class="tc player__now">00:15</span>
+              <svg viewBox="0 0 480 40" width="480" height="40">
+                <defs>
+                  <path id="wf-bars" d="M3 15.5v9M7 12.5v15M11 10.5v19M15 16v8M27 14.5v11M31 11.5v17M35 13.5v13M47 15.5v9M51 15v10M59 14v12M63 9.5v21M67 10v20M71 14.5v11M83 17.5v5M87 14.5v11M91 13v14M95 13v14M99 15.5v9M103 18v4M111 15v10M115 9v22M119 8.5v23M123 9v22M127 12v16M131 15v10M139 17v6M143 12.5v15M147 9.5v21M151 10v20M155 8.5v23M159 8v24M163 13v14M167 16v8M175 15.5v9M179 9v22M183 9.5v21M187 9v22M191 16v8M199 14v12M203 10.5v19M207 15v10M215 15.5v9M219 13v14M223 11.5v17M227 16v8M239 15.5v9M243 10.5v19M247 9v22M251 14v12M263 17v6M267 13.5v13M271 14v12M275 12v16M279 12v16M283 15v10M287 17v6M295 10.5v19M299 11.5v17M311 15v10M315 10v20M319 8v24M323 14v12M331 17.5v5M335 14v12M339 12.5v15M343 13v14M347 13v14M351 15.5v9M355 18v4M363 13.5v13M367 14v12M379 15v10M383 13.5v13M387 15.5v9M399 13v14M403 8v24M407 13.5v13M419 17.5v5M423 16v8M427 13.5v13M431 14v12M435 13.5v13M439 15.5v9M443 18v4M451 17v6M455 15v10M459 14.5v11M463 12v16M467 15v10M471 17v6"/>
+                  <clipPath id="wf-played"><rect class="player__clip" x="0" y="0" width="233" height="40"/></clipPath>
+                </defs>
+                <use class="w-rest" href="#wf-bars"/>
+                <use class="w-played" href="#wf-bars" clip-path="url(#wf-played)"/>
+                <path class="w-head" d="M0 1v38" transform="translate(233 0)"/>
+              </svg>
+              <span class="tc">00:31</span>
+            </div>
+            <div class="tr-head" aria-hidden="true"><span>ln</span><span>time</span><span>line</span></div>
+            <ol class="tr">
+              <li><time class="tm" datetime="PT2S">00:02</time> <b class="spk">Speaker 1<span class="sr">:</span></b> Quick launch check. Max, where are we with the landing page?</li>
+              <li><time class="tm" datetime="PT7S">00:07</time> <b class="spk">Speaker 2<span class="sr">:</span></b> Copy is done, I'll finish the layout by Thursday. Anna, who's testing payments?</li>
+              <li class="now"><time class="tm" datetime="PT15S">00:15</time> <b class="spk">Speaker 1<span class="sr">:</span></b> Me, by Friday. We still need someone on support for launch day.</li>
+              <li><time class="tm" datetime="PT23S">00:23</time> <b class="spk">Speaker 2<span class="sr">:</span></b> Ira said she's free.</li>
+              <li><time class="tm" datetime="PT26S">00:26</time> <b class="spk">Speaker 1<span class="sr">:</span></b> Then I'll message her today.</li>
+            </ol>
+            <div class="keys">
+              <span class="keys__label">Under the transcript in the bot</span>
+              <ul class="keys__list" aria-label="Buttons under the transcript">
+                <li>Summary</li><li>Tasks</li><li>Article</li><li>Post</li><li>Question</li><li>DOCX</li><li>TXT</li><li>SRT</li>
+              </ul>
+              <a class="keys__more" href="#results">What they make of this call</a>
+            </div>
+          </figure>
+          <p class="cta-pair hero__bot">
+            <a class="btn" href="https://t.me/Voicepad_bot?start=src_en" rel="noopener"><span>Open the bot<span class="wide-only"> in&nbsp;Telegram</span></span></a>
+            <a class="btn btn-line" href="https://t.me/Voicepad_bot?startgroup=true" rel="noopener">Add to a group</a>
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter" id="features" aria-labelledby="features-title">
+    <div class="shell">
+      <div class="col">
+        <h2 id="features-title">What can you transcribe, and&nbsp;what do you get?</h2>
+        <p class="intro">The site and the bot run on the same speech engine. The site gives you the text and the files; the bot adds a summary, tasks and answers to your questions about the recording.</p>
+
+        <div class="flow">
+          <div class="flow__side flow__in">
+            <h3 class="flow__label">In</h3>
+            <ol class="ports">
+              <li><span class="port__id" aria-hidden="true">IN 1</span> <span class="port__name">Your microphone <small>record right on this page</small></span> <span class="where"><span class="sr">Where: </span><b>site</b></span></li>
+              <li><span class="port__id" aria-hidden="true">IN 2</span> <span class="port__name">Voice messages and video notes <small>forwarded from any chat</small></span> <span class="where"><span class="sr">Where: </span><b>bot</b></span></li>
+              <li><span class="port__id" aria-hidden="true">IN 3</span> <span class="port__name">Audio files <small>MP3, M4A, WAV, OGG, OPUS</small></span> <span class="where"><span class="sr">Where: </span><b>site</b> <b>bot</b></span></li>
+              <li><span class="port__id" aria-hidden="true">IN 4</span> <span class="port__name">Video files <small>MP4, MOV, WEBM and more</small></span> <span class="where"><span class="sr">Where: </span><b>site</b> <b>bot</b></span></li>
+              <li><span class="port__id" aria-hidden="true">IN 5</span> <span class="port__name">Video links <small>YouTube, VK Video, RuTube, TikTok</small></span> <span class="where"><span class="sr">Where: </span><b>site</b> <b>bot</b></span></li>
+            </ol>
+          </div>
+          <div class="flow__core">
+            <h3 class="flow__label">Recognition</h3>
+            <p class="flow__engine">ElevenLabs Scribe&nbsp;v2</p>
+            <dl class="flow__specs">
+              <div><dt>language</dt><dd>detected automatically</dd></div>
+              <div><dt>speakers</dt><dd>labelled</dd></div>
+              <div><dt>length</dt><dd>up to 3&nbsp;hours<sup><a class="ref" href="#faq-limits" aria-label="Note 1: files and recording length">1</a></sup></dd></div>
+            </dl>
+          </div>
+          <div class="flow__side flow__out">
+            <h3 class="flow__label">Out</h3>
+            <ol class="ports">
+              <li><span class="port__id" aria-hidden="true">OUT 1</span> <span class="port__name">Text with timestamps <small>and speaker labels</small></span> <span class="where"><span class="sr">Where: </span><b>site</b> <b>bot</b></span></li>
+              <li><span class="port__id" aria-hidden="true">OUT 2</span> <span class="port__name">TXT, SRT, DOCX files <small>for editing, subtitles and minutes</small></span> <span class="where"><span class="sr">Where: </span><b>site</b> <b>bot</b></span></li>
+              <li><span class="port__id" aria-hidden="true">OUT 3</span> <span class="port__name">Summary <small>with chapters for YouTube videos</small></span> <span class="where"><span class="sr">Where: </span><b>bot</b></span></li>
+              <li><span class="port__id" aria-hidden="true">OUT 4</span> <span class="port__name">Tasks <small>who does what, and by when</small></span> <span class="where"><span class="sr">Where: </span><b>bot</b></span></li>
+              <li><span class="port__id" aria-hidden="true">OUT 5</span> <span class="port__name">Article, post, answers <small>to questions about the recording</small></span> <span class="where"><span class="sr">Where: </span><b>bot</b></span></li>
+            </ol>
+          </div>
+        </div>
+        <p class="callout">On the site, links work after a Telegram login, and besides these four platforms Vimeo, Dzen, OK and&nbsp;Twitch work too. Inside Telegram the bot accepts files up to&nbsp;20&nbsp;MB<sup><a class="ref" href="#faq-20mb" aria-label="Note 2: files over 20 MB">2</a></sup>; the site takes up to&nbsp;200&nbsp;MB after a login.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter" id="results" aria-labelledby="results-title">
+    <div class="shell">
+      <div class="col">
+        <h2 id="results-title">What does the bot do with a&nbsp;transcript?</h2>
+        <p class="intro">Every transcript in the bot comes with buttons. Here is what they made of the call you saw at the top.</p>
+
+        <div class="spread">
+          <div class="page">
+            <div class="out">
+              <h3 class="key">Summary</h3>
+              <ul class="ticks">
+                <li>The landing page copy is ready; Max finishes the layout by Thursday.</li>
+                <li>Anna tests payments, due Friday.</li>
+                <li>Ira is the pick for support on launch day.</li>
+              </ul>
+            </div>
+            <div class="out">
+              <h3 class="key">Tasks</h3>
+              <table class="book">
+                <caption class="sr">Tasks from the call: who, what and by when</caption>
+                <thead><tr><th scope="col">Who</th><th scope="col">What</th><th scope="col">When</th></tr></thead>
+                <tbody>
+                  <tr><td>Max</td><td>Finish the landing page layout</td><td>Thursday</td></tr>
+                  <tr><td>Anna</td><td>Test payments</td><td>Friday</td></tr>
+                  <tr><td>Anna</td><td>Message Ira about support</td><td>today</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="page">
+            <div class="out">
+              <h3 class="key">Question</h3>
+              <div class="qa">
+                <p><b>Q.</b> Who is on support on launch day?</p>
+                <p><b>A.</b> Ira: Max says she's free, and Anna will message her today.</p>
+              </div>
+            </div>
+            <div class="out">
+              <h3 class="key">Article and post</h3>
+              <p>The same conversation as connected prose: an article for a blog or a short post for a channel.</p>
+            </div>
+            <div class="out">
+              <h3 class="key">YouTube chapters</h3>
+              <p>The summary of a YouTube video ends with chapters and timecodes:</p>
+              <ul class="toc">
+                <li><span class="tc">00:00</span>What the lecture covers</li>
+                <li><span class="tc">06:40</span>The first example</li>
+                <li><span class="tc">21:15</span>Questions from the audience</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter" id="how" aria-labelledby="how-title">
+    <div class="shell">
+      <div class="col">
+        <h2 id="how-title">Transcribe on the site or in&nbsp;the Telegram bot?</h2>
+        <p class="intro">A short recording is quickest right here, with no sign-up. Log in with Telegram and your minutes are shared: the same 15 free minutes a month and the same balance as in the bot.</p>
+
+        <table class="book venues" role="table">
+          <caption class="sr">How the site without a login, the site with a login and the bot differ</caption>
+          <thead role="rowgroup">
+            <tr role="row"><th role="columnheader" scope="col">Where</th><th role="columnheader" scope="col">Accepts</th><th role="columnheader" scope="col">Limits</th><th role="columnheader" scope="col">Minutes</th><th role="columnheader" scope="col">Result</th><th role="columnheader" scope="col">Storage</th></tr>
+          </thead>
+          <tbody role="rowgroup">
+            <tr role="row">
+              <th role="rowheader" scope="row">Site, no login</th>
+              <td role="cell" data-label="Accepts"><span>Voice recording, file</span></td>
+              <td role="cell" data-label="Limits"><span>3&nbsp;transcriptions a day, files up to&nbsp;50&nbsp;MB, one at a time. A longer recording: the first 3&nbsp;minutes</span></td>
+              <td role="cell" data-label="Minutes"><span>Free, no sign-up</span></td>
+              <td role="cell" data-label="Result"><span>Text, copy, TXT, SRT, DOCX</span></td>
+              <td role="cell" data-label="Storage"><span>One hour in server memory</span></td>
+            </tr>
+            <tr role="row">
+              <th role="rowheader" scope="row">Site, Telegram login</th>
+              <td role="cell" data-label="Accepts"><span>Recording, file, video link</span></td>
+              <td role="cell" data-label="Limits"><span>Files up to&nbsp;200&nbsp;MB, recordings up to&nbsp;3&nbsp;hours, browser recording up to&nbsp;30&nbsp;minutes</span></td>
+              <td role="cell" data-label="Minutes"><span>Shared with the bot: 15&nbsp;free a month plus packs</span></td>
+              <td role="cell" data-label="Result"><span>The same, plus a copy in your bot history</span></td>
+              <td role="cell" data-label="Storage"><span>30&nbsp;days in the bot history</span></td>
+            </tr>
+            <tr role="row">
+              <th role="rowheader" scope="row">Bot @Voicepad_bot</th>
+              <td role="cell" data-label="Accepts"><span>Voice messages, video notes, files, video links</span></td>
+              <td role="cell" data-label="Limits"><span>Files up to&nbsp;20&nbsp;MB<sup><a class="ref" href="#faq-20mb" aria-label="Note 2: files over 20 MB">2</a></sup>, recordings up to&nbsp;3&nbsp;hours</span></td>
+              <td role="cell" data-label="Minutes"><span>15&nbsp;free a month plus packs</span></td>
+              <td role="cell" data-label="Result"><span>Text, summary, tasks, article, post, questions, DOCX, TXT, SRT</span></td>
+              <td role="cell" data-label="Storage"><span>30&nbsp;days, <code>/delete</code> removes it at once</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="split">
+          <h3 class="split__title">Telegram in three steps</h3>
+          <ol class="steps">
+            <li>Open <a href="https://t.me/Voicepad_bot?start=src_en" rel="noopener">@Voicepad_bot</a> and tap Start.</li>
+            <li>Forward a voice message or a video note, send a file up to&nbsp;20&nbsp;MB, or a link from YouTube, VK Video, RuTube or TikTok.</li>
+            <li>Get the text with timestamps and buttons under it. Past transcripts are in <code>/history</code>.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter" id="telegram" aria-labelledby="telegram-title">
+    <div class="shell">
+      <div class="col">
+        <h2 id="telegram-title">Why not Telegram's own transcription?</h2>
+        <p class="intro">Telegram can turn a voice message into text by itself, but only voice and video messages, and without Premium only a few short ones a week.</p>
+
+        <table class="book venues" role="table">
+          <caption class="sr">Telegram without Premium, Telegram Premium and Voicepad compared</caption>
+          <thead role="rowgroup">
+            <tr role="row"><th role="columnheader" scope="col">Option</th><th role="columnheader" scope="col">Transcribes</th><th role="columnheader" scope="col">Limit</th><th role="columnheader" scope="col">Files and links</th><th role="columnheader" scope="col">On top of the text</th></tr>
+          </thead>
+          <tbody role="rowgroup">
+            <tr role="row">
+              <th role="rowheader" scope="row">Telegram without Premium</th>
+              <td role="cell" data-label="Transcribes"><span>Short voice messages</span></td>
+              <td role="cell" data-label="Limit"><span>A few a week</span></td>
+              <td role="cell" data-label="Files, links"><span>No</span></td>
+              <td role="cell" data-label="On top"><span>Nothing</span></td>
+            </tr>
+            <tr role="row">
+              <th role="rowheader" scope="row">Telegram Premium</th>
+              <td role="cell" data-label="Transcribes"><span>Voice and video messages</span></td>
+              <td role="cell" data-label="Limit"><span>No weekly cap</span></td>
+              <td role="cell" data-label="Files, links"><span>No</span></td>
+              <td role="cell" data-label="On top"><span>No speaker labels, summaries or export</span></td>
+            </tr>
+            <tr role="row">
+              <th role="rowheader" scope="row">Voicepad</th>
+              <td role="cell" data-label="Transcribes"><span>Voice messages, video notes, audio and video files, video links</span></td>
+              <td role="cell" data-label="Limit"><span>Recordings up to&nbsp;3&nbsp;hours, 15&nbsp;free minutes a month</span></td>
+              <td role="cell" data-label="Files, links"><span>Files, links from YouTube, VK Video, RuTube, TikTok</span></td>
+              <td role="cell" data-label="On top"><span>Timestamps, speaker labels, summary, tasks, DOCX, TXT, SRT, group chats</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter sheet-ink" id="groups" aria-labelledby="groups-title">
+    <div class="shell">
+      <div class="col">
+        <h2 id="groups-title">How does the bot work in&nbsp;a&nbsp;group chat?</h2>
+        <p class="intro">Add @Voicepad_bot to a chat and it transcribes voice messages and video notes up to&nbsp;3&nbsp;minutes for everyone. Whoever can't listen right now just reads.</p>
+
+        <div class="group">
+          <div class="group__copy">
+            <dl class="defs">
+              <div><dt>free</dt><dd>30&nbsp;minutes a month for every chat, then minutes come from the balance of whoever sent the recording</dd></div>
+              <div><dt>on request</dt><dd><code>/text</code> in a reply transcribes any recording, and video links get a Transcribe button; minutes come from whoever asked</dd></div>
+              <div><dt>admins</dt><dd><code>/mute</code> turns automatic transcription off, <code>/unmute</code> turns it back on</dd></div>
+              <div><dt>premium</dt><dd>an admin sends <code>/premium</code> and subscribes the chat for 500&nbsp;Telegram Stars a month: replies come as bare text, voice messages of any length, 300&nbsp;minutes a month for the chat</dd></div>
+            </dl>
+            <p class="cta-pair">
+              <a class="btn" href="https://t.me/Voicepad_bot?startgroup=true" rel="noopener">Add the bot to a chat</a>
+              <a class="btn btn-line" href="/en/voice-message-to-text/#groups">Group chats in detail</a>
+            </p>
+          </div>
+          <figure class="chat" aria-labelledby="chat-caption">
+            <div class="chat__head" aria-hidden="true"><span>Kitchen renovation</span><span>3&nbsp;members</span></div>
+            <p class="chat__service">Anna added Voicepad to the group</p>
+            <div class="chat__line">
+              <span class="chat__who">Sergei</span>
+              <span class="voice" role="img" aria-label="Voice message, 38 seconds">
+                <svg class="voice__play" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><circle cx="12" cy="12" r="12"/><path d="M9.5 7.2v9.6l7.4-4.8z"/></svg>
+                <svg class="voice__wave" viewBox="0 0 120 24" width="120" height="24" aria-hidden="true"><path d="M2 9v6M5 8.5v7M11 10.5v3M14 9v6M17 8.5v7M20 7.5v9M23 9v6M26 9v6M29 10.5v3M35 8v8M38 4v16M41 8.5v7M50 9v6M53 7v10M56 6v12M59 5v14M62 6v12M65 9v6M71 9.5v5M74 8v8M77 9.5v5M83 9v6M86 8v8M95 8.5v7M98 5.5v13M101 7.5v9M107 7.5v9M110 5v14M113 7.5v9"/></svg>
+                <span class="tc">0:38</span>
+              </span>
+            </div>
+            <div class="chat__line chat__line-bot">
+              <span class="chat__who">Voicepad</span>
+              <div>
+                <p class="chat__quote">Sergei · voice message 0:38</p>
+                <p>The tiles arrive on Friday at nine, someone has to be home. I got the grey grout, like we agreed.</p>
+              </div>
+            </div>
+            <div class="chat__line">
+              <span class="chat__who">Anna</span>
+              <span class="voice" role="img" aria-label="Voice message, 9 seconds">
+                <svg class="voice__play" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><circle cx="12" cy="12" r="12"/><path d="M9.5 7.2v9.6l7.4-4.8z"/></svg>
+                <svg class="voice__wave voice__wave-short" viewBox="0 0 66 24" width="66" height="24" aria-hidden="true"><path d="M2 10v4M5 8v8M8 6v12M11 9v6M14 7.5v9M17 5v14M20 8v8M23 9.5v5M29 8.5v7M32 6v12M35 4.5v15M38 8v8M44 9v6M47 7v10M50 8.5v7M56 10v4M59 8v8M62 9.5v5"/></svg>
+                <span class="tc">0:09</span>
+              </span>
+            </div>
+            <div class="chat__line chat__line-bot">
+              <span class="chat__who">Voicepad</span>
+              <div>
+                <p class="chat__quote">Anna · voice message 0:09</p>
+                <p>I'm home from eight, just ring the intercom.</p>
+              </div>
+            </div>
+            <figcaption id="chat-caption">Example: two voice messages in a renovation chat, with the text under each one for every member.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter" id="pricing" aria-labelledby="pricing-title">
+    <div class="shell">
+      <div class="col">
+        <h2 id="pricing-title">How much does transcription cost?</h2>
+        <p class="intro">Minutes are shared between the bot and the site. You pay for the actual length of the recording, and if recognition fails, nothing is charged.</p>
+
+        <div class="ratecard">
+          <div class="ratecard__head"><span>Minute packs</span> <span>minutes never expire</span></div>
+          <ol class="rates">
+            <li class="rate rate-free">
+              <span class="rate__name"><span class="rate__big">15</span> minutes every month</span> <span class="rate__lead" aria-hidden="true"></span> <span class="rate__price">0&nbsp;RUB</span>
+              <span class="rate__note">in the bot and on the site after a login</span>
+            </li>
+            <li class="rate" style="--per: 3.32">
+              <span class="rate__name">60&nbsp;minutes</span> <span class="rate__lead" aria-hidden="true"></span> <span class="rate__price">199&nbsp;RUB</span>
+              <span class="rate__note">3.32&nbsp;RUB a minute</span>
+              <span class="rate__bar" aria-hidden="true"></span>
+            </li>
+            <li class="rate" style="--per: 2.30">
+              <span class="rate__name">300&nbsp;minutes</span> <span class="rate__lead" aria-hidden="true"></span> <span class="rate__price">690&nbsp;RUB</span>
+              <span class="rate__note">2.30&nbsp;RUB a minute, 31% cheaper</span>
+              <span class="rate__bar" aria-hidden="true"></span>
+            </li>
+            <li class="rate" style="--per: 1.99">
+              <span class="rate__name">1000&nbsp;minutes</span> <span class="rate__lead" aria-hidden="true"></span> <span class="rate__price">1990&nbsp;RUB</span>
+              <span class="rate__note">1.99&nbsp;RUB a minute, <span class="circled">40% cheaper</span></span>
+              <span class="rate__bar" aria-hidden="true"></span>
+            </li>
+          </ol>
+          <ol class="terms">
+            <li>Pay by card through Tribute.</li>
+            <li>You pay for the actual length of the recording.</li>
+            <li>If recognition fails, nothing is charged.</li>
+            <li>Without a login the site gives 3&nbsp;free transcriptions a day.</li>
+          </ol>
+        </div>
+        <p class="buy"><a class="btn" href="https://t.me/Voicepad_bot?start=src_en" rel="noopener">Buy minutes in the bot</a><span>or send <code>/buy</code> in the chat with the bot</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter" id="data" aria-labelledby="data-title">
+    <div class="shell">
+      <div class="col">
+        <h2 id="data-title">What happens to recordings after transcription?</h2>
+        <p class="intro">Audio is only needed for recognition. Text in the bot is kept for 30&nbsp;days and deleted whenever you ask.</p>
+
+        <div class="tracks">
+          <div class="tracks__ruler" aria-hidden="true">
+            <span class="tracks__name">Time after recognition</span>
+            <span class="ruler"><span style="--at: 0">now</span><span style="--at: 38.4">1&nbsp;h</span><span style="--at: 68.1">24&nbsp;h</span><span style="--at: 100">30&nbsp;d</span></span>
+          </div>
+          <ol class="lanes">
+            <li style="--at: 0.6"><span class="lane__name">Audio and video</span> <span class="lane" aria-hidden="true"></span> <span class="lane__note">deleted right after recognition</span></li>
+            <li style="--at: 38.4"><span class="lane__name">A result on the site without a login</span> <span class="lane" aria-hidden="true"></span> <span class="lane__note">kept only in server memory, for one hour</span></li>
+            <li style="--at: 100"><span class="lane__name">Text in the bot and in the history after a login</span> <span class="lane" aria-hidden="true"></span> <span class="lane__note">30&nbsp;days, <code>/delete</code> removes it at once</span></li>
+          </ol>
+        </div>
+        <p class="aside-link"><a href="/privacy/#en">Privacy policy</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter" id="faq" aria-labelledby="faq-title">
+    <div class="shell">
+      <div class="col">
+        <h2 id="faq-title">Questions and answers</h2>
+        <ol class="notes">
+          <li id="faq-limits">
+            <h3>Which files can I transcribe, and how long can they be?</h3>
+            <p>Voice messages, video notes, audio and video in MP3, M4A, WAV, OGG, OPUS, MP4, MOV, WEBM and other formats, up to 3 hours long. In the bot a file can be up to 20 MB; on the site, up to 50 MB without a login and up to 200 MB after one. Recording in the browser after a login runs up to 30 minutes.</p>
+          </li>
+          <li id="faq-20mb">
+            <h3>What if my file is larger than 20 MB?</h3>
+            <p>That limit comes from Telegram itself: the bot can't receive a file over 20 MB. Upload it on this page instead: up to 50 MB without a login, up to 200 MB after a Telegram login. A video from YouTube, VK Video, RuTube or TikTok can go to the bot as a link.</p>
+          </li>
+          <li id="faq-signup">
+            <h3>Can I transcribe a recording without signing up?</h3>
+            <p>Yes, on this page: 3 transcriptions a day, files up to 50 MB, one at a time. A file with no sound counts as a try, and a failure on our side gives the try back. If a recording is longer than 3 minutes, the first 3 minutes are transcribed, and the full text is available after a Telegram login or in the bot. Logging in takes one button, and in the bot you just tap Start.</p>
+          </li>
+          <li id="faq-links">
+            <h3>How do I transcribe a video from a link?</h3>
+            <p>Send the link to the bot: it accepts YouTube, VK Video, RuTube and TikTok. On the site links work after a Telegram login, and besides those four, Vimeo, Dzen, OK and Twitch work too when the video has a known duration. The summary of a YouTube video ends with chapters and timecodes.</p>
+          </li>
+          <li id="faq-lang">
+            <h3>Do I need to choose the language?</h3>
+            <p>No, the language is detected automatically. Speech is recognised by ElevenLabs Scribe v2.</p>
+          </li>
+          <li id="faq-telegram">
+            <h3>How is Voicepad different from Telegram's own transcription?</h3>
+            <p>Without Premium, Telegram transcribes only a few short voice messages a week. Premium removes that cap but still handles only voice and video messages: no files, no links, no speaker labels, summaries or export. Voicepad also takes audio and video files and video links, adds timestamps and speaker labels, writes a summary and a task list, exports DOCX, TXT and SRT, and works on the site and in group chats.</p>
+          </li>
+          <li id="faq-pay">
+            <h3>How do I buy minutes?</h3>
+            <p>In the bot, with the <code>/buy</code> command. Packs: 60 minutes for 199 RUB, 300 minutes for 690 RUB, 1000 minutes for 1990 RUB, paid by card through Tribute. Minutes never expire, and 15 minutes are free every month.</p>
+          </li>
+          <li id="faq-data">
+            <h3>What happens to my recordings?</h3>
+            <p>Audio and video are deleted right after recognition. Transcripts in the bot are kept for 30 days, and <code>/delete</code> removes them at once. A result on the site without a login lives only in server memory, for one hour.</p>
+          </li>
+          <li id="faq-group">
+            <h3>How do I add the bot to a group chat?</h3>
+            <p>Add @Voicepad_bot to the chat: it transcribes voice messages and video notes up to 3 minutes for every member automatically. Each chat gets 30 free minutes a month, after that minutes come from the balance of whoever sent the recording. Admins switch automatic transcription off and on with <code>/mute</code> and <code>/unmute</code>.</p>
+          </li>
+          <li id="faq-premium">
+            <h3>What does chat premium include?</h3>
+            <p>An admin sends <code>/premium</code> in the chat and subscribes for 500 Telegram Stars a month. The bot's replies become bare text, voice messages of any length are transcribed, and the chat gets 300 minutes a month.</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter" id="guides" aria-labelledby="guides-title">
+    <div class="shell">
+      <div class="col">
+        <h2 id="guides-title">Guides by task</h2>
+        <p class="intro">Walkthroughs for specific jobs, from a single voice message to a lecture that runs for hours.</p>
+        <div class="guides">
+          <section class="guides__group" aria-labelledby="g-voice">
+            <h3 id="g-voice">Messages and chats</h3>
+            <ol class="index">
+              <li><a href="/en/voice-message-to-text/">Telegram voice message to text</a><p>Three steps, group chats and how it compares with Telegram Premium.</p></li>
+              <li><a href="/en/transcribe-telegram-voice-without-premium/">Telegram voice messages without Premium</a><p>What the free weekly quota covers and three ways to read the rest.</p></li>
+              <li><a href="/en/whatsapp-voice-message-to-text/">WhatsApp voice message to text</a><p>The built-in option, and how to get the audio out on Android, iPhone and desktop.</p></li>
+            </ol>
+          </section>
+          <section class="guides__group" aria-labelledby="g-links">
+            <h3 id="g-links">Video by link</h3>
+            <ol class="index">
+              <li><a href="/en/youtube-to-text/">YouTube video to text with chapters</a><p>A link in, a transcript with timestamps and chapters out.</p></li>
+            </ol>
+          </section>
+          <section class="guides__group" aria-labelledby="g-talk">
+            <h3 id="g-talk">Meetings, study, podcasts</h3>
+            <ol class="index">
+              <li><a href="/en/meeting-notes/">Meeting recording to notes and action items</a><p>Speaker labels, call notes and a task list with owners.</p></li>
+              <li><a href="/en/lecture-notes-from-video/">Lecture notes from a recording or video</a><p>A recording or a YouTube link in, notes with chapters out.</p></li>
+              <li><a href="/en/podcast-transcript/">Podcast episode transcript</a><p>Text by speaker, timecodes for show notes, SRT captions.</p></li>
+            </ol>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="outro" aria-labelledby="outro-title">
+    <div class="shell">
+      <div class="col">
+        <h2 id="outro-title">Everything else is easier in&nbsp;Telegram</h2>
+        <p>Your transcript history, summaries, tasks and group chats live in the bot.</p>
+        <p class="cta-pair">
+          <a class="btn" href="https://t.me/Voicepad_bot?start=src_en" rel="noopener">Open @Voicepad_bot</a>
+          <a class="btn btn-line" href="https://t.me/Voicepad_bot?startgroup=true" rel="noopener">Add to a group</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="colophon">
+  <div class="shell">
+    <div class="col">
+      <p class="colophon__brand"><svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg><strong>Voicepad</strong><span>Voice messages, audio and video to text, online and in Telegram.</span></p>
+      <ul class="colophon__links">
+        <li><a href="https://t.me/Voicepad_bot?start=src_en" rel="noopener">t.me/Voicepad_bot</a></li>
+        <li><a href="https://t.me/Voicepad_bot?startgroup=true" rel="noopener">Add to a group</a></li>
+        <li><a href="/privacy/#en">Privacy policy</a></li>
+        <li><a href="/" hreflang="ru" lang="ru">Русская версия</a></li>
+      </ul>
+      <p class="colophon__note">Speech recognition by ElevenLabs Scribe v2. Set in Literata and IBM Plex Mono.</p>
+      <p class="colophon__en"><strong>Guides in English:</strong> <a href="/en/voice-message-to-text/">voice message to text</a>, <a href="/en/youtube-to-text/">YouTube to text</a>, <a href="/en/meeting-notes/">meeting notes</a>, <a href="/en/podcast-transcript/">podcast transcript</a>, <a href="/en/lecture-notes-from-video/">lecture notes</a>, <a href="/en/transcribe-telegram-voice-without-premium/">Telegram voice messages without Premium</a>, <a href="/en/whatsapp-voice-message-to-text/">WhatsApp voice message to text</a>.</p>
+    </div>
   </div>
-</section>
-
-<section>
-  <h2>Pricing</h2>
-  <p>15 minutes every month are free, including the summary, action items and one question per recording. Packs: 60 minutes for 199 RUB, 300 for 690 RUB, 1000 for 1990 RUB, paid by card in rubles, dollars or euros. Minutes never expire and failed transcriptions are never charged.</p>
-</section>
-
-<section>
-  <h2>FAQ</h2>
-  <details open><summary>How is this different from Telegram Premium's built-in transcription?</summary><p>Premium transcribes only short voice messages and only for subscribers. Voicepad handles files up to 20 MB (larger files as a Google Drive or Yandex Disk link) and video links, labels speakers, adds timestamps, writes summaries and action items, exports DOCX, TXT and SRT and works in group chats.</p></details>
-  <details><summary>Which languages are supported?</summary><p>English, Russian and dozens of others, detected automatically.</p></details>
-  <details><summary>What happens to my data?</summary><p>Audio and video are deleted right after recognition, texts are kept for 30 days so the buttons keep working, and /delete wipes everything at once.</p></details>
-  <details><summary>How do I use it in a group?</summary><p>Add @Voicepad_bot to the chat. Voice messages are transcribed automatically, video links get a button, and /text in a reply transcribes anything else. Admins can switch auto mode off with /mute.</p></details>
-</section>
-
-<section id="guides">
-  <h2>Guides</h2>
-  <div class="grid">
-    <div class="card"><h3><a href="/en/youtube-to-text/">YouTube video to text</a></h3><p>A link in, a transcript with timestamps and a summary with chapters out.</p></div>
-    <div class="card"><h3><a href="/en/voice-message-to-text/">Voice message to text</a></h3><p>Three steps, group chats, languages and pricing.</p></div>
-    <div class="card"><h3><a href="/en/meeting-notes/">Meeting notes and action items</a></h3><p>Transcript by speaker, summary and a task list from a call recording.</p></div>
-    <div class="card"><h3><a href="/en/podcast-transcript/">Podcast episode transcript</a></h3><p>Speaker labels, timecodes for show notes, chapters and SRT captions.</p></div>
-    <div class="card"><h3><a href="/en/lecture-notes-from-video/">Lecture notes from video</a></h3><p>A recording or a YouTube link in, notes with chapters out.</p></div>
-  </div>
-</section>
-
-<footer>
-  <p><strong>Voicepad</strong> · <a href="https://t.me/Voicepad_bot?start=src_en">t.me/Voicepad_bot</a> · <a href="/">Русская версия</a> · <a href="/privacy/#en">Privacy policy</a></p>
 </footer>
-</div>
+
+<script src="/assets/tool.js" defer></script>
 <script>
 (function () {
   var params = new URLSearchParams(location.search);
@@ -129,6 +637,47 @@ footer{padding:36px 0 56px;border-top:1px solid var(--line);color:var(--muted);f
   document.querySelectorAll('a[href*="t.me/Voicepad_bot?start=src_"]').forEach(function (link) {
     link.href = link.href.replace(/start=src_[a-z0-9_]+/, "start=src_" + raw);
   });
+})();
+</script>
+<script>
+(function () {
+  var sample = document.querySelector(".sample");
+  if (!sample || !window.matchMedia || !window.IntersectionObserver || !window.requestAnimationFrame) return;
+  if (!window.matchMedia("(prefers-reduced-motion: no-preference)").matches) return;
+  var lines = sample.querySelectorAll(".tr li");
+  var clip = sample.querySelector(".player__clip");
+  var head = sample.querySelector(".w-head");
+  var now = sample.querySelector(".player__now");
+  var total = 31, from = 15, width = 480, speed = 1.5;
+  var starts = Array.prototype.map.call(lines, function (line) {
+    return parseFloat(line.querySelector("time").getAttribute("datetime").replace(/[^0-9.]/g, ""));
+  });
+  function pad(value) { return (value < 10 ? "0" : "") + value; }
+  function show(seconds) {
+    var x = Math.min(width, seconds / total * width);
+    clip.setAttribute("width", x.toFixed(1));
+    head.setAttribute("transform", "translate(" + x.toFixed(1) + " 0)");
+    now.textContent = "00:" + pad(Math.floor(seconds));
+    var current = -1;
+    starts.forEach(function (start, index) { if (seconds >= start) current = index; });
+    Array.prototype.forEach.call(lines, function (line, index) { line.classList.toggle("now", index === current); });
+  }
+  function play() {
+    var began = null;
+    function frame(stamp) {
+      if (began === null) began = stamp;
+      var seconds = Math.min(total, from + (stamp-began) / 1000 * speed);
+      show(seconds);
+      if (seconds < total) window.requestAnimationFrame(frame);
+    }
+    window.requestAnimationFrame(frame);
+  }
+  var observer = new IntersectionObserver(function (entries) {
+    if (!entries[0].isIntersecting) return;
+    observer.disconnect();
+    window.setTimeout(play, 700);
+  }, { threshold: 1 });
+  observer.observe(sample.querySelector(".player"));
 })();
 </script>
 </body>

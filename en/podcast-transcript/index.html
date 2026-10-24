@@ -3,105 +3,205 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Podcast episode transcript with speakers and timecodes: Voicepad bot for Telegram</title>
-<meta name="description" content="Turn a podcast episode into a transcript with speaker labels and timecodes for show notes, plus a summary with chapters and SRT captions. Send the file (up to 20 MB (larger files as a Google Drive or Yandex Disk link)) or a link to the Voicepad bot in Telegram. 15 free minutes a month.">
+<title>Podcast episode transcript with speakers and timecodes: Voicepad</title>
+<meta name="description" content="Turn a podcast episode into a transcript with speaker labels and timecodes, plus chapters for YouTube episodes and SRT captions. 15 free minutes a month.">
 <link rel="canonical" href="https://voicepad.qupport.io/en/podcast-transcript/">
 <link rel="alternate" hreflang="ru" href="https://voicepad.qupport.io/podcast-v-tekst/">
 <link rel="alternate" hreflang="en" href="https://voicepad.qupport.io/en/podcast-transcript/">
-<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="alternate" hreflang="x-default" href="https://voicepad.qupport.io/podcast-v-tekst/">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f3eee4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#191713" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="article">
+<meta property="og:site_name" content="Voicepad">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ru_RU">
 <meta property="og:title" content="Podcast episode transcript with speakers and timecodes">
-<meta property="og:description" content="A file or a link in, a transcript by speaker with timecodes, chapters for show notes and SRT out. Telegram bot, 15 free minutes a month.">
+<meta property="og:description" content="A file or a link in, a transcript by speaker with timecodes, chapters for YouTube episodes and SRT out. 15 free minutes a month.">
 <meta property="og:url" content="https://voicepad.qupport.io/en/podcast-transcript/">
-<meta property="og:image" content="https://voicepad.qupport.io/cover.jpg">
+<meta property="og:image" content="https://voicepad.qupport.io/assets/cover.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Voicepad: voice messages, audio and video to text with timestamps and speaker labels">
+<meta property="article:published_time" content="2026-10-21">
+<meta property="article:modified_time" content="2026-10-24">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://voicepad.qupport.io/assets/cover.jpg">
+<meta name="twitter:image:alt" content="Voicepad: voice messages, audio and video to text with timestamps and speaker labels">
+<link rel="preload" href="/assets/fonts/literata.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "How to get a podcast episode transcript with speakers and timecodes",
-  "step": [
-    {"@type": "HowToStep", "name": "Open the bot", "text": "Open @Voicepad_bot in Telegram and tap Start. No sign-up, a Telegram account is all you need."},
-    {"@type": "HowToStep", "name": "Send the episode", "text": "Send the episode as a file (MP3, M4A, WAV or video, up to 20 MB (larger files as a Google Drive or Yandex Disk link)) or paste the link if it is already on YouTube."},
-    {"@type": "HowToStep", "name": "Wait for the transcript", "text": "A short segment is ready in about a minute, a full episode takes proportionally longer."},
-    {"@type": "HowToStep", "name": "Use the buttons", "text": "The transcript comes with speaker labels and timecodes. Tap Summary for chapters, Article, Post, Question, SRT, DOCX or TXT."}
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://voicepad.qupport.io/#organization",
+      "name": "Voicepad",
+      "url": "https://voicepad.qupport.io/",
+      "logo": {"@type": "ImageObject", "url": "https://voicepad.qupport.io/assets/logo-512.png", "width": 512, "height": 512},
+      "sameAs": ["https://t.me/Voicepad_bot"]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://voicepad.qupport.io/en/podcast-transcript/#breadcrumb",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://voicepad.qupport.io/en/"},
+        {"@type": "ListItem", "position": 2, "name": "Podcast transcript", "item": "https://voicepad.qupport.io/en/podcast-transcript/"}
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://voicepad.qupport.io/en/podcast-transcript/#article",
+      "headline": "Podcast episode transcript with speakers and timecodes",
+      "description": "Turn a podcast episode into a transcript with speaker labels and timecodes, plus chapters for YouTube episodes and SRT captions. 15 free minutes a month.",
+      "image": "https://voicepad.qupport.io/assets/cover.jpg",
+      "datePublished": "2026-10-21",
+      "dateModified": "2026-10-24",
+      "inLanguage": "en",
+      "author": {"@id": "https://voicepad.qupport.io/#organization"},
+      "publisher": {"@id": "https://voicepad.qupport.io/#organization"},
+      "mainEntityOfPage": "https://voicepad.qupport.io/en/podcast-transcript/",
+      "breadcrumb": {"@id": "https://voicepad.qupport.io/en/podcast-transcript/#breadcrumb"}
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://voicepad.qupport.io/en/podcast-transcript/#faq",
+      "url": "https://voicepad.qupport.io/en/podcast-transcript/",
+      "inLanguage": "en",
+      "mainEntity": [
+        {"@type": "Question", "name": "Does it tell the host and the guest apart?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, lines are labelled Speaker 1 and Speaker 2 with a timecode on each. Rename the labels in the DOCX before publishing."}},
+        {"@type": "Question", "name": "Can I get chapters for the show notes?", "acceptedAnswer": {"@type": "Answer", "text": "For an episode on YouTube, tap Summary: chapters with timecodes are at the end. For a file, use the timecodes in the transcript."}},
+        {"@type": "Question", "name": "Which file formats work?", "acceptedAnswer": {"@type": "Answer", "text": "MP3, M4A, WAV, OGG, MP4, MOV and other audio and video formats. In the bot a file can be up to 20 MB; on the site, up to 200 MB after a Telegram login. Without a login the site takes files up to 50 MB but transcribes only the first 3 minutes."}},
+        {"@type": "Question", "name": "Is the transcript free?", "acceptedAnswer": {"@type": "Answer", "text": "15 minutes a month are free. A full episode needs a pack, the smallest is 60 minutes for 199 RUB."}},
+        {"@type": "Question", "name": "Can I get captions for the video version?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, the SRT button under the transcript returns a subtitle file with timestamps."}}
+      ]
+    }
   ]
 }
 </script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "Does it tell the host and the guest apart?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, lines are labelled Speaker 1 and Speaker 2 with a timecode on each. Rename the labels in the DOCX before publishing."}},
-    {"@type": "Question", "name": "Can I get chapters for the show notes?", "acceptedAnswer": {"@type": "Answer", "text": "For an episode on YouTube, tap Summary: chapters with timestamps are at the end. For a file, use the timecodes in the transcript."}},
-    {"@type": "Question", "name": "Which file formats work?", "acceptedAnswer": {"@type": "Answer", "text": "MP3, M4A, WAV, OGG, MP4, MOV and anything else ffmpeg can read, up to 20 MB (larger files as a Google Drive or Yandex Disk link)."}},
-    {"@type": "Question", "name": "How long does a one-hour episode take?", "acceptedAnswer": {"@type": "Answer", "text": "Proportionally longer than a short clip, which is ready in about a minute."}},
-    {"@type": "Question", "name": "Is the transcript free?", "acceptedAnswer": {"@type": "Answer", "text": "15 minutes a month are free. A full episode needs a pack, the smallest is 60 minutes for 199 RUB."}},
-    {"@type": "Question", "name": "Can I get captions for the video version?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, the SRT button under the transcript returns a subtitle file with timestamps."}}
-  ]
-}
-</script>
-<style>
-:root{--bg:#0f1117;--card:#171a23;--text:#e8eaf0;--muted:#9aa0ae;--accent:#7c5cff;--line:#262a36}
-@media (prefers-color-scheme: light){:root{--bg:#fafafc;--card:#ffffff;--text:#15171e;--muted:#5d6472;--line:#e4e6ee}}
-*{box-sizing:border-box}
-body{margin:0;font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,sans-serif;background:var(--bg);color:var(--text)}
-a{color:var(--accent)}
-.wrap{max-width:800px;margin:0 auto;padding:40px 20px 60px}
-h1{font-size:2rem;line-height:1.2;margin:0 0 10px}
-h2{font-size:1.35rem;margin:36px 0 10px}
-.meta{color:var(--muted);font-size:.95rem}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:14px 0}
-.cta{display:inline-block;margin-top:12px;padding:12px 22px;border-radius:12px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
-ol li{margin-bottom:8px}
-details{border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:10px;background:var(--card)}
-summary{cursor:pointer;font-weight:600}
-details p{margin:10px 0 0;color:var(--muted)}
-pre{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;white-space:pre-wrap;font-size:.95rem;color:var(--muted)}
-.note{color:var(--muted);font-size:.9rem}
-</style>
 </head>
 <body>
-<div class="wrap">
-<p class="meta"><a href="/en/">Voicepad</a> · podcast transcripts</p>
-<h1>Podcast episode transcript with speakers and timecodes</h1>
-<p>Show notes need timestamps, the website needs a text version so the episode shows up in search, the newsletter needs two good quotes, and the video version needs captions. Doing all of that by hand for a fifty-minute episode takes an afternoon. The Voicepad bot in Telegram takes the episode file or a link to the published video and returns a transcript where every line has a speaker label and a timecode, with buttons for everything else on the list.</p>
+<a class="skip" href="#main">Skip to the guide</a>
 
-<h2>How to get the transcript</h2>
-<ol>
-  <li>Open <a href="https://t.me/Voicepad_bot?start=src_en_podcast">@Voicepad_bot</a> and tap Start. No sign-up, a Telegram account is all you need.</li>
-  <li>Send the episode as a file: MP3, M4A, WAV or the video export, up to 20 MB (larger files as a Google Drive or Yandex Disk link). If the episode is already on YouTube, paste the link instead and skip the download.</li>
-  <li>Wait. A short segment is ready in about a minute, a full episode takes proportionally longer.</li>
-  <li>Read the transcript. Host and guest are labelled Speaker 1 and Speaker 2, and every line carries a timecode.</li>
-</ol>
-<div class="card">Buttons under the transcript: Summary (for an episode sent as a link it ends with chapters, and each timestamp opens the video at that moment), Article for the blog version, Post for the announcement, Question for pulling one specific moment ("where did the guest mention the book?"), SRT for captions, DOCX and TXT for editing.
-<br><a class="cta" href="https://t.me/Voicepad_bot?start=src_en_podcast">Transcribe an episode</a></div>
+<header class="masthead">
+  <div class="shell">
+    <div class="col masthead__row">
+      <a class="brand" href="/en/" aria-label="Voicepad, home">
+        <svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg>
+        <span>Voicepad</span>
+      </a>
+      <nav class="chapters" aria-label="Page sections">
+        <ol>
+          <li><a href="#how">How to</a></li>
+          <li><a href="#show-notes">Show notes</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#guides">Guides</a></li>
+        </ol>
+      </nav>
+      <div class="masthead__aside">
+        <a class="lang" href="/podcast-v-tekst/" hreflang="ru" lang="ru">RU</a>
+        <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_podcast" rel="noopener">Open the bot</a>
+      </div>
+    </div>
+  </div>
+</header>
 
-<h2>Timecodes for show notes</h2>
-<p>If the episode is on YouTube, send the link and tap Summary: the chapters at the end come as a timestamp and a short title, ready to paste into the description. Rename the titles to match your style; the timestamps themselves rarely need fixing. If you sent a file, there is no video to jump to, but every paragraph of the transcript has a timecode, so a chapter list is a matter of scrolling through and noting where the topic changes.</p>
+<main id="main">
+  <article class="guide" aria-labelledby="page-title">
+  <header class="hero">
+    <div class="shell">
+      <div class="col">
+        <nav class="crumbs" aria-label="Breadcrumbs"><ol><li><a href="/en/">Home</a></li><li><span aria-current="page">Podcast transcript</span></li></ol></nav>
+        <h1 id="page-title">Podcast episode transcript with speakers and timecodes</h1>
+        <p class="lead">Show notes need timestamps, the website needs a text version so the episode shows up in search, the newsletter needs two good quotes, and the video version needs captions. Doing all of that by hand for a fifty-minute episode takes an afternoon. The Voicepad bot in Telegram takes the episode file or a link to the published video and returns a transcript where every line has a speaker label and a timecode.</p>
+        <p class="page-meta">Updated <time datetime="2026-10-24">24 October 2026</time></p>
+        <p class="cta-pair hero__bot">
+          <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_podcast" rel="noopener">Send the episode to&nbsp;the bot</a>
+          <a class="btn btn-line" href="/en/#tool">Upload a file on&nbsp;the site</a>
+        </p>
+      </div>
+    </div>
+  </header>
 
-<h2>Quotes and speaker names</h2>
-<p>To find a quote, ask the Question button: "what did the guest say about hiring?" returns the answer, and the timecode next to the relevant passage leads to the exact wording in the transcript. Speaker labels are generic, Speaker 1 and Speaker 2, so before publishing replace them with names in one find-and-replace pass in the DOCX. When the host and the guest talk over each other or laugh at the same time, a line boundary can move by a word, which is worth a glance in the liveliest parts of the conversation.</p>
+  <div class="shell">
+    <div class="col">
+      <div class="prose">
+        <h2 id="how">How to get the transcript</h2>
+        <ol>
+          <li>Open <a href="https://t.me/Voicepad_bot?start=src_en_podcast" rel="noopener">@Voicepad_bot</a> and tap Start.</li>
+          <li>Send the episode as a file (MP3, M4A, WAV or the video export), or paste the link if it is already on YouTube and skip the download. Inside Telegram a file can be up to 20 MB, which is a Telegram limit. A full episode is often bigger: upload it on <a href="/en/#tool">the site</a>. Without a login the site transcribes only the first 3 minutes, so log in with Telegram (one button): files up to 200 MB, and the transcript is saved to your bot history.</li>
+          <li>Wait. Processing time grows with the length of the episode; recordings up to 3 hours are accepted.</li>
+          <li>Read the transcript. Host and guest are labelled Speaker 1 and Speaker 2, and every line carries a timecode.</li>
+        </ol>
+        <p>Buttons under the transcript in the bot: Summary (for a YouTube episode it ends with chapters and timecodes), Article for the blog version, Post for the announcement, Question for pulling out one specific moment (“where did the guest mention the book?”), SRT for captions, DOCX and TXT for editing.</p>
 
-<h2>Accuracy</h2>
-<p>Podcasts are recorded on decent microphones more often than not, and that is the best case for speech recognition. The bot runs on ElevenLabs Scribe v2: in our test on a Russian clip full of technical terms it made roughly half as many mistakes as Whisper-based bots, which turned "backend" into "backing". The language is detected automatically, English and Russian work best, and an episode where the guest switches between the two is fine. Still worth checking before publishing: guest names, company and book titles, numbers. A remote guest on a poor connection will produce more errors than a studio recording.</p>
+        <h2 id="show-notes">Timecodes for show notes</h2>
+        <p>If the episode is on YouTube, send the link and tap Summary: the chapters at the end come as a timecode and a short title, ready to paste into the description. Rename the titles to match your style. If you sent a file, every paragraph of the transcript still has a timecode, so a chapter list is a matter of scrolling through and noting where the topic changes.</p>
 
-<h2>Pricing</h2>
-<p>15 minutes every month are free, including the summary and one question per recording. That is enough to test the quality on a segment, not for a full episode. Packs: 60 minutes for 199 RUB, 300 minutes for 690 RUB (about six fifty-minute episodes), 1000 minutes for 1990 RUB. Minutes never expire, you pay for the length of the recording. Payment by any bank card in the browser, the /buy command in the bot.</p>
+        <h2>Quotes and speaker names</h2>
+        <p>To find a quote, ask the Question button: “what did the guest say about hiring?” returns the answer, and the timecode next to the relevant passage leads to the exact wording in the transcript. Speaker labels are generic, Speaker 1 and Speaker 2, so before publishing replace them with names in one find-and-replace pass in the DOCX. When the host and the guest talk over each other or laugh at the same time, a line boundary can move by a word, which is worth a glance in the liveliest parts of the conversation.</p>
 
-<h2>FAQ</h2>
-<details open><summary>Does it tell the host and the guest apart?</summary><p>Yes, lines are labelled Speaker 1 and Speaker 2 with a timecode on each. Rename the labels in the DOCX before publishing.</p></details>
-<details><summary>Can I get chapters for the show notes?</summary><p>For an episode on YouTube, tap Summary: chapters with timestamps are at the end. For a file, use the timecodes in the transcript.</p></details>
-<details><summary>Which file formats work?</summary><p>MP3, M4A, WAV, OGG, MP4, MOV and anything else ffmpeg can read, up to 20 MB (larger files as a Google Drive or Yandex Disk link).</p></details>
-<details><summary>How long does a one-hour episode take?</summary><p>Proportionally longer than a short clip, which is ready in about a minute.</p></details>
-<details><summary>Is the transcript free?</summary><p>15 minutes a month are free. A full episode needs a pack, the smallest is 60 minutes for 199 RUB.</p></details>
-<details><summary>Can I get captions for the video version?</summary><p>Yes, the SRT button under the transcript returns a subtitle file with timestamps.</p></details>
+        <h2>Recognition quality</h2>
+        <p>Podcasts are recorded on decent microphones more often than not, and that is the best case for speech recognition. The bot runs on ElevenLabs Scribe v2, and the language is detected automatically. Still worth checking before publishing: guest names, company and book titles, numbers. A remote guest on a poor connection will produce more errors than a studio recording.</p>
 
-<h2>Other guides</h2>
-<p><a href="/en/youtube-to-text/">YouTube video to text with chapters</a>, <a href="/en/lecture-notes-from-video/">lecture notes from a recorded lecture or video</a>, <a href="/en/meeting-notes/">meeting recording to notes and action items</a>, <a href="/en/voice-message-to-text/">Telegram voice message to text</a>. This guide in Russian: <a href="/podcast-v-tekst/">расшифровка подкаста</a>.</p>
+        <h2 id="pricing">Pricing</h2>
+        <p>15 minutes every month are free. That is enough to test the quality on a segment, not for a full episode. Packs: 60 minutes for 199 RUB, 300 minutes for 690 RUB (about six fifty-minute episodes), 1000 minutes for 1990 RUB. Minutes never expire, you pay for the actual length of the recording, and nothing is charged if recognition fails. Pay by card through Tribute with the <code>/buy</code> command in the bot.</p>
 
-<p class="note"><a href="/en/">Voicepad</a>: voice, audio, video and YouTube to text in Telegram. 15 free minutes every month.</p>
-</div>
+        <h2 id="faq">FAQ</h2>
+        <details open><summary>Does it tell the host and the guest apart?</summary><p>Yes, lines are labelled Speaker 1 and Speaker 2 with a timecode on each. Rename the labels in the DOCX before publishing.</p></details>
+        <details><summary>Can I get chapters for the show notes?</summary><p>For an episode on YouTube, tap Summary: chapters with timecodes are at the end. For a file, use the timecodes in the transcript.</p></details>
+        <details><summary>Which file formats work?</summary><p>MP3, M4A, WAV, OGG, MP4, MOV and other audio and video formats. In the bot a file can be up to 20 MB; on the site, up to 200 MB after a Telegram login. Without a login the site takes files up to 50 MB but transcribes only the first 3 minutes.</p></details>
+        <details><summary>Is the transcript free?</summary><p>15 minutes a month are free. A full episode needs a pack, the smallest is 60 minutes for 199 RUB.</p></details>
+        <details><summary>Can I get captions for the video version?</summary><p>Yes, the SRT button under the transcript returns a subtitle file with timestamps.</p></details>
+
+        <h2 id="guides">Other guides</h2>
+        <ul>
+          <li><a href="/en/youtube-to-text/">YouTube video to text with chapters</a></li>
+          <li><a href="/en/lecture-notes-from-video/">Lecture notes from a recorded lecture or video</a></li>
+          <li><a href="/en/meeting-notes/">Meeting recording to notes and action items</a></li>
+          <li>In Russian: <a href="/podcast-v-tekst/" hreflang="ru" lang="ru">расшифровка подкаста</a> and the general guide <a href="/transkribaciya-audio-v-tekst/" hreflang="ru" lang="ru">транскрибация аудио в текст</a>.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </article>
+
+  <section class="outro" aria-labelledby="outro-title">
+    <div class="shell">
+      <div class="col">
+        <h2 id="outro-title">Send the next episode to&nbsp;the bot</h2>
+        <p>Transcript, chapters, article, post and SRT come back in the chat with @Voicepad_bot. A file over 20 MB goes through the site.</p>
+        <p class="cta-pair">
+          <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_podcast" rel="noopener">Open @Voicepad_bot</a>
+          <a class="btn btn-line" href="/en/#tool">Upload on the site</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="colophon">
+  <div class="shell">
+    <div class="col">
+      <p class="colophon__brand"><svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg><strong>Voicepad</strong><span>Voice messages, audio and video to text, online and in Telegram.</span></p>
+      <ul class="colophon__links">
+        <li><a href="https://t.me/Voicepad_bot?start=src_en_podcast" rel="noopener">t.me/Voicepad_bot</a></li>
+        <li><a href="https://t.me/Voicepad_bot?startgroup=true" rel="noopener">Add to a group</a></li>
+        <li><a href="/privacy/#en">Privacy policy</a></li>
+        <li><a href="/podcast-v-tekst/" hreflang="ru" lang="ru">Русская версия</a></li>
+      </ul>
+      <p class="colophon__note">Speech recognition by ElevenLabs Scribe v2. Set in Literata and IBM Plex Mono.</p>
+      <p class="colophon__en"><strong>Guides in English:</strong> <a href="/en/voice-message-to-text/">voice message to text</a>, <a href="/en/youtube-to-text/">YouTube to text</a>, <a href="/en/meeting-notes/">meeting notes</a>, <a href="/en/podcast-transcript/">podcast transcript</a>, <a href="/en/lecture-notes-from-video/">lecture notes</a>, <a href="/en/transcribe-telegram-voice-without-premium/">Telegram voice messages without Premium</a>, <a href="/en/whatsapp-voice-message-to-text/">WhatsApp voice message to text</a>.</p>
+    </div>
+  </div>
+</footer>
+
 <script>
 (function () {
   var params = new URLSearchParams(location.search);

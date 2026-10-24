@@ -3,105 +3,317 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Расшифровка подкаста в текст со спикерами и таймкодами: бот Voicepad</title>
-<meta name="description" content="Текстовая версия выпуска подкаста с разметкой по спикерам, таймкоды для описания и субтитры SRT. Отправьте файл до 20 МБ или ссылку боту Voicepad в Telegram. 15 минут в месяц бесплатно.">
+<title>Расшифровка подкаста в текст со спикерами и таймкодами: Voicepad</title>
+<meta name="description" content="Текстовая версия выпуска подкаста по спикерам, таймкоды для описания и субтитры SRT. Загрузите файл на сайте после входа или отправьте ссылку боту Voicepad.">
 <link rel="canonical" href="https://voicepad.qupport.io/podcast-v-tekst/">
 <link rel="alternate" hreflang="ru" href="https://voicepad.qupport.io/podcast-v-tekst/">
 <link rel="alternate" hreflang="en" href="https://voicepad.qupport.io/en/podcast-transcript/">
-<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="alternate" hreflang="x-default" href="https://voicepad.qupport.io/podcast-v-tekst/">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f3eee4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#191713" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="article">
+<meta property="og:site_name" content="Voicepad">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:locale:alternate" content="en_US">
 <meta property="og:title" content="Расшифровка подкаста: спикеры, таймкоды, SRT">
-<meta property="og:description" content="Текстовая версия выпуска, таймкоды для описания и субтитры из файла или ссылки. Бот в Telegram.">
+<meta property="og:description" content="Текстовая версия выпуска, таймкоды для описания и субтитры из файла или ссылки. На сайте или в Telegram-боте.">
 <meta property="og:url" content="https://voicepad.qupport.io/podcast-v-tekst/">
-<meta property="og:image" content="https://voicepad.qupport.io/cover.jpg">
+<meta property="og:image" content="https://voicepad.qupport.io/assets/cover.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Voicepad: голосовые, аудио и видео в текст с таймкодами и спикерами">
+<meta property="article:published_time" content="2026-10-20">
+<meta property="article:modified_time" content="2026-10-24">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://voicepad.qupport.io/assets/cover.jpg">
+<meta name="twitter:image:alt" content="Voicepad: голосовые, аудио и видео в текст с таймкодами и спикерами">
+<link rel="preload" href="/assets/fonts/literata.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "Как расшифровать выпуск подкаста в текст",
-  "step": [
-    {"@type": "HowToStep", "name": "Откройте бота", "text": "Откройте @Voicepad_bot в Telegram и нажмите «Начать»."},
-    {"@type": "HowToStep", "name": "Отправьте выпуск", "text": "Отправьте файл выпуска до 20 МБ, ссылку на Яндекс Диск или Google Drive, если файл тяжелее, или ссылку, если выпуск опубликован на YouTube, VK Видео или RuTube."},
-    {"@type": "HowToStep", "name": "Дождитесь обработки", "text": "Короткий фрагмент готов примерно за минуту, время растёт пропорционально длительности выпуска."},
-    {"@type": "HowToStep", "name": "Получите текст", "text": "Придёт текст с таймкодами и разметкой по спикерам. Под ним кнопки: Конспект, Статья, Пост, SRT, DOCX, TXT."}
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://voicepad.qupport.io/podcast-v-tekst/#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://voicepad.qupport.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Расшифровка подкаста",
+          "item": "https://voicepad.qupport.io/podcast-v-tekst/"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://voicepad.qupport.io/podcast-v-tekst/#article",
+      "url": "https://voicepad.qupport.io/podcast-v-tekst/",
+      "inLanguage": "ru",
+      "description": "Текстовая версия выпуска подкаста по спикерам, таймкоды для описания и субтитры SRT. Загрузите файл на сайте после входа или отправьте ссылку боту Voicepad.",
+      "datePublished": "2026-10-20",
+      "dateModified": "2026-10-24",
+      "image": "https://voicepad.qupport.io/assets/cover.jpg",
+      "isPartOf": {
+        "@id": "https://voicepad.qupport.io/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://voicepad.qupport.io/podcast-v-tekst/#breadcrumbs"
+      },
+      "headline": "Расшифровка подкаста в текст: спикеры, таймкоды, SRT",
+      "mainEntityOfPage": "https://voicepad.qupport.io/podcast-v-tekst/",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://voicepad.qupport.io/#organization",
+        "name": "Voicepad",
+        "url": "https://voicepad.qupport.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://voicepad.qupport.io/assets/logo-512.png",
+          "width": 512,
+          "height": 512
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://voicepad.qupport.io/#organization",
+        "name": "Voicepad",
+        "url": "https://voicepad.qupport.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://voicepad.qupport.io/assets/logo-512.png",
+          "width": 512,
+          "height": 512
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://voicepad.qupport.io/podcast-v-tekst/#faq",
+      "url": "https://voicepad.qupport.io/podcast-v-tekst/",
+      "inLanguage": "ru",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Бот различает ведущего и гостя?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, реплики помечены как Спикер 1 и Спикер 2, у каждой стоит таймкод. Метки заменяются на имена одной заменой в редакторе."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли расшифровать выпуск бесплатно?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "В боте и на сайте после входа 15 минут в месяц бесплатно. На сайте без входа расшифруются первые 3 минуты выпуска. Для выпусков длиннее нужен пакет минут, самый маленький 60 минут за 199 ₽."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как получить таймкоды для описания?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Отправьте боту ссылку на выпуск на YouTube и нажмите «Конспект», главы с таймкодами будут в конце. У файла таймкоды стоят в самом тексте."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какой длины файл можно загрузить?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Записи до 3 часов. Боту в Telegram можно отправить файл до 20 МБ, на сайте после входа через Telegram до 200 МБ. Без входа сайт берёт файл до 50 МБ и расшифровывает первые 3 минуты."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Выпуск на английском или с иностранным гостем?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Подойдёт: язык определяется автоматически, выбирать его не нужно."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли задать вопрос по выпуску?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, кнопка «Вопрос» в боте: например, «какие книги советовал гость» или «что сказали про цены»."
+          }
+        }
+      ]
+    }
   ]
 }
 </script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "Бот различает ведущего и гостя?", "acceptedAnswer": {"@type": "Answer", "text": "Да, реплики помечены как Спикер 1 и Спикер 2, у каждой стоит таймкод. Метки заменяются на имена одной заменой в редакторе."}},
-    {"@type": "Question", "name": "Можно ли расшифровать выпуск подкаста бесплатно?", "acceptedAnswer": {"@type": "Answer", "text": "15 минут в месяц без оплаты. Для выпусков длиннее нужен пакет минут, самый маленький 60 минут за 199 ₽."}},
-    {"@type": "Question", "name": "Как получить таймкоды для описания выпуска?", "acceptedAnswer": {"@type": "Answer", "text": "Отправьте ссылку на опубликованный выпуск и нажмите «Конспект», главы с таймкодами будут в конце. Для файла таймкоды стоят в самом тексте."}},
-    {"@type": "Question", "name": "Какой длины файл можно загрузить?", "acceptedAnswer": {"@type": "Answer", "text": "Файлом до 20 МБ в любом аудио или видео формате, это около 40 минут MP3 на 64 кбит/с; тяжелее ссылкой на Яндекс Диск или Google Drive, до 3 часов. Время обработки пропорционально длительности."}},
-    {"@type": "Question", "name": "Выпуск на английском или с иностранным гостем подойдёт?", "acceptedAnswer": {"@type": "Answer", "text": "Язык определяется автоматически, русский и английский распознаются лучше всего. Если в одном выпуске говорят на двух языках, расшифровка всё равно придёт."}},
-    {"@type": "Question", "name": "Можно ли задать вопрос по выпуску?", "acceptedAnswer": {"@type": "Answer", "text": "Да, кнопка «Вопрос»: например, какие книги советовал гость. В бесплатном тарифе один вопрос по записи."}}
-  ]
-}
-</script>
-<style>
-:root{--bg:#0f1117;--card:#171a23;--text:#e8eaf0;--muted:#9aa0ae;--accent:#7c5cff;--line:#262a36}
-@media (prefers-color-scheme: light){:root{--bg:#fafafc;--card:#ffffff;--text:#15171e;--muted:#5d6472;--line:#e4e6ee}}
-*{box-sizing:border-box}
-body{margin:0;font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,sans-serif;background:var(--bg);color:var(--text)}
-a{color:var(--accent)}
-.wrap{max-width:800px;margin:0 auto;padding:40px 20px 60px}
-h1{font-size:2rem;line-height:1.2;margin:0 0 10px}
-h2{font-size:1.35rem;margin:36px 0 10px}
-.meta{color:var(--muted);font-size:.95rem}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:14px 0}
-.cta{display:inline-block;margin-top:12px;padding:12px 22px;border-radius:12px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
-ol li{margin-bottom:8px}
-details{border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:10px;background:var(--card)}
-summary{cursor:pointer;font-weight:600}
-details p{margin:10px 0 0;color:var(--muted)}
-pre{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;white-space:pre-wrap;font-size:.95rem;color:var(--muted)}
-.note{color:var(--muted);font-size:.9rem}
-</style>
 </head>
 <body>
-<div class="wrap">
-<p class="meta"><a href="/">Voicepad</a> · подкасты в текст</p>
-<h1>Расшифровка подкаста в текст: спикеры, таймкоды, SRT</h1>
-<p>Текстовая версия выпуска нужна для сайта и поиска, таймкоды для описания в подкаст-приложениях и на YouTube, цитаты для анонсов, субтитры для видеоверсии. Расшифровать час разговора вручную это полдня работы, а заказать у человека это деньги и ожидание. Бот Voicepad в Telegram берёт файл выпуска или ссылку и отдаёт текст, в котором видно, кто из участников что сказал и в какую минуту.</p>
+<a class="skip" href="#main">Перейти к тексту</a>
 
-<h2>Как получить текст выпуска</h2>
-<ol>
-  <li>Откройте <a href="https://t.me/Voicepad_bot?start=src_podcast">@Voicepad_bot</a>, нажмите «Начать». Регистрации нет.</li>
-  <li>Отправьте файл выпуска: MP3, M4A, WAV или видео, до 20 МБ, тяжелее ссылкой на Яндекс Диск или Google Drive. Если выпуск уже опубликован на YouTube, VK Видео или RuTube, достаточно ссылки.</li>
-  <li>Подождите. Короткий фрагмент готов примерно за минуту, время обработки растёт пропорционально длительности, так что часовой выпуск займёт заметно дольше.</li>
-  <li>Получите текст с таймкодами и разметкой по спикерам: ведущий и гость будут помечены как Спикер 1 и Спикер 2.</li>
-</ol>
-<div class="card">Под расшифровкой кнопки для всего, что нужно одному выпуску. «Конспект» даёт краткое содержание для описания, а для выпуска по ссылке заканчивается главами с таймкодами, каждая метка открывает видео на этой минуте. «Статья» собирает текстовую версию для сайта, «Пост» анонс для канала, SRT отдаёт субтитры для видеоверсии, DOCX и TXT файл для правок в редакторе.
-<br><a class="cta" href="https://t.me/Voicepad_bot?start=src_podcast">Расшифровать выпуск</a></div>
+<header class="masthead">
+  <div class="shell">
+    <div class="col masthead__row">
+      <a class="brand" href="/" aria-label="Voicepad, главная">
+        <svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg>
+        <span>Voicepad</span>
+      </a>
+      <nav class="chapters" aria-label="Разделы страницы">
+        <ol>
+          <li><a href="#how">Как получить текст</a></li>
+          <li><a href="#timecodes">Таймкоды</a></li>
+          <li><a href="#speakers">Спикеры</a></li>
+          <li><a href="#price">Цены</a></li>
+          <li><a href="#faq">Вопросы</a></li>
+        </ol>
+      </nav>
+      <div class="masthead__aside">
+        <a class="lang" href="/en/podcast-transcript/" hreflang="en" lang="en">EN</a>
+        <a class="btn" href="https://t.me/Voicepad_bot?start=src_podcast" rel="noopener">Открыть бота</a>
+      </div>
+    </div>
+  </div>
+</header>
 
-<h2>Таймкоды для описания выпуска</h2>
-<p>Если выпуск уже выложен на YouTube или VK Видео, отправьте ссылку и нажмите «Конспект»: в конце будет список глав с таймкодами, его можно вставить в описание почти без правок, разве что переименовать главы под свой стиль. Для файла переходы по видео не работают (видео нет), но таймкоды стоят у каждого фрагмента текста, и собрать по ним оглавление недолго.</p>
+<main id="main">
+  <article class="guide" aria-labelledby="page-title">
+    <header class="hero">
+      <div class="shell">
+        <div class="col">
+          <nav class="crumbs" aria-label="Навигационная цепочка">
+            <ol>
+              <li><a href="/">Главная</a></li>
+              <li aria-current="page">Расшифровка подкаста</li>
+            </ol>
+          </nav>
+          <h1 id="page-title">Расшифровка подкаста в&nbsp;текст: <span class="h1__tail">спикеры, таймкоды, SRT</span></h1>
+          <p class="lead">Текстовая версия выпуска нужна для сайта и поиска, таймкоды для описания в подкаст-приложениях и на YouTube, цитаты для анонсов, субтитры для видеоверсии. Voicepad берёт файл выпуска или ссылку и отдаёт текст, в котором видно, кто что сказал и в какую минуту.</p>
+          <p class="page-meta">Инструкция · обновлено <time datetime="2026-10-24">24 октября 2026</time></p>
+          <p class="buy">
+            <a class="btn" href="https://t.me/Voicepad_bot?start=src_podcast" rel="noopener"><span>Открыть бота<span class="wide-only"> в&nbsp;Telegram</span></span></a>
+            <a class="btn btn-line" href="/#tool">Загрузить выпуск на сайте</a>
+          </p>
+        </div>
+      </div>
+    </header>
 
-<h2>Спикеры и имена</h2>
-<p>Реплики размечаются как Спикер 1, Спикер 2 и дальше по числу голосов. Для публикации метки удобно заменить на имена через поиск и замену в DOCX или в любом редакторе: один проход на весь выпуск. Когда гость и ведущий перебивают друг друга или смеются одновременно, граница реплик может сместиться на слово-другое, это стоит проверить в самых живых местах разговора.</p>
+    <div class="shell">
+      <div class="col">
+        <div class="prose">
+          <h2 id="how">Как получить текст выпуска</h2>
+          <ol>
+            <li>Возьмите файл выпуска: MP3, M4A, WAV или видео. Боту в Telegram можно отправить файл до 20&nbsp;МБ, это ограничение самого Telegram. Выпуск тяжелее загрузите на сайте: до 50&nbsp;МБ без входа и до 200&nbsp;МБ после входа через Telegram.</li>
+            <li>Если выпуск уже опубликован на YouTube, VK Видео или RuTube, достаточно ссылки. Бот принимает её сразу, сайт после входа.</li>
+            <li>Получите текст с таймкодами и разметкой по спикерам: ведущий и гость будут помечены как Спикер&nbsp;1 и Спикер&nbsp;2.</li>
+          </ol>
+          <p>Записи принимаются длиной до 3&nbsp;часов. Без входа сайт расшифрует первые 3&nbsp;минуты выпуска: этого хватит, чтобы проверить качество, а полную версию дадут вход через Telegram или бот.</p>
 
-<h2>Качество текста</h2>
-<p>Подкасты обычно пишут на приличные микрофоны, и это лучший случай для распознавания. Движок ElevenLabs Scribe v2: в нашем тесте на русском клипе с техническими терминами ошибок примерно вдвое меньше, чем у ботов на Whisper, которые превратили «бэкенд» в «бэкинг». Язык определяется автоматически, лучше всего русский и английский, и если гость вставляет английские термины в русскую речь, бот это переживает. Что всё равно стоит проверить перед публикацией: имена гостей, названия компаний и книг, цифры. Удалённая запись через мессенджер с плохим интернетом даст больше ошибок, чем студия.</p>
+          <h2 id="buttons">Что делать с текстом</h2>
+          <p>Под расшифровкой в боте кнопки для всего, что нужно одному выпуску:</p>
+          <ul>
+            <li>«Конспект» даёт краткое содержание для описания, а у выпуска с YouTube заканчивается главами с таймкодами.</li>
+            <li>«Статья» собирает текстовую версию для сайта, «Пост» анонс для канала.</li>
+            <li>SRT отдаёт субтитры для видеоверсии, DOCX и TXT файл для правок в редакторе.</li>
+          </ul>
+          <p>На сайте под текстом есть копирование, TXT, SRT и DOCX. После входа через Telegram расшифровка сохраняется в истории бота, и кнопки можно нажать там.</p>
 
-<h2>Цена для подкастера</h2>
-<p>15 минут в месяц бесплатно, на целый выпуск этого не хватит, но проверить качество на фрагменте можно. Дальше пакеты: 60 минут за 199 ₽, 300 минут за 690 ₽ (это примерно шесть выпусков по 50 минут), 1000 минут за 1990 ₽. Минуты не сгорают, оплата любой банковской картой в браузере через Tribute, команда /buy.</p>
+          <h2 id="timecodes">Таймкоды для описания выпуска</h2>
+          <p>Если выпуск выложен на YouTube, отправьте ссылку боту и нажмите «Конспект»: в конце будет список глав с таймкодами, его можно вставить в описание почти без правок, разве что переименовать главы под свой стиль. У файла таймкоды стоят у каждого фрагмента текста, и собрать по ним оглавление недолго.</p>
 
-<h2>Вопросы</h2>
-<details open><summary>Бот различает ведущего и гостя?</summary><p>Да, реплики помечены как Спикер 1 и Спикер 2, у каждой стоит таймкод. Метки заменяются на имена одной заменой в редакторе.</p></details>
-<details><summary>Можно ли расшифровать выпуск бесплатно?</summary><p>15 минут в месяц без оплаты. Для выпусков длиннее нужен пакет минут, самый маленький 60 минут за 199 ₽.</p></details>
-<details><summary>Как получить таймкоды для описания?</summary><p>Отправьте ссылку на опубликованный выпуск и нажмите «Конспект», главы с таймкодами будут в конце. Для файла таймкоды стоят в самом тексте.</p></details>
-<details><summary>Какой длины файл можно загрузить?</summary><p>Файлом до 20 МБ в любом аудио или видео формате, это около 40 минут MP3 на 64 кбит/с; тяжелее ссылкой на Яндекс Диск или Google Drive, до 3 часов. Время обработки пропорционально длительности.</p></details>
-<details><summary>Выпуск на английском или с иностранным гостем?</summary><p>Язык определяется автоматически, русский и английский распознаются лучше всего. Если в одном выпуске говорят на двух языках, расшифровка всё равно придёт.</p></details>
-<details><summary>Можно ли задать вопрос по выпуску?</summary><p>Да, кнопка «Вопрос»: например, «какие книги советовал гость» или «что сказали про цены». В бесплатном тарифе один вопрос по записи.</p></details>
+          <h2 id="speakers">Спикеры и имена</h2>
+          <p>Реплики размечаются как Спикер&nbsp;1, Спикер&nbsp;2 и дальше по числу голосов. Для публикации метки удобно заменить на имена через поиск и замену в DOCX или в любом редакторе: один проход на весь выпуск. Когда гость и ведущий перебивают друг друга или смеются одновременно, граница реплик может сместиться на слово, это стоит проверить в самых живых местах разговора.</p>
 
-<h2>Другие инструкции</h2>
-<p><a href="/youtube-v-tekst/">Видео с YouTube в текст и конспект</a>, <a href="/subtitry-srt-iz-video/">субтитры SRT из видео</a>, <a href="/rasshifrovka-intervyu/">расшифровка интервью по спикерам</a>, <a href="/vk-video-v-tekst/">видео из VK Видео и RuTube в текст</a>, <a href="/konspekt-lekcii/">конспект лекции</a>, <a href="/rasshifrovka-vebinara/">расшифровка вебинара</a>, <a href="/subtitry-dlya-reels-i-shorts/">субтитры для Reels и Shorts</a>, <a href="/compare/">сравнение ботов для расшифровки</a>. In English: <a href="/en/podcast-transcript/">podcast episode transcript</a>.</p>
+          <h2 id="quality">Качество текста</h2>
+          <p>Подкасты обычно пишут на хорошие микрофоны, и это удобный случай для распознавания. Речь распознаёт ElevenLabs Scribe v2, язык определяется автоматически. Перед публикацией стоит проверить имена гостей, названия компаний и книг, цифры. Удалённая запись через мессенджер с плохим интернетом даст больше ошибок, чем студия.</p>
 
-<p class="note"><a href="/">Voicepad</a>: голосовые, аудио и видео в текст в Telegram. 15 минут в месяц бесплатно.</p>
-</div>
+          <h2 id="price">Цена для подкастера</h2>
+          <p>В боте и на сайте после входа 15&nbsp;минут каждый месяц бесплатно: на целый выпуск не хватит, но проверить качество на фрагменте можно. Дальше пакеты:</p>
+          <ul>
+            <li>60&nbsp;минут за 199&nbsp;₽;</li>
+            <li>300&nbsp;минут за 690&nbsp;₽, это примерно шесть выпусков по 50&nbsp;минут, на&nbsp;31% дешевле за минуту;</li>
+            <li>1000&nbsp;минут за 1990&nbsp;₽, на&nbsp;40% дешевле за минуту.</li>
+          </ul>
+          <p>Минуты не сгорают, списывается фактическая длительность записи, а если распознать не удалось, минуты не списываются. Оплата банковской картой через Tribute, в боте команда <code>/buy</code>.</p>
+
+          <h2 id="faq">Вопросы и ответы</h2>
+          <details open>
+            <summary>Бот различает ведущего и гостя?</summary>
+            <p>Да, реплики помечены как Спикер 1 и Спикер 2, у каждой стоит таймкод. Метки заменяются на имена одной заменой в редакторе.</p>
+          </details>
+          <details>
+            <summary>Можно ли расшифровать выпуск бесплатно?</summary>
+            <p>В боте и на сайте после входа 15 минут в месяц бесплатно. На сайте без входа расшифруются первые 3 минуты выпуска. Для выпусков длиннее нужен пакет минут, самый маленький 60 минут за 199 ₽.</p>
+          </details>
+          <details>
+            <summary>Как получить таймкоды для описания?</summary>
+            <p>Отправьте боту ссылку на выпуск на YouTube и нажмите «Конспект», главы с таймкодами будут в конце. У файла таймкоды стоят в самом тексте.</p>
+          </details>
+          <details>
+            <summary>Какой длины файл можно загрузить?</summary>
+            <p>Записи до 3 часов. Боту в Telegram можно отправить файл до 20 МБ, на сайте после входа через Telegram до 200 МБ. Без входа сайт берёт файл до 50 МБ и расшифровывает первые 3 минуты.</p>
+          </details>
+          <details>
+            <summary>Выпуск на английском или с иностранным гостем?</summary>
+            <p>Подойдёт: язык определяется автоматически, выбирать его не нужно.</p>
+          </details>
+          <details>
+            <summary>Можно ли задать вопрос по выпуску?</summary>
+            <p>Да, кнопка «Вопрос» в боте: например, «какие книги советовал гость» или «что сказали про цены».</p>
+          </details>
+
+          <h2 id="related">Другие инструкции</h2>
+          <ul>
+            <li><a href="/transkribaciya-audio-v-tekst/">Транскрибация аудио в текст онлайн</a>: что на самом деле значит «бесплатно» и где заканчиваются 15&nbsp;минут.</li>
+            <li><a href="/rasshifrovka-intervyu/">Расшифровка интервью</a>: реплики по спикерам с таймкодами, DOCX для правок.</li>
+            <li><a href="/subtitry-srt-iz-video/">Субтитры SRT из видео</a>: файл или ссылка на вход, файл субтитров с таймкодами на выход.</li>
+            <li><a href="/youtube-v-tekst/">YouTube-видео в конспект</a>: ссылка на вход, текст с таймкодами и главы на выход.</li>
+          </ul>
+          <p lang="en">In English: <a href="/en/podcast-transcript/" hreflang="en">podcast episode transcript</a>.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <section class="outro" aria-labelledby="outro-title">
+    <div class="shell">
+      <div class="col">
+        <h2 id="outro-title">Остальное удобнее в&nbsp;Telegram</h2>
+        <p>История расшифровок, конспекты, задачи и ответы на вопросы по записи живут в боте.</p>
+        <p class="cta-pair">
+          <a class="btn" href="https://t.me/Voicepad_bot?start=src_podcast" rel="noopener">Открыть @Voicepad_bot</a>
+          <a class="btn btn-line" href="/#tool">Расшифровать на сайте</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="colophon">
+  <div class="shell">
+    <div class="col">
+      <p class="colophon__brand"><svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg><strong>Voicepad</strong><span>Расшифровка голосовых, аудио и видео в текст онлайн и в Telegram.</span></p>
+      <ul class="colophon__links">
+        <li><a href="https://t.me/Voicepad_bot?start=src_podcast" rel="noopener">t.me/Voicepad_bot</a></li>
+        <li><a href="https://t.me/Voicepad_bot?startgroup=true" rel="noopener">Добавить в чат</a></li>
+        <li><a href="/privacy/">Политика конфиденциальности</a></li>
+        <li><a href="/en/" hreflang="en" lang="en">English</a></li>
+      </ul>
+      <p class="colophon__note">Речь распознаёт ElevenLabs Scribe v2. Набрано шрифтами Literata и IBM Plex Mono.</p>
+      <p class="colophon__en" lang="en"><strong>Voicepad in English:</strong> <a href="/en/" hreflang="en">web tool and Telegram bot</a>, <a href="/en/voice-message-to-text/" hreflang="en">voice message to text</a>, <a href="/en/youtube-to-text/" hreflang="en">YouTube to text</a>, <a href="/en/meeting-notes/" hreflang="en">meeting notes</a>, <a href="/en/podcast-transcript/" hreflang="en">podcast transcript</a>, <a href="/en/lecture-notes-from-video/" hreflang="en">lecture notes</a>, <a href="/en/transcribe-telegram-voice-without-premium/" hreflang="en">Telegram voice messages without Premium</a>, <a href="/en/whatsapp-voice-message-to-text/" hreflang="en">WhatsApp voice message to text</a>.</p>
+    </div>
+  </div>
+</footer>
+
 <script>
 (function () {
   var params = new URLSearchParams(location.search);

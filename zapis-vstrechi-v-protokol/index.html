@@ -3,85 +3,196 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Расшифровка записи встречи: протокол созвона и список задач за минуту</title>
-<meta name="description" content="Загрузите запись созвона в бота Voicepad в Telegram: текст по спикерам, конспект встречи и список задач с ответственными и сроками. Zoom, Google Meet, Telegram, файлы до 20 МБ или ссылка на диск. 15 минут в месяц бесплатно.">
+<title>Расшифровка записи встречи: протокол созвона и список задач</title>
+<meta name="description" content="Запись созвона в протокол: текст по спикерам с таймкодами, конспект встречи и задачи в боте Voicepad. Файл больше 20 МБ загрузите на сайте после входа.">
 <link rel="canonical" href="https://voicepad.qupport.io/zapis-vstrechi-v-protokol/">
 <link rel="alternate" hreflang="ru" href="https://voicepad.qupport.io/zapis-vstrechi-v-protokol/">
 <link rel="alternate" hreflang="en" href="https://voicepad.qupport.io/en/meeting-notes/">
-<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="alternate" hreflang="x-default" href="https://voicepad.qupport.io/zapis-vstrechi-v-protokol/">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f3eee4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#191713" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="article">
+<meta property="og:site_name" content="Voicepad">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:locale:alternate" content="en_US">
 <meta property="og:title" content="Запись встречи в протокол и задачи">
-<meta property="og:description" content="Текст по спикерам, конспект и задачи из записи созвона. Бот в Telegram.">
+<meta property="og:description" content="Текст по спикерам, конспект и задачи из записи созвона. Бот в Telegram, большие файлы на сайте после входа.">
 <meta property="og:url" content="https://voicepad.qupport.io/zapis-vstrechi-v-protokol/">
-<meta property="og:image" content="https://voicepad.qupport.io/cover.jpg">
+<meta property="og:image" content="https://voicepad.qupport.io/assets/cover.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Запись встречи в протокол и задачи">
+<meta property="article:published_time" content="2026-10-20">
+<meta property="article:modified_time" content="2026-10-24">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://voicepad.qupport.io/assets/cover.jpg">
+<meta name="twitter:image:alt" content="Запись встречи в протокол и задачи">
+<link rel="preload" href="/assets/fonts/literata.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "Как записать созвон, чтобы потом расшифровать?", "acceptedAnswer": {"@type": "Answer", "text": "В Zoom и Google Meet есть встроенная запись, в Telegram и FaceTime подойдёт запись экрана со звуком или диктофон рядом с динамиком. Боту нужен любой аудио или видео файл до 20 МБ, формат не важен; тяжелее ссылкой на Яндекс Диск или Google Drive."}},
-    {"@type": "Question", "name": "Бот различает, кто говорит?", "acceptedAnswer": {"@type": "Answer", "text": "Да, реплики размечаются как Спикер 1, Спикер 2 и так далее. Если участники представляются по имени, конспект и задачи используют имена."}},
-    {"@type": "Question", "name": "Что попадает в список задач?", "acceptedAnswer": {"@type": "Answer", "text": "Всё, что кто-то пообещал, взял на себя или попросил сделать, с ответственным и сроком, если они прозвучали. Если задач не было, бот так и скажет."}},
-    {"@type": "Question", "name": "Это безопасно для рабочих записей?", "acceptedAnswer": {"@type": "Answer", "text": "Аудио удаляется сразу после распознавания, текст хранится 30 дней для кнопок под расшифровкой, команда /delete стирает всё немедленно."}}
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://voicepad.qupport.io/zapis-vstrechi-v-protokol/#breadcrumbs",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://voicepad.qupport.io/"},
+        {"@type": "ListItem", "position": 2, "name": "Запись встречи в протокол", "item": "https://voicepad.qupport.io/zapis-vstrechi-v-protokol/"}
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://voicepad.qupport.io/zapis-vstrechi-v-protokol/#article",
+      "headline": "Запись встречи в протокол и список задач",
+      "description": "Запись созвона в протокол: текст по спикерам с таймкодами, конспект встречи и задачи в боте Voicepad. Файл больше 20 МБ загрузите на сайте после входа.",
+      "url": "https://voicepad.qupport.io/zapis-vstrechi-v-protokol/",
+      "mainEntityOfPage": "https://voicepad.qupport.io/zapis-vstrechi-v-protokol/",
+      "inLanguage": "ru",
+      "datePublished": "2026-10-20",
+      "dateModified": "2026-10-24",
+      "image": {"@type": "ImageObject", "url": "https://voicepad.qupport.io/assets/cover.jpg", "width": 1200, "height": 630},
+      "author": {"@type": "Organization", "@id": "https://voicepad.qupport.io/#organization", "name": "Voicepad", "url": "https://voicepad.qupport.io/"},
+      "publisher": {"@type": "Organization", "@id": "https://voicepad.qupport.io/#organization", "name": "Voicepad", "url": "https://voicepad.qupport.io/", "logo": {"@type": "ImageObject", "url": "https://voicepad.qupport.io/assets/logo-512.png", "width": 512, "height": 512}},
+      "isPartOf": {"@id": "https://voicepad.qupport.io/#website"}
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://voicepad.qupport.io/zapis-vstrechi-v-protokol/#faq",
+      "url": "https://voicepad.qupport.io/zapis-vstrechi-v-protokol/",
+      "inLanguage": "ru",
+      "mainEntity": [
+        {"@type": "Question", "name": "Как записать созвон, чтобы потом расшифровать?", "acceptedAnswer": {"@type": "Answer", "text": "В Zoom и Google Meet есть встроенная запись, звонок в Telegram или по телефону можно записать диктофоном рядом с динамиком. Подойдут MP3, M4A, WAV, OGG, OPUS, MP4, MOV, WEBM и другие форматы: боту до 20 МБ, на сайте после входа до 200 МБ."}},
+        {"@type": "Question", "name": "Бот различает, кто говорит?", "acceptedAnswer": {"@type": "Answer", "text": "Да, реплики размечаются как Спикер 1, Спикер 2 и дальше."}},
+        {"@type": "Question", "name": "Что попадает в список задач?", "acceptedAnswer": {"@type": "Answer", "text": "Всё, что кто-то пообещал, взял на себя или попросил сделать, с ответственным и сроком, если они прозвучали."}},
+        {"@type": "Question", "name": "Сколько стоит час записи?", "acceptedAnswer": {"@type": "Answer", "text": "15 минут в месяц бесплатно, дальше 60 минут за 199 ₽, 300 за 690 ₽, 1000 за 1990 ₽. Списывается фактическая длительность, так что час записи расходует 60 минут."}},
+        {"@type": "Question", "name": "Это безопасно для рабочих записей?", "acceptedAnswer": {"@type": "Answer", "text": "Аудио и видео удаляются сразу после распознавания. Текст хранится 30 дней, команда /delete стирает его сразу."}}
+      ]
+    }
   ]
 }
 </script>
-<style>
-:root{--bg:#0f1117;--card:#171a23;--text:#e8eaf0;--muted:#9aa0ae;--accent:#7c5cff;--line:#262a36}
-@media (prefers-color-scheme: light){:root{--bg:#fafafc;--card:#ffffff;--text:#15171e;--muted:#5d6472;--line:#e4e6ee}}
-*{box-sizing:border-box}
-body{margin:0;font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,sans-serif;background:var(--bg);color:var(--text)}
-a{color:var(--accent)}
-.wrap{max-width:800px;margin:0 auto;padding:40px 20px 60px}
-h1{font-size:2rem;line-height:1.2;margin:0 0 10px}
-h2{font-size:1.35rem;margin:36px 0 10px}
-.meta{color:var(--muted);font-size:.95rem}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:14px 0}
-.cta{display:inline-block;margin-top:12px;padding:12px 22px;border-radius:12px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
-ol li{margin-bottom:8px}
-details{border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:10px;background:var(--card)}
-summary{cursor:pointer;font-weight:600}
-details p{margin:10px 0 0;color:var(--muted)}
-pre{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;white-space:pre-wrap;font-size:.95rem;color:var(--muted)}
-.note{color:var(--muted);font-size:.9rem}
-</style>
 </head>
 <body>
-<div class="wrap">
-<p class="meta"><a href="/">Voicepad</a> · записи встреч</p>
-<h1>Запись встречи в протокол и список задач</h1>
-<p>Созвон на час, после него все расходятся с разным пониманием, кто что обещал. Запись есть, но пересматривать её никто не будет. Бот превращает запись в текст по спикерам, короткий протокол и список задач с ответственными и сроками, прямо в Telegram.</p>
+<a class="skip" href="#main">Перейти к тексту</a>
 
-<h2>Как сделать</h2>
+<header class="masthead">
+  <div class="shell">
+    <div class="col masthead__row">
+      <a class="brand" href="/" aria-label="Voicepad, главная">
+        <svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg>
+        <span>Voicepad</span>
+      </a>
+      <nav class="chapters" aria-label="Разделы страницы">
+        <ol>
+          <li><a href="#kak">Как сделать</a></li>
+          <li><a href="#bolshoj-fajl">Большой файл</a></li>
+          <li><a href="#chat">Рабочий чат</a></li>
+          <li><a href="#faq">Вопросы</a></li>
+        </ol>
+      </nav>
+      <div class="masthead__aside">
+        <a class="lang" href="/en/meeting-notes/" hreflang="en" lang="en">EN</a>
+        <a class="btn" href="https://t.me/Voicepad_bot?start=src_meeting" rel="noopener">Открыть бота</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <article class="guide" aria-labelledby="page-title">
+    <div class="shell">
+      <div class="col">
+        <header class="page-head">
+          <nav class="crumbs" aria-label="Навигационная цепочка"><ol><li><a href="/">Главная</a></li><li><span aria-current="page">Запись встречи в протокол</span></li></ol></nav>
+          <h1 id="page-title">Запись встречи в&nbsp;протокол и&nbsp;список задач</h1>
+          <p class="lead">Отправьте запись созвона боту: текст по&nbsp;спикерам, конспект и&nbsp;задачи. Тяжёлый файл загрузите на&nbsp;сайте.</p>
+          <p class="page-meta">Инструкция · обновлено <time datetime="2026-10-24">24 октября 2026</time></p>
+        </header>
+        <div class="prose">
+<p>Созвон на&nbsp;час, после него все расходятся с&nbsp;разным пониманием, кто что обещал. Запись есть, но пересматривать её никто не&nbsp;будет. Voicepad превращает запись в&nbsp;текст по&nbsp;спикерам, а&nbsp;бот в&nbsp;Telegram делает из&nbsp;него короткий протокол и&nbsp;список задач: кто, что и&nbsp;к&nbsp;какому сроку.</p>
+
+<h2 id="kak">Как сделать</h2>
 <ol>
-  <li>Запишите созвон: в Zoom и Google Meet есть встроенная запись, для Telegram и FaceTime подойдёт запись экрана со звуком.</li>
-  <li>Отправьте файл в <a href="https://t.me/Voicepad_bot?start=src_meeting">@Voicepad_bot</a>. Подходят любые аудио и видео до 20 МБ, длинные записи ссылкой на Яндекс Диск или Google Drive.</li>
-  <li>Получите текст с таймкодами и спикерами. Нажмите «Задачи» для списка поручений и «Конспект» для протокола. Кнопка DOCX отдаёт документ для рассылки участникам.</li>
+  <li>Запишите созвон: в&nbsp;Zoom и&nbsp;Google Meet есть встроенная запись, звонок в&nbsp;Telegram или по&nbsp;телефону можно записать диктофоном рядом с&nbsp;динамиком.</li>
+  <li>Отправьте файл в <a href="https://t.me/Voicepad_bot?start=src_meeting" rel="noopener">@Voicepad_bot</a>, внутри Telegram до&nbsp;20&nbsp;МБ. Видеозапись созвона обычно тяжелее, её загрузите на <a href="/">сайте</a> после входа через Telegram: до&nbsp;200&nbsp;МБ и&nbsp;до&nbsp;3&nbsp;часов, а&nbsp;расшифровка сохранится в&nbsp;истории бота.</li>
+  <li>Получите текст с&nbsp;таймкодами и&nbsp;спикерами. Нажмите «Задачи» для списка поручений и&nbsp;«Конспект» для протокола. Кнопка DOCX отдаёт документ для рассылки участникам.</li>
 </ol>
-<div class="card">Пример ответа кнопки «Задачи» по записи планёрки:
-<pre>Артём
-• Подготовить смету по второму варианту (до пятницы)
-• Созвониться с подрядчиком по срокам монтажа
-Лена
-• Переписать текст лендинга с учётом правок (до среды)
-Общее
-• Следующая встреча в четверг в 15:00</pre>
-<a class="cta" href="https://t.me/Voicepad_bot?start=src_meeting">Расшифровать запись встречи</a></div>
+<table>
+  <caption class="sr">Пример: задачи из&nbsp;записи планёрки</caption>
+  <thead><tr><th scope="col">Кто</th><th scope="col">Что сделать</th><th scope="col">Срок</th></tr></thead>
+  <tbody>
+    <tr><td>Артём</td><td>Подготовить смету по&nbsp;второму варианту</td><td>пятница</td></tr>
+    <tr><td>Артём</td><td>Созвониться с&nbsp;подрядчиком по&nbsp;срокам монтажа</td><td>не&nbsp;назван</td></tr>
+    <tr><td>Лена</td><td>Переписать текст лендинга с&nbsp;учётом правок</td><td>среда</td></tr>
+    <tr><td>Все</td><td>Следующая встреча</td><td>четверг, 15:00</td></tr>
+  </tbody>
+</table>
+<p class="note">Пример: что кнопка «Задачи» собрала из&nbsp;записи планёрки.</p>
+<p class="cta-pair"><a class="btn" href="https://t.me/Voicepad_bot?start=src_meeting" rel="noopener">Расшифровать запись встречи</a></p>
 
-<h2>Если созвоны проходят в рабочем чате</h2>
-<p>Добавьте бота в чат команды. Голосовые он расшифрует сам, а любую запись расшифрует по команде /text в ответе на файл. Конспект и задачи каждый участник открывает в личке по кнопке под расшифровкой, чат не засоряется.</p>
+<h2 id="bolshoj-fajl">Если файл больше 20&nbsp;МБ</h2>
+<p>Это ограничение самого Telegram: файл больше 20&nbsp;МБ бот получить не&nbsp;может. Загрузите запись в&nbsp;браузере на <a href="/">главной странице</a>: без входа до&nbsp;50&nbsp;МБ, после входа через Telegram до&nbsp;200&nbsp;МБ и&nbsp;до&nbsp;3&nbsp;часов. Без входа у&nbsp;записи длиннее 3&nbsp;минут расшифруются первые 3&nbsp;минуты, поэтому для созвона лучше войти: минуты спишутся с&nbsp;того же баланса, что в&nbsp;боте, а&nbsp;расшифровка попадёт в&nbsp;историю бота.</p>
+<p>Если запись созвона уже выложена на&nbsp;YouTube, VK Видео или RuTube, отправьте боту ссылку.</p>
 
-<h2>Вопросы</h2>
-<details open><summary>Бот различает, кто говорит?</summary><p>Да, реплики размечаются как Спикер 1, Спикер 2 и дальше. Если участники представляются, конспект и задачи используют имена.</p></details>
-<details><summary>Что попадает в список задач?</summary><p>Всё, что кто-то пообещал, взял на себя или попросил сделать, с ответственным и сроком, если они прозвучали. Если задач не было, бот так и напишет.</p></details>
-<details><summary>Сколько стоит час записи?</summary><p>15 минут в месяц бесплатно, дальше 60 минут за 199 ₽, 300 за 690 ₽, 1000 за 1990 ₽. Списывается фактическая длительность.</p></details>
-<details><summary>Это безопасно для рабочих записей?</summary><p>Аудио удаляется сразу после распознавания, текст хранится 30 дней, команда /delete стирает всё немедленно.</p></details>
+<h2 id="chat">Если созвоны проходят в&nbsp;рабочем чате</h2>
+<p>Добавьте бота в&nbsp;чат команды: голосовые и&nbsp;кружочки до&nbsp;3&nbsp;минут он расшифрует сам, для всех участников. На&nbsp;чат даётся 30 бесплатных минут в&nbsp;месяц, дальше минуты списываются с&nbsp;баланса автора записи. Файл записи, который кто-то выложил в&nbsp;чат, расшифрует команда <code>/text</code> в&nbsp;ответе на&nbsp;него. Запись созвона целиком можно и&nbsp;отправить боту в&nbsp;личные сообщения или загрузить на&nbsp;сайте. Как бот ведёт себя в&nbsp;живых чатах, в&nbsp;разборе <a href="/bot-v-gruppovom-chate/">бот в&nbsp;групповом чате</a>.</p>
 
-<h2>Другие инструкции</h2>
-<p><a href="/rasshifrovka-intervyu/">Расшифровка интервью по спикерам</a>, <a href="/podcast-v-tekst/">расшифровка подкаста</a>, <a href="/golosovoe-v-tekst/">голосовые в текст</a>, <a href="/kruzhochek-v-tekst/">кружочек в текст</a>, <a href="/youtube-v-tekst/">видео с YouTube в конспект</a>, <a href="/konspekt-lekcii/">конспект лекции</a>, <a href="/rasshifrovka-vebinara/">расшифровка вебинара</a>, <a href="/transkribaciya-audio-v-tekst/">транскрибация аудио без регистрации</a>, <a href="/compare/">сравнение ботов для расшифровки</a>. In English: <a href="/en/meeting-notes/">meeting notes and action items</a>.</p>
+<h2 id="faq">Вопросы</h2>
+<details open><summary>Как записать созвон, чтобы потом расшифровать?</summary><p>В Zoom и Google Meet есть встроенная запись, звонок в Telegram или по телефону можно записать диктофоном рядом с динамиком. Подойдут MP3, M4A, WAV, OGG, OPUS, MP4, MOV, WEBM и другие форматы: боту до 20 МБ, на сайте после входа до 200 МБ.</p></details>
+<details><summary>Бот различает, кто говорит?</summary><p>Да, реплики размечаются как Спикер 1, Спикер 2 и дальше.</p></details>
+<details><summary>Что попадает в список задач?</summary><p>Всё, что кто-то пообещал, взял на себя или попросил сделать, с ответственным и сроком, если они прозвучали.</p></details>
+<details><summary>Сколько стоит час записи?</summary><p>15 минут в месяц бесплатно, дальше 60 минут за 199 ₽, 300 за 690 ₽, 1000 за 1990 ₽. Списывается фактическая длительность, так что час записи расходует 60 минут.</p></details>
+<details><summary>Это безопасно для рабочих записей?</summary><p>Аудио и видео удаляются сразу после распознавания. Текст хранится 30 дней, команда <code>/delete</code> стирает его сразу.</p></details>
 
-<p class="note"><a href="/">Voicepad</a>: голосовые, аудио и видео в текст в Telegram. 15 минут в месяц бесплатно.</p>
-</div>
+<h2 id="guides">Другие инструкции</h2>
+<ul>
+  <li><a href="/transkribaciya-audio-v-tekst/">Транскрибация аудио в&nbsp;текст</a>: форма на&nbsp;странице, лимиты и&nbsp;цены</li>
+  <li><a href="/rasshifrovka-intervyu/">Расшифровка интервью</a>: реплики по&nbsp;спикерам с&nbsp;таймкодами, DOCX для правок</li>
+  <li><a href="/rasshifrovka-vebinara/">Расшифровка вебинара</a>: запись из&nbsp;Zoom, Meet или Телемоста в&nbsp;конспект</li>
+  <li><a href="/konspekt-lekcii/">Конспект лекции</a>: запись с&nbsp;диктофона или видео в&nbsp;конспект с&nbsp;главами</li>
+</ul>
+<p lang="en">In English: <a href="/en/meeting-notes/" hreflang="en">meeting notes and action items</a>.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <section class="outro" aria-labelledby="outro-title">
+    <div class="shell">
+      <div class="col">
+        <h2 id="outro-title">Протокол и&nbsp;задачи собирает бот</h2>
+        <p>Отправьте запись созвона @Voicepad_bot и&nbsp;нажмите «Задачи» и&nbsp;«Конспект» под текстом.</p>
+        <p class="cta-pair">
+          <a class="btn" href="https://t.me/Voicepad_bot?start=src_meeting" rel="noopener">Открыть @Voicepad_bot</a>
+          <a class="btn btn-line" href="https://t.me/Voicepad_bot?startgroup=true" rel="noopener">Добавить в чат</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="colophon">
+  <div class="shell">
+    <div class="col">
+      <p class="colophon__brand"><svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg><strong>Voicepad</strong><span>Расшифровка голосовых, аудио и видео в текст онлайн и в Telegram.</span></p>
+      <ul class="colophon__links">
+        <li><a href="https://t.me/Voicepad_bot?start=src_meeting" rel="noopener">t.me/Voicepad_bot</a></li>
+        <li><a href="https://t.me/Voicepad_bot?startgroup=true" rel="noopener">Добавить в чат</a></li>
+        <li><a href="/privacy/">Политика конфиденциальности</a></li>
+        <li><a href="/en/" hreflang="en" lang="en">English</a></li>
+      </ul>
+      <p class="colophon__note">Речь распознаёт ElevenLabs Scribe v2. Набрано шрифтами Literata и IBM Plex Mono.</p>
+      <p class="colophon__en" lang="en"><strong>Voicepad in English:</strong> <a href="/en/" hreflang="en">web tool and Telegram bot</a>, <a href="/en/voice-message-to-text/" hreflang="en">voice message to text</a>, <a href="/en/youtube-to-text/" hreflang="en">YouTube to text</a>, <a href="/en/meeting-notes/" hreflang="en">meeting notes</a>, <a href="/en/podcast-transcript/" hreflang="en">podcast transcript</a>, <a href="/en/lecture-notes-from-video/" hreflang="en">lecture notes</a>, <a href="/en/transcribe-telegram-voice-without-premium/" hreflang="en">Telegram voice messages without Premium</a>, <a href="/en/whatsapp-voice-message-to-text/" hreflang="en">WhatsApp voice message to text</a>.</p>
+    </div>
+  </div>
+</footer>
+
 <script>
 (function () {
   var params = new URLSearchParams(location.search);

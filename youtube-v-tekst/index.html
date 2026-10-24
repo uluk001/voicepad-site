@@ -3,96 +3,315 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Видео с YouTube в текст и конспект с главами: бот Voicepad для Telegram</title>
-<meta name="description" content="Отправьте ссылку на YouTube-видео боту Voicepad и получите текст с таймкодами и конспект с главами, где каждая метка открывает видео на нужном месте. Лекции, подкасты, интервью. 15 минут в месяц бесплатно.">
+<title>Видео с YouTube в текст и конспект с главами: Voicepad</title>
+<meta name="description" content="Вставьте ссылку на видео с YouTube и получите текст с таймкодами и спикерами, TXT, SRT, DOCX. Конспект с главами в боте Voicepad, 15 минут в месяц бесплатно.">
 <link rel="canonical" href="https://voicepad.qupport.io/youtube-v-tekst/">
 <link rel="alternate" hreflang="ru" href="https://voicepad.qupport.io/youtube-v-tekst/">
 <link rel="alternate" hreflang="en" href="https://voicepad.qupport.io/en/youtube-to-text/">
-<link rel="icon" type="image/png" href="/favicon.png">
-<meta property="og:type" content="article">
-<meta property="og:title" content="YouTube-видео в текст и конспект с главами">
-<meta property="og:description" content="Ссылка на лекцию на вход, текст с таймкодами и конспект с главами на выход. Бот в Telegram.">
+<link rel="alternate" hreflang="x-default" href="https://voicepad.qupport.io/youtube-v-tekst/">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f3eee4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#191713" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Voicepad">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:title" content="Видео с YouTube в текст и конспект с главами">
+<meta property="og:description" content="Ссылка на ролик на вход, текст с таймкодами и конспект с главами на выход. На сайте после входа через Telegram, в боте сразу.">
 <meta property="og:url" content="https://voicepad.qupport.io/youtube-v-tekst/">
-<meta property="og:image" content="https://voicepad.qupport.io/cover.jpg">
+<meta property="og:image" content="https://voicepad.qupport.io/assets/cover.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Voicepad: голосовые, аудио и видео в текст с таймкодами и спикерами">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://voicepad.qupport.io/assets/cover.jpg">
+<meta name="twitter:image:alt" content="Voicepad: голосовые, аудио и видео в текст с таймкодами и спикерами">
+<link rel="preload" href="/assets/fonts/literata.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://bot.voicepad.qupport.io" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "Как получить текст и конспект видео с YouTube",
-  "step": [
-    {"@type": "HowToStep", "name": "Скопируйте ссылку", "text": "Скопируйте ссылку на видео с YouTube, VK, RuTube или TikTok."},
-    {"@type": "HowToStep", "name": "Отправьте боту", "text": "Вставьте ссылку в чат с @Voicepad_bot. Бот скачает звук и распознает речь."},
-    {"@type": "HowToStep", "name": "Читайте конспект", "text": "Нажмите «Конспект»: придёт краткое содержание с главами, каждая метка времени открывает видео на этом моменте."}
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://voicepad.qupport.io/youtube-v-tekst/#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Главная",
+          "item": "https://voicepad.qupport.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "YouTube в текст",
+          "item": "https://voicepad.qupport.io/youtube-v-tekst/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://voicepad.qupport.io/youtube-v-tekst/#webpage",
+      "url": "https://voicepad.qupport.io/youtube-v-tekst/",
+      "inLanguage": "ru",
+      "description": "Вставьте ссылку на видео с YouTube и получите текст с таймкодами и спикерами, TXT, SRT, DOCX. Конспект с главами в боте Voicepad, 15 минут в месяц бесплатно.",
+      "datePublished": "2026-10-20",
+      "dateModified": "2026-10-24",
+      "image": "https://voicepad.qupport.io/assets/cover.jpg",
+      "isPartOf": {
+        "@id": "https://voicepad.qupport.io/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://voicepad.qupport.io/youtube-v-tekst/#breadcrumbs"
+      },
+      "name": "Видео с YouTube в текст и конспект с главами: Voicepad",
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://voicepad.qupport.io/#organization",
+        "name": "Voicepad",
+        "url": "https://voicepad.qupport.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://voicepad.qupport.io/assets/logo-512.png",
+          "width": 512,
+          "height": 512
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://voicepad.qupport.io/youtube-v-tekst/#faq",
+      "url": "https://voicepad.qupport.io/youtube-v-tekst/",
+      "inLanguage": "ru",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Какой длины видео можно расшифровать?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "До 3 часов за раз. Списывается фактическая длительность, 15 минут в месяц бесплатно, дальше пакеты от 199 ₽ за 60 минут."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Почему на сайте ссылка просит войти через Telegram?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "На сайте ссылки работают только после входа: минуты списываются с баланса бота, а расшифровка сохраняется в его истории. Бот принимает ссылки сразу. Без входа на сайте можно записать голос или загрузить файл до 50 МБ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Видео на английском подойдёт?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, язык определяется автоматически. Текст приходит на языке видео."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Можно ли получить субтитры?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Да, файл SRT с таймкодами скачивается и на сайте, и в боте. Его можно загрузить в видеоредактор или на YouTube."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Нужно ли скачивать видео самому?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Нет, достаточно ссылки. Если видео закрыто и по ссылке не открывается, загрузите файл: в боте до 20 МБ, на сайте до 50 МБ без входа и до 200 МБ после входа."
+          }
+        }
+      ]
+    }
   ]
 }
 </script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "Какой длины видео можно расшифровать?", "acceptedAnswer": {"@type": "Answer", "text": "До трёх часов за один раз. Длинная лекция, подкаст или запись вебинара подходят."}},
-    {"@type": "Question", "name": "Работает ли это с видео на английском?", "acceptedAnswer": {"@type": "Answer", "text": "Да, язык определяется автоматически. Текст придёт на языке видео, а конспект можно попросить на русском вопросом по записи."}},
-    {"@type": "Question", "name": "Можно ли получить субтитры?", "acceptedAnswer": {"@type": "Answer", "text": "Да, кнопка SRT отдаёт файл субтитров с таймкодами, его можно загрузить в видеоредактор или на YouTube."}},
-    {"@type": "Question", "name": "Нужно ли скачивать видео самому?", "acceptedAnswer": {"@type": "Answer", "text": "Нет. Достаточно ссылки. Бот сам скачивает звуковую дорожку и удаляет её после распознавания."}}
-  ]
-}
-</script>
-<style>
-:root{--bg:#0f1117;--card:#171a23;--text:#e8eaf0;--muted:#9aa0ae;--accent:#7c5cff;--line:#262a36}
-@media (prefers-color-scheme: light){:root{--bg:#fafafc;--card:#ffffff;--text:#15171e;--muted:#5d6472;--line:#e4e6ee}}
-*{box-sizing:border-box}
-body{margin:0;font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,sans-serif;background:var(--bg);color:var(--text)}
-a{color:var(--accent)}
-.wrap{max-width:800px;margin:0 auto;padding:40px 20px 60px}
-h1{font-size:2rem;line-height:1.2;margin:0 0 10px}
-h2{font-size:1.35rem;margin:36px 0 10px}
-.meta{color:var(--muted);font-size:.95rem}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:14px 0}
-.cta{display:inline-block;margin-top:12px;padding:12px 22px;border-radius:12px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
-ol li{margin-bottom:8px}
-details{border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:10px;background:var(--card)}
-summary{cursor:pointer;font-weight:600}
-details p{margin:10px 0 0;color:var(--muted)}
-pre{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;white-space:pre-wrap;font-size:.95rem;color:var(--muted)}
-.note{color:var(--muted);font-size:.9rem}
-</style>
 </head>
 <body>
-<div class="wrap">
-<p class="meta"><a href="/">Voicepad</a> · видео в текст</p>
-<h1>Видео с YouTube в текст и конспект с главами</h1>
-<p>Трёхчасовая лекция, часовой подкаст, интервью на английском. Смотреть целиком некогда, а нужно понять, о чём там, и найти нужный момент. Бот делает из ссылки текст с таймкодами и конспект, в котором каждая глава ведёт на свою минуту видео.</p>
+<a class="skip" href="#tool">Перейти к расшифровке</a>
 
-<h2>Как это работает</h2>
-<ol>
-  <li>Скопируйте ссылку на видео: YouTube, в том числе Shorts, VK Видео, RuTube, TikTok.</li>
-  <li>Отправьте её в чат с <a href="https://t.me/Voicepad_bot?start=src_youtube">@Voicepad_bot</a>. Бот скачает только звуковую дорожку и распознает речь, обычно это одна или две минуты на час видео.</li>
-  <li>Нажмите «Конспект». Придёт краткое содержание, ключевые тезисы и главы с таймкодами. Каждая метка времени это ссылка, которая открывает видео на этом месте.</li>
-</ol>
-<div class="card">Пример конца конспекта по часовой лекции:
-<pre>Главы
-00:00 Зачем нужна линейная регрессия
-07:40 Метод наименьших квадратов на пальцах
-19:15 Переобучение и регуляризация
-34:02 Разбор домашнего задания
-52:30 Ответы на вопросы</pre>
-<a class="cta" href="https://t.me/Voicepad_bot?start=src_youtube">Расшифровать видео</a></div>
+<header class="masthead">
+  <div class="shell">
+    <div class="col masthead__row">
+      <a class="brand" href="/" aria-label="Voicepad, главная">
+        <svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg>
+        <span>Voicepad</span>
+      </a>
+      <nav class="chapters" aria-label="Разделы страницы">
+        <ol>
+          <li><a href="#tool">Расшифровать</a></li>
+          <li><a href="#how">Как это работает</a></li>
+          <li><a href="#site-or-bot">Сайт или бот</a></li>
+          <li><a href="#price">Цены</a></li>
+          <li><a href="#faq">Вопросы</a></li>
+        </ol>
+      </nav>
+      <div class="masthead__aside">
+        <a class="lang" href="/en/youtube-to-text/" hreflang="en" lang="en">EN</a>
+        <a class="btn" href="https://t.me/Voicepad_bot?start=src_youtube" rel="noopener">Открыть бота</a>
+      </div>
+    </div>
+  </div>
+</header>
 
-<h2>Что ещё можно сделать с текстом</h2>
-<p>Задать вопрос по записи («в чём разница между двумя методами из середины лекции?»), собрать задачи, если это рабочий вебинар, получить статью или пост для канала, скачать DOCX для реферата или SRT для субтитров. Если ссылку кинули в учебный чат, где есть бот, он сам предложит кнопку «Расшифровать видео», и конспект придёт прямо в чат.</p>
+<main id="main">
+  <article class="guide" aria-labelledby="page-title">
+    <header class="hero">
+      <div class="shell">
+        <div class="col">
+          <nav class="crumbs" aria-label="Навигационная цепочка">
+            <ol>
+              <li><a href="/">Главная</a></li>
+              <li aria-current="page">YouTube в текст</li>
+            </ol>
+          </nav>
+          <h1 id="page-title">Видео с YouTube в&nbsp;текст и конспект с&nbsp;главами</h1>
+          <p class="lead">Смотреть лекцию или подкаст целиком некогда? Вставьте ссылку и получите текст с таймкодами, а в боте ещё и конспект, который заканчивается главами.</p>
+          <p class="page-meta">Обновлено <time datetime="2026-10-24">24 октября 2026</time></p>
+          <div class="hero__grid">
+            <div class="hero__main">
+              <div class="desk" id="tool">
+                <div class="desk__head">
+                  <h2 id="tool-title">Ссылка на видео в текст</h2>
+                  <p>Текст появится ниже: скопируйте или скачайте TXT, SRT, DOCX.</p>
+                </div>
+                <div id="vp-tool" data-api="https://bot.voicepad.qupport.io" data-lang="ru" data-source="youtube" data-tab="link"><noscript><p class="vp-fallback">Форма расшифровки работает с включённым JavaScript. Без него отправьте ссылку боту <a href="https://t.me/Voicepad_bot?start=src_youtube">@Voicepad_bot</a> в Telegram: он принимает её сразу.</p></noscript></div>
+              </div>
+              <p class="buy"><a class="btn" href="https://t.me/Voicepad_bot?start=src_youtube" rel="noopener">Отправить ссылку боту</a><span>Бот принимает ссылки сразу и делает конспект с главами.</span></p>
+            </div>
+            <div class="hero__aside">
+              <figure class="sample" aria-labelledby="sample-caption">
+                <figcaption class="sample__meta" id="sample-caption">
+                  <span>Образец: главы в конспекте</span>
+                  <span>YouTube · лекция 1&nbsp;ч</span>
+                </figcaption>
+                <ul class="toc" aria-label="Главы с таймкодами">
+                  <li><span class="tc">00:00</span>Зачем нужна линейная регрессия</li>
+                  <li><span class="tc">07:40</span>Метод наименьших квадратов на&nbsp;пальцах</li>
+                  <li><span class="tc">19:15</span>Переобучение и регуляризация</li>
+                  <li><span class="tc">34:02</span>Разбор домашнего задания</li>
+                  <li><span class="tc">52:30</span>Ответы на вопросы</li>
+                </ul>
+                <div class="keys">
+                  <span class="keys__label">Под расшифровкой в боте</span>
+                  <ul class="keys__list" aria-label="Кнопки под расшифровкой">
+                    <li>Конспект</li><li>Задачи</li><li>Статья</li><li>Пост</li><li>Вопрос</li><li>DOCX</li><li>TXT</li><li>SRT</li>
+                  </ul>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
-<h2>Вопросы</h2>
-<details open><summary>Какой длины видео можно расшифровать?</summary><p>До трёх часов за раз. Списывается фактическая длительность, 15 минут в месяц бесплатно, дальше пакеты от 199 ₽ за 60 минут.</p></details>
-<details><summary>Видео на английском подойдёт?</summary><p>Да, язык определяется сам. Текст приходит на языке видео, конспект на русском можно получить вопросом по записи.</p></details>
-<details><summary>Можно ли получить субтитры?</summary><p>Кнопка SRT отдаёт файл субтитров с таймкодами для видеоредактора или YouTube.</p></details>
-<details><summary>Нужно ли скачивать видео самому?</summary><p>Нет, достаточно ссылки. Если видео приватное, пришлите файл напрямую (до 20 МБ) или ссылку на него с Яндекс Диска или Google Drive.</p></details>
+    <div class="shell">
+      <div class="col">
+        <div class="prose">
+          <h2 id="how">Как это работает</h2>
+          <ol>
+            <li>Скопируйте ссылку на видео с YouTube, в том числе на Shorts. Так же принимаются VK Видео, RuTube и TikTok.</li>
+            <li>Вставьте её в форму выше и войдите через Telegram одной кнопкой. Или отправьте ссылку в чат с <a href="https://t.me/Voicepad_bot?start=src_youtube" rel="noopener">@Voicepad_bot</a>: бот принимает ссылки без входа.</li>
+            <li>Получите текст с таймкодами и разметкой по спикерам. На сайте его можно скопировать или скачать TXT, SRT и DOCX.</li>
+            <li>В боте нажмите «Конспект». Придёт краткое содержание, а в конце главы с таймкодами.</li>
+          </ol>
+          <p>Скачивать видео самому не нужно. Записи принимаются длиной до 3&nbsp;часов, язык определяется автоматически.</p>
 
-<h2>Другие инструкции</h2>
-<p><a href="/vk-video-v-tekst/">Видео из VK Видео и RuTube в текст</a>, <a href="/konspekt-lekcii/">конспект лекции</a>, <a href="/subtitry-srt-iz-video/">субтитры SRT из видео</a>, <a href="/podcast-v-tekst/">расшифровка подкаста</a>, <a href="/golosovoe-v-tekst/">голосовые в текст</a>, <a href="/zapis-vstrechi-v-protokol/">запись встречи в протокол</a>, <a href="/compare/">сравнение ботов для расшифровки</a>. In English: <a href="/en/youtube-to-text/">YouTube video to text</a>.</p>
+          <h2 id="site-or-bot">Сайт или бот</h2>
+          <p>Речь в обоих случаях распознаёт ElevenLabs Scribe v2. Разница в том, как отправить ссылку и что лежит под готовым текстом.</p>
+          <ul>
+            <li><strong>Сайт без входа.</strong> Запись голоса и файлы до 50&nbsp;МБ, 3&nbsp;расшифровки в день, у длинной записи первые 3&nbsp;минуты. Ссылки без входа не принимаются.</li>
+            <li><strong>Сайт после входа через Telegram.</strong> Ссылки с YouTube, VK Видео, RuTube, TikTok, Vimeo, Дзена, OK и Twitch, если у ролика известна длительность. Записи до 3&nbsp;часов, файлы до 200&nbsp;МБ. Минуты общие с ботом, а расшифровка сохраняется в истории бота.</li>
+            <li><strong>Бот @Voicepad_bot.</strong> Ссылку на YouTube, VK Видео, RuTube или TikTok можно отправить сразу. Под текстом кнопки «Конспект», «Задачи», «Статья», «Пост» и «Вопрос», файлы DOCX, TXT и SRT.</li>
+          </ul>
 
-<p class="note"><a href="/">Voicepad</a>: голосовые, аудио и видео в текст в Telegram. 15 минут в месяц бесплатно.</p>
-</div>
+          <h2 id="more">Что ещё можно сделать с текстом</h2>
+          <p>В боте можно задать вопрос по записи («в чём разница между двумя методами из середины лекции?»), собрать задачи, если это рабочий вебинар, получить статью или пост для канала. DOCX пригодится для реферата, SRT для субтитров. Как сделать субтитры для коротких роликов, рассказано в инструкции <a href="/subtitry-dlya-reels-i-shorts/">субтитры для Reels и Shorts</a>.</p>
+
+          <h2 id="price">Сколько стоит</h2>
+          <p>В боте и на сайте после входа 15&nbsp;минут каждый месяц бесплатно, дальше пакеты:</p>
+          <ul>
+            <li>60&nbsp;минут за 199&nbsp;₽;</li>
+            <li>300&nbsp;минут за 690&nbsp;₽, на&nbsp;31% дешевле за минуту;</li>
+            <li>1000&nbsp;минут за 1990&nbsp;₽, на&nbsp;40% дешевле за минуту.</li>
+          </ul>
+          <p>Минуты не сгорают, списывается фактическая длительность записи, а если распознать не удалось, минуты не списываются. Оплата банковской картой через Tribute, в боте команда <code>/buy</code>.</p>
+
+          <h2 id="faq">Вопросы и ответы</h2>
+          <details open>
+            <summary>Какой длины видео можно расшифровать?</summary>
+            <p>До 3 часов за раз. Списывается фактическая длительность, 15 минут в месяц бесплатно, дальше пакеты от 199 ₽ за 60 минут.</p>
+          </details>
+          <details>
+            <summary>Почему на сайте ссылка просит войти через Telegram?</summary>
+            <p>На сайте ссылки работают только после входа: минуты списываются с баланса бота, а расшифровка сохраняется в его истории. Бот принимает ссылки сразу. Без входа на сайте можно записать голос или загрузить файл до 50 МБ.</p>
+          </details>
+          <details>
+            <summary>Видео на английском подойдёт?</summary>
+            <p>Да, язык определяется автоматически. Текст приходит на языке видео.</p>
+          </details>
+          <details>
+            <summary>Можно ли получить субтитры?</summary>
+            <p>Да, файл SRT с таймкодами скачивается и на сайте, и в боте. Его можно загрузить в видеоредактор или на YouTube.</p>
+          </details>
+          <details>
+            <summary>Нужно ли скачивать видео самому?</summary>
+            <p>Нет, достаточно ссылки. Если видео закрыто и по ссылке не открывается, загрузите файл: в боте до 20 МБ, на сайте до 50 МБ без входа и до 200 МБ после входа.</p>
+          </details>
+
+          <h2 id="related">Другие инструкции</h2>
+          <ul>
+            <li><a href="/transkribaciya-audio-v-tekst/">Транскрибация аудио в текст онлайн</a>: что на самом деле значит «бесплатно» и где заканчиваются 15&nbsp;минут.</li>
+            <li><a href="/vk-video-v-tekst/">VK Видео и RuTube в текст</a>: ссылки VK, RuTube и TikTok принимаются так же, как YouTube.</li>
+            <li><a href="/konspekt-lekcii/">Конспект лекции</a>: запись с диктофона или видео с YouTube в конспект с главами.</li>
+            <li><a href="/subtitry-dlya-reels-i-shorts/">Субтитры для Reels и Shorts</a>: короткий вертикальный ролик в файл SRT по фразам.</li>
+          </ul>
+          <p lang="en">In English: <a href="/en/youtube-to-text/" hreflang="en">YouTube video to text</a>.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <section class="outro" aria-labelledby="outro-title">
+    <div class="shell">
+      <div class="col">
+        <h2 id="outro-title">Остальное удобнее в&nbsp;Telegram</h2>
+        <p>История расшифровок, конспекты, задачи и ответы на вопросы по записи живут в боте.</p>
+        <p class="cta-pair">
+          <a class="btn" href="https://t.me/Voicepad_bot?start=src_youtube" rel="noopener">Открыть @Voicepad_bot</a>
+          <a class="btn btn-line" href="#tool">К форме на этой странице</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="colophon">
+  <div class="shell">
+    <div class="col">
+      <p class="colophon__brand"><svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg><strong>Voicepad</strong><span>Расшифровка голосовых, аудио и видео в текст онлайн и в Telegram.</span></p>
+      <ul class="colophon__links">
+        <li><a href="https://t.me/Voicepad_bot?start=src_youtube" rel="noopener">t.me/Voicepad_bot</a></li>
+        <li><a href="https://t.me/Voicepad_bot?startgroup=true" rel="noopener">Добавить в чат</a></li>
+        <li><a href="/privacy/">Политика конфиденциальности</a></li>
+        <li><a href="/en/" hreflang="en" lang="en">English</a></li>
+      </ul>
+      <p class="colophon__note">Речь распознаёт ElevenLabs Scribe v2. Набрано шрифтами Literata и IBM Plex Mono.</p>
+      <p class="colophon__en" lang="en"><strong>Voicepad in English:</strong> <a href="/en/" hreflang="en">web tool and Telegram bot</a>, <a href="/en/voice-message-to-text/" hreflang="en">voice message to text</a>, <a href="/en/youtube-to-text/" hreflang="en">YouTube to text</a>, <a href="/en/meeting-notes/" hreflang="en">meeting notes</a>, <a href="/en/podcast-transcript/" hreflang="en">podcast transcript</a>, <a href="/en/lecture-notes-from-video/" hreflang="en">lecture notes</a>, <a href="/en/transcribe-telegram-voice-without-premium/" hreflang="en">Telegram voice messages without Premium</a>, <a href="/en/whatsapp-voice-message-to-text/" hreflang="en">WhatsApp voice message to text</a>.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/tool.js" defer></script>
 <script>
 (function () {
   var params = new URLSearchParams(location.search);
