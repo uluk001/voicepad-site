@@ -32,15 +32,58 @@
 <meta name="twitter:image" content="https://voicepad.qupport.io/assets/cover.jpg">
 <meta name="twitter:image:alt" content="Voicepad: voice messages, audio and video to text with timestamps and speaker labels">
 <link rel="preload" href="/assets/fonts/literata.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://bot.voicepad.qupport.io" crossorigin>
 <link rel="stylesheet" href="/assets/site.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
-    {"@type": "Organization", "@id": "https://voicepad.qupport.io/#organization", "name": "Voicepad", "url": "https://voicepad.qupport.io/", "logo": {"@type": "ImageObject", "url": "https://voicepad.qupport.io/assets/logo-512.png", "width": 512, "height": 512}, "sameAs": ["https://t.me/Voicepad_bot"]},
-    {"@type": "BreadcrumbList", "@id": "https://voicepad.qupport.io/en/whatsapp-voice-message-to-text/#breadcrumbs", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://voicepad.qupport.io/en/"}, {"@type": "ListItem", "position": 2, "name": "WhatsApp voice message to text", "item": "https://voicepad.qupport.io/en/whatsapp-voice-message-to-text/"}]},
-    {"@type": "BlogPosting", "@id": "https://voicepad.qupport.io/en/whatsapp-voice-message-to-text/#article", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://voicepad.qupport.io/en/whatsapp-voice-message-to-text/", "url": "https://voicepad.qupport.io/en/whatsapp-voice-message-to-text/", "breadcrumb": {"@id": "https://voicepad.qupport.io/en/whatsapp-voice-message-to-text/#breadcrumbs"}}, "url": "https://voicepad.qupport.io/en/whatsapp-voice-message-to-text/", "headline": "How to transcribe a WhatsApp voice message on Android, iPhone and desktop", "description": "Turn a WhatsApp voice message into text: built-in transcripts and their languages, plus how to save the audio file on Android, iPhone and desktop.", "image": {"@type": "ImageObject", "url": "https://voicepad.qupport.io/assets/cover.jpg", "width": 1200, "height": 630}, "datePublished": "2026-10-24", "dateModified": "2026-10-24", "author": {"@type": "Organization", "@id": "https://voicepad.qupport.io/#organization", "name": "Voicepad", "url": "https://voicepad.qupport.io/"}, "publisher": {"@id": "https://voicepad.qupport.io/#organization"}, "inLanguage": "en", "wordCount": 1950, "isPartOf": {"@id": "https://voicepad.qupport.io/#website"}},
-    {"@type": "FAQPage", "@id": "https://voicepad.qupport.io/en/whatsapp-voice-message-to-text/#faq", "url": "https://voicepad.qupport.io/en/whatsapp-voice-message-to-text/", "inLanguage": "en", "isPartOf": {"@id": "https://voicepad.qupport.io/en/whatsapp-voice-message-to-text/#article"}, "mainEntity": [{"@type": "Question", "name": "Can WhatsApp transcribe voice messages by itself?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, on Android and iPhone. Turn on Voice Message Transcripts in Settings, Chats, pick a language, then tap and hold a voice message and choose Transcribe. When checked on October 24, 2026, the WhatsApp Help Center listed English, Portuguese, Spanish and Russian on Android and a longer list on iOS 16 and newer. For WhatsApp Web, Windows and Mac it said transcripts are only available on certain devices."}}, {"@type": "Question", "name": "Why is there no Transcribe option on my phone?", "acceptedAnswer": {"@type": "Answer", "text": "The feature is off by default, so check Settings, Chats first. On iPhone it also needs iOS 16 or newer and Siri turned on. WhatsApp rolled the feature out gradually from November 2024, so some accounts got it later than others. On WhatsApp Web and the desktop apps the Help Center says it may not be available yet."}}, {"@type": "Question", "name": "What file format is a WhatsApp voice message?", "acceptedAnswer": {"@type": "Answer", "text": "Opus audio in an OGG container. Shared or saved from a phone it usually has the .opus extension; downloaded from WhatsApp Web or the desktop app it is usually an .ogg file. Both are ordinary audio files, and you can send or upload them to Voicepad as they are, without converting to MP3."}}, {"@type": "Question", "name": "Can I add the Voicepad bot to a WhatsApp group?", "acceptedAnswer": {"@type": "Answer", "text": "No. Voicepad is a Telegram bot with a web tool on its website, and it does not work inside WhatsApp. Share or download the voice message and send it to @Voicepad_bot in Telegram, or upload it at voicepad.qupport.io. In a Telegram group, the bot transcribes voice messages and video notes up to 3 minutes long for everyone."}}, {"@type": "Question", "name": "Is it free?", "acceptedAnswer": {"@type": "Answer", "text": "WhatsApp's built-in transcripts are free. Voicepad gives 15 free minutes every month, and the website without login allows 3 transcriptions a day; a recording longer than 3 minutes is transcribed only for its first 3 minutes there. More minutes come in packs, from 199 RUB for 60 minutes, and they never expire."}}]}
+    {
+      "@type": "Organization",
+      "@id": "https://voicepad.qupport.io/#organization",
+      "name": "Voicepad",
+      "url": "https://voicepad.qupport.io/",
+      "logo": {"@type": "ImageObject", "url": "https://voicepad.qupport.io/assets/logo-512.png", "width": 512, "height": 512},
+      "sameAs": ["https://t.me/Voicepad_bot"]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://voicepad.qupport.io/en/whatsapp-voice-message-to-text/#breadcrumbs",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://voicepad.qupport.io/en/"},
+        {"@type": "ListItem", "position": 2, "name": "WhatsApp voice message to text", "item": "https://voicepad.qupport.io/en/whatsapp-voice-message-to-text/"}
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://voicepad.qupport.io/en/whatsapp-voice-message-to-text/#article",
+      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://voicepad.qupport.io/en/whatsapp-voice-message-to-text/", "url": "https://voicepad.qupport.io/en/whatsapp-voice-message-to-text/", "breadcrumb": {"@id": "https://voicepad.qupport.io/en/whatsapp-voice-message-to-text/#breadcrumbs"}},
+      "url": "https://voicepad.qupport.io/en/whatsapp-voice-message-to-text/",
+      "headline": "How to transcribe a WhatsApp voice message on Android, iPhone and desktop",
+      "description": "Turn a WhatsApp voice message into text: built-in transcripts and their languages, plus how to save the audio file on Android, iPhone and desktop.",
+      "image": {"@type": "ImageObject", "url": "https://voicepad.qupport.io/assets/cover.jpg", "width": 1200, "height": 630},
+      "datePublished": "2026-10-24",
+      "dateModified": "2026-10-24",
+      "author": {"@type": "Organization", "@id": "https://voicepad.qupport.io/#organization", "name": "Voicepad", "url": "https://voicepad.qupport.io/"},
+      "publisher": {"@id": "https://voicepad.qupport.io/#organization"},
+      "inLanguage": "en",
+      "wordCount": 2036,
+      "isPartOf": {"@id": "https://voicepad.qupport.io/#website"}
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://voicepad.qupport.io/en/whatsapp-voice-message-to-text/#faq",
+      "url": "https://voicepad.qupport.io/en/whatsapp-voice-message-to-text/",
+      "inLanguage": "en",
+      "isPartOf": {"@id": "https://voicepad.qupport.io/en/whatsapp-voice-message-to-text/#article"},
+      "mainEntity": [
+        {"@type": "Question", "name": "Can WhatsApp transcribe voice messages by itself?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, on Android and iPhone. Turn on Voice Message Transcripts in Settings, Chats, pick a language, then tap and hold a voice message and choose Transcribe. When checked on October 24, 2026, the WhatsApp Help Center listed English, Portuguese, Spanish and Russian on Android and a longer list on iOS 16 and newer. For WhatsApp Web, Windows and Mac it said transcripts are only available on certain devices."}},
+        {"@type": "Question", "name": "Why is there no Transcribe option on my phone?", "acceptedAnswer": {"@type": "Answer", "text": "The feature is off by default, so check Settings, Chats first. On iPhone it also needs iOS 16 or newer and Siri turned on. WhatsApp rolled the feature out gradually from November 2024, so some accounts got it later than others. On WhatsApp Web and the desktop apps the Help Center says it may not be available yet."}},
+        {"@type": "Question", "name": "What file format is a WhatsApp voice message?", "acceptedAnswer": {"@type": "Answer", "text": "Opus audio in an OGG container. Shared or saved from a phone it usually has the .opus extension; downloaded from WhatsApp Web or the desktop app it is usually an .ogg file. Both are ordinary audio files, and you can send or upload them to Voicepad as they are, without converting to MP3."}},
+        {"@type": "Question", "name": "Can I add the Voicepad bot to a WhatsApp group?", "acceptedAnswer": {"@type": "Answer", "text": "No. Voicepad is a Telegram bot with a web tool on its website, and it does not work inside WhatsApp. Share or download the voice message and send it to @Voicepad_bot in Telegram, or upload it at voicepad.qupport.io. In a Telegram group, the bot transcribes voice messages and video notes up to 3 minutes long for everyone."}},
+        {"@type": "Question", "name": "Is it free?", "acceptedAnswer": {"@type": "Answer", "text": "WhatsApp's built-in transcripts are free. Voicepad gives 15 free minutes every month, and the website without login allows 3 transcriptions a day; a recording longer than 3 minutes is transcribed only for its first 3 minutes there. More minutes come in packs, from 199 RUB for 60 minutes, and they never expire."}}
+      ]
+    }
   ]
 }
 </script>
@@ -48,203 +91,265 @@
 <body>
 <a class="skip" href="#main">Skip to the article</a>
 
-<header class="masthead">
-  <div class="shell">
-    <div class="col masthead__row">
-      <a class="brand" href="/en/" aria-label="Voicepad, home">
-        <svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg>
-        <span>Voicepad</span>
-      </a>
-      <nav class="chapters" aria-label="Page sections">
-        <ol>
-          <li><a href="#built-in">Built-in</a></li>
-          <li><a href="#limits">Limits</a></li>
-          <li><a href="#android">Android</a></li>
-          <li><a href="#iphone">iPhone</a></li>
-          <li><a href="#desktop">Desktop</a></li>
-          <li><a href="#transcribe">Transcribe</a></li>
-          <li><a href="#faq">FAQ</a></li>
-        </ol>
+<header class="topbar">
+  <div class="column topbar__row">
+    <a class="brand" href="/en/" aria-label="Voicepad, home">
+      <svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg>
+      <span>Voicepad</span>
+    </a>
+    <nav class="topbar__nav" aria-label="Main menu">
+      <a href="#pricing">Pricing</a>
+      <a href="/en/#guides">Guides</a>
+      <a href="https://t.me/Voicepad_bot?start=src_en_whatsapp" rel="noopener">Telegram bot</a>
+      <a href="/golosovoe-whatsapp-v-tekst/" hreflang="ru" lang="ru">RU</a>
+    </nav>
+    <details class="menu">
+      <summary>Menu</summary>
+      <nav class="menu__list" aria-label="Main menu">
+        <a href="#pricing">Pricing</a>
+        <a href="/en/#guides">Guides</a>
+        <a href="https://t.me/Voicepad_bot?start=src_en_whatsapp" rel="noopener">Telegram bot</a>
+        <a href="/golosovoe-whatsapp-v-tekst/" hreflang="ru" lang="ru">Русская версия</a>
       </nav>
-      <div class="masthead__aside">
-        <a class="lang" href="/golosovoe-whatsapp-v-tekst/" hreflang="ru" lang="ru">RU</a>
-        <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_whatsapp" rel="noopener">Open the bot</a>
-      </div>
-    </div>
+    </details>
   </div>
 </header>
 
 <main id="main">
-  <section class="hero" aria-labelledby="page-title">
-    <div class="shell">
-      <div class="col">
-        <nav class="crumbs" aria-label="Breadcrumb">
-          <ol>
-            <li><a href="/en/">Home</a></li>
-            <li><span aria-current="page">WhatsApp voice message to text</span></li>
-          </ol>
-        </nav>
-        <h1 id="page-title">How to transcribe a WhatsApp voice message <span class="h1__tail">on Android, iPhone and desktop</span></h1>
-        <p class="lead">WhatsApp can transcribe voice messages on its own, but only in some languages and, so far, only on phones. Here is how to use the built-in option, and how to get the voice message out as a file on Android, iPhone and desktop when it falls short.</p>
-        <p class="page-meta page-meta-list"><span>Voicepad</span><span><time datetime="2026-10-24">October&nbsp;24,&nbsp;2026</time></span><span>9&nbsp;min&nbsp;read</span></p>
+  <section class="opening" aria-labelledby="page-title">
+    <div class="column">
+      <nav class="crumbs" aria-label="Breadcrumbs"><ol><li><a href="/en/">Home</a></li><li><span aria-current="page">WhatsApp voice message to text</span></li></ol></nav>
+      <h1 id="page-title">How to transcribe a WhatsApp voice message on Android, iPhone and desktop</h1>
+      <p class="opening__line">WhatsApp can transcribe voice messages on its own, but only in some languages and, so far, only on phones. Here is how to use the built-in option, and how to get the voice message out as a file on Android, iPhone and desktop when it falls short.</p>
+    </div>
+  </section>
+
+  <article class="block" id="article" aria-labelledby="built-in">
+    <div class="column">
+      <div class="copy">
+        <h2 id="built-in">WhatsApp's own transcription and its languages</h2>
+        <p>Before you install anything, check whether WhatsApp can already do the job. The app has had its own voice message transcripts since November 2024 (<a href="https://blog.whatsapp.com/introducing-voice-message-transcripts" rel="noopener">announced on the WhatsApp blog on November 21, 2024</a>). According to the <a href="https://faq.whatsapp.com/241617298315321/" rel="noopener">WhatsApp Help Center</a>, transcripts are generated on your device, voice messages stay protected by end-to-end encryption, and the sender cannot see your transcript.</p>
+        <p>The feature is off by default. To turn it on:</p>
+        <ol>
+        <li>Open WhatsApp <strong>Settings</strong> and tap <strong>Chats</strong>.</li>
+        <li>Turn on <strong>Voice Message Transcripts</strong>.</li>
+        <li>Tap <strong>Choose language</strong> and pick the language most of your incoming voice messages are in. Then confirm: on Android with <strong>Set up now</strong> or <strong>Wait for Wi-Fi</strong>, on iPhone with <strong>Change to</strong> plus the language name.</li>
+        <li>In a chat, tap and hold a voice message and choose <strong>Transcribe</strong> (on Android it sits behind a menu icon). The text appears in the voice message after a moment.</li>
+        </ol>
+        <p>Languages depend on the platform. This is what the Help Center listed when I checked it on October 24, 2026:</p>
+        <table>
+        <thead><tr><th scope="col">Platform</th><th scope="col">Languages listed by WhatsApp</th><th scope="col">Extra requirements</th></tr></thead>
+        <tbody>
+        <tr><th scope="row">Android</th><td>English, Portuguese, Spanish, Russian</td><td>None stated</td></tr>
+        <tr><th scope="row">iPhone, iOS 16</th><td>English, Arabic, Chinese, French, German, Italian, Japanese, Korean, Portuguese, Russian, Spanish, Turkish</td><td>Siri turned on</td></tr>
+        <tr><th scope="row">iPhone, iOS 17 and newer</th><td>The iOS 16 list plus Danish, Dutch, Finnish, Hebrew, Malay, Norwegian, Swedish, Thai</td><td>Siri turned on</td></tr>
+        <tr><th scope="row">WhatsApp Web, Windows, Mac</th><td>None listed</td><td>The Help Center says transcripts are only available on certain devices and may not be available to you yet</td></tr>
+        </tbody>
+        </table>
+        <p>Treat this table as a snapshot. A <a href="https://wabetainfo.com/whatsapp-is-rolling-out-new-languages-for-voice-transcriptions/" rel="noopener">WABetaInfo report from September 17, 2026</a> says Android beta 2.26.37.5 brings German, French, Italian, Japanese and more English variants to some beta testers, and lists Arabic, Spanish, Hindi, Portuguese and Russian as already available, while the official Android page still shows four languages. The reliable answer is on your own phone: once the feature is on, open Settings, Chats, <strong>Transcript language</strong> and see what it offers.</p>
+        <p>If your language is there and the phone is in your hand, use the built-in option. It is free, it takes one tap, and the transcript is made on the device. The rest of this guide is for the cases where it falls short.</p>
+
+        <h2 id="limits">When WhatsApp transcripts are not enough</h2>
+        <ul>
+        <li><strong>Your language is missing.</strong> The official Android list has four languages. Ukrainian and Polish, for example, are not on any list in the table above.</li>
+        <li><strong>Your contacts speak different languages.</strong> WhatsApp asks for one transcript language, the one most of your voice messages are in. A friend who records in German and a colleague who records in English are not both covered unless you keep switching the setting.</li>
+        <li><strong>You are at a computer.</strong> For WhatsApp Web, Windows and Mac the Help Center only says transcripts are available on certain devices, so on a laptop you will most likely not find a Transcribe option.</li>
+        <li><strong>Your iPhone runs an older iOS or Siri is off.</strong> On iPhone the feature needs iOS 16 or newer with Siri enabled.</li>
+        <li><strong>You need the text somewhere else.</strong> The transcript appears inside the voice message in the chat. A ten-minute brief from a client is easier to work with as a document with timestamps, or as a summary with the tasks pulled out.</li>
+        <li><strong>The exact words matter.</strong> The Help Center itself notes that transcripts may be inaccurate. For an address, a price or a quote you will repeat, timestamps let you jump to that moment and listen.</li>
+        <li><strong>It is not a voice message.</strong> The Help Center article covers voice messages only. For a call recording or a podcast clip that arrives as an audio file, do not count on the Transcribe option.</li>
+        </ul>
+        <p>In each of these cases the route is the same: get the audio out of WhatsApp as a file and give it to a transcription tool. The one I build, <a href="/en/">Voicepad, a transcription tool for the browser and Telegram</a>, does not work inside WhatsApp, so below is how to get the file out on each platform.</p>
+
+        <h2 id="android">Android: share or save the voice message</h2>
+        <p>The fastest route on Android is the share sheet, straight from WhatsApp to Telegram.</p>
+        <ol>
+        <li>Open <a href="https://t.me/Voicepad_bot?start=src_en_whatsapp" rel="noopener">@Voicepad_bot in Telegram</a> once and tap Start, so the chat is there when you share to Telegram.</li>
+        <li>In WhatsApp, tap and hold the voice message.</li>
+        <li>Tap the Share icon.</li>
+        <li>Choose Telegram, then the chat with the bot.</li>
+        </ol>
+        <p>The bot replies with the text, timestamps and speaker labels. Under every transcript it offers a summary, a task list, an article, a post, questions about the recording, and export to DOCX, TXT and SRT.</p>
+        <p>If you would rather keep the file, for example to upload it on the website, look for it in your file manager. Guides describe a <code>WhatsApp Voice Notes</code> folder inside WhatsApp's Media folder, split into subfolders by date. The exact path differs between phones and Android versions, so searching for "Voice Notes" in the file manager is faster than following a path. The files usually have the .opus extension.</p>
+        <p>For a whole thread of voice messages, export the chat: open it, tap the menu icon, then <strong>More</strong>, <strong>Export chat</strong>, <strong>Include media</strong>. The Help Center says the most recent media is added as attachments, so older voice messages may be left out.</p>
+
+        <h2 id="iphone">iPhone: share or save the .opus file</h2>
+        <ol>
+        <li>Tap and hold the voice message and choose <strong>Forward</strong>.</li>
+        <li>Tap the share icon.</li>
+        <li>Choose Telegram and the chat with the bot, or tap <strong>Save to Files</strong> to keep the audio in the Files app.</li>
+        </ol>
+        <p>The saved file usually has the .opus extension. Some guides suggest converting it to MP3 in case a tool rejects .opus. For Voicepad you can skip that step: the site lists OGG and OPUS among accepted formats, and the bot takes audio files as they are.</p>
+        <p>To pull out many voice messages at once, tap the contact or group name at the top of the chat, then <strong>Export chat</strong> and <strong>With all media</strong>. According to the Help Center, the chat is exported as a ZIP file (you can pick Save to Files), and view once messages are not exported.</p>
+
+        <h2 id="desktop">Desktop and web</h2>
+        <p>On a computer you most likely have no built-in transcript, so download the voice message and transcribe the file.</p>
+        <ol>
+        <li>Open the chat in WhatsApp Web or the desktop app.</li>
+        <li>Hover over the voice message and click the small arrow in its corner.</li>
+        <li>Click <strong>Download</strong> and choose where to save it.</li>
+        </ol>
+        <p>The download is usually an .ogg file rather than .opus. That is not a problem. GuidingTech describes WhatsApp's voice format as Opus in OGG, and Meta's developer documentation for the WhatsApp Business Platform requires voice messages to be .ogg files encoded with the Opus codec, so the phone file and the computer file are the same kind of audio under a different extension. Drag the .ogg into the <a href="#vp-tool">Voicepad web tool</a> or into the chat with the bot in Telegram Desktop.</p>
+
+        <h2 id="transcribe">Upload in the browser or forward to the Telegram bot</h2>
+        <p>Voicepad detects the language of each recording automatically, so the German friend and the English colleague from the list above are both covered without touching a setting. The website and the bot differ in limits and extras:</p>
+        <table>
+        <thead><tr><td></td><th scope="col">Website, no login</th><th scope="col">Website, logged in with Telegram</th><th scope="col">Telegram bot</th></tr></thead>
+        <tbody>
+        <tr><th scope="row">Input</th><td>Record or upload a file</td><td>Record, upload, or paste a video link</td><td>Forward, share or send a file, or send a video link</td></tr>
+        <tr><th scope="row">File size</th><td>Up to 50 MB</td><td>Up to 200 MB</td><td>Up to 20 MB (a Telegram limit)</td></tr>
+        <tr><th scope="row">Length</th><td>Longer recordings: the first 3 minutes, full text after login or in the bot</td><td>Up to 3 hours (browser recording up to 30 minutes)</td><td>Up to 3 hours</td></tr>
+        <tr><th scope="row">Quota</th><td>3 transcriptions a day, one at a time, no signup</td><td>Same free minutes and balance as in the bot</td><td>15 free minutes a month, then paid packs</td></tr>
+        <tr><th scope="row">Result</th><td>Copy, or download TXT, SRT, DOCX</td><td>Copy, or download TXT, SRT, DOCX; saved to the bot history</td><td>Text with timestamps and speaker labels; summary, task list, article, post, questions about the recording; DOCX, TXT, SRT</td></tr>
+        </tbody>
+        </table>
+        <p>For a single short voice message the browser tool without login is the quickest: open the page, drop the .opus or .ogg file, read the text. A longer recording is not refused there, but only its first three minutes are transcribed, so for a longer message log in with Telegram or forward it to the bot.</p>
+        <p>If WhatsApp voice messages are a daily thing for you, <a href="https://t.me/Voicepad_bot?start=src_en_whatsapp" rel="noopener">the Voicepad bot in Telegram</a> means less friction: share from WhatsApp to Telegram and the text comes back in the same app, with a task list for the moments when someone dictated a list of errands. Logging in on the site uses the same balance as the bot.</p>
+        <p>Pricing: 15 free minutes every month. After that there are packs of 60 minutes for 199 RUB, 300 minutes for 690 RUB and 1000 minutes for 1990 RUB, paid by card via Tribute. Minutes never expire, and only the real duration of a recording is charged.</p>
+        <p>On privacy, an honest comparison: WhatsApp's own transcripts are made on your phone. With Voicepad the audio is uploaded for recognition and deleted right after it; transcripts in the bot are kept for 30 days, and <code>/delete</code> removes them. If a voice message is sensitive and WhatsApp supports its language, the built-in feature is the more private choice. The details are in <a href="/privacy/#en">Voicepad's privacy policy</a>, which has an English summary.</p>
+        <p>One more limit: Voicepad is a Telegram bot and a web tool, so it cannot join a WhatsApp group. In a Telegram group it can: add it to the chat and it transcribes voice messages and video notes up to 3 minutes long for everyone. For that, and for Telegram's own voice messages, see <a href="/en/voice-message-to-text/">Telegram voice message to text</a>. Longer recordings have their own guide, <a href="/en/meeting-notes/">meeting recording to notes and action items</a>, and Russian speakers can read <a href="/golosovoe-whatsapp-v-tekst/" hreflang="ru">this guide in Russian</a>.</p>
+
+        <h2 id="sources">Sources</h2>
+        <ol class="note">
+        <li><a href="https://blog.whatsapp.com/introducing-voice-message-transcripts">WhatsApp blog: Introducing Voice Message Transcripts, November 21, 2024</a></li>
+        <li><a href="https://faq.whatsapp.com/241617298315321/?cms_platform=android&amp;locale=en_US">WhatsApp Help Center: voice message transcripts, Android</a></li>
+        <li><a href="https://faq.whatsapp.com/241617298315321/?cms_platform=iphone&amp;locale=en_US">WhatsApp Help Center: voice message transcripts, iPhone</a></li>
+        <li><a href="https://faq.whatsapp.com/241617298315321/?cms_platform=web&amp;locale=en_US">WhatsApp Help Center: voice message transcripts, Web</a></li>
+        <li><a href="https://faq.whatsapp.com/1180414079177245/?cms_platform=android&amp;locale=en_US">WhatsApp Help Center: export chat history, Android</a></li>
+        <li><a href="https://faq.whatsapp.com/1180414079177245/?cms_platform=iphone&amp;locale=en_US">WhatsApp Help Center: export chat history, iPhone</a></li>
+        <li><a href="https://wabetainfo.com/whatsapp-is-rolling-out-new-languages-for-voice-transcriptions/">WABetaInfo: new languages for voice transcriptions, September 17, 2026</a></li>
+        <li><a href="https://www.guidingtech.com/how-to-save-whatsapp-audio/">GuidingTech: how to save WhatsApp audio</a></li>
+        <li><a href="https://gotranscript.com/blog/how-to-transcribe-whatsapp-voice-messages">GoTranscript: how to transcribe WhatsApp voice messages</a></li>
+        <li><a href="https://en.androidayuda.com/applications/Tutorials/they-save-whatsapp-audios/">AndroidAyuda: where WhatsApp saves audio</a></li>
+        <li><a href="https://www.ionos.com/digitalguide/online-marketing/social-media/how-to-save-audio-from-whatsapp/">IONOS: how to save audio from WhatsApp</a></li>
+        <li><a href="https://canaltech.com.br/software/como-baixar-audios-do-whatsapp-no-computador/">Canaltech: download WhatsApp audio on a computer (Portuguese)</a></li>
+        <li><a href="https://developers.facebook.com/documentation/business-messaging/whatsapp/messages/audio-messages">Meta for Developers: WhatsApp audio messages</a></li>
+        </ol>
+      </div>
+    </div>
+  </article>
+
+  <section class="block" id="file" aria-labelledby="file-title">
+    <div class="column">
+      <h2 id="file-title">Transcribe the voice message you saved</h2>
+      <p class="block__lead">Drop the .opus or .ogg file here, or choose it on your phone.</p>
+      <div id="vp-tool" data-api="https://bot.voicepad.qupport.io" data-lang="en" data-source="site_en_whatsapp"><noscript><p class="vp-fallback">The transcription form needs JavaScript. Without it, share the voice message to <a href="https://t.me/Voicepad_bot?start=src_en_whatsapp">@Voicepad_bot</a> in Telegram.</p></noscript></div>
+    </div>
+  </section>
+
+  <section class="block" id="pricing" aria-labelledby="pricing-title">
+    <div class="column">
+      <h2 id="pricing-title">How much it costs</h2>
+      <p class="block__lead">Minutes are shared by the site and the bot. Bought minutes never expire.</p>
+      <ul class="plans">
+        <li class="plan">
+          <h3>Without logging in</h3>
+          <p>3 recordings a day, the first 3&nbsp;minutes of a long one, files up to 50&nbsp;MB.</p>
+        </li>
+        <li class="plan">
+          <h3>With a Telegram login</h3>
+          <p>15 free minutes a month, files up to 200&nbsp;MB, video links.</p>
+        </li>
+        <li class="plan plan-packs">
+          <h3>Minute packs</h3>
+          <ul class="packs">
+            <li><span>60 min</span> <b>199&nbsp;RUB</b></li>
+            <li><span>300 min</span> <b>690&nbsp;RUB</b></li>
+            <li><span>1000 min</span> <b>1990&nbsp;RUB</b></li>
+          </ul>
+          <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_whatsapp_buy" rel="noopener">Buy minutes in the bot</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" id="faq" aria-labelledby="faq-title">
+    <div class="column">
+      <h2 id="faq-title">Questions</h2>
+      <div class="faq">
+        <details>
+          <summary>Can WhatsApp transcribe voice messages by itself?</summary>
+          <p>Yes, on Android and iPhone. Turn on Voice Message Transcripts in Settings, Chats, pick a language, then tap and hold a voice message and choose Transcribe. When checked on October 24, 2026, the WhatsApp Help Center listed English, Portuguese, Spanish and Russian on Android and a longer list on iOS 16 and newer. For WhatsApp Web, Windows and Mac it said transcripts are only available on certain devices.</p>
+        </details>
+        <details>
+          <summary>Why is there no Transcribe option on my phone?</summary>
+          <p>The feature is off by default, so check Settings, Chats first. On iPhone it also needs iOS 16 or newer and Siri turned on. WhatsApp rolled the feature out gradually from November 2024, so some accounts got it later than others. On WhatsApp Web and the desktop apps the Help Center says it may not be available yet.</p>
+        </details>
+        <details>
+          <summary>What file format is a WhatsApp voice message?</summary>
+          <p>Opus audio in an OGG container. Shared or saved from a phone it usually has the .opus extension; downloaded from WhatsApp Web or the desktop app it is usually an .ogg file. Both are ordinary audio files, and you can send or upload them to Voicepad as they are, without converting to MP3.</p>
+        </details>
+        <details>
+          <summary>Can I add the Voicepad bot to a WhatsApp group?</summary>
+          <p>No. Voicepad is a Telegram bot with a web tool on its website, and it does not work inside WhatsApp. Share or download the voice message and send it to @Voicepad_bot in Telegram, or upload it at voicepad.qupport.io. In a Telegram group, the bot transcribes voice messages and video notes up to 3 minutes long for everyone.</p>
+        </details>
+        <details>
+          <summary>Is it free?</summary>
+          <p>WhatsApp's built-in transcripts are free. Voicepad gives 15 free minutes every month, and the website without login allows 3 transcriptions a day; a recording longer than 3 minutes is transcribed only for its first 3 minutes there. More minutes come in packs, from 199 RUB for 60 minutes, and they never expire.</p>
+        </details>
       </div>
     </div>
   </section>
 
-  <div class="shell">
-    <div class="col">
-      <article class="prose" aria-labelledby="page-title">
-<h2 id="built-in">WhatsApp's own transcription and its languages</h2>
-<p>Before you install anything, check whether WhatsApp can already do the job. The app has had its own voice message transcripts since November 2024 (<a href="https://blog.whatsapp.com/introducing-voice-message-transcripts" rel="noopener">announced on the WhatsApp blog on November 21, 2024</a>). According to the <a href="https://faq.whatsapp.com/241617298315321/" rel="noopener">WhatsApp Help Center</a>, transcripts are generated on your device, voice messages stay protected by end-to-end encryption, and the sender cannot see your transcript.</p>
-<p>The feature is off by default. To turn it on:</p>
-<ol>
-<li>Open WhatsApp <strong>Settings</strong> and tap <strong>Chats</strong>.</li>
-<li>Turn on <strong>Voice Message Transcripts</strong>.</li>
-<li>Tap <strong>Choose language</strong> and pick the language most of your incoming voice messages are in. Then confirm: on Android with <strong>Set up now</strong> or <strong>Wait for Wi-Fi</strong>, on iPhone with <strong>Change to</strong> plus the language name.</li>
-<li>In a chat, tap and hold a voice message and choose <strong>Transcribe</strong> (on Android it sits behind a menu icon). The text appears in the voice message after a moment.</li>
-</ol>
-<p>Languages depend on the platform. This is what the Help Center listed when I checked it on October 24, 2026:</p>
-<table class="book venues" role="table">
-<thead role="rowgroup"><tr role="row"><th role="columnheader" scope="col">Platform</th><th role="columnheader" scope="col">Languages listed by WhatsApp</th><th role="columnheader" scope="col">Extra requirements</th></tr></thead>
-<tbody role="rowgroup">
-<tr role="row"><th role="rowheader" scope="row">Android</th><td role="cell" data-label="Languages listed by WhatsApp"><span>English, Portuguese, Spanish, Russian</span></td><td role="cell" data-label="Extra requirements"><span>None stated</span></td></tr>
-<tr role="row"><th role="rowheader" scope="row">iPhone, iOS 16</th><td role="cell" data-label="Languages listed by WhatsApp"><span>English, Arabic, Chinese, French, German, Italian, Japanese, Korean, Portuguese, Russian, Spanish, Turkish</span></td><td role="cell" data-label="Extra requirements"><span>Siri turned on</span></td></tr>
-<tr role="row"><th role="rowheader" scope="row">iPhone, iOS 17 and newer</th><td role="cell" data-label="Languages listed by WhatsApp"><span>The iOS 16 list plus Danish, Dutch, Finnish, Hebrew, Malay, Norwegian, Swedish, Thai</span></td><td role="cell" data-label="Extra requirements"><span>Siri turned on</span></td></tr>
-<tr role="row"><th role="rowheader" scope="row">WhatsApp Web, Windows, Mac</th><td role="cell" data-label="Languages listed by WhatsApp"><span>None listed</span></td><td role="cell" data-label="Extra requirements"><span>The Help Center says transcripts are only available on certain devices and may not be available to you yet</span></td></tr>
-</tbody>
-</table>
-<p>Treat this table as a snapshot. A <a href="https://wabetainfo.com/whatsapp-is-rolling-out-new-languages-for-voice-transcriptions/" rel="noopener">WABetaInfo report from September 17, 2026</a> says Android beta 2.26.37.5 brings German, French, Italian, Japanese and more English variants to some beta testers, and lists Arabic, Spanish, Hindi, Portuguese and Russian as already available, while the official Android page still shows four languages. The reliable answer is on your own phone: once the feature is on, open Settings, Chats, <strong>Transcript language</strong> and see what it offers.</p>
-<p>If your language is there and the phone is in your hand, use the built-in option. It is free, it takes one tap, and the transcript is made on the device. The rest of this guide is for the cases where it falls short.</p>
-
-<h2 id="limits">When WhatsApp transcripts are not enough</h2>
-<ul>
-<li><strong>Your language is missing.</strong> The official Android list has four languages. Ukrainian and Polish, for example, are not on any list in the table above.</li>
-<li><strong>Your contacts speak different languages.</strong> WhatsApp asks for one transcript language, the one most of your voice messages are in. A friend who records in German and a colleague who records in English are not both covered unless you keep switching the setting.</li>
-<li><strong>You are at a computer.</strong> For WhatsApp Web, Windows and Mac the Help Center only says transcripts are available on certain devices, so on a laptop you will most likely not find a Transcribe option.</li>
-<li><strong>Your iPhone runs an older iOS or Siri is off.</strong> On iPhone the feature needs iOS 16 or newer with Siri enabled.</li>
-<li><strong>You need the text somewhere else.</strong> The transcript appears inside the voice message in the chat. A ten-minute brief from a client is easier to work with as a document with timestamps, or as a summary with the tasks pulled out.</li>
-<li><strong>The exact words matter.</strong> The Help Center itself notes that transcripts may be inaccurate. For an address, a price or a quote you will repeat, timestamps let you jump to that moment and listen.</li>
-<li><strong>It is not a voice message.</strong> The Help Center article covers voice messages only. For a call recording or a podcast clip that arrives as an audio file, do not count on the Transcribe option.</li>
-</ul>
-<p>In each of these cases the route is the same: get the audio out of WhatsApp as a file and give it to a transcription tool. The one I build, <a href="/en/">Voicepad, a transcription tool for the browser and Telegram</a>, does not work inside WhatsApp, so below is how to get the file out on each platform.</p>
-
-<h2 id="android">Android: share or save the voice message</h2>
-<p>The fastest route on Android is the share sheet, straight from WhatsApp to Telegram.</p>
-<ol>
-<li>Open <a href="https://t.me/Voicepad_bot?start=src_en_whatsapp" rel="noopener">@Voicepad_bot in Telegram</a> once and tap Start, so the chat is there when you share to Telegram.</li>
-<li>In WhatsApp, tap and hold the voice message.</li>
-<li>Tap the Share icon.</li>
-<li>Choose Telegram, then the chat with the bot.</li>
-</ol>
-<p>The bot replies with the text, timestamps and speaker labels. Under every transcript it offers a summary, a task list, an article, a post, questions about the recording, and export to DOCX, TXT and SRT.</p>
-<p>If you would rather keep the file, for example to upload it on the website, look for it in your file manager. Guides describe a <code>WhatsApp Voice Notes</code> folder inside WhatsApp's Media folder, split into subfolders by date. The exact path differs between phones and Android versions, so searching for "Voice Notes" in the file manager is faster than following a path. The files usually have the .opus extension.</p>
-<p>For a whole thread of voice messages, export the chat: open it, tap the menu icon, then <strong>More</strong>, <strong>Export chat</strong>, <strong>Include media</strong>. The Help Center says the most recent media is added as attachments, so older voice messages may be left out.</p>
-
-<h2 id="iphone">iPhone: share or save the .opus file</h2>
-<ol>
-<li>Tap and hold the voice message and choose <strong>Forward</strong>.</li>
-<li>Tap the share icon.</li>
-<li>Choose Telegram and the chat with the bot, or tap <strong>Save to Files</strong> to keep the audio in the Files app.</li>
-</ol>
-<p>The saved file usually has the .opus extension. Some guides suggest converting it to MP3 in case a tool rejects .opus. For Voicepad you can skip that step: the site lists OGG and OPUS among accepted formats, and the bot takes audio files as they are.</p>
-<p>To pull out many voice messages at once, tap the contact or group name at the top of the chat, then <strong>Export chat</strong> and <strong>With all media</strong>. According to the Help Center, the chat is exported as a ZIP file (you can pick Save to Files), and view once messages are not exported.</p>
-
-<h2 id="desktop">Desktop and web</h2>
-<p>On a computer you most likely have no built-in transcript, so download the voice message and transcribe the file.</p>
-<ol>
-<li>Open the chat in WhatsApp Web or the desktop app.</li>
-<li>Hover over the voice message and click the small arrow in its corner.</li>
-<li>Click <strong>Download</strong> and choose where to save it.</li>
-</ol>
-<p>The download is usually an .ogg file rather than .opus. That is not a problem. GuidingTech describes WhatsApp's voice format as Opus in OGG, and Meta's developer documentation for the WhatsApp Business Platform requires voice messages to be .ogg files encoded with the Opus codec, so the phone file and the computer file are the same kind of audio under a different extension. Drag the .ogg into the <a href="/en/#tool">Voicepad web tool</a> or into the chat with the bot in Telegram Desktop.</p>
-
-<h2 id="transcribe">Upload in the browser or forward to the Telegram bot</h2>
-<p>Voicepad runs on ElevenLabs Scribe v2 and detects the language of each recording automatically, so the German friend and the English colleague from the list above are both covered without touching a setting. The website and the bot differ in limits and extras:</p>
-<table class="book venues" role="table">
-<thead role="rowgroup"><tr role="row"><th role="columnheader" scope="col"></th><th role="columnheader" scope="col">Website, no login</th><th role="columnheader" scope="col">Website, logged in with Telegram</th><th role="columnheader" scope="col">Telegram bot</th></tr></thead>
-<tbody role="rowgroup">
-<tr role="row"><th role="rowheader" scope="row">Input</th><td role="cell" data-label="Website, no login"><span>Record or upload a file</span></td><td role="cell" data-label="Website, logged in with Telegram"><span>Record, upload, or paste a video link</span></td><td role="cell" data-label="Telegram bot"><span>Forward, share or send a file, or send a video link</span></td></tr>
-<tr role="row"><th role="rowheader" scope="row">File size</th><td role="cell" data-label="Website, no login"><span>Up to 50 MB</span></td><td role="cell" data-label="Website, logged in with Telegram"><span>Up to 200 MB</span></td><td role="cell" data-label="Telegram bot"><span>Up to 20 MB (a Telegram limit)</span></td></tr>
-<tr role="row"><th role="rowheader" scope="row">Length</th><td role="cell" data-label="Website, no login"><span>Longer recordings: the first 3 minutes, full text after login or in the bot</span></td><td role="cell" data-label="Website, logged in with Telegram"><span>Up to 3 hours (browser recording up to 30 minutes)</span></td><td role="cell" data-label="Telegram bot"><span>Up to 3 hours</span></td></tr>
-<tr role="row"><th role="rowheader" scope="row">Quota</th><td role="cell" data-label="Website, no login"><span>3 transcriptions a day, one at a time, no signup</span></td><td role="cell" data-label="Website, logged in with Telegram"><span>Same free minutes and balance as in the bot</span></td><td role="cell" data-label="Telegram bot"><span>15 free minutes a month, then paid packs</span></td></tr>
-<tr role="row"><th role="rowheader" scope="row">Result</th><td role="cell" data-label="Website, no login"><span>Copy, or download TXT, SRT, DOCX</span></td><td role="cell" data-label="Website, logged in with Telegram"><span>Copy, or download TXT, SRT, DOCX; saved to the bot history</span></td><td role="cell" data-label="Telegram bot"><span>Text with timestamps and speaker labels; summary, task list, article, post, questions about the recording; DOCX, TXT, SRT</span></td></tr>
-</tbody>
-</table>
-<p>For a single short voice message the browser tool without login is the quickest: open the page, drop the .opus or .ogg file, read the text. A longer recording is not refused there, but only its first three minutes are transcribed, so for a longer message log in with Telegram or forward it to the bot.</p>
-<p>If WhatsApp voice messages are a daily thing for you, <a href="https://t.me/Voicepad_bot?start=src_en_whatsapp" rel="noopener">the Voicepad bot in Telegram</a> means less friction: share from WhatsApp to Telegram and the text comes back in the same app, with a task list for the moments when someone dictated a list of errands. Logging in on the site uses the same balance as the bot.</p>
-<p>Pricing: 15 free minutes every month. After that there are packs of 60 minutes for 199 RUB, 300 minutes for 690 RUB and 1000 minutes for 1990 RUB, paid by card via Tribute. Minutes never expire, and only the real duration of a recording is charged.</p>
-<p>On privacy, an honest comparison: WhatsApp's own transcripts are made on your phone. With Voicepad the audio is uploaded for recognition and deleted right after it; transcripts in the bot are kept for 30 days, and <code>/delete</code> removes them. If a voice message is sensitive and WhatsApp supports its language, the built-in feature is the more private choice. The details are in <a href="/privacy/#en">Voicepad's privacy policy</a>, which has an English summary.</p>
-<p>One more limit: Voicepad is a Telegram bot and a web tool, so it cannot join a WhatsApp group. In a Telegram group it can: add it to the chat and it transcribes voice messages and video notes up to 3 minutes long for everyone. For that, and for Telegram's own voice messages, see <a href="/en/voice-message-to-text/">Telegram voice message to text</a>. Longer recordings have their own guide, <a href="/en/meeting-notes/">meeting recording to notes and action items</a>, and Russian speakers can read <a href="/golosovoe-whatsapp-v-tekst/" hreflang="ru">this guide in Russian</a>.</p>
-
-<h2 id="faq">FAQ</h2>
-<h3>Can WhatsApp transcribe voice messages by itself?</h3>
-<p>Yes, on Android and iPhone. Turn on Voice Message Transcripts in Settings, Chats, pick a language, then tap and hold a voice message and choose Transcribe. When checked on October 24, 2026, the WhatsApp Help Center listed English, Portuguese, Spanish and Russian on Android and a longer list on iOS 16 and newer. For WhatsApp Web, Windows and Mac it said transcripts are only available on certain devices.</p>
-<h3>Why is there no Transcribe option on my phone?</h3>
-<p>The feature is off by default, so check Settings, Chats first. On iPhone it also needs iOS 16 or newer and Siri turned on. WhatsApp rolled the feature out gradually from November 2024, so some accounts got it later than others. On WhatsApp Web and the desktop apps the Help Center says it may not be available yet.</p>
-<h3>What file format is a WhatsApp voice message?</h3>
-<p>Opus audio in an OGG container. Shared or saved from a phone it usually has the .opus extension; downloaded from WhatsApp Web or the desktop app it is usually an .ogg file. Both are ordinary audio files, and you can send or upload them to Voicepad as they are, without converting to MP3.</p>
-<h3>Can I add the Voicepad bot to a WhatsApp group?</h3>
-<p>No. Voicepad is a Telegram bot with a web tool on its website, and it does not work inside WhatsApp. Share or download the voice message and send it to @Voicepad_bot in Telegram, or upload it at voicepad.qupport.io. In a Telegram group, the bot transcribes voice messages and video notes up to 3 minutes long for everyone.</p>
-<h3>Is it free?</h3>
-<p>WhatsApp's built-in transcripts are free. Voicepad gives 15 free minutes every month, and the website without login allows 3 transcriptions a day; a recording longer than 3 minutes is transcribed only for its first 3 minutes there. More minutes come in packs, from 199 RUB for 60 minutes, and they never expire.</p>
-
-<h2 id="related">Other guides</h2>
-<ul>
-<li><a href="/en/voice-message-to-text/">Telegram voice message to text</a>: the bot step by step, in private chats and groups.</li>
-<li><a href="/en/meeting-notes/">Meeting recording to notes and action items</a>: speakers, a summary of the call and a task list.</li>
-<li>In Russian: <a href="/golosovoe-whatsapp-v-tekst/" hreflang="ru" lang="ru">голосовое из WhatsApp в текст</a>, the same task, and the general guide <a href="/transkribaciya-audio-v-tekst/" hreflang="ru" lang="ru">транскрибация аудио в текст</a>.</li>
-</ul>
-
-<h2 id="sources">Sources</h2>
-<ol class="note">
-<li><a href="https://blog.whatsapp.com/introducing-voice-message-transcripts">WhatsApp blog: Introducing Voice Message Transcripts, November 21, 2024</a></li>
-<li><a href="https://faq.whatsapp.com/241617298315321/?cms_platform=android&amp;locale=en_US">WhatsApp Help Center: voice message transcripts, Android</a></li>
-<li><a href="https://faq.whatsapp.com/241617298315321/?cms_platform=iphone&amp;locale=en_US">WhatsApp Help Center: voice message transcripts, iPhone</a></li>
-<li><a href="https://faq.whatsapp.com/241617298315321/?cms_platform=web&amp;locale=en_US">WhatsApp Help Center: voice message transcripts, Web</a></li>
-<li><a href="https://faq.whatsapp.com/1180414079177245/?cms_platform=android&amp;locale=en_US">WhatsApp Help Center: export chat history, Android</a></li>
-<li><a href="https://faq.whatsapp.com/1180414079177245/?cms_platform=iphone&amp;locale=en_US">WhatsApp Help Center: export chat history, iPhone</a></li>
-<li><a href="https://wabetainfo.com/whatsapp-is-rolling-out-new-languages-for-voice-transcriptions/">WABetaInfo: new languages for voice transcriptions, September 17, 2026</a></li>
-<li><a href="https://www.guidingtech.com/how-to-save-whatsapp-audio/">GuidingTech: how to save WhatsApp audio</a></li>
-<li><a href="https://gotranscript.com/blog/how-to-transcribe-whatsapp-voice-messages">GoTranscript: how to transcribe WhatsApp voice messages</a></li>
-<li><a href="https://en.androidayuda.com/applications/Tutorials/they-save-whatsapp-audios/">AndroidAyuda: where WhatsApp saves audio</a></li>
-<li><a href="https://www.ionos.com/digitalguide/online-marketing/social-media/how-to-save-audio-from-whatsapp/">IONOS: how to save audio from WhatsApp</a></li>
-<li><a href="https://canaltech.com.br/software/como-baixar-audios-do-whatsapp-no-computador/">Canaltech: download WhatsApp audio on a computer (Portuguese)</a></li>
-<li><a href="https://developers.facebook.com/documentation/business-messaging/whatsapp/messages/audio-messages">Meta for Developers: WhatsApp audio messages</a></li>
-</ol>
-      </article>
-    </div>
-  </div>
-
-  <section class="outro" aria-labelledby="outro-title">
-    <div class="shell">
-      <div class="col">
-        <h2 id="outro-title">Transcribe the voice message you saved</h2>
-        <p>Drop the .opus or .ogg file into the web tool, or share it from WhatsApp to the bot in Telegram. 15 free minutes every month.</p>
-        <p class="cta-pair">
-          <a class="btn" href="/en/#tool">Transcribe on the site</a>
-          <a class="btn btn-line" href="https://t.me/Voicepad_bot?start=src_en_whatsapp" rel="noopener">Open @Voicepad_bot</a>
-        </p>
+  <section class="block" id="related" aria-labelledby="related-title">
+    <div class="column">
+      <h2 id="related-title">More guides</h2>
+      <div class="links">
+        <ul>
+          <li><a href="/en/voice-message-to-text/">Voice message to text</a></li>
+          <li><a href="/en/transcribe-telegram-voice-without-premium/">Telegram voice messages without Premium</a></li>
+          <li><a href="/en/meeting-notes/">Meeting recording to notes and action items</a></li>
+          <li><a href="/en/podcast-transcript/">Podcast episode transcript</a></li>
+          <li><a href="/en/youtube-to-text/">YouTube video to text with chapters</a></li>
+        </ul>
       </div>
     </div>
   </section>
+
+  <section class="block" id="bot" aria-labelledby="bot-title">
+    <div class="column">
+      <h2 id="bot-title">The site and the Telegram bot</h2>
+      <p class="block__lead">One service and one balance of minutes. Logging in on the site with Telegram links the two.</p>
+      <div class="duo">
+        <div>
+          <h3>On the site</h3>
+          <ul class="dots">
+            <li>Large files and video links</li>
+            <li>Copy or download the text</li>
+            <li>3 recordings a day without logging in</li>
+          </ul>
+        </div>
+        <div>
+          <h3>In @Voicepad_bot</h3>
+          <ul class="dots">
+            <li>Voice messages and video notes, forwarded from any chat</li>
+            <li>Summaries, tasks and answers to questions about a recording</li>
+            <li>Works in group chats</li>
+          </ul>
+        </div>
+      </div>
+      <p class="block__actions">
+        <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_whatsapp" rel="noopener">Open the bot</a>
+        <a href="/en/voice-message-to-text/#groups">How the bot works in a group</a>
+      </p>
+    </div>
+  </section>
+
+  <p class="column updated">Updated <time datetime="2026-10-24">24 October 2026</time></p>
 </main>
 
-<footer class="colophon">
-  <div class="shell">
-    <div class="col">
-      <p class="colophon__brand"><svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg><strong>Voicepad</strong><span>Voice messages, audio and video to text, online and in Telegram.</span></p>
-      <ul class="colophon__links">
-        <li><a href="https://t.me/Voicepad_bot?start=src_en_whatsapp" rel="noopener">t.me/Voicepad_bot</a></li>
-        <li><a href="https://t.me/Voicepad_bot?startgroup=true" rel="noopener">Add to a group</a></li>
-        <li><a href="/privacy/#en">Privacy policy</a></li>
-        <li><a href="/golosovoe-whatsapp-v-tekst/" hreflang="ru" lang="ru">Русская версия</a></li>
-      </ul>
-      <p class="colophon__note">Speech recognition by ElevenLabs Scribe v2. Set in Literata and IBM Plex Mono.</p>
-      <p class="colophon__en"><strong>Guides in English:</strong> <a href="/en/voice-message-to-text/">voice message to text</a>, <a href="/en/youtube-to-text/">YouTube to text</a>, <a href="/en/meeting-notes/">meeting notes</a>, <a href="/en/podcast-transcript/">podcast transcript</a>, <a href="/en/lecture-notes-from-video/">lecture notes</a>, <a href="/en/transcribe-telegram-voice-without-premium/">Telegram voice messages without Premium</a>, <a href="/en/whatsapp-voice-message-to-text/">WhatsApp voice message to text</a>.</p>
-    </div>
+<footer class="foot">
+  <div class="column">
+    <p class="foot__brand"><svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg><strong>Voicepad</strong><span>Voice messages, audio and video to text.</span></p>
+    <ul class="foot__links">
+      <li><a href="https://t.me/Voicepad_bot?start=src_en_whatsapp" rel="noopener">@Voicepad_bot in Telegram</a></li>
+      <li><a href="/privacy/#en">Privacy policy</a></li>
+      <li><a href="/golosovoe-whatsapp-v-tekst/" hreflang="ru" lang="ru">Русская версия</a></li>
+    </ul>
   </div>
 </footer>
 
+<script src="/assets/tool.js" defer></script>
 <script>
 (function () {
   var params = new URLSearchParams(location.search);
@@ -252,6 +357,24 @@
   if (!raw || raw.length > 24) return;
   document.querySelectorAll('a[href*="t.me/Voicepad_bot?start=src_"]').forEach(function (link) {
     link.href = link.href.replace(/start=src_[a-z0-9_]+/, "start=src_" + raw);
+  });
+})();
+</script>
+<script>
+(function () {
+  var menu = document.querySelector(".menu");
+  if (!menu) return;
+  function close() { menu.open = false; }
+  menu.addEventListener("click", function (event) {
+    if (event.target.closest && event.target.closest("a")) close();
+  });
+  document.addEventListener("click", function (event) {
+    if (menu.open && !menu.contains(event.target)) close();
+  });
+  document.addEventListener("keydown", function (event) {
+    if (event.key !== "Escape" || !menu.open) return;
+    close();
+    menu.querySelector("summary").focus();
   });
 })();
 </script>

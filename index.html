@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Транскрибация голосовых, аудио и видео в текст: сайт и Telegram</title>
-<meta name="description" content="Расшифровка голосовых, аудио и видео в текст с таймкодами и спикерами, TXT, SRT, DOCX. Без входа 3 расшифровки в день, в боте 15 минут в месяц бесплатно.">
+<title>Голосовое, аудио и видео в текст онлайн бесплатно: Voicepad</title>
+<meta name="description" content="Голосовые, аудио и видео в текст по репликам, со временем. Без входа 3 записи в день, первые 3 минуты каждой. После входа файлы до 200 МБ и ссылки на видео.">
 <link rel="canonical" href="https://voicepad.qupport.io/">
 <link rel="alternate" hreflang="ru" href="https://voicepad.qupport.io/">
 <link rel="alternate" hreflang="en" href="https://voicepad.qupport.io/en/">
@@ -19,17 +19,17 @@
 <meta property="og:site_name" content="Voicepad">
 <meta property="og:locale" content="ru_RU">
 <meta property="og:locale:alternate" content="en_US">
-<meta property="og:title" content="Транскрибация голосовых, аудио и видео в текст: в браузере и в Telegram">
-<meta property="og:description" content="Запишите голос или загрузите файл: текст с таймкодами и спикерами. На сайте 3 расшифровки в день без входа, ссылки на видео и конспект в боте @Voicepad_bot.">
+<meta property="og:title" content="Голосовое, аудио и видео в текст онлайн">
+<meta property="og:description" content="Текст по репликам, со временем: скопируйте или скачайте TXT, DOCX, SRT. Без регистрации 3 записи в день, первые 3 минуты каждой. Конспект и задачи в боте @Voicepad_bot.">
 <meta property="og:url" content="https://voicepad.qupport.io/">
 <meta property="og:image" content="https://voicepad.qupport.io/assets/cover.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Voicepad: голосовые, аудио и видео в текст с таймкодами и спикерами">
+<meta property="og:image:alt" content="Voicepad: голосовые, аудио и видео в текст по репликам, со временем">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://voicepad.qupport.io/assets/cover.jpg">
-<meta name="twitter:image:alt" content="Voicepad: голосовые, аудио и видео в текст с таймкодами и спикерами">
+<meta name="twitter:image:alt" content="Voicepad: голосовые, аудио и видео в текст по репликам, со временем">
 <link rel="preload" href="/assets/fonts/literata.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preconnect" href="https://bot.voicepad.qupport.io" crossorigin>
 <link rel="stylesheet" href="/assets/site.css">
@@ -50,7 +50,7 @@
       "@id": "https://voicepad.qupport.io/#website",
       "url": "https://voicepad.qupport.io/",
       "name": "Voicepad",
-      "inLanguage": "ru",
+      "inLanguage": ["ru", "en"],
       "publisher": {"@id": "https://voicepad.qupport.io/#organization"}
     },
     {
@@ -63,11 +63,12 @@
       "applicationCategory": "UtilitiesApplication",
       "operatingSystem": "Telegram, Web",
       "image": "https://voicepad.qupport.io/assets/cover.jpg",
-      "description": "Транскрибация аудио и видео в текст онлайн и Telegram-бот: голосовые, кружочки, файлы и ссылки на YouTube, VK Видео, RuTube и TikTok в текст с таймкодами и спикерами, конспект, задачи и экспорт в DOCX, TXT и SRT.",
+      "description": "Голосовые, аудио и видео в текст онлайн и в Telegram: текст по репликам, со временем, файлы TXT, DOCX и SRT, конспект и задачи по записи в боте @Voicepad_bot.",
       "inLanguage": ["ru", "en"],
       "publisher": {"@id": "https://voicepad.qupport.io/#organization"},
       "offers": [
-        {"@type": "Offer", "price": "0", "priceCurrency": "RUB", "description": "15 минут каждый месяц бесплатно"},
+        {"@type": "Offer", "price": "0", "priceCurrency": "RUB", "description": "3 записи в день без входа, у длинной записи первые 3 минуты"},
+        {"@type": "Offer", "price": "0", "priceCurrency": "RUB", "description": "15 минут в месяц бесплатно после входа через Telegram"},
         {"@type": "Offer", "price": "199", "priceCurrency": "RUB", "description": "Пакет 60 минут"},
         {"@type": "Offer", "price": "690", "priceCurrency": "RUB", "description": "Пакет 300 минут"},
         {"@type": "Offer", "price": "1990", "priceCurrency": "RUB", "description": "Пакет 1000 минут"}
@@ -80,16 +81,11 @@
       "inLanguage": "ru",
       "isPartOf": {"@id": "https://voicepad.qupport.io/#website"},
       "mainEntity": [
-        {"@type": "Question", "name": "Какие файлы и какой длины можно расшифровать?", "acceptedAnswer": {"@type": "Answer", "text": "Голосовые, кружочки, аудио и видео в MP3, M4A, WAV, OGG, OPUS, MP4, MOV, WEBM и других форматах, записи до 3 часов. В боте файл может весить до 20 МБ, на сайте без входа до 50 МБ, после входа до 200 МБ. Запись голоса в браузере после входа длится до 30 минут."}},
-        {"@type": "Question", "name": "Что делать, если файл больше 20 МБ?", "acceptedAnswer": {"@type": "Answer", "text": "Это ограничение самого Telegram: файл больше 20 МБ бот получить не может. Загрузите его на этой странице: без входа до 50 МБ, после входа через Telegram до 200 МБ. Видео с YouTube, VK Видео, RuTube или TikTok можно прислать боту ссылкой."}},
-        {"@type": "Question", "name": "Можно ли расшифровать запись без регистрации?", "acceptedAnswer": {"@type": "Answer", "text": "Да, на этой странице: 3 расшифровки в день, файлы до 50 МБ, по одной за раз. Файл без звука считается попыткой, а сбой на нашей стороне попытку возвращает. У записи длиннее 3 минут расшифруются первые 3 минуты, полную версию можно получить после входа через Telegram или в боте. Для входа нужна одна кнопка, а в боте достаточно нажать «Начать»."}},
-        {"@type": "Question", "name": "Как расшифровать видео по ссылке?", "acceptedAnswer": {"@type": "Answer", "text": "Пришлите ссылку боту: он принимает YouTube, VK Видео, RuTube и TikTok. На сайте ссылки работают после входа через Telegram, и кроме этих четырёх подходят Vimeo, Дзен, OK и Twitch, если у ролика известна длительность. Конспект видео с YouTube заканчивается главами с таймкодами."}},
-        {"@type": "Question", "name": "Нужно ли выбирать язык записи?", "acceptedAnswer": {"@type": "Answer", "text": "Нет, язык определяется автоматически. Речь распознаёт ElevenLabs Scribe v2."}},
-        {"@type": "Question", "name": "Чем Voicepad отличается от расшифровки в самом Telegram?", "acceptedAnswer": {"@type": "Answer", "text": "Voicepad расшифровывает не только голосовые и кружочки, но и аудио и видео файлы и ссылки на ролики. Он ставит таймкоды, размечает спикеров, делает конспект и список задач, отдаёт DOCX, TXT и SRT, работает на сайте и в групповых чатах."}},
-        {"@type": "Question", "name": "Как купить минуты?", "acceptedAnswer": {"@type": "Answer", "text": "В боте командой /buy. Пакеты: 60 минут за 199 ₽, 300 минут за 690 ₽, 1000 минут за 1990 ₽, оплата банковской картой через Tribute. Минуты не сгорают, а 15 минут каждый месяц даются бесплатно."}},
-        {"@type": "Question", "name": "Что происходит с моими записями?", "acceptedAnswer": {"@type": "Answer", "text": "Аудио и видео удаляются сразу после распознавания. Расшифровки в боте хранятся 30 дней, команда /delete удаляет их сразу. Результат на сайте без входа живёт только в памяти сервера один час."}},
-        {"@type": "Question", "name": "Как добавить бота в групповой чат?", "acceptedAnswer": {"@type": "Answer", "text": "Добавьте @Voicepad_bot в чат: он сам расшифрует голосовые и кружочки до 3 минут для всех участников. Каждому чату даётся 30 бесплатных минут в месяц, дальше минуты списываются с баланса автора записи. Админы выключают и включают автоматическую расшифровку командами /mute и /unmute."}},
-        {"@type": "Question", "name": "Что даёт премиум для чата?", "acceptedAnswer": {"@type": "Answer", "text": "Админ отправляет в чате /premium и оформляет подписку за 500 Telegram Stars в месяц. Ответы бота становятся чистым текстом, голосовые расшифровываются любой длины, а на чат приходится 300 минут в месяц."}}
+        {"@type": "Question", "name": "Зачем входить через Telegram?", "acceptedAnswer": {"@type": "Answer", "text": "После входа можно загружать файлы до 200 МБ и ссылки на видео с YouTube, VK Видео, RuTube, TikTok, Vimeo, Дзена, OK и Twitch, а записи до 3 часов расшифровываются целиком. Каждый месяц 15 минут бесплатно, дальше минуты из пакета. Минуты общие с ботом @Voicepad_bot, а расшифровки сохраняются в его истории. Пароля нет, вход подтверждается в Telegram."}},
+        {"@type": "Question", "name": "Как достать голосовое из WhatsApp?", "acceptedAnswer": {"@type": "Answer", "text": "На iPhone нажмите и удерживайте голосовое, выберите «Переслать», затем значок «Поделиться» и «Сохранить в Файлы». На Android нажмите и удерживайте голосовое, затем «Поделиться» и сохраните его в «Файлы». После этого нажмите «Выберите запись» в форме вверху страницы. На компьютере выберите в меню сообщения «Скачать» и перетащите файл в форму. Формат .opus или .m4a менять не нужно. Голосовое можно и переслать боту @Voicepad_bot в Telegram: боту можно отправить файл до 20 МБ, файл больше загрузите на сайте."}},
+        {"@type": "Question", "name": "Нужно ли выбирать язык?", "acceptedAnswer": {"@type": "Answer", "text": "Язык записи определяется автоматически, выбирать его не нужно. Он указан в заголовке результата рядом с длиной записи."}},
+        {"@type": "Question", "name": "Что с записями после расшифровки?", "acceptedAnswer": {"@type": "Answer", "text": "Аудио и видео удаляются сразу после распознавания. Результат без входа хранится в памяти сервера один час, расшифровки в боте 30 дней. Подробнее в политике конфиденциальности."}},
+        {"@type": "Question", "name": "Как оплатить?", "acceptedAnswer": {"@type": "Answer", "text": "Минуты покупаются в боте командой /buy, оплата картой через Tribute. Пакеты: 60 минут за 199 ₽, 300 минут за 690 ₽, 1000 минут за 1990 ₽. Минуты не сгорают. Списывается только реальная длина записи, а если распознать не удалось, минуты не списываются."}}
       ]
     }
   ]
@@ -97,508 +93,219 @@
 </script>
 </head>
 <body>
-<a class="skip" href="#tool">Перейти к расшифровке</a>
+<a class="skip" href="#vp-tool">Перейти к расшифровке</a>
 
-<header class="masthead">
-  <div class="shell">
-    <div class="col masthead__row">
-      <a class="brand" href="/" aria-label="Voicepad, главная">
-        <svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg>
-        <span>Voicepad</span>
-      </a>
-      <nav class="chapters" aria-label="Разделы страницы">
-        <ol>
-          <li><a href="#features">Что расшифровать</a></li>
-          <li><a href="#how">Сайт или бот</a></li>
-          <li><a href="#groups">Группы</a></li>
-          <li><a href="#pricing">Цены</a></li>
-          <li><a href="#faq">Вопросы</a></li>
-          <li><a href="#guides">Инструкции</a></li>
-        </ol>
+<header class="topbar">
+  <div class="column topbar__row">
+    <a class="brand" href="/" aria-label="Voicepad, главная">
+      <svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg>
+      <span>Voicepad</span>
+    </a>
+    <nav class="topbar__nav" aria-label="Основное меню">
+      <a href="#pricing">Цены</a>
+      <a href="#guides">Инструкции</a>
+      <a href="https://t.me/Voicepad_bot?start=src_site" rel="noopener">Бот в Telegram</a>
+      <a href="/en/" hreflang="en" lang="en">EN</a>
+    </nav>
+    <details class="menu">
+      <summary>Меню</summary>
+      <nav class="menu__list" aria-label="Основное меню">
+        <a href="#pricing">Цены</a>
+        <a href="#guides">Инструкции</a>
+        <a href="https://t.me/Voicepad_bot?start=src_site" rel="noopener">Бот в Telegram</a>
+        <a href="/en/" hreflang="en" lang="en">English</a>
       </nav>
-      <div class="masthead__aside">
-        <a class="lang" href="/en/" hreflang="en" lang="en">EN</a>
-        <a class="btn" href="https://t.me/Voicepad_bot?start=src_site" rel="noopener">Открыть бота</a>
-      </div>
-    </div>
+    </details>
   </div>
 </header>
 
 <main id="main">
-  <section class="hero" aria-labelledby="page-title">
-    <div class="shell">
-      <div class="col">
-        <p class="slug"><span>Без входа 3&nbsp;расшифровки в день</span><span>С&nbsp;Telegram 15&nbsp;минут в месяц бесплатно</span></p>
-        <h1 id="page-title">Транскрибация голосовых, аудио и&nbsp;видео в&nbsp;текст: <span class="h1__tail">в&nbsp;браузере и в&nbsp;Telegram</span></h1>
-        <p class="lead">Запишите голос, загрузите файл или вставьте ссылку на видео: получите текст с таймкодами и разметкой по спикерам. Голосовые и кружочки из Telegram пересылайте боту <a href="https://t.me/Voicepad_bot?start=src_site" rel="noopener">@Voicepad_bot</a>.</p>
-
-        <div class="hero__grid">
-          <div class="desk" id="tool">
-            <div class="desk__head">
-              <h2 id="tool-title">Расшифровать запись онлайн</h2>
-              <p>Текст появится ниже: скопируйте или скачайте TXT, SRT, DOCX.</p>
-            </div>
-            <div id="vp-tool" data-api="https://bot.voicepad.qupport.io" data-lang="ru" data-source="site"><noscript><p class="vp-fallback">Форма расшифровки работает с включённым JavaScript. Без него отправьте запись боту <a href="https://t.me/Voicepad_bot?start=src_site">@Voicepad_bot</a> в Telegram: голосовое, кружочек, файл или ссылку на видео.</p></noscript></div>
-          </div>
-
-          <div class="hero__aside">
-          <figure class="sample" aria-labelledby="sample-caption">
-            <figcaption class="sample__meta" id="sample-caption">
-              <span>Образец расшифровки</span>
-              <span>0&nbsp;мин 31&nbsp;сек · RU · 2&nbsp;спикера</span>
-            </figcaption>
-            <div class="player" aria-hidden="true">
-              <span class="tc player__now">00:15</span>
-              <svg viewBox="0 0 480 40" width="480" height="40">
-                <defs>
-                  <path id="wf-bars" d="M3 15.5v9M7 12.5v15M11 10.5v19M15 16v8M27 14.5v11M31 11.5v17M35 13.5v13M47 15.5v9M51 15v10M59 14v12M63 9.5v21M67 10v20M71 14.5v11M83 17.5v5M87 14.5v11M91 13v14M95 13v14M99 15.5v9M103 18v4M111 15v10M115 9v22M119 8.5v23M123 9v22M127 12v16M131 15v10M139 17v6M143 12.5v15M147 9.5v21M151 10v20M155 8.5v23M159 8v24M163 13v14M167 16v8M175 15.5v9M179 9v22M183 9.5v21M187 9v22M191 16v8M199 14v12M203 10.5v19M207 15v10M215 15.5v9M219 13v14M223 11.5v17M227 16v8M239 15.5v9M243 10.5v19M247 9v22M251 14v12M263 17v6M267 13.5v13M271 14v12M275 12v16M279 12v16M283 15v10M287 17v6M295 10.5v19M299 11.5v17M311 15v10M315 10v20M319 8v24M323 14v12M331 17.5v5M335 14v12M339 12.5v15M343 13v14M347 13v14M351 15.5v9M355 18v4M363 13.5v13M367 14v12M379 15v10M383 13.5v13M387 15.5v9M399 13v14M403 8v24M407 13.5v13M419 17.5v5M423 16v8M427 13.5v13M431 14v12M435 13.5v13M439 15.5v9M443 18v4M451 17v6M455 15v10M459 14.5v11M463 12v16M467 15v10M471 17v6"/>
-                  <clipPath id="wf-played"><rect class="player__clip" x="0" y="0" width="233" height="40"/></clipPath>
-                </defs>
-                <use class="w-rest" href="#wf-bars"/>
-                <use class="w-played" href="#wf-bars" clip-path="url(#wf-played)"/>
-                <path class="w-head" d="M0 1v38" transform="translate(233 0)"/>
-              </svg>
-              <span class="tc">00:31</span>
-            </div>
-            <div class="tr-head" aria-hidden="true"><span>стр.</span><span>время</span><span>реплика</span></div>
-            <ol class="tr">
-              <li><time class="tm" datetime="PT2S">00:02</time> <b class="spk">Спикер 1<span class="sr">:</span></b> Давайте коротко по запуску. Макс, что с лендингом?</li>
-              <li><time class="tm" datetime="PT7S">00:07</time> <b class="spk">Спикер 2<span class="sr">:</span></b> Тексты готовы, вёрстку закончу к четвергу. Анна, а оплату кто проверит?</li>
-              <li class="now"><time class="tm" datetime="PT15S">00:15</time> <b class="spk">Спикер 1<span class="sr">:</span></b> Я, до пятницы. Ещё нужен человек на поддержку в первый день.</li>
-              <li><time class="tm" datetime="PT23S">00:23</time> <b class="spk">Спикер 2<span class="sr">:</span></b> Ира говорила, что свободна.</li>
-              <li><time class="tm" datetime="PT26S">00:26</time> <b class="spk">Спикер 1<span class="sr">:</span></b> Тогда напишу ей сегодня.</li>
-            </ol>
-            <div class="keys">
-              <span class="keys__label">Под расшифровкой в боте</span>
-              <ul class="keys__list" aria-label="Кнопки под расшифровкой">
-                <li>Конспект</li><li>Задачи</li><li>Статья</li><li>Пост</li><li>Вопрос</li><li>DOCX</li><li>TXT</li><li>SRT</li>
-              </ul>
-              <a class="keys__more" href="#results">Что они делают с этим созвоном</a>
-            </div>
-          </figure>
-          <p class="cta-pair hero__bot">
-            <a class="btn" href="https://t.me/Voicepad_bot?start=src_site" rel="noopener"><span>Открыть бота<span class="wide-only"> в&nbsp;Telegram</span></span></a>
-            <a class="btn btn-line" href="https://t.me/Voicepad_bot?startgroup=true" rel="noopener">Добавить в чат</a>
-          </p>
-          </div>
-        </div>
-      </div>
+  <section class="opening" aria-labelledby="page-title">
+    <div class="column">
+      <h1 id="page-title">Голосовое, аудио или видео в&nbsp;текст</h1>
+      <p class="opening__line">Текст по репликам, со временем. Бесплатно и без регистрации.</p>
+      <h2 class="sr">Расшифровать запись</h2>
+      <div id="vp-tool" data-api="https://bot.voicepad.qupport.io" data-lang="ru" data-source="site"><noscript><p class="vp-fallback">Форма расшифровки работает с включённым JavaScript. Без него отправьте запись боту <a href="https://t.me/Voicepad_bot?start=src_site">@Voicepad_bot</a> в Telegram.</p></noscript></div>
     </div>
   </section>
 
-  <section class="chapter" id="features" aria-labelledby="features-title">
-    <div class="shell">
-      <div class="col">
-        <h2 id="features-title">Что можно расшифровать и&nbsp;что получится?</h2>
-        <p class="intro">Сайт и бот работают на одном движке распознавания. Сайт отдаёт текст и файлы, бот добавляет к тексту конспект, задачи и ответы на вопросы по записи.</p>
-
-        <div class="flow">
-          <div class="flow__side flow__in">
-            <h3 class="flow__label">На входе</h3>
-            <ol class="ports">
-              <li><span class="port__id" aria-hidden="true">ВХ 1</span> <span class="port__name">Голос с микрофона <small>запись прямо на этой странице</small></span> <span class="where"><span class="sr">Где: </span><b>сайт</b></span></li>
-              <li><span class="port__id" aria-hidden="true">ВХ 2</span> <span class="port__name">Голосовые и кружочки <small>пересланные из любого чата</small></span> <span class="where"><span class="sr">Где: </span><b>бот</b></span></li>
-              <li><span class="port__id" aria-hidden="true">ВХ 3</span> <span class="port__name">Аудиофайлы <small>MP3, M4A, WAV, OGG, OPUS</small></span> <span class="where"><span class="sr">Где: </span><b>сайт</b> <b>бот</b></span></li>
-              <li><span class="port__id" aria-hidden="true">ВХ 4</span> <span class="port__name">Видеофайлы <small>MP4, MOV, WEBM и другие</small></span> <span class="where"><span class="sr">Где: </span><b>сайт</b> <b>бот</b></span></li>
-              <li><span class="port__id" aria-hidden="true">ВХ 5</span> <span class="port__name">Ссылки на видео <small>YouTube, VK Видео, RuTube, TikTok</small></span> <span class="where"><span class="sr">Где: </span><b>сайт</b> <b>бот</b></span></li>
-            </ol>
-          </div>
-          <div class="flow__core">
-            <h3 class="flow__label">Распознавание</h3>
-            <p class="flow__engine">ElevenLabs Scribe&nbsp;v2</p>
-            <dl class="flow__specs">
-              <div><dt>язык</dt><dd>определяется сам</dd></div>
-              <div><dt>спикеры</dt><dd>размечаются</dd></div>
-              <div><dt>длина</dt><dd>до 3&nbsp;часов<sup><a class="ref" href="#faq-limits" aria-label="Примечание 1: файлы и длина записи">1</a></sup></dd></div>
-            </dl>
-          </div>
-          <div class="flow__side flow__out">
-            <h3 class="flow__label">На выходе</h3>
-            <ol class="ports">
-              <li><span class="port__id" aria-hidden="true">ВЫХ 1</span> <span class="port__name">Текст с таймкодами <small>и разметкой по спикерам</small></span> <span class="where"><span class="sr">Где: </span><b>сайт</b> <b>бот</b></span></li>
-              <li><span class="port__id" aria-hidden="true">ВЫХ 2</span> <span class="port__name">Файлы TXT, SRT, DOCX <small>для правок, субтитров и протокола</small></span> <span class="where"><span class="sr">Где: </span><b>сайт</b> <b>бот</b></span></li>
-              <li><span class="port__id" aria-hidden="true">ВЫХ 3</span> <span class="port__name">Конспект <small>у роликов с YouTube с главами</small></span> <span class="where"><span class="sr">Где: </span><b>бот</b></span></li>
-              <li><span class="port__id" aria-hidden="true">ВЫХ 4</span> <span class="port__name">Задачи <small>кто, что и к какому сроку</small></span> <span class="where"><span class="sr">Где: </span><b>бот</b></span></li>
-              <li><span class="port__id" aria-hidden="true">ВЫХ 5</span> <span class="port__name">Статья, пост, ответы <small>на вопросы по записи</small></span> <span class="where"><span class="sr">Где: </span><b>бот</b></span></li>
-            </ol>
-          </div>
-        </div>
-        <p class="callout">Ссылки на сайте работают после входа через Telegram, и кроме этих четырёх площадок подходят Vimeo, Дзен, OK и&nbsp;Twitch. Боту внутри Telegram можно отправить файл до&nbsp;20&nbsp;МБ<sup><a class="ref" href="#faq-20mb" aria-label="Примечание 2: файлы больше 20 МБ">2</a></sup>, сайт после входа берёт до&nbsp;200&nbsp;МБ.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="chapter" id="results" aria-labelledby="results-title">
-    <div class="shell">
-      <div class="col">
-        <h2 id="results-title">Что бот делает с расшифровкой?</h2>
-        <p class="intro">Под каждой расшифровкой в боте есть кнопки. Вот что они сделали из созвона, который вы видели наверху.</p>
-
-        <div class="spread">
-          <div class="page">
-            <div class="out">
-              <h3 class="key">Конспект</h3>
-              <ul class="ticks">
-                <li>Тексты для лендинга готовы, вёрстку Макс закончит к четвергу.</li>
-                <li>Оплату проверяет Анна, срок пятница.</li>
-                <li>На поддержку в день запуска зовут Иру.</li>
-              </ul>
-            </div>
-            <div class="out">
-              <h3 class="key">Задачи</h3>
-              <table class="book">
-                <caption class="sr">Задачи из созвона: кто, что и к какому сроку</caption>
-                <thead><tr><th scope="col">Кто</th><th scope="col">Что сделать</th><th scope="col">Срок</th></tr></thead>
-                <tbody>
-                  <tr><td>Макс</td><td>Сверстать лендинг</td><td>четверг</td></tr>
-                  <tr><td>Анна</td><td>Проверить оплату</td><td>пятница</td></tr>
-                  <tr><td>Анна</td><td>Написать Ире про поддержку</td><td>сегодня</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="page">
-            <div class="out">
-              <h3 class="key">Вопрос по записи</h3>
-              <div class="qa">
-                <p><b>Вопрос.</b> Кто дежурит в день запуска?</p>
-                <p><b>Ответ.</b> Ира: Макс говорит, что она свободна, Анна напишет ей сегодня.</p>
-              </div>
-            </div>
-            <div class="out">
-              <h3 class="key">Статья и пост</h3>
-              <p>Тот же разговор связным текстом: статья для блога или короткий пост для канала.</p>
-            </div>
-            <div class="out">
-              <h3 class="key">Главы для YouTube</h3>
-              <p>Конспект ролика с YouTube заканчивается главами с таймкодами:</p>
-              <ul class="toc">
-                <li><span class="tc">00:00</span>О чём лекция</li>
-                <li><span class="tc">06:40</span>Первый пример</li>
-                <li><span class="tc">21:15</span>Вопросы из зала</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="chapter" id="how" aria-labelledby="how-title">
-    <div class="shell">
-      <div class="col">
-        <h2 id="how-title">Расшифровка на сайте или в&nbsp;Telegram-боте?</h2>
-        <p class="intro">Короткую запись проще расшифровать здесь, без регистрации. Войдите через Telegram, и минуты станут общими: те же 15 бесплатных в месяц и тот же баланс, что в боте.</p>
-
-        <table class="book venues" role="table">
-          <caption class="sr">Чем отличаются сайт без входа, сайт со входом и бот</caption>
-          <thead role="rowgroup">
-            <tr role="row"><th role="columnheader" scope="col">Где</th><th role="columnheader" scope="col">Что принимает</th><th role="columnheader" scope="col">Ограничения</th><th role="columnheader" scope="col">Минуты</th><th role="columnheader" scope="col">Результат</th><th role="columnheader" scope="col">Хранение</th></tr>
-          </thead>
-          <tbody role="rowgroup">
-            <tr role="row">
-              <th role="rowheader" scope="row">Сайт без входа</th>
-              <td role="cell" data-label="Принимает"><span>Запись голоса, файл</span></td>
-              <td role="cell" data-label="Ограничения"><span>3&nbsp;расшифровки в день, файлы до&nbsp;50&nbsp;МБ, по одной. У&nbsp;длинной записи первые 3&nbsp;минуты</span></td>
-              <td role="cell" data-label="Минуты"><span>Бесплатно, без регистрации</span></td>
-              <td role="cell" data-label="Результат"><span>Текст, копирование, TXT, SRT, DOCX</span></td>
-              <td role="cell" data-label="Хранение"><span>В&nbsp;памяти сервера один час</span></td>
-            </tr>
-            <tr role="row">
-              <th role="rowheader" scope="row">Сайт, вход через Telegram</th>
-              <td role="cell" data-label="Принимает"><span>Запись, файл, ссылка на видео</span></td>
-              <td role="cell" data-label="Ограничения"><span>Файлы до&nbsp;200&nbsp;МБ, записи до&nbsp;3&nbsp;часов, запись в браузере до&nbsp;30&nbsp;минут</span></td>
-              <td role="cell" data-label="Минуты"><span>Общие с ботом: 15&nbsp;бесплатных в месяц и пакеты</span></td>
-              <td role="cell" data-label="Результат"><span>То же, плюс запись в истории бота</span></td>
-              <td role="cell" data-label="Хранение"><span>В&nbsp;истории бота 30&nbsp;дней</span></td>
-            </tr>
-            <tr role="row">
-              <th role="rowheader" scope="row">Бот @Voicepad_bot</th>
-              <td role="cell" data-label="Принимает"><span>Голосовые, кружочки, файлы, ссылки на видео</span></td>
-              <td role="cell" data-label="Ограничения"><span>Файлы до&nbsp;20&nbsp;МБ<sup><a class="ref" href="#faq-20mb" aria-label="Примечание 2: файлы больше 20 МБ">2</a></sup>, записи до&nbsp;3&nbsp;часов</span></td>
-              <td role="cell" data-label="Минуты"><span>15&nbsp;бесплатных в месяц и пакеты</span></td>
-              <td role="cell" data-label="Результат"><span>Текст, конспект, задачи, статья, пост, вопросы, DOCX, TXT, SRT</span></td>
-              <td role="cell" data-label="Хранение"><span>30&nbsp;дней, <code>/delete</code> удаляет сразу</span></td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div class="split">
-          <h3 class="split__title">В&nbsp;Telegram за три шага</h3>
-          <ol class="steps">
-            <li>Откройте <a href="https://t.me/Voicepad_bot?start=src_site" rel="noopener">@Voicepad_bot</a> и нажмите «Начать».</li>
-            <li>Перешлите голосовое или кружочек, отправьте файл до&nbsp;20&nbsp;МБ или ссылку на YouTube, VK Видео, RuTube, TikTok.</li>
-            <li>Получите текст с таймкодами и кнопки под ним. Прошлые расшифровки лежат в <code>/history</code>.</li>
+  <section class="block" id="result" aria-labelledby="result-title">
+    <div class="column">
+      <h2 id="result-title">Что получится</h2>
+      <p class="block__lead">Текст на сайте, конспект и задачи по нему в боте.</p>
+      <div class="example">
+        <div class="example__part">
+          <h3 class="example__title">Текст на сайте</h3>
+          <ol class="lines">
+            <li><time datetime="PT2S">00:02</time> <b>Спикер 1<span class="sr">:</span></b> Давайте коротко по запуску. Макс, что с лендингом?</li>
+            <li><time datetime="PT7S">00:07</time> <b>Спикер 2<span class="sr">:</span></b> Тексты готовы, вёрстку закончу к четвергу. Анна, а оплату кто проверит?</li>
+            <li><time datetime="PT15S">00:15</time> <b>Спикер 1<span class="sr">:</span></b> Я, до пятницы. И сегодня напишу Ире про поддержку.</li>
           </ol>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="chapter sheet-ink" id="groups" aria-labelledby="groups-title">
-    <div class="shell">
-      <div class="col">
-        <h2 id="groups-title">Как бот работает в групповом чате?</h2>
-        <p class="intro">Добавьте @Voicepad_bot в чат, и он сам расшифрует голосовые и кружочки до&nbsp;3&nbsp;минут для всех участников. Кто не может слушать, просто читает.</p>
-
-        <div class="group">
-          <div class="group__copy">
-            <dl class="defs">
-              <div><dt>бесплатно</dt><dd>30&nbsp;минут в месяц на каждый чат, дальше минуты списываются с баланса автора записи</dd></div>
-              <div><dt>по просьбе</dt><dd><code>/text</code> в ответе на сообщение расшифрует любую запись, под ссылками на видео бот кладёт кнопку «Расшифровать»; минуты списываются с баланса того, кто попросил</dd></div>
-              <div><dt>админам</dt><dd><code>/mute</code> выключает автоматическую расшифровку, <code>/unmute</code> включает</dd></div>
-              <div><dt>премиум</dt><dd>админ отправляет <code>/premium</code> и подписывает чат за 500&nbsp;Telegram Stars в месяц: ответы приходят чистым текстом, голосовые любой длины, 300&nbsp;минут в месяц на чат</dd></div>
-            </dl>
-            <p class="cta-pair">
-              <a class="btn" href="https://t.me/Voicepad_bot?startgroup=true" rel="noopener">Добавить бота в чат</a>
-              <a class="btn btn-line" href="/bot-v-gruppovom-chate/">Как это устроено</a>
-            </p>
-          </div>
-          <figure class="chat" aria-labelledby="chat-caption">
-            <div class="chat__head" aria-hidden="true"><span>Ремонт кухни</span><span>3&nbsp;участника</span></div>
-            <p class="chat__service">Аня добавила Voicepad в чат</p>
-            <div class="chat__line">
-              <span class="chat__who">Сергей</span>
-              <span class="voice" role="img" aria-label="Голосовое сообщение, 38 секунд">
-                <svg class="voice__play" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><circle cx="12" cy="12" r="12"/><path d="M9.5 7.2v9.6l7.4-4.8z"/></svg>
-                <svg class="voice__wave" viewBox="0 0 120 24" width="120" height="24" aria-hidden="true"><path d="M2 9v6M5 8.5v7M11 10.5v3M14 9v6M17 8.5v7M20 7.5v9M23 9v6M26 9v6M29 10.5v3M35 8v8M38 4v16M41 8.5v7M50 9v6M53 7v10M56 6v12M59 5v14M62 6v12M65 9v6M71 9.5v5M74 8v8M77 9.5v5M83 9v6M86 8v8M95 8.5v7M98 5.5v13M101 7.5v9M107 7.5v9M110 5v14M113 7.5v9"/></svg>
-                <span class="tc">0:38</span>
-              </span>
-            </div>
-            <div class="chat__line chat__line-bot">
-              <span class="chat__who">Voicepad</span>
-              <div>
-                <p class="chat__quote">Сергей · голосовое 0:38</p>
-                <p>Плитку привезут в пятницу к девяти, кто-нибудь должен быть дома. Затирку взял серую, как договаривались.</p>
-              </div>
-            </div>
-            <div class="chat__line">
-              <span class="chat__who">Аня</span>
-              <span class="voice" role="img" aria-label="Голосовое сообщение, 9 секунд">
-                <svg class="voice__play" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><circle cx="12" cy="12" r="12"/><path d="M9.5 7.2v9.6l7.4-4.8z"/></svg>
-                <svg class="voice__wave voice__wave-short" viewBox="0 0 66 24" width="66" height="24" aria-hidden="true"><path d="M2 10v4M5 8v8M8 6v12M11 9v6M14 7.5v9M17 5v14M20 8v8M23 9.5v5M29 8.5v7M32 6v12M35 4.5v15M38 8v8M44 9v6M47 7v10M50 8.5v7M56 10v4M59 8v8M62 9.5v5"/></svg>
-                <span class="tc">0:09</span>
-              </span>
-            </div>
-            <div class="chat__line chat__line-bot">
-              <span class="chat__who">Voicepad</span>
-              <div>
-                <p class="chat__quote">Аня · голосовое 0:09</p>
-                <p>Я дома с восьми, звоните в домофон.</p>
-              </div>
-            </div>
-            <figcaption id="chat-caption">Пример: два голосовых в чате ремонта и текст под каждым, для всех участников.</figcaption>
-          </figure>
+        <div class="example__part">
+          <h3 class="example__title">Задачи в боте</h3>
+          <table class="tasks">
+            <caption class="sr">Задачи из этого разговора: кто, что и к какому сроку</caption>
+            <thead><tr><th scope="col">Кто</th><th scope="col">Что сделать</th><th scope="col">Срок</th></tr></thead>
+            <tbody>
+              <tr><td>Макс</td><td>Сверстать лендинг</td><td>четверг</td></tr>
+              <tr><td>Анна</td><td>Проверить оплату</td><td>пятница</td></tr>
+              <tr><td>Анна</td><td>Написать Ире про поддержку</td><td>сегодня</td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="chapter" id="pricing" aria-labelledby="pricing-title">
-    <div class="shell">
-      <div class="col">
-        <h2 id="pricing-title">Сколько стоит транскрибация?</h2>
-        <p class="intro">Минуты общие для бота и сайта. Списывается фактическая длительность записи, а если распознать не удалось, минуты не списываются.</p>
-
-        <div class="ratecard">
-          <div class="ratecard__head"><span>Пакеты минут</span> <span>минуты не сгорают</span></div>
-          <ol class="rates">
-            <li class="rate rate-free">
-              <span class="rate__name"><span class="rate__big">15</span> минут каждый месяц</span> <span class="rate__lead" aria-hidden="true"></span> <span class="rate__price">0&nbsp;₽</span>
-              <span class="rate__note">в боте и на сайте после входа</span>
-            </li>
-            <li class="rate" style="--per: 3.32">
-              <span class="rate__name">60&nbsp;минут</span> <span class="rate__lead" aria-hidden="true"></span> <span class="rate__price">199&nbsp;₽</span>
-              <span class="rate__note">3,32&nbsp;₽ за минуту</span>
-              <span class="rate__bar" aria-hidden="true"></span>
-            </li>
-            <li class="rate" style="--per: 2.30">
-              <span class="rate__name">300&nbsp;минут</span> <span class="rate__lead" aria-hidden="true"></span> <span class="rate__price">690&nbsp;₽</span>
-              <span class="rate__note">2,30&nbsp;₽ за минуту, на&nbsp;31% дешевле</span>
-              <span class="rate__bar" aria-hidden="true"></span>
-            </li>
-            <li class="rate" style="--per: 1.99">
-              <span class="rate__name">1000&nbsp;минут</span> <span class="rate__lead" aria-hidden="true"></span> <span class="rate__price">1990&nbsp;₽</span>
-              <span class="rate__note">1,99&nbsp;₽ за минуту, <span class="circled">на&nbsp;40% дешевле</span></span>
-              <span class="rate__bar" aria-hidden="true"></span>
-            </li>
-          </ol>
-          <ol class="terms">
-            <li>Оплата банковской картой через Tribute.</li>
-            <li>Списывается фактическая длительность записи.</li>
-            <li>Если распознать не удалось, минуты не списываются.</li>
-            <li>Без входа на сайте 3&nbsp;расшифровки в день бесплатно.</li>
-          </ol>
+  <section class="block" id="bot" aria-labelledby="bot-title">
+    <div class="column">
+      <h2 id="bot-title">Сайт и бот в Telegram</h2>
+      <p class="block__lead">Один сервис и один баланс минут. Вход на сайте через Telegram связывает их.</p>
+      <div class="duo">
+        <div>
+          <h3>На сайте</h3>
+          <ul class="dots">
+            <li>Большие файлы и ссылки на видео</li>
+            <li>Текст можно скопировать или скачать</li>
+            <li>3 записи в день без входа</li>
+          </ul>
         </div>
-        <p class="buy"><a class="btn" href="https://t.me/Voicepad_bot?start=src_site" rel="noopener">Купить минуты в боте</a><span>или командой <code>/buy</code> в чате с ботом</span></p>
-      </div>
-    </div>
-  </section>
-
-  <section class="chapter" id="data" aria-labelledby="data-title">
-    <div class="shell">
-      <div class="col">
-        <h2 id="data-title">Что происходит с записями после расшифровки?</h2>
-        <p class="intro">Звук нужен только для распознавания. Текст в боте хранится 30&nbsp;дней и удаляется по команде.</p>
-
-        <div class="tracks">
-          <div class="tracks__ruler" aria-hidden="true">
-            <span class="tracks__name">Время после распознавания</span>
-            <span class="ruler"><span style="--at: 0">сразу</span><span style="--at: 38.4">1&nbsp;ч</span><span style="--at: 68.1">24&nbsp;ч</span><span style="--at: 100">30&nbsp;дн</span></span>
-          </div>
-          <ol class="lanes">
-            <li style="--at: 0.6"><span class="lane__name">Аудио и видео</span> <span class="lane" aria-hidden="true"></span> <span class="lane__note">удаляются сразу после распознавания</span></li>
-            <li style="--at: 38.4"><span class="lane__name">Результат на сайте без входа</span> <span class="lane" aria-hidden="true"></span> <span class="lane__note">живёт только в памяти сервера один час</span></li>
-            <li style="--at: 100"><span class="lane__name">Текст в боте и в истории после входа</span> <span class="lane" aria-hidden="true"></span> <span class="lane__note">30&nbsp;дней, команда <code>/delete</code> удаляет сразу</span></li>
-          </ol>
-        </div>
-        <p class="aside-link"><a href="/privacy/">Политика конфиденциальности</a></p>
-      </div>
-    </div>
-  </section>
-
-  <section class="chapter" id="faq" aria-labelledby="faq-title">
-    <div class="shell">
-      <div class="col">
-        <h2 id="faq-title">Вопросы и ответы</h2>
-        <ol class="notes">
-          <li id="faq-limits">
-            <h3>Какие файлы и какой длины можно расшифровать?</h3>
-            <p>Голосовые, кружочки, аудио и видео в MP3, M4A, WAV, OGG, OPUS, MP4, MOV, WEBM и других форматах, записи до 3 часов. В боте файл может весить до 20 МБ, на сайте без входа до 50 МБ, после входа до 200 МБ. Запись голоса в браузере после входа длится до 30 минут.</p>
-          </li>
-          <li id="faq-20mb">
-            <h3>Что делать, если файл больше 20 МБ?</h3>
-            <p>Это ограничение самого Telegram: файл больше 20 МБ бот получить не может. Загрузите его на этой странице: без входа до 50 МБ, после входа через Telegram до 200 МБ. Видео с YouTube, VK Видео, RuTube или TikTok можно прислать боту ссылкой.</p>
-          </li>
-          <li id="faq-signup">
-            <h3>Можно ли расшифровать запись без регистрации?</h3>
-            <p>Да, на этой странице: 3 расшифровки в день, файлы до 50 МБ, по одной за раз. Файл без звука считается попыткой, а сбой на нашей стороне попытку возвращает. У записи длиннее 3 минут расшифруются первые 3 минуты, полную версию можно получить после входа через Telegram или в боте. Для входа нужна одна кнопка, а в боте достаточно нажать «Начать».</p>
-          </li>
-          <li id="faq-links">
-            <h3>Как расшифровать видео по ссылке?</h3>
-            <p>Пришлите ссылку боту: он принимает YouTube, VK Видео, RuTube и TikTok. На сайте ссылки работают после входа через Telegram, и кроме этих четырёх подходят Vimeo, Дзен, OK и Twitch, если у ролика известна длительность. Конспект видео с YouTube заканчивается главами с таймкодами.</p>
-          </li>
-          <li id="faq-lang">
-            <h3>Нужно ли выбирать язык записи?</h3>
-            <p>Нет, язык определяется автоматически. Речь распознаёт ElevenLabs Scribe v2.</p>
-          </li>
-          <li id="faq-telegram">
-            <h3>Чем Voicepad отличается от расшифровки в самом Telegram?</h3>
-            <p>Voicepad расшифровывает не только голосовые и кружочки, но и аудио и видео файлы и ссылки на ролики. Он ставит таймкоды, размечает спикеров, делает конспект и список задач, отдаёт DOCX, TXT и SRT, работает на сайте и в групповых чатах.</p>
-          </li>
-          <li id="faq-pay">
-            <h3>Как купить минуты?</h3>
-            <p>В боте командой <code>/buy</code>. Пакеты: 60 минут за 199 ₽, 300 минут за 690 ₽, 1000 минут за 1990 ₽, оплата банковской картой через Tribute. Минуты не сгорают, а 15 минут каждый месяц даются бесплатно.</p>
-          </li>
-          <li id="faq-data">
-            <h3>Что происходит с моими записями?</h3>
-            <p>Аудио и видео удаляются сразу после распознавания. Расшифровки в боте хранятся 30 дней, команда <code>/delete</code> удаляет их сразу. Результат на сайте без входа живёт только в памяти сервера один час.</p>
-          </li>
-          <li id="faq-group">
-            <h3>Как добавить бота в групповой чат?</h3>
-            <p>Добавьте @Voicepad_bot в чат: он сам расшифрует голосовые и кружочки до 3 минут для всех участников. Каждому чату даётся 30 бесплатных минут в месяц, дальше минуты списываются с баланса автора записи. Админы выключают и включают автоматическую расшифровку командами <code>/mute</code> и <code>/unmute</code>.</p>
-          </li>
-          <li id="faq-premium">
-            <h3>Что даёт премиум для чата?</h3>
-            <p>Админ отправляет в чате <code>/premium</code> и оформляет подписку за 500 Telegram Stars в месяц. Ответы бота становятся чистым текстом, голосовые расшифровываются любой длины, а на чат приходится 300 минут в месяц.</p>
-          </li>
-        </ol>
-      </div>
-    </div>
-  </section>
-
-  <section class="chapter" id="guides" aria-labelledby="guides-title">
-    <div class="shell">
-      <div class="col">
-        <h2 id="guides-title">Инструкции по задачам</h2>
-        <p class="intro">Разборы под конкретный случай: от одного голосового до трёхчасового вебинара.</p>
-        <div class="guides">
-          <section class="guides__group" aria-labelledby="g-files">
-            <h3 id="g-files">Файлы и выбор сервиса</h3>
-            <ol class="index">
-              <li><a href="/transkribaciya-audio-v-tekst/">Транскрибация аудио в текст онлайн</a><p>Что на самом деле значит «бесплатно» и где заканчиваются 15&nbsp;минут.</p></li>
-              <li><a href="/audio-v-tekst-onlayn/">Аудио в текст онлайн</a><p>Диктофон, MP3, M4A, WAV в текст с таймкодами, без программ.</p></li>
-              <li><a href="/diktofon-v-tekst/">Диктофон онлайн с расшифровкой</a><p>Запись голоса в браузере, в том числе на iPhone, или файл с диктофона в текст.</p></li>
-              <li><a href="/compare/">Сравнение ботов</a><p>Боты для расшифровки в Telegram: лимиты и цены.</p></li>
-            </ol>
-          </section>
-          <section class="guides__group" aria-labelledby="g-voice">
-            <h3 id="g-voice">Голосовые и чаты</h3>
-            <ol class="index">
-              <li><a href="/golosovoe-v-tekst/">Голосовое в текст</a><p>Три шага, работа в группах, чем бот отличается от Premium.</p></li>
-              <li><a href="/rasshifrovka-golosovyh-bez-premium/">Расшифровка голосовых без Premium</a><p>Сколько даёт бесплатная расшифровка Telegram и как читать остальные голосовые.</p></li>
-              <li><a href="/kruzhochek-v-tekst/">Кружочек в текст</a><p>Видеосообщение из любого чата в текст, в личке и в группах.</p></li>
-              <li><a href="/golosovoe-whatsapp-v-tekst/">Голосовое из WhatsApp в текст</a><p>Сохранить аудио из WhatsApp и расшифровать его.</p></li>
-              <li><a href="/bot-v-gruppovom-chate/">Бот в групповом чате</a><p>Два чата, 13 голосовых за три дня и всё, что пошло не так.</p></li>
-            </ol>
-          </section>
-          <section class="guides__group" aria-labelledby="g-links">
-            <h3 id="g-links">Видео по ссылке</h3>
-            <ol class="index">
-              <li><a href="/video-v-tekst/">Видео в текст онлайн</a><p>Файл MP4 или MOV или ссылка на ролик в текст с таймкодами, SRT и DOCX.</p></li>
-              <li><a href="/youtube-v-tekst/">YouTube-видео в конспект</a><p>Ссылка на вход, текст с таймкодами и главы на выход.</p></li>
-              <li><a href="/vk-video-v-tekst/">VK Видео и RuTube в текст</a><p>Ссылки VK, RuTube и TikTok принимаются так же, как YouTube.</p></li>
-            </ol>
-          </section>
-          <section class="guides__group" aria-labelledby="g-talk">
-            <h3 id="g-talk">Встречи, учёба, интервью</h3>
-            <ol class="index">
-              <li><a href="/zapis-vstrechi-v-protokol/">Запись встречи в протокол</a><p>Спикеры, конспект созвона и список задач.</p></li>
-              <li><a href="/konspekt-lekcii/">Конспект лекции</a><p>Запись с диктофона или видео с YouTube в конспект с главами.</p></li>
-              <li><a href="/rasshifrovka-intervyu/">Расшифровка интервью</a><p>Реплики по спикерам с таймкодами, DOCX для правок.</p></li>
-              <li><a href="/rasshifrovka-vebinara/">Расшифровка вебинара</a><p>Запись из Zoom, Meet или Телемоста в конспект и список вопросов.</p></li>
-              <li><a href="/podcast-v-tekst/">Расшифровка подкаста</a><p>Текст выпуска по спикерам, таймкоды для описания, SRT.</p></li>
-            </ol>
-          </section>
-          <section class="guides__group" aria-labelledby="g-subs">
-            <h3 id="g-subs">Субтитры</h3>
-            <ol class="index">
-              <li><a href="/subtitry-srt-iz-video/">Субтитры SRT из видео</a><p>Файл или ссылка на вход, файл субтитров с таймкодами на выход.</p></li>
-              <li><a href="/subtitry-dlya-reels-i-shorts/">Субтитры для Reels и Shorts</a><p>Короткий вертикальный ролик в файл SRT по фразам.</p></li>
-            </ol>
-          </section>
-          <section class="guides__group" aria-labelledby="g-articles">
-            <h3 id="g-articles">Статьи</h3>
-            <ol class="index">
-              <li><a href="/chto-takoe-transkribaciya/">Что такое транскрибация простыми словами</a><p>Термины, виды, нормы времени и как сделать самому.</p></li>
-              <li><a href="/zapis-razgovora-v-tekst/">Запись разговора в текст</a><p>iPhone, Android, МТС, Билайн, МегаФон и текст по спикерам.</p></li>
-              <li><a href="/kak-sdelat-transkribaciyu-video/">Как сделать транскрибацию видео</a><p>Файл, ссылка, SRT и что делать с большим видео.</p></li>
-              <li><a href="/en/transcribe-telegram-voice-without-premium/" hreflang="en" lang="en">Telegram voice messages to text without Premium</a><p>На английском: бесплатный лимит Telegram, что даёт Premium и как обойтись без него.</p></li>
-              <li><a href="/en/whatsapp-voice-message-to-text/" hreflang="en" lang="en">WhatsApp voice message to text</a><p>На английском: встроенная расшифровка WhatsApp и как сохранить аудио на Android, iPhone и компьютере.</p></li>
-            </ol>
-          </section>
+        <div>
+          <h3>В боте @Voicepad_bot</h3>
+          <ul class="dots">
+            <li>Голосовые и кружочки пересылкой из любого чата</li>
+            <li>Конспект, задачи и ответы на вопросы по записи</li>
+            <li>Работает в групповых чатах</li>
+          </ul>
         </div>
       </div>
+      <p class="block__actions">
+        <a class="btn" href="https://t.me/Voicepad_bot?start=src_site" rel="noopener">Открыть бота</a>
+        <a href="/bot-v-gruppovom-chate/">Как бот работает в группе</a>
+      </p>
     </div>
   </section>
 
-  <section class="outro" aria-labelledby="outro-title">
-    <div class="shell">
-      <div class="col">
-        <h2 id="outro-title">Остальное удобнее в&nbsp;Telegram</h2>
-        <p>История расшифровок, конспекты, задачи и групповые чаты живут в боте.</p>
-        <p class="cta-pair">
-          <a class="btn" href="https://t.me/Voicepad_bot?start=src_site" rel="noopener">Открыть @Voicepad_bot</a>
-          <a class="btn btn-line" href="https://t.me/Voicepad_bot?startgroup=true" rel="noopener">Добавить в чат</a>
-        </p>
+  <section class="block" id="pricing" aria-labelledby="pricing-title">
+    <div class="column">
+      <h2 id="pricing-title">Сколько стоит</h2>
+      <p class="block__lead">Минуты общие для сайта и бота. Купленные минуты не сгорают.</p>
+      <ul class="plans">
+        <li class="plan">
+          <h3>Без входа</h3>
+          <p>3 записи в день, у длинной записи первые 3&nbsp;минуты, файл до 50&nbsp;МБ.</p>
+        </li>
+        <li class="plan">
+          <h3>Со входом через Telegram</h3>
+          <p>15 минут в месяц бесплатно, файлы до 200&nbsp;МБ, ссылки на видео.</p>
+        </li>
+        <li class="plan plan-packs">
+          <h3>Пакеты минут</h3>
+          <ul class="packs">
+            <li><span>60 мин</span> <b>199&nbsp;₽</b></li>
+            <li><span>300 мин</span> <b>690&nbsp;₽</b></li>
+            <li><span>1000 мин</span> <b>1990&nbsp;₽</b></li>
+          </ul>
+          <a class="btn" href="https://t.me/Voicepad_bot?start=src_site_buy" rel="noopener">Купить минуты в боте</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" id="faq" aria-labelledby="faq-title">
+    <div class="column">
+      <h2 id="faq-title">Вопросы</h2>
+      <div class="faq">
+        <details>
+          <summary>Зачем входить через Telegram?</summary>
+          <p>После входа можно загружать файлы до 200 МБ и ссылки на видео с YouTube, VK Видео, RuTube, TikTok, Vimeo, Дзена, OK и Twitch, а записи до 3 часов расшифровываются целиком. Каждый месяц 15 минут бесплатно, дальше минуты из пакета. Минуты общие с ботом @Voicepad_bot, а расшифровки сохраняются в его истории. Пароля нет, вход подтверждается в Telegram.</p>
+        </details>
+        <details>
+          <summary>Как достать голосовое из WhatsApp?</summary>
+          <p>На iPhone нажмите и удерживайте голосовое, выберите «Переслать», затем значок «Поделиться» и «Сохранить в Файлы». На Android нажмите и удерживайте голосовое, затем «Поделиться» и сохраните его в «Файлы». После этого нажмите «Выберите запись» в форме вверху страницы. На компьютере выберите в меню сообщения «Скачать» и перетащите файл в форму. Формат .opus или .m4a менять не нужно. Голосовое можно и переслать боту @Voicepad_bot в Telegram: боту можно отправить файл до 20 МБ, файл больше загрузите на сайте.</p>
+        </details>
+        <details>
+          <summary>Нужно ли выбирать язык?</summary>
+          <p>Язык записи определяется автоматически, выбирать его не нужно. Он указан в заголовке результата рядом с длиной записи.</p>
+        </details>
+        <details>
+          <summary>Что с записями после расшифровки?</summary>
+          <p>Аудио и видео удаляются сразу после распознавания. Результат без входа хранится в памяти сервера один час, расшифровки в боте 30 дней. Подробнее в <a href="/privacy/">политике конфиденциальности</a>.</p>
+        </details>
+        <details>
+          <summary>Как оплатить?</summary>
+          <p>Минуты покупаются в боте командой <code>/buy</code>, оплата картой через Tribute. Пакеты: 60 минут за 199 ₽, 300 минут за 690 ₽, 1000 минут за 1990 ₽. Минуты не сгорают. Списывается только реальная длина записи, а если распознать не удалось, минуты не списываются.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="guides" aria-labelledby="guides-title">
+    <div class="column">
+      <h2 id="guides-title">Инструкции</h2>
+      <div class="links">
+        <section aria-labelledby="g-voice">
+          <h3 id="g-voice">Голосовые и чаты</h3>
+          <ul>
+            <li><a href="/golosovoe-v-tekst/">Голосовое в текст</a></li>
+            <li><a href="/golosovoe-whatsapp-v-tekst/">Голосовое из WhatsApp в текст</a></li>
+            <li><a href="/kruzhochek-v-tekst/">Кружочек в текст</a></li>
+            <li><a href="/rasshifrovka-golosovyh-bez-premium/">Расшифровка голосовых без Premium</a></li>
+            <li><a href="/bot-v-gruppovom-chate/">Бот в групповом чате</a></li>
+          </ul>
+        </section>
+        <section aria-labelledby="g-media">
+          <h3 id="g-media">Аудио и видео</h3>
+          <ul>
+            <li><a href="/audio-v-tekst-onlayn/">Аудио в текст онлайн</a></li>
+            <li><a href="/transkribaciya-audio-v-tekst/">Транскрибация аудио в текст</a></li>
+            <li><a href="/diktofon-v-tekst/">Диктофон онлайн с расшифровкой</a></li>
+            <li><a href="/video-v-tekst/">Видео в текст онлайн</a></li>
+            <li><a href="/youtube-v-tekst/">Видео с YouTube в текст</a></li>
+            <li><a href="/vk-video-v-tekst/">VK Видео и RuTube в текст</a></li>
+          </ul>
+        </section>
+        <section aria-labelledby="g-talk">
+          <h3 id="g-talk">Встречи, учёба, интервью</h3>
+          <ul>
+            <li><a href="/zapis-vstrechi-v-protokol/">Запись встречи в протокол</a></li>
+            <li><a href="/zapis-razgovora-v-tekst/">Запись разговора в текст</a></li>
+            <li><a href="/konspekt-lekcii/">Конспект лекции</a></li>
+            <li><a href="/rasshifrovka-intervyu/">Расшифровка интервью</a></li>
+            <li><a href="/rasshifrovka-vebinara/">Расшифровка вебинара</a></li>
+            <li><a href="/podcast-v-tekst/">Расшифровка подкаста</a></li>
+          </ul>
+        </section>
+        <section aria-labelledby="g-subs">
+          <h3 id="g-subs">Субтитры</h3>
+          <ul>
+            <li><a href="/subtitry-srt-iz-video/">Субтитры SRT из видео</a></li>
+            <li><a href="/subtitry-dlya-reels-i-shorts/">Субтитры для Reels и Shorts</a></li>
+          </ul>
+        </section>
+        <section aria-labelledby="g-articles">
+          <h3 id="g-articles">Статьи</h3>
+          <ul>
+            <li><a href="/chto-takoe-transkribaciya/">Что такое транскрибация</a></li>
+            <li><a href="/kak-sdelat-transkribaciyu-video/">Как сделать транскрибацию видео</a></li>
+            <li><a href="/compare/">Сравнение ботов для расшифровки</a></li>
+          </ul>
+        </section>
       </div>
     </div>
   </section>
 </main>
 
-<footer class="colophon">
-  <div class="shell">
-    <div class="col">
-      <p class="colophon__brand"><svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg><strong>Voicepad</strong><span>Расшифровка голосовых, аудио и видео в текст онлайн и в Telegram.</span></p>
-      <ul class="colophon__links">
-        <li><a href="https://t.me/Voicepad_bot?start=src_site" rel="noopener">t.me/Voicepad_bot</a></li>
-        <li><a href="https://t.me/Voicepad_bot?startgroup=true" rel="noopener">Добавить в чат</a></li>
-        <li><a href="/privacy/">Политика конфиденциальности</a></li>
-        <li><a href="/en/" hreflang="en" lang="en">English</a></li>
-      </ul>
-      <p class="colophon__note">Речь распознаёт ElevenLabs Scribe v2. Набрано шрифтами Literata и IBM Plex Mono.</p>
-      <p class="colophon__en" lang="en"><strong>Voicepad in English:</strong> <a href="/en/" hreflang="en">web tool and Telegram bot</a>, <a href="/en/voice-message-to-text/" hreflang="en">voice message to text</a>, <a href="/en/youtube-to-text/" hreflang="en">YouTube to text</a>, <a href="/en/meeting-notes/" hreflang="en">meeting notes</a>, <a href="/en/podcast-transcript/" hreflang="en">podcast transcript</a>, <a href="/en/lecture-notes-from-video/" hreflang="en">lecture notes</a>, <a href="/en/transcribe-telegram-voice-without-premium/" hreflang="en">Telegram voice messages without Premium</a>, <a href="/en/whatsapp-voice-message-to-text/" hreflang="en">WhatsApp voice message to text</a>.</p>
-    </div>
+<footer class="foot">
+  <div class="column">
+    <p class="foot__brand"><svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg><strong>Voicepad</strong><span>Голосовые, аудио и видео в текст.</span></p>
+    <ul class="foot__links">
+      <li><a href="https://t.me/Voicepad_bot?start=src_site" rel="noopener">@Voicepad_bot в Telegram</a></li>
+      <li><a href="/privacy/">Политика конфиденциальности</a></li>
+      <li><a href="/en/" hreflang="en" lang="en">English</a></li>
+    </ul>
+    <p class="foot__more" lang="en">In English: <a href="/en/voice-message-to-text/" hreflang="en">voice message to text</a>, <a href="/en/youtube-to-text/" hreflang="en">YouTube to text</a>, <a href="/en/meeting-notes/" hreflang="en">meeting notes</a>, <a href="/en/podcast-transcript/" hreflang="en">podcast transcript</a>, <a href="/en/lecture-notes-from-video/" hreflang="en">lecture notes</a>, <a href="/en/transcribe-telegram-voice-without-premium/" hreflang="en">Telegram voice messages without Premium</a>, <a href="/en/whatsapp-voice-message-to-text/" hreflang="en">WhatsApp voice message to text</a>.</p>
   </div>
 </footer>
 
@@ -615,43 +322,20 @@
 </script>
 <script>
 (function () {
-  var sample = document.querySelector(".sample");
-  if (!sample || !window.matchMedia || !window.IntersectionObserver || !window.requestAnimationFrame) return;
-  if (!window.matchMedia("(prefers-reduced-motion: no-preference)").matches) return;
-  var lines = sample.querySelectorAll(".tr li");
-  var clip = sample.querySelector(".player__clip");
-  var head = sample.querySelector(".w-head");
-  var now = sample.querySelector(".player__now");
-  var total = 31, from = 15, width = 480, speed = 1.5;
-  var starts = Array.prototype.map.call(lines, function (line) {
-    return parseFloat(line.querySelector("time").getAttribute("datetime").replace(/[^0-9.]/g, ""));
+  var menu = document.querySelector(".menu");
+  if (!menu) return;
+  function close() { menu.open = false; }
+  menu.addEventListener("click", function (event) {
+    if (event.target.closest && event.target.closest("a")) close();
   });
-  function pad(value) { return (value < 10 ? "0" : "") + value; }
-  function show(seconds) {
-    var x = Math.min(width, seconds / total * width);
-    clip.setAttribute("width", x.toFixed(1));
-    head.setAttribute("transform", "translate(" + x.toFixed(1) + " 0)");
-    now.textContent = "00:" + pad(Math.floor(seconds));
-    var current = -1;
-    starts.forEach(function (start, index) { if (seconds >= start) current = index; });
-    Array.prototype.forEach.call(lines, function (line, index) { line.classList.toggle("now", index === current); });
-  }
-  function play() {
-    var began = null;
-    function frame(stamp) {
-      if (began === null) began = stamp;
-      var seconds = Math.min(total, from + (stamp-began) / 1000 * speed);
-      show(seconds);
-      if (seconds < total) window.requestAnimationFrame(frame);
-    }
-    window.requestAnimationFrame(frame);
-  }
-  var observer = new IntersectionObserver(function (entries) {
-    if (!entries[0].isIntersecting) return;
-    observer.disconnect();
-    window.setTimeout(play, 700);
-  }, { threshold: 1 });
-  observer.observe(sample.querySelector(".player"));
+  document.addEventListener("click", function (event) {
+    if (menu.open && !menu.contains(event.target)) close();
+  });
+  document.addEventListener("keydown", function (event) {
+    if (event.key !== "Escape" || !menu.open) return;
+    close();
+    menu.querySelector("summary").focus();
+  });
 })();
 </script>
 </body>

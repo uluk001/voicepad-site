@@ -16,19 +16,18 @@
 <meta property="og:site_name" content="Voicepad">
 <meta property="og:locale" content="ru_RU">
 <meta property="og:title" content="Расшифровка интервью по спикерам">
-<meta property="og:description" content="Текст с таймкодами и разметкой, кто говорит, из записи интервью. На сайте или в Telegram-боте.">
+<meta property="og:description" content="Реплики интервьюера и собеседника отдельно, у каждой время, и DOCX для правок. Конспект и ответы на вопросы по записи делает бот @Voicepad_bot.">
 <meta property="og:url" content="https://voicepad.qupport.io/rasshifrovka-intervyu/">
 <meta property="og:image" content="https://voicepad.qupport.io/assets/cover.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Voicepad: голосовые, аудио и видео в текст с таймкодами и спикерами">
-<meta property="article:published_time" content="2026-10-20">
-<meta property="article:modified_time" content="2026-10-24">
+<meta property="og:image:alt" content="Расшифровка интервью по спикерам: текст по репликам, со временем">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://voicepad.qupport.io/assets/cover.jpg">
-<meta name="twitter:image:alt" content="Voicepad: голосовые, аудио и видео в текст с таймкодами и спикерами">
+<meta name="twitter:image:alt" content="Расшифровка интервью по спикерам: текст по репликам, со временем">
 <link rel="preload" href="/assets/fonts/literata.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://bot.voicepad.qupport.io" crossorigin>
 <link rel="stylesheet" href="/assets/site.css">
 <script type="application/ld+json">
 {
@@ -38,61 +37,26 @@
       "@type": "BreadcrumbList",
       "@id": "https://voicepad.qupport.io/rasshifrovka-intervyu/#breadcrumbs",
       "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Главная",
-          "item": "https://voicepad.qupport.io/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Расшифровка интервью",
-          "item": "https://voicepad.qupport.io/rasshifrovka-intervyu/"
-        }
+        {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://voicepad.qupport.io/"},
+        {"@type": "ListItem", "position": 2, "name": "Расшифровка интервью", "item": "https://voicepad.qupport.io/rasshifrovka-intervyu/"}
       ]
     },
     {
       "@type": "Article",
       "@id": "https://voicepad.qupport.io/rasshifrovka-intervyu/#article",
-      "url": "https://voicepad.qupport.io/rasshifrovka-intervyu/",
-      "inLanguage": "ru",
+      "headline": "Расшифровка интервью по спикерам",
       "description": "Запись интервью в текст по спикерам и с таймкодами, DOCX для правок. Для журналистов, исследователей и HR: загрузите файл на сайте или отправьте боту Voicepad.",
+      "url": "https://voicepad.qupport.io/rasshifrovka-intervyu/",
+      "mainEntityOfPage": "https://voicepad.qupport.io/rasshifrovka-intervyu/",
+      "inLanguage": "ru",
       "datePublished": "2026-10-20",
       "dateModified": "2026-10-24",
-      "image": "https://voicepad.qupport.io/assets/cover.jpg",
-      "isPartOf": {
-        "@id": "https://voicepad.qupport.io/#website"
-      },
-      "breadcrumb": {
-        "@id": "https://voicepad.qupport.io/rasshifrovka-intervyu/#breadcrumbs"
-      },
-      "headline": "Расшифровка интервью по спикерам",
-      "mainEntityOfPage": "https://voicepad.qupport.io/rasshifrovka-intervyu/",
-      "author": {
-        "@type": "Organization",
-        "@id": "https://voicepad.qupport.io/#organization",
-        "name": "Voicepad",
-        "url": "https://voicepad.qupport.io/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://voicepad.qupport.io/assets/logo-512.png",
-          "width": 512,
-          "height": 512
-        }
-      },
-      "publisher": {
-        "@type": "Organization",
-        "@id": "https://voicepad.qupport.io/#organization",
-        "name": "Voicepad",
-        "url": "https://voicepad.qupport.io/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://voicepad.qupport.io/assets/logo-512.png",
-          "width": 512,
-          "height": 512
-        }
-      }
+      "image": {"@type": "ImageObject", "url": "https://voicepad.qupport.io/assets/cover.jpg", "width": 1200, "height": 630},
+      "author": {"@type": "Organization", "@id": "https://voicepad.qupport.io/#organization", "name": "Voicepad", "url": "https://voicepad.qupport.io/"},
+      "publisher": {"@type": "Organization", "@id": "https://voicepad.qupport.io/#organization", "name": "Voicepad", "url": "https://voicepad.qupport.io/", "logo": {"@type": "ImageObject", "url": "https://voicepad.qupport.io/assets/logo-512.png", "width": 512, "height": 512}},
+      "isPartOf": {"@id": "https://voicepad.qupport.io/#website"},
+      "about": {"@id": "https://voicepad.qupport.io/#app"},
+      "breadcrumb": {"@id": "https://voicepad.qupport.io/rasshifrovka-intervyu/#breadcrumbs"}
     },
     {
       "@type": "FAQPage",
@@ -100,54 +64,11 @@
       "url": "https://voicepad.qupport.io/rasshifrovka-intervyu/",
       "inLanguage": "ru",
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Бот различает интервьюера и собеседника?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Да, реплики размечаются как Спикер 1 и Спикер 2, и дальше, если участников больше. Метки заменяются на имена одной заменой в DOCX."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Можно ли получить текст в Word?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Да, DOCX скачивается под расшифровкой на сайте и в боте. Есть также TXT и SRT."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Как быстро найти нужную цитату?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "По таймкодам в тексте или кнопкой «Вопрос» в боте: спросите, где собеседник говорил о конкретной теме, и получите ответ по записи."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Интервью на английском подойдёт?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Да. Язык определяется автоматически."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Запись из Zoom подойдёт?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Да, Zoom сохраняет запись в MP4 или M4A, оба формата подходят. Файл до 20 МБ отправьте боту, запись тяжелее загрузите на сайте после входа через Telegram, до 200 МБ. Без входа сайт берёт файл до 50 МБ, но расшифрует только первые 3 минуты."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Что с конфиденциальностью?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Аудио удаляется сразу после распознавания. Расшифровки в боте хранятся 30 дней, команда /delete удаляет их сразу. Результат на сайте без входа хранится в памяти сервера один час."
-          }
-        }
+        {"@type": "Question", "name": "Различаются ли интервьюер и собеседник?", "acceptedAnswer": {"@type": "Answer", "text": "Да, реплики размечаются как Спикер 1 и Спикер 2, и дальше, если участников больше. Метки заменяются на имена одной заменой в DOCX."}},
+        {"@type": "Question", "name": "Можно ли получить текст в Word?", "acceptedAnswer": {"@type": "Answer", "text": "Да, DOCX скачивается под расшифровкой на сайте и в боте. Есть также TXT и SRT."}},
+        {"@type": "Question", "name": "Как быстро найти нужную цитату?", "acceptedAnswer": {"@type": "Answer", "text": "По времени у реплик или кнопкой «Вопрос» в боте: спросите, где собеседник говорил о конкретной теме, и получите ответ по записи."}},
+        {"@type": "Question", "name": "Запись из Zoom подойдёт?", "acceptedAnswer": {"@type": "Answer", "text": "Да, Zoom обычно сохраняет запись в MP4 или M4A, оба формата подходят. После входа на сайте можно загрузить файл до 200 МБ. Боту можно отправить файл до 20 МБ, файл больше загрузите на сайте."}},
+        {"@type": "Question", "name": "Что с конфиденциальностью?", "acceptedAnswer": {"@type": "Answer", "text": "Аудио удаляется сразу после распознавания. Результат без входа хранится в памяти сервера один час, расшифровки в боте 30 дней, а команда /delete стирает их сразу. Подробнее в политике конфиденциальности."}}
       ]
     }
   ]
@@ -155,159 +76,204 @@
 </script>
 </head>
 <body>
-<a class="skip" href="#main">Перейти к тексту</a>
+<a class="skip" href="#vp-tool">Перейти к расшифровке</a>
 
-<header class="masthead">
-  <div class="shell">
-    <div class="col masthead__row">
-      <a class="brand" href="/" aria-label="Voicepad, главная">
-        <svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg>
-        <span>Voicepad</span>
-      </a>
-      <nav class="chapters" aria-label="Разделы страницы">
-        <ol>
-          <li><a href="#how">Как расшифровать</a></li>
-          <li><a href="#who">Для кого</a></li>
-          <li><a href="#privacy">Конфиденциальность</a></li>
-          <li><a href="#price">Цены</a></li>
-          <li><a href="#faq">Вопросы</a></li>
-        </ol>
+<header class="topbar">
+  <div class="column topbar__row">
+    <a class="brand" href="/" aria-label="Voicepad, главная">
+      <svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg>
+      <span>Voicepad</span>
+    </a>
+    <nav class="topbar__nav" aria-label="Основное меню">
+      <a href="#pricing">Цены</a>
+      <a href="/#guides">Инструкции</a>
+      <a href="https://t.me/Voicepad_bot?start=src_interview" rel="noopener">Бот в Telegram</a>
+      <a href="/en/" hreflang="en" lang="en">EN</a>
+    </nav>
+    <details class="menu">
+      <summary>Меню</summary>
+      <nav class="menu__list" aria-label="Основное меню">
+        <a href="#pricing">Цены</a>
+        <a href="/#guides">Инструкции</a>
+        <a href="https://t.me/Voicepad_bot?start=src_interview" rel="noopener">Бот в Telegram</a>
+        <a href="/en/" hreflang="en" lang="en">English</a>
       </nav>
-      <div class="masthead__aside">
-        <a class="lang" href="/en/" hreflang="en" lang="en">EN</a>
-        <a class="btn" href="https://t.me/Voicepad_bot?start=src_interview" rel="noopener">Открыть бота</a>
-      </div>
-    </div>
+    </details>
   </div>
 </header>
 
 <main id="main">
-  <article class="guide" aria-labelledby="page-title">
-    <header class="hero">
-      <div class="shell">
-        <div class="col">
-          <nav class="crumbs" aria-label="Навигационная цепочка">
-            <ol>
-              <li><a href="/">Главная</a></li>
-              <li aria-current="page">Расшифровка интервью</li>
-            </ol>
-          </nav>
-          <h1 id="page-title">Расшифровка интервью по&nbsp;спикерам</h1>
-          <p class="lead">Час интервью это тридцать с лишним страниц текста, если набирать вручную. Журналисту нужны точные цитаты с привязкой ко времени, исследователю разметка, где вопрос, а где ответ, HR короткая сводка по кандидату. Voicepad принимает запись и отдаёт текст, в котором реплики разделены по говорящим и у каждой стоит таймкод.</p>
-          <p class="page-meta">Инструкция · обновлено <time datetime="2026-10-24">24 октября 2026</time></p>
-          <p class="buy">
-            <a class="btn" href="https://t.me/Voicepad_bot?start=src_interview" rel="noopener"><span>Открыть бота<span class="wide-only"> в&nbsp;Telegram</span></span></a>
-            <a class="btn btn-line" href="/#tool">Загрузить запись на сайте</a>
-          </p>
-        </div>
-      </div>
-    </header>
-
-    <div class="shell">
-      <div class="col">
-        <div class="prose">
-          <h2 id="how">Как расшифровать интервью</h2>
-          <ol>
-            <li>Возьмите запись с диктофона, из Zoom или с телефона: подойдут MP3, M4A, WAV, OGG, MP4, MOV, WEBM и другие форматы.</li>
-            <li>Файл до 20&nbsp;МБ отправьте боту <a href="https://t.me/Voicepad_bot?start=src_interview" rel="noopener">@Voicepad_bot</a>. Запись тяжелее загрузите на сайте: до 50&nbsp;МБ без входа и до 200&nbsp;МБ после входа через Telegram. Без входа сайт расшифрует первые 3&nbsp;минуты, полную версию дадут вход или бот. Если интервью опубликовано на YouTube или VK Видео, подойдёт ссылка.</li>
-            <li>Получите текст. Реплики помечены как Спикер&nbsp;1 и Спикер&nbsp;2, у каждой таймкод. DOCX отдаёт документ для правок, TXT простой текст.</li>
-          </ol>
-          <p>Так выглядит фрагмент расшифровки:</p>
-          <blockquote>
-            <p><span class="tc">12:40</span> <b class="spk">Спикер 1</b> Когда вы поняли, что первая гипотеза не подтверждается?</p>
-            <p><span class="tc">12:48</span> <b class="spk">Спикер 2</b> Месяца через три, когда пришли данные по второй группе. До этого мы честно в неё верили.</p>
-          </blockquote>
-
-          <h2 id="who">Для кого это</h2>
-          <ul>
-            <li><strong>Журналистам.</strong> Цитату можно сверить с записью по таймкоду, а кнопка «Статья» в боте делает черновик материала по разговору, который дальше правится руками.</li>
-            <li><strong>Исследователям</strong>, которые проводят серии интервью. Кнопка «Вопрос» отвечает по содержанию конкретной записи, например «что респондент говорил о цене».</li>
-            <li><strong>HR и рекрутерам.</strong> «Конспект» даёт короткую сводку по собеседованию для карточки кандидата, а полный текст стоит сохранить в DOCX на случай спора о том, что именно было сказано: в боте расшифровки хранятся 30&nbsp;дней.</li>
-          </ul>
-
-          <h2 id="quality">Качество и ограничения</h2>
-          <p>Два человека, диктофон на столе между ними, тихая комната: такой вариант распознаётся хорошо, и правки сводятся к именам и редким терминам. Интервью в кафе с телефоном в кармане даст пропуски. Когда собеседники говорят одновременно, граница между репликами может сдвинуться на слово. Речь распознаёт ElevenLabs Scribe v2, язык определяется автоматически, так что интервью на английском тоже подойдёт.</p>
-
-          <h2 id="privacy">Конфиденциальность</h2>
-          <p>Аудио и видео удаляются сразу после распознавания. Расшифровки в боте хранятся 30&nbsp;дней, команда <code>/delete</code> удаляет их сразу. Результат на сайте без входа живёт только в памяти сервера один час. Подробности в <a href="/privacy/">политике конфиденциальности</a>.</p>
-
-          <h2 id="price">Сколько стоит час интервью</h2>
-          <p>В боте и на сайте после входа 15&nbsp;минут каждый месяц бесплатно: этого хватает на короткий разговор или на проверку качества на фрагменте. Час интервью укладывается в самый маленький пакет:</p>
-          <ul>
-            <li>60&nbsp;минут за 199&nbsp;₽;</li>
-            <li>300&nbsp;минут за 690&nbsp;₽, на&nbsp;31% дешевле за минуту;</li>
-            <li>1000&nbsp;минут за 1990&nbsp;₽, на&nbsp;40% дешевле за минуту.</li>
-          </ul>
-          <p>Минуты не сгорают, списывается фактическая длительность записи, а если распознать не удалось, минуты не списываются. Оплата банковской картой через Tribute, в боте команда <code>/buy</code>.</p>
-
-          <h2 id="faq">Вопросы и ответы</h2>
-          <details open>
-            <summary>Бот различает интервьюера и собеседника?</summary>
-            <p>Да, реплики размечаются как Спикер 1 и Спикер 2, и дальше, если участников больше. Метки заменяются на имена одной заменой в DOCX.</p>
-          </details>
-          <details>
-            <summary>Можно ли получить текст в Word?</summary>
-            <p>Да, DOCX скачивается под расшифровкой на сайте и в боте. Есть также TXT и SRT.</p>
-          </details>
-          <details>
-            <summary>Как быстро найти нужную цитату?</summary>
-            <p>По таймкодам в тексте или кнопкой «Вопрос» в боте: спросите, где собеседник говорил о конкретной теме, и получите ответ по записи.</p>
-          </details>
-          <details>
-            <summary>Интервью на английском подойдёт?</summary>
-            <p>Да. Язык определяется автоматически.</p>
-          </details>
-          <details>
-            <summary>Запись из Zoom подойдёт?</summary>
-            <p>Да, Zoom сохраняет запись в MP4 или M4A, оба формата подходят. Файл до 20 МБ отправьте боту, запись тяжелее загрузите на сайте после входа через Telegram, до 200 МБ. Без входа сайт берёт файл до 50 МБ, но расшифрует только первые 3 минуты.</p>
-          </details>
-          <details>
-            <summary>Что с конфиденциальностью?</summary>
-            <p>Аудио удаляется сразу после распознавания. Расшифровки в боте хранятся 30 дней, команда /delete удаляет их сразу. Результат на сайте без входа хранится в памяти сервера один час.</p>
-          </details>
-
-          <h2 id="related">Другие инструкции</h2>
-          <ul>
-            <li><a href="/transkribaciya-audio-v-tekst/">Транскрибация аудио в текст онлайн</a>: что на самом деле значит «бесплатно» и где заканчиваются 15&nbsp;минут.</li>
-            <li><a href="/zapis-vstrechi-v-protokol/">Запись встречи в протокол</a>: спикеры, конспект созвона и список задач.</li>
-            <li><a href="/podcast-v-tekst/">Расшифровка подкаста</a>: текст выпуска по спикерам, таймкоды для описания, SRT.</li>
-            <li><a href="/rasshifrovka-vebinara/">Расшифровка вебинара</a>: запись из Zoom, Meet или Телемоста в конспект и список вопросов.</li>
-          </ul>
-        </div>
-      </div>
+  <section class="opening" aria-labelledby="page-title">
+    <div class="column">
+      <nav class="crumbs" aria-label="Навигационная цепочка"><ol><li><a href="/">Главная</a></li><li><span aria-current="page">Расшифровка интервью</span></li></ol></nav>
+      <h1 id="page-title">Расшифровка интервью по&nbsp;спикерам</h1>
+      <p class="opening__line">Реплики по спикерам, у каждой время, и DOCX для правок.</p>
+      <h2 class="sr">Расшифровать интервью</h2>
+      <div id="vp-tool" data-api="https://bot.voicepad.qupport.io" data-lang="ru" data-source="interview"><noscript><p class="vp-fallback">Форма расшифровки работает с включённым JavaScript. Без него отправьте запись боту <a href="https://t.me/Voicepad_bot?start=src_interview">@Voicepad_bot</a> в Telegram.</p></noscript></div>
     </div>
-  </article>
+  </section>
 
-  <section class="outro" aria-labelledby="outro-title">
-    <div class="shell">
-      <div class="col">
-        <h2 id="outro-title">Остальное удобнее в&nbsp;Telegram</h2>
-        <p>История расшифровок, конспекты, задачи и ответы на вопросы по записи живут в боте.</p>
-        <p class="cta-pair">
-          <a class="btn" href="https://t.me/Voicepad_bot?start=src_interview" rel="noopener">Открыть @Voicepad_bot</a>
-          <a class="btn btn-line" href="/#tool">Расшифровать на сайте</a>
-        </p>
+  <section class="block" id="how" aria-labelledby="how-title">
+    <div class="column">
+      <h2 id="how-title">Как расшифровать интервью</h2>
+      <div class="copy">
+        <p>Час интервью это тридцать с&nbsp;лишним страниц текста, если набирать вручную. Журналисту нужны точные цитаты с&nbsp;привязкой ко&nbsp;времени, исследователю разметка, где вопрос, а&nbsp;где ответ, HR короткая сводка по&nbsp;кандидату.</p>
+        <ol>
+          <li>Возьмите запись с&nbsp;диктофона, из&nbsp;Zoom или с&nbsp;телефона: подойдут MP3, M4A, WAV, OGG, MP4, MOV, WEBM и&nbsp;другие форматы.</li>
+          <li>Выберите файл в&nbsp;форме выше. Интервью длиннее 3&nbsp;минут расшифруется целиком после входа через Telegram.</li>
+          <li>Получите текст: реплики помечены как Спикер 1 и&nbsp;Спикер 2, у&nbsp;каждой время. Скачайте DOCX для правок или TXT.</li>
+        </ol>
+        <h3>Журналистам, исследователям и&nbsp;HR</h3>
+        <ul>
+          <li>Журналисту: цитату можно сверить с&nbsp;записью по&nbsp;времени, а&nbsp;кнопка «Статья» в&nbsp;боте <a href="https://t.me/Voicepad_bot?start=src_interview" rel="noopener">@Voicepad_bot</a> делает черновик материала по&nbsp;разговору.</li>
+          <li>Исследователю: кнопка «Вопрос» отвечает по&nbsp;содержанию конкретной записи, например «что респондент говорил о&nbsp;цене».</li>
+          <li>HR и&nbsp;рекрутеру: «Конспект» даёт короткую сводку по&nbsp;собеседованию для карточки кандидата. Полный текст стоит сохранить в&nbsp;DOCX: в&nbsp;боте расшифровки хранятся 30 дней.</li>
+        </ul>
+        <p>После входа на&nbsp;сайте расшифровка сохраняется в&nbsp;истории бота, и&nbsp;эти кнопки доступны там.</p>
+        <h3>Что влияет на&nbsp;качество</h3>
+        <p>Два человека, диктофон на&nbsp;столе между ними, тихая комната: такой вариант распознаётся хорошо, и&nbsp;правки сводятся к&nbsp;именам и&nbsp;редким терминам. Интервью в&nbsp;кафе с&nbsp;телефоном в&nbsp;кармане даст пропуски, а&nbsp;когда собеседники говорят одновременно, граница между репликами может сдвинуться на&nbsp;слово. Язык определяется автоматически, так что интервью на&nbsp;английском тоже подойдёт.</p>
       </div>
     </div>
   </section>
+
+  <section class="block" id="result" aria-labelledby="result-title">
+    <div class="column">
+      <h2 id="result-title">Что получится</h2>
+      <p class="block__lead">Текст по&nbsp;спикерам на&nbsp;сайте, ответы на&nbsp;вопросы по&nbsp;нему в&nbsp;боте.</p>
+      <div class="example">
+        <div class="example__part">
+          <h3 class="example__title">Текст на сайте</h3>
+          <ol class="lines">
+            <li><time datetime="PT12M40S">12:40</time> <b>Спикер 1<span class="sr">:</span></b> Когда вы поняли, что первая гипотеза не подтверждается?</li>
+            <li><time datetime="PT12M48S">12:48</time> <b>Спикер 2<span class="sr">:</span></b> Месяца через три, когда пришли данные по второй группе. До этого мы честно в неё верили.</li>
+            <li><time datetime="PT12M59S">12:59</time> <b>Спикер 1<span class="sr">:</span></b> И что вы сделали первым делом?</li>
+          </ol>
+        </div>
+        <div class="example__part">
+          <h3 class="example__title">Вопрос в боте</h3>
+          <div class="copy">
+            <p><b>Вопрос:</b> когда стало ясно, что первая гипотеза не подтверждается?</p>
+            <p><b>Ответ:</b> месяца через три, когда пришли данные по второй группе.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="pricing" aria-labelledby="pricing-title">
+    <div class="column">
+      <h2 id="pricing-title">Сколько стоит</h2>
+      <p class="block__lead">Минуты общие для сайта и бота. Купленные минуты не сгорают.</p>
+      <ul class="plans">
+        <li class="plan">
+          <h3>Без входа</h3>
+          <p>3 записи в день, у длинной записи первые 3&nbsp;минуты, файл до 50&nbsp;МБ.</p>
+        </li>
+        <li class="plan">
+          <h3>Со входом через Telegram</h3>
+          <p>15 минут в месяц бесплатно, файлы до 200&nbsp;МБ, ссылки на видео.</p>
+        </li>
+        <li class="plan plan-packs">
+          <h3>Пакеты минут</h3>
+          <ul class="packs">
+            <li><span>60 мин</span> <b>199&nbsp;₽</b></li>
+            <li><span>300 мин</span> <b>690&nbsp;₽</b></li>
+            <li><span>1000 мин</span> <b>1990&nbsp;₽</b></li>
+          </ul>
+          <a class="btn" href="https://t.me/Voicepad_bot?start=src_interview_buy" rel="noopener">Купить минуты в боте</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" id="faq" aria-labelledby="faq-title">
+    <div class="column">
+      <h2 id="faq-title">Вопросы</h2>
+      <div class="faq">
+        <details>
+          <summary>Различаются ли интервьюер и собеседник?</summary>
+          <p>Да, реплики размечаются как Спикер 1 и Спикер 2, и дальше, если участников больше. Метки заменяются на имена одной заменой в DOCX.</p>
+        </details>
+        <details>
+          <summary>Можно ли получить текст в Word?</summary>
+          <p>Да, DOCX скачивается под расшифровкой на сайте и в боте. Есть также TXT и SRT.</p>
+        </details>
+        <details>
+          <summary>Как быстро найти нужную цитату?</summary>
+          <p>По времени у реплик или кнопкой «Вопрос» в боте: спросите, где собеседник говорил о конкретной теме, и получите ответ по записи.</p>
+        </details>
+        <details>
+          <summary>Запись из Zoom подойдёт?</summary>
+          <p>Да, Zoom обычно сохраняет запись в MP4 или M4A, оба формата подходят. После входа на сайте можно загрузить файл до 200 МБ. Боту можно отправить файл до 20 МБ, файл больше загрузите на сайте.</p>
+        </details>
+        <details>
+          <summary>Что с конфиденциальностью?</summary>
+          <p>Аудио удаляется сразу после распознавания. Результат без входа хранится в памяти сервера один час, расшифровки в боте 30 дней, а команда <code>/delete</code> стирает их сразу. Подробнее в <a href="/privacy/">политике конфиденциальности</a>.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="related" aria-labelledby="related-title">
+    <div class="column">
+      <h2 id="related-title">Другие инструкции</h2>
+      <div class="links">
+        <ul>
+          <li><a href="/zapis-razgovora-v-tekst/">Запись разговора в текст</a></li>
+          <li><a href="/zapis-vstrechi-v-protokol/">Запись встречи в протокол</a></li>
+          <li><a href="/podcast-v-tekst/">Расшифровка подкаста</a></li>
+          <li><a href="/rasshifrovka-vebinara/">Расшифровка вебинара</a></li>
+          <li><a href="/transkribaciya-audio-v-tekst/">Транскрибация аудио в текст</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="bot" aria-labelledby="bot-title">
+    <div class="column">
+      <h2 id="bot-title">Сайт и бот в Telegram</h2>
+      <p class="block__lead">Один сервис и один баланс минут. Вход на сайте через Telegram связывает их.</p>
+      <div class="duo">
+        <div>
+          <h3>На сайте</h3>
+          <ul class="dots">
+            <li>Большие файлы и ссылки на видео</li>
+            <li>Текст можно скопировать или скачать</li>
+            <li>3 записи в день без входа</li>
+          </ul>
+        </div>
+        <div>
+          <h3>В боте @Voicepad_bot</h3>
+          <ul class="dots">
+            <li>Голосовые и кружочки пересылкой из любого чата</li>
+            <li>Конспект, задачи и ответы на вопросы по записи</li>
+            <li>Работает в групповых чатах</li>
+          </ul>
+        </div>
+      </div>
+      <p class="block__actions">
+        <a class="btn" href="https://t.me/Voicepad_bot?start=src_interview" rel="noopener">Открыть бота</a>
+        <a href="/bot-v-gruppovom-chate/">Как бот работает в группе</a>
+      </p>
+    </div>
+  </section>
+
+  <p class="column updated">Обновлено <time datetime="2026-10-24">24 октября 2026</time></p>
 </main>
 
-<footer class="colophon">
-  <div class="shell">
-    <div class="col">
-      <p class="colophon__brand"><svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg><strong>Voicepad</strong><span>Расшифровка голосовых, аудио и видео в текст онлайн и в Telegram.</span></p>
-      <ul class="colophon__links">
-        <li><a href="https://t.me/Voicepad_bot?start=src_interview" rel="noopener">t.me/Voicepad_bot</a></li>
-        <li><a href="https://t.me/Voicepad_bot?startgroup=true" rel="noopener">Добавить в чат</a></li>
-        <li><a href="/privacy/">Политика конфиденциальности</a></li>
-        <li><a href="/en/" hreflang="en" lang="en">English</a></li>
-      </ul>
-      <p class="colophon__note">Речь распознаёт ElevenLabs Scribe v2. Набрано шрифтами Literata и IBM Plex Mono.</p>
-      <p class="colophon__en" lang="en"><strong>Voicepad in English:</strong> <a href="/en/" hreflang="en">web tool and Telegram bot</a>, <a href="/en/voice-message-to-text/" hreflang="en">voice message to text</a>, <a href="/en/youtube-to-text/" hreflang="en">YouTube to text</a>, <a href="/en/meeting-notes/" hreflang="en">meeting notes</a>, <a href="/en/podcast-transcript/" hreflang="en">podcast transcript</a>, <a href="/en/lecture-notes-from-video/" hreflang="en">lecture notes</a>, <a href="/en/transcribe-telegram-voice-without-premium/" hreflang="en">Telegram voice messages without Premium</a>, <a href="/en/whatsapp-voice-message-to-text/" hreflang="en">WhatsApp voice message to text</a>.</p>
-    </div>
+<footer class="foot">
+  <div class="column">
+    <p class="foot__brand"><svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg><strong>Voicepad</strong><span>Голосовые, аудио и видео в текст.</span></p>
+    <ul class="foot__links">
+      <li><a href="https://t.me/Voicepad_bot?start=src_interview" rel="noopener">@Voicepad_bot в Telegram</a></li>
+      <li><a href="/privacy/">Политика конфиденциальности</a></li>
+      <li><a href="/en/" hreflang="en" lang="en">English</a></li>
+    </ul>
+    <p class="foot__more" lang="en">In English: <a href="/en/voice-message-to-text/" hreflang="en">voice message to text</a>, <a href="/en/youtube-to-text/" hreflang="en">YouTube to text</a>, <a href="/en/meeting-notes/" hreflang="en">meeting notes</a>, <a href="/en/podcast-transcript/" hreflang="en">podcast transcript</a>, <a href="/en/lecture-notes-from-video/" hreflang="en">lecture notes</a>, <a href="/en/transcribe-telegram-voice-without-premium/" hreflang="en">Telegram voice messages without Premium</a>, <a href="/en/whatsapp-voice-message-to-text/" hreflang="en">WhatsApp voice message to text</a>.</p>
   </div>
 </footer>
 
+<script src="/assets/tool.js" defer></script>
 <script>
 (function () {
   var params = new URLSearchParams(location.search);
@@ -315,6 +281,24 @@
   if (!raw || raw.length > 24) return;
   document.querySelectorAll('a[href*="t.me/Voicepad_bot?start=src_"]').forEach(function (link) {
     link.href = link.href.replace(/start=src_[a-z0-9_]+/, "start=src_" + raw);
+  });
+})();
+</script>
+<script>
+(function () {
+  var menu = document.querySelector(".menu");
+  if (!menu) return;
+  function close() { menu.open = false; }
+  menu.addEventListener("click", function (event) {
+    if (event.target.closest && event.target.closest("a")) close();
+  });
+  document.addEventListener("click", function (event) {
+    if (menu.open && !menu.contains(event.target)) close();
+  });
+  document.addEventListener("keydown", function (event) {
+    if (event.key !== "Escape" || !menu.open) return;
+    close();
+    menu.querySelector("summary").focus();
   });
 })();
 </script>

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Telegram voice message to text: Voicepad bot</title>
-<meta name="description" content="Forward a Telegram voice message or video note to the Voicepad bot, or record one on the site, and read it as text with timestamps. 15 free minutes a month.">
+<title>Voice message to text online for free: Voicepad</title>
+<meta name="description" content="Voice message from WhatsApp, Telegram or a recorder to text online: upload .ogg, .opus or .m4a and get the text by speaker, with timestamps. No sign-up.">
 <link rel="canonical" href="https://voicepad.qupport.io/en/voice-message-to-text/">
 <link rel="alternate" hreflang="ru" href="https://voicepad.qupport.io/golosovoe-v-tekst/">
 <link rel="alternate" hreflang="en" href="https://voicepad.qupport.io/en/voice-message-to-text/">
@@ -19,8 +19,8 @@
 <meta property="og:site_name" content="Voicepad">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="ru_RU">
-<meta property="og:title" content="Telegram voice message to text">
-<meta property="og:description" content="Forward a voice message to the Voicepad bot or record one on the site and get the text with timestamps. 15 free minutes a month.">
+<meta property="og:title" content="Voice message to text online">
+<meta property="og:description" content="Voice messages from WhatsApp, Telegram or a recorder to text by speaker, with timestamps: copy it or download TXT, DOCX, SRT. Free, no sign-up.">
 <meta property="og:url" content="https://voicepad.qupport.io/en/voice-message-to-text/">
 <meta property="og:image" content="https://voicepad.qupport.io/assets/cover.jpg">
 <meta property="og:image:type" content="image/jpeg">
@@ -58,8 +58,8 @@
     {
       "@type": "Article",
       "@id": "https://voicepad.qupport.io/en/voice-message-to-text/#article",
-      "headline": "Telegram voice message to text",
-      "description": "Forward a Telegram voice message or video note to the Voicepad bot, or record one on the site, and read it as text with timestamps. 15 free minutes a month.",
+      "headline": "Voice message to text online",
+      "description": "Voice message from WhatsApp, Telegram or a recorder to text online: upload .ogg, .opus or .m4a and get the text by speaker, with timestamps. No sign-up.",
       "image": "https://voicepad.qupport.io/assets/cover.jpg",
       "datePublished": "2026-10-20",
       "dateModified": "2026-10-24",
@@ -75,11 +75,11 @@
       "url": "https://voicepad.qupport.io/en/voice-message-to-text/",
       "inLanguage": "en",
       "mainEntity": [
-        {"@type": "Question", "name": "Is it free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, 15 minutes of recordings a month at no cost and with no card. On the site, 3 transcriptions a day work without a login."}},
-        {"@type": "Question", "name": "Does it work with round video notes?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Forward a video note the same way as a voice message and you get the same text with timestamps."}},
-        {"@type": "Question", "name": "Can I transcribe a voice message from a group the bot is not in?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, forward it to the bot in a private chat. If voice messages are a daily thing in that group, adding the bot there is simpler."}},
-        {"@type": "Question", "name": "Do I need to choose the language?", "acceptedAnswer": {"@type": "Answer", "text": "No. The language is detected automatically, there are no settings."}},
-        {"@type": "Question", "name": "Where do old transcripts go?", "acceptedAnswer": {"@type": "Answer", "text": "/history lists your recent transcripts. They are kept for 30 days, and /delete removes them sooner when you no longer need them."}}
+        {"@type": "Question", "name": "Which voice message formats work?", "acceptedAnswer": {"@type": "Answer", "text": "Any format voice messages are saved in: .ogg and .opus from Telegram and WhatsApp, .m4a from iPhone, .mp3 and .wav from a voice recorder. There is nothing to convert."}},
+        {"@type": "Question", "name": "Can I turn a voice message into text right in Telegram?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, forward the voice message or video note to @Voicepad_bot from any chat. Under the text the bot offers a summary, tasks and DOCX, TXT, SRT files. The bot takes files up to 20 MB; upload a bigger file on the site."}},
+        {"@type": "Question", "name": "Does it work with round video notes?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Upload a saved video note on the site or forward it to the bot the same way as a voice message, and you get the same text with timestamps."}},
+        {"@type": "Question", "name": "Do I need to choose the language?", "acceptedAnswer": {"@type": "Answer", "text": "No. The language of the recording is detected automatically and shown in the result header next to the length."}},
+        {"@type": "Question", "name": "What happens to voice messages after transcription?", "acceptedAnswer": {"@type": "Answer", "text": "Audio is deleted right after recognition. A result made without logging in stays in server memory for one hour, transcripts in the bot for 30 days, and /delete removes them at once. More in the privacy policy."}}
       ]
     }
   ]
@@ -87,153 +87,210 @@
 </script>
 </head>
 <body>
-<a class="skip" href="#tool">Skip to transcription</a>
+<a class="skip" href="#vp-tool">Skip to transcription</a>
 
-<header class="masthead">
-  <div class="shell">
-    <div class="col masthead__row">
-      <a class="brand" href="/en/" aria-label="Voicepad, home">
-        <svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg>
-        <span>Voicepad</span>
-      </a>
-      <nav class="chapters" aria-label="Page sections">
-        <ol>
-          <li><a href="#tool">Record</a></li>
-          <li><a href="#how">In Telegram</a></li>
-          <li><a href="#groups">Groups</a></li>
-          <li><a href="#premium">vs Premium</a></li>
-          <li><a href="#faq">FAQ</a></li>
-        </ol>
+<header class="topbar">
+  <div class="column topbar__row">
+    <a class="brand" href="/en/" aria-label="Voicepad, home">
+      <svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg>
+      <span>Voicepad</span>
+    </a>
+    <nav class="topbar__nav" aria-label="Main menu">
+      <a href="#pricing">Pricing</a>
+      <a href="/en/#guides">Guides</a>
+      <a href="https://t.me/Voicepad_bot?start=src_en_voice" rel="noopener">Telegram bot</a>
+      <a href="/golosovoe-v-tekst/" hreflang="ru" lang="ru">RU</a>
+    </nav>
+    <details class="menu">
+      <summary>Menu</summary>
+      <nav class="menu__list" aria-label="Main menu">
+        <a href="#pricing">Pricing</a>
+        <a href="/en/#guides">Guides</a>
+        <a href="https://t.me/Voicepad_bot?start=src_en_voice" rel="noopener">Telegram bot</a>
+        <a href="/golosovoe-v-tekst/" hreflang="ru" lang="ru">Русская версия</a>
       </nav>
-      <div class="masthead__aside">
-        <a class="lang" href="/golosovoe-v-tekst/" hreflang="ru" lang="ru">RU</a>
-        <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_voice" rel="noopener">Open the bot</a>
-      </div>
-    </div>
+    </details>
   </div>
 </header>
 
 <main id="main">
-  <article class="guide" aria-labelledby="page-title">
-  <header class="hero">
-    <div class="shell">
-      <div class="col">
-        <nav class="crumbs" aria-label="Breadcrumbs"><ol><li><a href="/en/">Home</a></li><li><span aria-current="page">Voice message to text</span></li></ol></nav>
-        <h1 id="page-title">Telegram voice message to text</h1>
-        <p class="lead">A four-minute voice message from a colleague, a video note from a friend, an audio reply in a family chat. No time to listen, no headphones at hand, or you simply read faster than people talk. Forward it to the Voicepad bot in Telegram, or record your own voice right here and get it as text.</p>
-        <p class="page-meta">Updated <time datetime="2026-10-24">24 October 2026</time></p>
-
-        <div class="hero__grid">
-          <div class="desk" id="tool">
-            <div class="desk__head">
-              <h2 id="tool-title">Turn your voice into text</h2>
-              <p>Tap record, speak, stop: the text appears below with TXT, SRT and DOCX.</p>
-            </div>
-            <div id="vp-tool" data-api="https://bot.voicepad.qupport.io" data-lang="en" data-source="site_en_voice" data-tab="record"><noscript><p class="vp-fallback">The transcription form needs JavaScript. Without it, forward the voice message to <a href="https://t.me/Voicepad_bot?start=src_en_voice">@Voicepad_bot</a> in Telegram.</p></noscript></div>
-          </div>
-
-          <div class="hero__aside">
-            <figure class="chat" aria-labelledby="chat-caption">
-              <div class="chat__head" aria-hidden="true"><span>Voicepad</span><span>bot</span></div>
-              <div class="chat__line">
-                <span class="chat__who">You</span>
-                <span class="voice" role="img" aria-label="Forwarded voice message, 47 seconds">
-                  <svg class="voice__play" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><circle cx="12" cy="12" r="12"/><path d="M9.5 7.2v9.6l7.4-4.8z"/></svg>
-                  <svg class="voice__wave" viewBox="0 0 120 24" width="120" height="24" aria-hidden="true"><path d="M2 9v6M5 8.5v7M11 10.5v3M14 9v6M17 8.5v7M20 7.5v9M23 9v6M26 9v6M29 10.5v3M35 8v8M38 4v16M41 8.5v7M50 9v6M53 7v10M56 6v12M59 5v14M62 6v12M65 9v6M71 9.5v5M74 8v8M77 9.5v5M83 9v6M86 8v8M95 8.5v7M98 5.5v13M101 7.5v9M107 7.5v9M110 5v14M113 7.5v9"/></svg>
-                  <span class="tc">0:47</span>
-                </span>
-              </div>
-              <div class="chat__line chat__line-bot">
-                <span class="chat__who">Voicepad</span>
-                <div>
-                  <p><span class="tc">00:00</span> Hi, it's Kate. The train is stuck outside the station, I'll be about twenty minutes late.</p>
-                  <p><span class="tc">00:12</span> Start without me and send me the slides, I'll join the call from my phone.</p>
-                </div>
-              </div>
-              <figcaption id="chat-caption">Example: a forwarded voice message and the text the bot sends back, with timestamps.</figcaption>
-            </figure>
-            <p class="cta-pair hero__bot">
-              <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_voice" rel="noopener"><span>Forward it to the bot<span class="wide-only"> in&nbsp;Telegram</span></span></a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <div class="shell">
-    <div class="col">
-      <div class="prose">
-        <h2 id="how">Three steps in Telegram</h2>
+  <section class="opening" aria-labelledby="page-title">
+    <div class="column">
+      <nav class="crumbs" aria-label="Breadcrumbs"><ol><li><a href="/en/">Home</a></li><li><span aria-current="page">Voice message to text</span></li></ol></nav>
+      <h1 id="page-title">Voice message to&nbsp;text online</h1>
+      <p class="opening__line">From WhatsApp, Telegram or a voice recorder. Free, no sign-up.</p>
+      <h2 class="sr">Transcribe a voice message</h2>
+      <div id="vp-tool" data-api="https://bot.voicepad.qupport.io" data-lang="en" data-source="site_en_voice"><noscript><p class="vp-fallback">The transcription form needs JavaScript. Without it, forward the voice message to <a href="https://t.me/Voicepad_bot?start=src_en_voice">@Voicepad_bot</a> in Telegram.</p></noscript></div>
+      <details class="tip">
+        <summary>Voice message from WhatsApp: how to save it as a file</summary>
         <ol>
-          <li>Open <a href="https://t.me/Voicepad_bot?start=src_en_voice" rel="noopener">@Voicepad_bot</a> and tap Start.</li>
-          <li>Forward the voice message or video note from any chat to the bot, or record a new one right in the chat with the bot.</li>
-          <li>The text arrives with timestamps. If more than one person spoke, the lines are labelled Speaker 1 and Speaker 2.</li>
+          <li>Tap and hold the voice message. On Android choose Share; on iPhone choose Forward, then the Share icon.</li>
+          <li>Save it to Files or anywhere else on the phone, then tap Choose a recording in the form above.</li>
         </ol>
-        <p>No Telegram at hand? Record your voice in the form above or upload an audio file: 3 transcriptions a day work without a login. A recording longer than 3 minutes is not refused: the first 3 minutes are transcribed, and the full text is available after a Telegram login or in the bot.</p>
-
-        <h2>Buttons under the transcript</h2>
-        <p>Under every transcript in the bot there are buttons: Summary, Tasks, Question (ask anything about the recording), Article, Post, and export to DOCX, TXT and SRT. For a one-minute voice message the text itself is usually enough, but when someone talks through a list of things to do, the Tasks button turns it into a checklist.</p>
-
-        <h2 id="groups">Voice messages in a group chat</h2>
-        <p>Add the bot to the chat. Voice messages and video notes up to three minutes long are transcribed automatically for everyone, so nobody has to forward anything. Every chat gets 30 free minutes a month, then minutes come from the balance of whoever sent the recording. If automatic transcription gets in the way, an admin switches it off with <code>/mute</code> and back on with <code>/unmute</code>.</p>
-        <p>For a busy chat there is chat premium: an admin sends <code>/premium</code> and subscribes for 500 Telegram Stars a month. Replies become bare text, voice messages of any length are transcribed, and the chat gets 300 minutes a month.</p>
-
-        <h2 id="premium">Compared with Telegram Premium</h2>
-        <p>Without Premium, Telegram transcribes only a few short voice messages a week. Premium removes that cap but still handles only voice and video messages: no files, no links, no speaker labels, summaries or export. The bot does all of that, and in a group chat it transcribes for every member, with or without Premium.</p>
-
-        <h2>Languages and quality</h2>
-        <p>The language is detected automatically, no settings needed. Recognition runs on ElevenLabs Scribe v2. The result still depends on the recording: a voice message from a quiet room comes out almost clean, one recorded on a windy street or in a car will have a few guessed words.</p>
-
-        <h2 id="pricing">Pricing and commands</h2>
-        <p>15 minutes every month are free, which is roughly thirty ordinary voice messages. Packs: 60 minutes for 199 RUB, 300 for 690 RUB, 1000 for 1990 RUB. Minutes never expire, and you pay by card through Tribute with the <code>/buy</code> command. <code>/history</code> lists your recent transcripts and <code>/delete</code> removes them.</p>
-
-        <h2 id="faq">FAQ</h2>
-        <details open><summary>Is it free?</summary><p>Yes, 15 minutes of recordings a month at no cost and with no card. On the site, 3 transcriptions a day work without a login.</p></details>
-        <details><summary>Does it work with round video notes?</summary><p>Yes. Forward a video note the same way as a voice message and you get the same text with timestamps.</p></details>
-        <details><summary>Can I transcribe a voice message from a group the bot is not in?</summary><p>Yes, forward it to the bot in a private chat. If voice messages are a daily thing in that group, adding the bot there is simpler.</p></details>
-        <details><summary>Do I need to choose the language?</summary><p>No. The language is detected automatically, there are no settings.</p></details>
-        <details><summary>Where do old transcripts go?</summary><p>/history lists your recent transcripts. They are kept for 30 days, and /delete removes them sooner when you no longer need them.</p></details>
-
-        <h2 id="guides">Other guides</h2>
-        <ul>
-          <li><a href="/en/transcribe-telegram-voice-without-premium/">Telegram voice messages without Premium</a></li>
-          <li><a href="/en/whatsapp-voice-message-to-text/">WhatsApp voice message to text</a></li>
-          <li><a href="/en/meeting-notes/">Meeting recording to notes and action items</a></li>
-          <li>In Russian: <a href="/golosovoe-v-tekst/" hreflang="ru" lang="ru">голосовое в текст</a> and the general guide <a href="/transkribaciya-audio-v-tekst/" hreflang="ru" lang="ru">транскрибация аудио в текст</a>.</li>
-        </ul>
-      </div>
+        <p>Menu names depend on your WhatsApp version. From a computer and in more detail: <a href="/en/whatsapp-voice-message-to-text/">WhatsApp voice message to text</a>.</p>
+      </details>
     </div>
-  </div>
-  </article>
+  </section>
 
-  <section class="outro" aria-labelledby="outro-title">
-    <div class="shell">
-      <div class="col">
-        <h2 id="outro-title">Forward the next one to&nbsp;the bot</h2>
-        <p>Voice messages, video notes and group chats are easiest right inside Telegram.</p>
-        <p class="cta-pair">
-          <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_voice" rel="noopener">Open @Voicepad_bot</a>
-          <a class="btn btn-line" href="https://t.me/Voicepad_bot?startgroup=true" rel="noopener">Add to a group</a>
-        </p>
+  <section class="block" id="how" aria-labelledby="how-title">
+    <div class="column">
+      <h2 id="how-title">How to turn a voice message into&nbsp;text</h2>
+      <div class="copy">
+        <p>A four-minute voice message from a colleague or a note on your recorder: there is no time to listen, but the text takes half a minute to read.</p>
+        <ol>
+          <li>Save the voice message as a file. In messengers this is usually Share in the message menu, and you get an .opus, .ogg or .m4a file.</li>
+          <li>Choose the file in the form above or drag it there. There is nothing to convert.</li>
+          <li>Get the text by speaker, with timestamps. Copy it or download TXT, DOCX or SRT.</li>
+        </ol>
+        <p>To dictate right on the page, press Record your voice with the microphone. A voice message that came in Telegram is quicker to forward to <a href="https://t.me/Voicepad_bot?start=src_en_voice" rel="noopener">@Voicepad_bot</a>: it takes voice messages and video notes from any chat.</p>
+        <h3 id="groups">Voice messages in a group chat</h3>
+        <p>Add the bot to the chat, and voice messages and video notes up to 3&nbsp;minutes are transcribed automatically for everyone. Each chat gets 30 free minutes a month, then minutes come from the balance of whoever sent the recording. An admin switches this off with <code>/mute</code> and back on with <code>/unmute</code>.</p>
+        <p>For a busy chat there is chat premium: an admin sends <code>/premium</code> and subscribes the chat for 500 Telegram Stars a month. Replies become bare text, voice messages of any length are transcribed, and the chat gets 300 minutes a month.</p>
+        <h3>Compared with Telegram Premium</h3>
+        <p>Without Premium, Telegram transcribes only a few short voice messages a week. Premium removes that cap but handles only voice and video messages: no files, no links, no speaker labels, summaries or export.</p>
+        <p>Voicepad needs no Premium, takes voice messages from any messenger and labels speakers. More in <a href="/en/transcribe-telegram-voice-without-premium/">Telegram voice messages without Premium</a>.</p>
       </div>
     </div>
   </section>
+
+  <section class="block" id="result" aria-labelledby="result-title">
+    <div class="column">
+      <h2 id="result-title">What you get</h2>
+      <p class="block__lead">Text by speaker, with timestamps: copy it or download TXT, DOCX, SRT. The bot makes a summary and tasks from it.</p>
+      <div class="example">
+        <div class="example__part">
+          <h3 class="example__title">Text on the site</h3>
+          <ol class="lines">
+            <li><time datetime="PT0S">00:00</time> <b>Speaker 1<span class="sr">:</span></b> Hi Anna! Quick one about the report: the September numbers add up, the only gap is in delivery.</li>
+            <li><time datetime="PT10S">00:10</time> <b>Speaker 1<span class="sr">:</span></b> Tom promised to send the invoices by Wednesday. When they come in, please fix the table.</li>
+            <li><time datetime="PT19S">00:19</time> <b>Speaker 1<span class="sr">:</span></b> And on Friday we have a call with the client, could you prepare a couple of slides on the results?</li>
+          </ol>
+        </div>
+        <div class="example__part">
+          <h3 class="example__title">Tasks in the bot</h3>
+          <table class="tasks">
+            <caption class="sr">Tasks from this voice message: who, what and by when</caption>
+            <thead><tr><th scope="col">Who</th><th scope="col">What</th><th scope="col">When</th></tr></thead>
+            <tbody>
+              <tr><td>Tom</td><td>Send the invoices</td><td>Wednesday</td></tr>
+              <tr><td>Anna</td><td>Fix the table from the invoices</td><td>after the invoices</td></tr>
+              <tr><td>Anna</td><td>Prepare slides for the client call</td><td>Friday</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="pricing" aria-labelledby="pricing-title">
+    <div class="column">
+      <h2 id="pricing-title">How much it costs</h2>
+      <p class="block__lead">Minutes are shared by the site and the bot. Bought minutes never expire.</p>
+      <ul class="plans">
+        <li class="plan">
+          <h3>Without logging in</h3>
+          <p>3 recordings a day, the first 3&nbsp;minutes of a long one, files up to 50&nbsp;MB.</p>
+        </li>
+        <li class="plan">
+          <h3>With a Telegram login</h3>
+          <p>15 free minutes a month, files up to 200&nbsp;MB, video links.</p>
+        </li>
+        <li class="plan plan-packs">
+          <h3>Minute packs</h3>
+          <ul class="packs">
+            <li><span>60 min</span> <b>199&nbsp;RUB</b></li>
+            <li><span>300 min</span> <b>690&nbsp;RUB</b></li>
+            <li><span>1000 min</span> <b>1990&nbsp;RUB</b></li>
+          </ul>
+          <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_voice_buy" rel="noopener">Buy minutes in the bot</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" id="faq" aria-labelledby="faq-title">
+    <div class="column">
+      <h2 id="faq-title">Questions</h2>
+      <div class="faq">
+        <details>
+          <summary>Which voice message formats work?</summary>
+          <p>Any format voice messages are saved in: .ogg and .opus from Telegram and WhatsApp, .m4a from iPhone, .mp3 and .wav from a voice recorder. There is nothing to convert.</p>
+        </details>
+        <details>
+          <summary>Can I turn a voice message into text right in Telegram?</summary>
+          <p>Yes, forward the voice message or video note to <a href="https://t.me/Voicepad_bot?start=src_en_voice" rel="noopener">@Voicepad_bot</a> from any chat. Under the text the bot offers a summary, tasks and DOCX, TXT, SRT files. The bot takes files up to 20 MB; upload a bigger file on the site.</p>
+        </details>
+        <details>
+          <summary>Does it work with round video notes?</summary>
+          <p>Yes. Upload a saved video note on the site or forward it to the bot the same way as a voice message, and you get the same text with timestamps.</p>
+        </details>
+        <details>
+          <summary>Do I need to choose the language?</summary>
+          <p>No. The language of the recording is detected automatically and shown in the result header next to the length.</p>
+        </details>
+        <details>
+          <summary>What happens to voice messages after transcription?</summary>
+          <p>Audio is deleted right after recognition. A result made without logging in stays in server memory for one hour, transcripts in the bot for 30 days, and <code>/delete</code> removes them at once. More in the <a href="/privacy/#en">privacy policy</a>.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="related" aria-labelledby="related-title">
+    <div class="column">
+      <h2 id="related-title">More guides</h2>
+      <div class="links">
+        <ul>
+          <li><a href="/en/whatsapp-voice-message-to-text/">WhatsApp voice message to text</a></li>
+          <li><a href="/en/transcribe-telegram-voice-without-premium/">Telegram voice messages without Premium</a></li>
+          <li><a href="/en/meeting-notes/">Meeting recording to notes and action items</a></li>
+          <li><a href="/en/lecture-notes-from-video/">Lecture notes from a recording or video</a></li>
+          <li><a href="/en/youtube-to-text/">YouTube video to text with chapters</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="bot" aria-labelledby="bot-title">
+    <div class="column">
+      <h2 id="bot-title">The site and the Telegram bot</h2>
+      <p class="block__lead">One service and one balance of minutes. Logging in on the site with Telegram links the two.</p>
+      <div class="duo">
+        <div>
+          <h3>On the site</h3>
+          <ul class="dots">
+            <li>Large files and video links</li>
+            <li>Copy or download the text</li>
+            <li>3 recordings a day without logging in</li>
+          </ul>
+        </div>
+        <div>
+          <h3>In @Voicepad_bot</h3>
+          <ul class="dots">
+            <li>Voice messages and video notes, forwarded from any chat</li>
+            <li>Summaries, tasks and answers to questions about a recording</li>
+            <li>Works in group chats</li>
+          </ul>
+        </div>
+      </div>
+      <p class="block__actions">
+        <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_voice" rel="noopener">Open the bot</a>
+        <a href="/en/voice-message-to-text/#groups">How the bot works in a group</a>
+      </p>
+    </div>
+  </section>
+
+  <p class="column updated">Updated <time datetime="2026-10-24">24 October 2026</time></p>
 </main>
 
-<footer class="colophon">
-  <div class="shell">
-    <div class="col">
-      <p class="colophon__brand"><svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg><strong>Voicepad</strong><span>Voice messages, audio and video to text, online and in Telegram.</span></p>
-      <ul class="colophon__links">
-        <li><a href="https://t.me/Voicepad_bot?start=src_en_voice" rel="noopener">t.me/Voicepad_bot</a></li>
-        <li><a href="https://t.me/Voicepad_bot?startgroup=true" rel="noopener">Add to a group</a></li>
-        <li><a href="/privacy/#en">Privacy policy</a></li>
-        <li><a href="/golosovoe-v-tekst/" hreflang="ru" lang="ru">Русская версия</a></li>
-      </ul>
-      <p class="colophon__note">Speech recognition by ElevenLabs Scribe v2. Set in Literata and IBM Plex Mono.</p>
-      <p class="colophon__en"><strong>Guides in English:</strong> <a href="/en/voice-message-to-text/">voice message to text</a>, <a href="/en/youtube-to-text/">YouTube to text</a>, <a href="/en/meeting-notes/">meeting notes</a>, <a href="/en/podcast-transcript/">podcast transcript</a>, <a href="/en/lecture-notes-from-video/">lecture notes</a>, <a href="/en/transcribe-telegram-voice-without-premium/">Telegram voice messages without Premium</a>, <a href="/en/whatsapp-voice-message-to-text/">WhatsApp voice message to text</a>.</p>
-    </div>
+<footer class="foot">
+  <div class="column">
+    <p class="foot__brand"><svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg><strong>Voicepad</strong><span>Voice messages, audio and video to text.</span></p>
+    <ul class="foot__links">
+      <li><a href="https://t.me/Voicepad_bot?start=src_en_voice" rel="noopener">@Voicepad_bot in Telegram</a></li>
+      <li><a href="/privacy/#en">Privacy policy</a></li>
+      <li><a href="/golosovoe-v-tekst/" hreflang="ru" lang="ru">Русская версия</a></li>
+    </ul>
   </div>
 </footer>
 
@@ -245,6 +302,24 @@
   if (!raw || raw.length > 24) return;
   document.querySelectorAll('a[href*="t.me/Voicepad_bot?start=src_"]').forEach(function (link) {
     link.href = link.href.replace(/start=src_[a-z0-9_]+/, "start=src_" + raw);
+  });
+})();
+</script>
+<script>
+(function () {
+  var menu = document.querySelector(".menu");
+  if (!menu) return;
+  function close() { menu.open = false; }
+  menu.addEventListener("click", function (event) {
+    if (event.target.closest && event.target.closest("a")) close();
+  });
+  document.addEventListener("click", function (event) {
+    if (menu.open && !menu.contains(event.target)) close();
+  });
+  document.addEventListener("keydown", function (event) {
+    if (event.key !== "Escape" || !menu.open) return;
+    close();
+    menu.querySelector("summary").focus();
   });
 })();
 </script>

@@ -33,15 +33,58 @@
 <meta name="twitter:image" content="https://voicepad.qupport.io/assets/cover.jpg">
 <meta name="twitter:image:alt" content="Voicepad: voice messages, audio and video to text with timestamps and speaker labels">
 <link rel="preload" href="/assets/fonts/literata.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://bot.voicepad.qupport.io" crossorigin>
 <link rel="stylesheet" href="/assets/site.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
-    {"@type": "Organization", "@id": "https://voicepad.qupport.io/#organization", "name": "Voicepad", "url": "https://voicepad.qupport.io/", "logo": {"@type": "ImageObject", "url": "https://voicepad.qupport.io/assets/logo-512.png", "width": 512, "height": 512}, "sameAs": ["https://t.me/Voicepad_bot"]},
-    {"@type": "BreadcrumbList", "@id": "https://voicepad.qupport.io/en/transcribe-telegram-voice-without-premium/#breadcrumbs", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://voicepad.qupport.io/en/"}, {"@type": "ListItem", "position": 2, "name": "Telegram voice to text without Premium", "item": "https://voicepad.qupport.io/en/transcribe-telegram-voice-without-premium/"}]},
-    {"@type": "BlogPosting", "@id": "https://voicepad.qupport.io/en/transcribe-telegram-voice-without-premium/#article", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://voicepad.qupport.io/en/transcribe-telegram-voice-without-premium/", "url": "https://voicepad.qupport.io/en/transcribe-telegram-voice-without-premium/", "breadcrumb": {"@id": "https://voicepad.qupport.io/en/transcribe-telegram-voice-without-premium/#breadcrumbs"}}, "url": "https://voicepad.qupport.io/en/transcribe-telegram-voice-without-premium/", "headline": "How to transcribe Telegram voice messages without Premium", "description": "Telegram's free voice-to-text has a weekly cap. What Premium adds, three ways to transcribe voice messages without it, and Premium prices vs Voicepad packs.", "image": {"@type": "ImageObject", "url": "https://voicepad.qupport.io/assets/cover.jpg", "width": 1200, "height": 630}, "datePublished": "2026-10-24", "dateModified": "2026-10-24", "author": {"@type": "Organization", "@id": "https://voicepad.qupport.io/#organization", "name": "Voicepad", "url": "https://voicepad.qupport.io/"}, "publisher": {"@id": "https://voicepad.qupport.io/#organization"}, "inLanguage": "en", "wordCount": 2063, "isPartOf": {"@id": "https://voicepad.qupport.io/#website"}},
-    {"@type": "FAQPage", "@id": "https://voicepad.qupport.io/en/transcribe-telegram-voice-without-premium/#faq", "url": "https://voicepad.qupport.io/en/transcribe-telegram-voice-without-premium/", "inLanguage": "en", "isPartOf": {"@id": "https://voicepad.qupport.io/en/transcribe-telegram-voice-without-premium/#article"}, "mainEntity": [{"@type": "Question", "name": "How many voice messages can I transcribe in Telegram for free?", "acceptedAnswer": {"@type": "Answer", "text": "Telegram's announcement of November 30, 2023 says users without Premium can convert up to 2 messages per week into text with the →A icon. The limit is a server setting that Telegram can change, so check what your app shows. In a group boosted to level 6 or above, members can transcribe voice and video messages sent there without using their weekly quota."}}, {"@type": "Question", "name": "Does Telegram Premium transcribe audio files and video links?", "acceptedAnswer": {"@type": "Answer", "text": "Telegram describes Premium voice-to-text for voice messages and video messages. I found no official wording that it covers audio files sent as documents or links to YouTube and other sites. For those, @Voicepad_bot accepts audio and video files and links to YouTube, VK Video, RuTube and TikTok, and the browser tool at voicepad.qupport.io accepts uploads and, after you log in with Telegram, links."}}, {"@type": "Question", "name": "How can everyone in a Telegram group read voice messages without Premium?", "acceptedAnswer": {"@type": "Answer", "text": "There are two ways. The group can reach boost level 6, which unlocks unlimited voice-to-text for its members; boosts come from members with Premium or from giveaways, and the number needed depends on the group size. Or you add @Voicepad_bot to the chat: it transcribes voice messages and video notes up to 3 minutes long for everyone, and each chat gets 30 free minutes a month."}}, {"@type": "Question", "name": "Is there a file size limit when I send a recording to a transcription bot?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Telegram's Bot API lets a bot download files of up to 20 MB, so files sent to Voicepad inside Telegram are limited to 20 MB. On the Voicepad website you can upload files up to 50 MB without login (a recording longer than 3 minutes is transcribed only for its first 3 minutes), or up to 200 MB after logging in with Telegram."}}, {"@type": "Question", "name": "Is Telegram Premium cheaper than a Voicepad minute pack?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on volume. On October 24, 2026 the App Store listed Telegram Premium at $4.99 in the US and 329 RUB in Russia, and Telegram Premium Annual at $35.99 and 2,390 RUB. A Voicepad pack of 60 minutes costs 199 RUB once, the minutes never expire, and there are also 15 free minutes every month. Premium suits many short voice messages every day; a pack suits uneven use, long recordings, files and exports."}}]}
+    {
+      "@type": "Organization",
+      "@id": "https://voicepad.qupport.io/#organization",
+      "name": "Voicepad",
+      "url": "https://voicepad.qupport.io/",
+      "logo": {"@type": "ImageObject", "url": "https://voicepad.qupport.io/assets/logo-512.png", "width": 512, "height": 512},
+      "sameAs": ["https://t.me/Voicepad_bot"]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://voicepad.qupport.io/en/transcribe-telegram-voice-without-premium/#breadcrumbs",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://voicepad.qupport.io/en/"},
+        {"@type": "ListItem", "position": 2, "name": "Telegram voice to text without Premium", "item": "https://voicepad.qupport.io/en/transcribe-telegram-voice-without-premium/"}
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://voicepad.qupport.io/en/transcribe-telegram-voice-without-premium/#article",
+      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://voicepad.qupport.io/en/transcribe-telegram-voice-without-premium/", "url": "https://voicepad.qupport.io/en/transcribe-telegram-voice-without-premium/", "breadcrumb": {"@id": "https://voicepad.qupport.io/en/transcribe-telegram-voice-without-premium/#breadcrumbs"}},
+      "url": "https://voicepad.qupport.io/en/transcribe-telegram-voice-without-premium/",
+      "headline": "How to transcribe Telegram voice messages without Premium",
+      "description": "Telegram's free voice-to-text has a weekly cap. What Premium adds, three ways to transcribe voice messages without it, and Premium prices vs Voicepad packs.",
+      "image": {"@type": "ImageObject", "url": "https://voicepad.qupport.io/assets/cover.jpg", "width": 1200, "height": 630},
+      "datePublished": "2026-10-24",
+      "dateModified": "2026-10-24",
+      "author": {"@type": "Organization", "@id": "https://voicepad.qupport.io/#organization", "name": "Voicepad", "url": "https://voicepad.qupport.io/"},
+      "publisher": {"@id": "https://voicepad.qupport.io/#organization"},
+      "inLanguage": "en",
+      "wordCount": 2124,
+      "isPartOf": {"@id": "https://voicepad.qupport.io/#website"}
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://voicepad.qupport.io/en/transcribe-telegram-voice-without-premium/#faq",
+      "url": "https://voicepad.qupport.io/en/transcribe-telegram-voice-without-premium/",
+      "inLanguage": "en",
+      "isPartOf": {"@id": "https://voicepad.qupport.io/en/transcribe-telegram-voice-without-premium/#article"},
+      "mainEntity": [
+        {"@type": "Question", "name": "How many voice messages can I transcribe in Telegram for free?", "acceptedAnswer": {"@type": "Answer", "text": "Telegram's announcement of November 30, 2023 says users without Premium can convert up to 2 messages per week into text with the →A icon. The limit is a server setting that Telegram can change, so check what your app shows. In a group boosted to level 6 or above, members can transcribe voice and video messages sent there without using their weekly quota."}},
+        {"@type": "Question", "name": "Does Telegram Premium transcribe audio files and video links?", "acceptedAnswer": {"@type": "Answer", "text": "Telegram describes Premium voice-to-text for voice messages and video messages. I found no official wording that it covers audio files sent as documents or links to YouTube and other sites. For those, @Voicepad_bot accepts audio and video files and links to YouTube, VK Video, RuTube and TikTok, and the browser tool at voicepad.qupport.io accepts uploads and, after you log in with Telegram, links."}},
+        {"@type": "Question", "name": "How can everyone in a Telegram group read voice messages without Premium?", "acceptedAnswer": {"@type": "Answer", "text": "There are two ways. The group can reach boost level 6, which unlocks unlimited voice-to-text for its members; boosts come from members with Premium or from giveaways, and the number needed depends on the group size. Or you add @Voicepad_bot to the chat: it transcribes voice messages and video notes up to 3 minutes long for everyone, and each chat gets 30 free minutes a month."}},
+        {"@type": "Question", "name": "Is there a file size limit when I send a recording to a transcription bot?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Telegram's Bot API lets a bot download files of up to 20 MB, so files sent to Voicepad inside Telegram are limited to 20 MB. On the Voicepad website you can upload files up to 50 MB without login (a recording longer than 3 minutes is transcribed only for its first 3 minutes), or up to 200 MB after logging in with Telegram."}},
+        {"@type": "Question", "name": "Is Telegram Premium cheaper than a Voicepad minute pack?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on volume. On October 24, 2026 the App Store listed Telegram Premium at $4.99 in the US and 329 RUB in Russia, and Telegram Premium Annual at $35.99 and 2,390 RUB. A Voicepad pack of 60 minutes costs 199 RUB once, the minutes never expire, and there are also 15 free minutes every month. Premium suits many short voice messages every day; a pack suits uneven use, long recordings, files and exports."}}
+      ]
+    }
   ]
 }
 </script>
@@ -49,184 +92,245 @@
 <body>
 <a class="skip" href="#main">Skip to the article</a>
 
-<header class="masthead">
-  <div class="shell">
-    <div class="col masthead__row">
-      <a class="brand" href="/en/" aria-label="Voicepad, home">
-        <svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg>
-        <span>Voicepad</span>
-      </a>
-      <nav class="chapters" aria-label="Page sections">
-        <ol>
-          <li><a href="#free">Free limits</a></li>
-          <li><a href="#premium">Premium</a></li>
-          <li><a href="#bot">Bot</a></li>
-          <li><a href="#group">Groups</a></li>
-          <li><a href="#browser">Browser</a></li>
-          <li><a href="#prices">Prices</a></li>
-          <li><a href="#faq">FAQ</a></li>
-        </ol>
+<header class="topbar">
+  <div class="column topbar__row">
+    <a class="brand" href="/en/" aria-label="Voicepad, home">
+      <svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg>
+      <span>Voicepad</span>
+    </a>
+    <nav class="topbar__nav" aria-label="Main menu">
+      <a href="#pricing">Pricing</a>
+      <a href="/en/#guides">Guides</a>
+      <a href="https://t.me/Voicepad_bot?start=src_en_tg_premium" rel="noopener">Telegram bot</a>
+      <a href="/rasshifrovka-golosovyh-bez-premium/" hreflang="ru" lang="ru">RU</a>
+    </nav>
+    <details class="menu">
+      <summary>Menu</summary>
+      <nav class="menu__list" aria-label="Main menu">
+        <a href="#pricing">Pricing</a>
+        <a href="/en/#guides">Guides</a>
+        <a href="https://t.me/Voicepad_bot?start=src_en_tg_premium" rel="noopener">Telegram bot</a>
+        <a href="/rasshifrovka-golosovyh-bez-premium/" hreflang="ru" lang="ru">Русская версия</a>
       </nav>
-      <div class="masthead__aside">
-        <a class="lang" href="/rasshifrovka-golosovyh-bez-premium/" hreflang="ru" lang="ru">RU</a>
-        <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_tg_premium" rel="noopener">Open the bot</a>
-      </div>
-    </div>
+    </details>
   </div>
 </header>
 
 <main id="main">
-  <section class="hero" aria-labelledby="page-title">
-    <div class="shell">
-      <div class="col">
-        <nav class="crumbs" aria-label="Breadcrumb">
-          <ol>
-            <li><a href="/en/">Home</a></li>
-            <li><span aria-current="page">Telegram voice to text without Premium</span></li>
-          </ol>
-        </nav>
-        <h1 id="page-title">How to transcribe Telegram voice messages <span class="h1__tail">without Premium</span></h1>
-        <p class="lead">Telegram's built-in voice-to-text gives free accounts a small weekly quota, and the unlimited version comes with a Premium subscription. I build Voicepad, a transcription bot, so keep that bias in mind: below is a sourced look at what Telegram gives you, what Premium solves, and three ways to read voice messages without it.</p>
-        <p class="page-meta page-meta-list"><span>Voicepad</span><span><time datetime="2026-10-24">October&nbsp;24,&nbsp;2026</time></span><span>9&nbsp;min&nbsp;read</span></p>
+  <section class="opening" aria-labelledby="page-title">
+    <div class="column">
+      <nav class="crumbs" aria-label="Breadcrumbs"><ol><li><a href="/en/">Home</a></li><li><span aria-current="page">Telegram voice to text without Premium</span></li></ol></nav>
+      <h1 id="page-title">How to transcribe Telegram voice messages without Premium</h1>
+      <p class="opening__line">Telegram's built-in voice-to-text gives free accounts a small weekly quota, and the unlimited version comes with a Premium subscription. I build Voicepad, a transcription bot, so keep that bias in mind: below is a sourced look at what Telegram gives you, what Premium solves, and three ways to read voice messages without it.</p>
+    </div>
+  </section>
+
+  <article class="block" id="article" aria-labelledby="free">
+    <div class="column">
+      <div class="copy">
+        <h2 id="free">What Telegram gives free users</h2>
+        <p>Voice-to-text arrived in Telegram as a Premium feature in June 2022 and was extended to round video messages in November 2022. On November 30, 2023, Telegram's blog post "Similar Channels, Reposting Stories, and 9 More Features" opened it to everyone with a cap: users without Premium can convert up to 2 messages per week into text by tapping the →A icon. The same post said the feature would roll out gradually, so it might not appear everywhere at once.</p>
+        <p>Two details are worth knowing before you build a habit around it:</p>
+        <ul>
+        <li><strong>The cap is a server setting.</strong> Telegram's API documentation describes free transcription as a trial controlled by two configuration values: a weekly number of transcriptions and a maximum media length in seconds. The sample configuration in the docs shows 300 seconds for that length, but the live value is set by Telegram and I could not confirm it. I found no official announcement after 2023 that changes the figure of two per week, so treat it as likely current, but trust what your app shows over any article, including this one.</li>
+        <li><strong>Groups can unlock it for everyone.</strong> Since February 29, 2024, groups can collect boosts, and Telegram's Premium FAQ lists unlimited voice-to-text from group level 6 upward. Telegram's announcement says members of boosted groups get unlimited transcription of voice and video messages sent there, and the API documentation says this does not use their personal weekly quota.</li>
+        </ul>
+        <p>So a free account gets two transcriptions a week in private chats, plus unlimited ones in any group boosted high enough. If a colleague sends you a voice message every working day, the free quota covers two of the five.</p>
+
+        <h2 id="premium">What Premium adds and what it still cannot do</h2>
+        <p>Telegram Premium removes the weekly cap. The 2023 announcement says Premium keeps unlimited voice-to-text, and the Premium FAQ lists transcription for both voice messages and video messages. Telegram's February 2024 post adds that Premium includes 4 boosts that can be assigned to any group or channel, which helps a group climb toward level 6. The subscription bundles many features that have nothing to do with voice, so if you would pay for those anyway, unlimited transcription comes as a bonus.</p>
+        <p>What Premium does not change:</p>
+        <ul>
+        <li><strong>It is per account.</strong> Your subscription covers you. The people in your chats keep their own limits unless they pay too, or unless the group reaches level 6. Telegram's FAQ says the number of boosts a group needs depends on its total member count, so a large work chat may need several Premium members to boost it.</li>
+        <li><strong>It is built for voice and video messages.</strong> That is how Telegram describes the feature everywhere I looked. I found no official wording about audio files sent as documents, YouTube links or recordings that were never in Telegram, so I would not count on it for those.</li>
+        <li><strong>The result is plain text.</strong> None of the Telegram pages I read mention timestamps, speaker labels, summaries or export to SRT or DOCX. For a 40-second "running late, start without me" that is all you need. For a 20-minute voice message from a client or a recorded call, you usually want to know who said what and where in the recording it was said.</li>
+        </ul>
+
+        <h2 id="option-bot">Option 1: a bot in a private chat</h2>
+        <p>The most direct replacement for the →A button is a transcription bot. Here is how it works with <a href="https://t.me/Voicepad_bot?start=src_en_tg_premium" rel="noopener">@Voicepad_bot</a>, the bot I build:</p>
+        <ol>
+        <li>Open the bot and tap Start.</li>
+        <li>Forward the voice message or video note from any chat to it. You can also send an audio or video file, or a link to YouTube, VK Video, RuTube or TikTok.</li>
+        <li>The text comes back with timestamps and speaker labels. The language is detected automatically.</li>
+        </ol>
+        <p>Every transcript in the bot comes with a summary, a task list, an article, a post and questions about the recording, plus export to DOCX, TXT and SRT. Recordings can be up to 3 hours long, and there are 15 free minutes every month. If you mostly deal with video links rather than voice notes, the guide on <a href="/en/youtube-to-text/">YouTube video to text with chapters</a> covers that case.</p>
+        <p>The honest limits: forwarding is one step more than tapping →A, and minutes are metered rather than unlimited. Files sent to the bot inside Telegram are capped at 20 MB, because Telegram's Bot API documentation sets 20 MB as the maximum file size a bot can download. For bigger files, use the website (Option 3). For a walkthrough with examples, see <a href="/en/voice-message-to-text/">Telegram voice message to text</a>.</p>
+
+        <h2 id="group">Option 2: a bot in a group that transcribes for everyone</h2>
+        <p>If voice messages pile up in a family chat or a work group, forwarding each one gets old quickly. Add @Voicepad_bot to the chat and it transcribes voice messages and video notes up to 3 minutes long automatically, for everyone in it. Nobody needs Premium, nobody has to forward anything, and people who cannot listen right now (in a meeting, on a train, or hard of hearing) can read along.</p>
+        <p>Each chat gets 30 free minutes a month; after that, minutes come from the balance of whoever sent the voice message. Admins switch automatic transcription off and on with <code>/mute</code> and <code>/unmute</code>. If the chat needs more, an admin can send <code>/premium</code> and subscribe the chat for 500 Telegram Stars a month: replies become bare text, voice messages of any length are transcribed, and the chat gets 300 minutes a month.</p>
+        <p>Compare that with boosting the group to level 6. Telegram's February 2024 announcement says groups get boosts from their members or through giveaways, and the FAQ says the number required depends on how many members the group has. If your group already has enough Premium members willing to boost it, Telegram's own transcription becomes free for everyone there and you do not need a bot at all. If it does not, a bot is the practical path. In work chats a long voice message is often a small meeting in disguise; for recorded calls, the guide on <a href="/en/meeting-notes/">meeting recording to notes and action items</a> covers the full workflow.</p>
+        <p>One thing to do first: tell the group. A bot in a chat processes everyone's voice messages, not only yours. Voicepad deletes the audio right after recognition and keeps transcripts in the bot for 30 days, and members should know that before the bot starts working.</p>
+
+        <h2 id="browser">Option 3: the browser (record or upload on the site)</h2>
+        <p>Sometimes the recording is not in Telegram at all, or you are at a laptop with a file. The <a href="#vp-tool">browser transcription tool on the Voicepad site</a> takes three kinds of input: record your voice, upload a file, or paste a video link.</p>
+        <ul>
+        <li><strong>Without login:</strong> 3 transcriptions a day, files up to 50 MB, one at a time, no signup. A longer recording is not refused: its first 3 minutes are transcribed, and the full text is available after login or in the bot. Links need a login.</li>
+        <li><strong>Logged in with Telegram (one button):</strong> files up to 200 MB, links from YouTube, VK Video, RuTube, TikTok, Vimeo, Dzen, OK and Twitch when the video has a known duration, recordings up to 3 hours (browser recording up to 30 minutes), and the same free minutes and balance as in the bot.</li>
+        </ul>
+        <p>Results can be copied or downloaded as TXT, SRT or DOCX. Logged in, the site is the way around the 20 MB bot limit. Without login it is a quick way to try the quality on a short clip. For a voice message already sitting in a Telegram chat, forwarding it to the bot is faster than saving and uploading it.</p>
+
+        <h2 id="prices">Premium or a pack of 60 minutes</h2>
+        <p>Telegram prices below come from the App Store listings of the Telegram app in the US and Russian storefronts, checked on October 24, 2026. Neither listing names a billing period for the plain "Telegram Premium" item ($4.99 in the US, 329 RUB in Russia). I treat it as the monthly plan because Digital Trends reported Premium at $4.99 per month or $35.99 per year, which matches the US listing. Telegram's FAQ says prices vary slightly with local conditions and taxes, and that subscriptions bought through @PremiumBot are discounted, so your price may differ. Voicepad packs are paid by card via Tribute.</p>
+        <table>
+        <thead><tr><th scope="col">Option</th><th scope="col">Price</th><th scope="col">What you get for transcription</th></tr></thead>
+        <tbody>
+        <tr><th scope="row">Telegram, free account</th><td>0</td><td>Up to 2 messages a week (November 2023 announcement); unlimited in groups at level 6 and above</td></tr>
+        <tr><th scope="row">Telegram Premium, monthly</th><td>$4.99 (US App Store), 329 RUB (Russian App Store)</td><td>Unlimited voice-to-text for voice and video messages on your account, for as long as you pay</td></tr>
+        <tr><th scope="row">Telegram Premium, annual</th><td>$35.99 (US App Store), 2,390 RUB (Russian App Store)</td><td>The same, paid once a year</td></tr>
+        <tr><th scope="row">Voicepad, free</th><td>0</td><td>15 minutes every month</td></tr>
+        <tr><th scope="row">Voicepad, 60-minute pack</th><td>199 RUB</td><td>60 minutes with timestamps, speaker labels and exports; minutes never expire</td></tr>
+        <tr><th scope="row">Voicepad, 300-minute pack</th><td>690 RUB</td><td>300 minutes; minutes never expire</td></tr>
+        <tr><th scope="row">Voicepad, 1000-minute pack</th><td>1990 RUB</td><td>1000 minutes; minutes never expire</td></tr>
+        </tbody>
+        </table>
+        <p>Voicepad charges only the real duration of each recording, and nothing is charged if recognition fails. How I would read this table:</p>
+        <ul>
+        <li><strong>Premium wins</strong> if you get many short voice messages every day and only want to read them, or if you already want Premium for its other features. Unlimited and one tap beats metered minutes for that pattern.</li>
+        <li><strong>Free is enough</strong> if you get a few voice messages a week: two Telegram transcriptions a week plus 15 Voicepad minutes a month cover that.</li>
+        <li><strong>A pack wins</strong> if your volume is uneven, if you deal with long recordings, files or links, if you need timestamps, speaker labels or SRT and DOCX files, or if a whole group needs transcription without anyone buying Premium. In the Russian storefront, 199 RUB once costs less than one month of Premium at 329 RUB, and the minutes stay on your balance until you use them.</li>
+        </ul>
+        <p>For the other things Voicepad does with files and video links, see the <a href="/en/">Voicepad home page</a>. Or forward your next long voice message to <a href="https://t.me/Voicepad_bot?start=src_en_tg_premium" rel="noopener">Voicepad in Telegram</a> and spend the free minutes first.</p>
+
+        <h2 id="sources">Sources</h2>
+        <ol class="note">
+        <li><a href="https://telegram.org/blog/700-million-and-premium">Telegram blog: Telegram Premium launch, June 19, 2022</a></li>
+        <li><a href="https://telegram.org/blog/topics-in-groups-collectible-usernames">Telegram blog: Voice-to-Text for Video Messages, November 5, 2022</a></li>
+        <li><a href="https://telegram.org/blog/similar-channels">Telegram blog: Voice-to-Text for Everyone, November 30, 2023</a></li>
+        <li><a href="https://telegram.org/blog/february2024">Telegram blog: Boosts for Groups, February 29, 2024</a></li>
+        <li><a href="https://telegram.org/faq_premium">Telegram: Premium FAQ</a></li>
+        <li><a href="https://core.telegram.org/api/transcribe">Telegram API: transcribing voice messages</a></li>
+        <li><a href="https://core.telegram.org/api/config">Telegram API: client configuration</a></li>
+        <li><a href="https://core.telegram.org/bots/api#getfile">Telegram Bot API: getFile</a></li>
+        <li><a href="https://apps.apple.com/us/app/telegram-messenger/id686449807">App Store (US): Telegram Messenger</a></li>
+        <li><a href="https://apps.apple.com/ru/app/telegram-messenger/id686449807">App Store (Russia): Telegram Messenger</a></li>
+        <li><a href="https://www.digitaltrends.com/phones/what-is-telegram-premium-features-price-how-to-sign-up/">Digital Trends: What is Telegram Premium, June 23, 2024</a></li>
+        </ol>
+      </div>
+    </div>
+  </article>
+
+  <section class="block" id="file" aria-labelledby="file-title">
+    <div class="column">
+      <h2 id="file-title">Transcribe a recording on the site</h2>
+      <p class="block__lead">Upload a saved voice message, record one with the microphone or paste a video link.</p>
+      <div id="vp-tool" data-api="https://bot.voicepad.qupport.io" data-lang="en" data-source="site_en_tg_premium"><noscript><p class="vp-fallback">The transcription form needs JavaScript. Without it, forward the voice message to <a href="https://t.me/Voicepad_bot?start=src_en_tg_premium">@Voicepad_bot</a> in Telegram.</p></noscript></div>
+    </div>
+  </section>
+
+  <section class="block" id="pricing" aria-labelledby="pricing-title">
+    <div class="column">
+      <h2 id="pricing-title">How much it costs</h2>
+      <p class="block__lead">Minutes are shared by the site and the bot. Bought minutes never expire.</p>
+      <ul class="plans">
+        <li class="plan">
+          <h3>Without logging in</h3>
+          <p>3 recordings a day, the first 3&nbsp;minutes of a long one, files up to 50&nbsp;MB.</p>
+        </li>
+        <li class="plan">
+          <h3>With a Telegram login</h3>
+          <p>15 free minutes a month, files up to 200&nbsp;MB, video links.</p>
+        </li>
+        <li class="plan plan-packs">
+          <h3>Minute packs</h3>
+          <ul class="packs">
+            <li><span>60 min</span> <b>199&nbsp;RUB</b></li>
+            <li><span>300 min</span> <b>690&nbsp;RUB</b></li>
+            <li><span>1000 min</span> <b>1990&nbsp;RUB</b></li>
+          </ul>
+          <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_tg_premium_buy" rel="noopener">Buy minutes in the bot</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" id="faq" aria-labelledby="faq-title">
+    <div class="column">
+      <h2 id="faq-title">Questions</h2>
+      <div class="faq">
+        <details>
+          <summary>How many voice messages can I transcribe in Telegram for free?</summary>
+          <p>Telegram's announcement of November 30, 2023 says users without Premium can convert up to 2 messages per week into text with the →A icon. The limit is a server setting that Telegram can change, so check what your app shows. In a group boosted to level 6 or above, members can transcribe voice and video messages sent there without using their weekly quota.</p>
+        </details>
+        <details>
+          <summary>Does Telegram Premium transcribe audio files and video links?</summary>
+          <p>Telegram describes Premium voice-to-text for voice messages and video messages. I found no official wording that it covers audio files sent as documents or links to YouTube and other sites. For those, @Voicepad_bot accepts audio and video files and links to YouTube, VK Video, RuTube and TikTok, and the browser tool at voicepad.qupport.io accepts uploads and, after you log in with Telegram, links.</p>
+        </details>
+        <details>
+          <summary>How can everyone in a Telegram group read voice messages without Premium?</summary>
+          <p>There are two ways. The group can reach boost level 6, which unlocks unlimited voice-to-text for its members; boosts come from members with Premium or from giveaways, and the number needed depends on the group size. Or you add @Voicepad_bot to the chat: it transcribes voice messages and video notes up to 3 minutes long for everyone, and each chat gets 30 free minutes a month.</p>
+        </details>
+        <details>
+          <summary>Is there a file size limit when I send a recording to a transcription bot?</summary>
+          <p>Yes. Telegram's Bot API lets a bot download files of up to 20 MB, so files sent to Voicepad inside Telegram are limited to 20 MB. On the Voicepad website you can upload files up to 50 MB without login (a recording longer than 3 minutes is transcribed only for its first 3 minutes), or up to 200 MB after logging in with Telegram.</p>
+        </details>
+        <details>
+          <summary>Is Telegram Premium cheaper than a Voicepad minute pack?</summary>
+          <p>It depends on volume. On October 24, 2026 the App Store listed Telegram Premium at $4.99 in the US and 329 RUB in Russia, and Telegram Premium Annual at $35.99 and 2,390 RUB. A Voicepad pack of 60 minutes costs 199 RUB once, the minutes never expire, and there are also 15 free minutes every month. Premium suits many short voice messages every day; a pack suits uneven use, long recordings, files and exports.</p>
+        </details>
       </div>
     </div>
   </section>
 
-  <div class="shell">
-    <div class="col">
-      <article class="prose" aria-labelledby="page-title">
-<h2 id="free">What Telegram gives free users</h2>
-<p>Voice-to-text arrived in Telegram as a Premium feature in June 2022 and was extended to round video messages in November 2022. On November 30, 2023, Telegram's blog post "Similar Channels, Reposting Stories, and 9 More Features" opened it to everyone with a cap: users without Premium can convert up to 2 messages per week into text by tapping the →A icon. The same post said the feature would roll out gradually, so it might not appear everywhere at once.</p>
-<p>Two details are worth knowing before you build a habit around it:</p>
-<ul>
-<li><strong>The cap is a server setting.</strong> Telegram's API documentation describes free transcription as a trial controlled by two configuration values: a weekly number of transcriptions and a maximum media length in seconds. The sample configuration in the docs shows 300 seconds for that length, but the live value is set by Telegram and I could not confirm it. I found no official announcement after 2023 that changes the figure of two per week, so treat it as likely current, but trust what your app shows over any article, including this one.</li>
-<li><strong>Groups can unlock it for everyone.</strong> Since February 29, 2024, groups can collect boosts, and Telegram's Premium FAQ lists unlimited voice-to-text from group level 6 upward. Telegram's announcement says members of boosted groups get unlimited transcription of voice and video messages sent there, and the API documentation says this does not use their personal weekly quota.</li>
-</ul>
-<p>So a free account gets two transcriptions a week in private chats, plus unlimited ones in any group boosted high enough. If a colleague sends you a voice message every working day, the free quota covers two of the five.</p>
-
-<h2 id="premium">What Premium adds and what it still cannot do</h2>
-<p>Telegram Premium removes the weekly cap. The 2023 announcement says Premium keeps unlimited voice-to-text, and the Premium FAQ lists transcription for both voice messages and video messages. Telegram's February 2024 post adds that Premium includes 4 boosts that can be assigned to any group or channel, which helps a group climb toward level 6. The subscription bundles many features that have nothing to do with voice, so if you would pay for those anyway, unlimited transcription comes as a bonus.</p>
-<p>What Premium does not change:</p>
-<ul>
-<li><strong>It is per account.</strong> Your subscription covers you. The people in your chats keep their own limits unless they pay too, or unless the group reaches level 6. Telegram's FAQ says the number of boosts a group needs depends on its total member count, so a large work chat may need several Premium members to boost it.</li>
-<li><strong>It is built for voice and video messages.</strong> That is how Telegram describes the feature everywhere I looked. I found no official wording about audio files sent as documents, YouTube links or recordings that were never in Telegram, so I would not count on it for those.</li>
-<li><strong>The result is plain text.</strong> None of the Telegram pages I read mention timestamps, speaker labels, summaries or export to SRT or DOCX. For a 40-second "running late, start without me" that is all you need. For a 20-minute voice message from a client or a recorded call, you usually want to know who said what and where in the recording it was said.</li>
-</ul>
-
-<h2 id="bot">Option 1: a bot in a private chat</h2>
-<p>The most direct replacement for the →A button is a transcription bot. Here is how it works with <a href="https://t.me/Voicepad_bot?start=src_en_tg_premium" rel="noopener">@Voicepad_bot</a>, the bot I build:</p>
-<ol>
-<li>Open the bot and tap Start.</li>
-<li>Forward the voice message or video note from any chat to it. You can also send an audio or video file, or a link to YouTube, VK Video, RuTube or TikTok.</li>
-<li>The text comes back with timestamps and speaker labels. The language is detected automatically, and recognition runs on ElevenLabs Scribe v2.</li>
-</ol>
-<p>Every transcript in the bot comes with a summary, a task list, an article, a post and questions about the recording, plus export to DOCX, TXT and SRT. Recordings can be up to 3 hours long, and there are 15 free minutes every month. If you mostly deal with video links rather than voice notes, the guide on <a href="/en/youtube-to-text/">YouTube video to text with chapters</a> covers that case.</p>
-<p>The honest limits: forwarding is one step more than tapping →A, and minutes are metered rather than unlimited. Files sent to the bot inside Telegram are capped at 20 MB, because Telegram's Bot API documentation sets 20 MB as the maximum file size a bot can download. For bigger files, use the website (Option 3). For a walkthrough with examples, see <a href="/en/voice-message-to-text/">Telegram voice message to text</a>.</p>
-
-<h2 id="group">Option 2: a bot in a group that transcribes for everyone</h2>
-<p>If voice messages pile up in a family chat or a work group, forwarding each one gets old quickly. Add @Voicepad_bot to the chat and it transcribes voice messages and video notes up to 3 minutes long automatically, for everyone in it. Nobody needs Premium, nobody has to forward anything, and people who cannot listen right now (in a meeting, on a train, or hard of hearing) can read along.</p>
-<p>Each chat gets 30 free minutes a month; after that, minutes come from the balance of whoever sent the voice message. Admins switch automatic transcription off and on with <code>/mute</code> and <code>/unmute</code>. If the chat needs more, an admin can send <code>/premium</code> and subscribe the chat for 500 Telegram Stars a month: replies become bare text, voice messages of any length are transcribed, and the chat gets 300 minutes a month.</p>
-<p>Compare that with boosting the group to level 6. Telegram's February 2024 announcement says groups get boosts from their members or through giveaways, and the FAQ says the number required depends on how many members the group has. If your group already has enough Premium members willing to boost it, Telegram's own transcription becomes free for everyone there and you do not need a bot at all. If it does not, a bot is the practical path. In work chats a long voice message is often a small meeting in disguise; for recorded calls, the guide on <a href="/en/meeting-notes/">meeting recording to notes and action items</a> covers the full workflow.</p>
-<p>One thing to do first: tell the group. A bot in a chat processes everyone's voice messages, not only yours. Voicepad deletes the audio right after recognition and keeps transcripts in the bot for 30 days, and members should know that before the bot starts working.</p>
-
-<h2 id="browser">Option 3: the browser (record or upload on the site)</h2>
-<p>Sometimes the recording is not in Telegram at all, or you are at a laptop with a file. The <a href="/en/#tool">browser transcription tool on the Voicepad site</a> takes three kinds of input: record your voice, upload a file, or paste a video link.</p>
-<ul>
-<li><strong>Without login:</strong> 3 transcriptions a day, files up to 50 MB, one at a time, no signup. A longer recording is not refused: its first 3 minutes are transcribed, and the full text is available after login or in the bot. Links need a login.</li>
-<li><strong>Logged in with Telegram (one button):</strong> files up to 200 MB, links from YouTube, VK Video, RuTube, TikTok, Vimeo, Dzen, OK and Twitch when the video has a known duration, recordings up to 3 hours (browser recording up to 30 minutes), and the same free minutes and balance as in the bot.</li>
-</ul>
-<p>Results can be copied or downloaded as TXT, SRT or DOCX. Logged in, the site is the way around the 20 MB bot limit. Without login it is a quick way to try the quality on a short clip. For a voice message already sitting in a Telegram chat, forwarding it to the bot is faster than saving and uploading it.</p>
-
-<h2 id="prices">Premium or a pack of 60 minutes</h2>
-<p>Telegram prices below come from the App Store listings of the Telegram app in the US and Russian storefronts, checked on October 24, 2026. Neither listing names a billing period for the plain "Telegram Premium" item ($4.99 in the US, 329 RUB in Russia). I treat it as the monthly plan because Digital Trends reported Premium at $4.99 per month or $35.99 per year, which matches the US listing. Telegram's FAQ says prices vary slightly with local conditions and taxes, and that subscriptions bought through @PremiumBot are discounted, so your price may differ. Voicepad packs are paid by card via Tribute.</p>
-<table class="book venues" role="table">
-<thead role="rowgroup"><tr role="row"><th role="columnheader" scope="col">Option</th><th role="columnheader" scope="col">Price</th><th role="columnheader" scope="col">What you get for transcription</th></tr></thead>
-<tbody role="rowgroup">
-<tr role="row"><th role="rowheader" scope="row">Telegram, free account</th><td role="cell" data-label="Price"><span>0</span></td><td role="cell" data-label="What you get for transcription"><span>Up to 2 messages a week (November 2023 announcement); unlimited in groups at level 6 and above</span></td></tr>
-<tr role="row"><th role="rowheader" scope="row">Telegram Premium, monthly</th><td role="cell" data-label="Price"><span>$4.99 (US App Store), 329 RUB (Russian App Store)</span></td><td role="cell" data-label="What you get for transcription"><span>Unlimited voice-to-text for voice and video messages on your account, for as long as you pay</span></td></tr>
-<tr role="row"><th role="rowheader" scope="row">Telegram Premium, annual</th><td role="cell" data-label="Price"><span>$35.99 (US App Store), 2,390 RUB (Russian App Store)</span></td><td role="cell" data-label="What you get for transcription"><span>The same, paid once a year</span></td></tr>
-<tr role="row"><th role="rowheader" scope="row">Voicepad, free</th><td role="cell" data-label="Price"><span>0</span></td><td role="cell" data-label="What you get for transcription"><span>15 minutes every month</span></td></tr>
-<tr role="row"><th role="rowheader" scope="row">Voicepad, 60-minute pack</th><td role="cell" data-label="Price"><span>199 RUB</span></td><td role="cell" data-label="What you get for transcription"><span>60 minutes with timestamps, speaker labels and exports; minutes never expire</span></td></tr>
-<tr role="row"><th role="rowheader" scope="row">Voicepad, 300-minute pack</th><td role="cell" data-label="Price"><span>690 RUB</span></td><td role="cell" data-label="What you get for transcription"><span>300 minutes; minutes never expire</span></td></tr>
-<tr role="row"><th role="rowheader" scope="row">Voicepad, 1000-minute pack</th><td role="cell" data-label="Price"><span>1990 RUB</span></td><td role="cell" data-label="What you get for transcription"><span>1000 minutes; minutes never expire</span></td></tr>
-</tbody>
-</table>
-<p>Voicepad charges only the real duration of each recording, and nothing is charged if recognition fails. How I would read this table:</p>
-<ul>
-<li><strong>Premium wins</strong> if you get many short voice messages every day and only want to read them, or if you already want Premium for its other features. Unlimited and one tap beats metered minutes for that pattern.</li>
-<li><strong>Free is enough</strong> if you get a few voice messages a week: two Telegram transcriptions a week plus 15 Voicepad minutes a month cover that.</li>
-<li><strong>A pack wins</strong> if your volume is uneven, if you deal with long recordings, files or links, if you need timestamps, speaker labels or SRT and DOCX files, or if a whole group needs transcription without anyone buying Premium. In the Russian storefront, 199 RUB once costs less than one month of Premium at 329 RUB, and the minutes stay on your balance until you use them.</li>
-</ul>
-<p>For the other things Voicepad does with files and video links, see the <a href="/en/">Voicepad home page</a>. Or forward your next long voice message to <a href="https://t.me/Voicepad_bot?start=src_en_tg_premium" rel="noopener">Voicepad in Telegram</a> and spend the free minutes first.</p>
-
-<h2 id="faq">FAQ</h2>
-<h3>How many voice messages can I transcribe in Telegram for free?</h3>
-<p>Telegram's announcement of November 30, 2023 says users without Premium can convert up to 2 messages per week into text with the →A icon. The limit is a server setting that Telegram can change, so check what your app shows. In a group boosted to level 6 or above, members can transcribe voice and video messages sent there without using their weekly quota.</p>
-<h3>Does Telegram Premium transcribe audio files and video links?</h3>
-<p>Telegram describes Premium voice-to-text for voice messages and video messages. I found no official wording that it covers audio files sent as documents or links to YouTube and other sites. For those, @Voicepad_bot accepts audio and video files and links to YouTube, VK Video, RuTube and TikTok, and the browser tool at voicepad.qupport.io accepts uploads and, after you log in with Telegram, links.</p>
-<h3>How can everyone in a Telegram group read voice messages without Premium?</h3>
-<p>There are two ways. The group can reach boost level 6, which unlocks unlimited voice-to-text for its members; boosts come from members with Premium or from giveaways, and the number needed depends on the group size. Or you add @Voicepad_bot to the chat: it transcribes voice messages and video notes up to 3 minutes long for everyone, and each chat gets 30 free minutes a month.</p>
-<h3>Is there a file size limit when I send a recording to a transcription bot?</h3>
-<p>Yes. Telegram's Bot API lets a bot download files of up to 20 MB, so files sent to Voicepad inside Telegram are limited to 20 MB. On the Voicepad website you can upload files up to 50 MB without login (a recording longer than 3 minutes is transcribed only for its first 3 minutes), or up to 200 MB after logging in with Telegram.</p>
-<h3>Is Telegram Premium cheaper than a Voicepad minute pack?</h3>
-<p>It depends on volume. On October 24, 2026 the App Store listed Telegram Premium at $4.99 in the US and 329 RUB in Russia, and Telegram Premium Annual at $35.99 and 2,390 RUB. A Voicepad pack of 60 minutes costs 199 RUB once, the minutes never expire, and there are also 15 free minutes every month. Premium suits many short voice messages every day; a pack suits uneven use, long recordings, files and exports.</p>
-
-<h2 id="related">Other guides</h2>
-<ul>
-<li><a href="/en/voice-message-to-text/">Telegram voice message to text</a>: the bot step by step, in private chats and groups.</li>
-<li><a href="/en/youtube-to-text/">YouTube video to text with chapters</a>: a link in, a transcript with timestamps and chapters out.</li>
-<li><a href="/en/meeting-notes/">Meeting recording to notes and action items</a>: speakers, a summary of the call and a task list.</li>
-<li>In Russian: <a href="/rasshifrovka-golosovyh-bez-premium/" hreflang="ru" lang="ru">расшифровка голосовых без Premium</a>, <a href="/golosovoe-v-tekst/" hreflang="ru" lang="ru">голосовое в текст</a> and the general guide <a href="/transkribaciya-audio-v-tekst/" hreflang="ru" lang="ru">транскрибация аудио в текст</a>.</li>
-</ul>
-
-<h2 id="sources">Sources</h2>
-<ol class="note">
-<li><a href="https://telegram.org/blog/700-million-and-premium">Telegram blog: Telegram Premium launch, June 19, 2022</a></li>
-<li><a href="https://telegram.org/blog/topics-in-groups-collectible-usernames">Telegram blog: Voice-to-Text for Video Messages, November 5, 2022</a></li>
-<li><a href="https://telegram.org/blog/similar-channels">Telegram blog: Voice-to-Text for Everyone, November 30, 2023</a></li>
-<li><a href="https://telegram.org/blog/february2024">Telegram blog: Boosts for Groups, February 29, 2024</a></li>
-<li><a href="https://telegram.org/faq_premium">Telegram: Premium FAQ</a></li>
-<li><a href="https://core.telegram.org/api/transcribe">Telegram API: transcribing voice messages</a></li>
-<li><a href="https://core.telegram.org/api/config">Telegram API: client configuration</a></li>
-<li><a href="https://core.telegram.org/bots/api#getfile">Telegram Bot API: getFile</a></li>
-<li><a href="https://apps.apple.com/us/app/telegram-messenger/id686449807">App Store (US): Telegram Messenger</a></li>
-<li><a href="https://apps.apple.com/ru/app/telegram-messenger/id686449807">App Store (Russia): Telegram Messenger</a></li>
-<li><a href="https://www.digitaltrends.com/phones/what-is-telegram-premium-features-price-how-to-sign-up/">Digital Trends: What is Telegram Premium, June 23, 2024</a></li>
-</ol>
-      </article>
-    </div>
-  </div>
-
-  <section class="outro" aria-labelledby="outro-title">
-    <div class="shell">
-      <div class="col">
-        <h2 id="outro-title">Read your voice messages without Premium</h2>
-        <p>Forward a voice message to the bot, or add it to a group. 15 free minutes every month, timestamps and speaker labels included.</p>
-        <p class="cta-pair">
-          <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_tg_premium" rel="noopener">Open @Voicepad_bot</a>
-          <a class="btn btn-line" href="/en/#tool">Transcribe on the site</a>
-        </p>
+  <section class="block" id="related" aria-labelledby="related-title">
+    <div class="column">
+      <h2 id="related-title">More guides</h2>
+      <div class="links">
+        <ul>
+          <li><a href="/en/voice-message-to-text/">Voice message to text</a></li>
+          <li><a href="/en/whatsapp-voice-message-to-text/">WhatsApp voice message to text</a></li>
+          <li><a href="/en/youtube-to-text/">YouTube video to text with chapters</a></li>
+          <li><a href="/en/meeting-notes/">Meeting recording to notes and action items</a></li>
+          <li><a href="/en/lecture-notes-from-video/">Lecture notes from a recording or video</a></li>
+        </ul>
       </div>
     </div>
   </section>
+
+  <section class="block" id="bot" aria-labelledby="bot-title">
+    <div class="column">
+      <h2 id="bot-title">The site and the Telegram bot</h2>
+      <p class="block__lead">One service and one balance of minutes. Logging in on the site with Telegram links the two.</p>
+      <div class="duo">
+        <div>
+          <h3>On the site</h3>
+          <ul class="dots">
+            <li>Large files and video links</li>
+            <li>Copy or download the text</li>
+            <li>3 recordings a day without logging in</li>
+          </ul>
+        </div>
+        <div>
+          <h3>In @Voicepad_bot</h3>
+          <ul class="dots">
+            <li>Voice messages and video notes, forwarded from any chat</li>
+            <li>Summaries, tasks and answers to questions about a recording</li>
+            <li>Works in group chats</li>
+          </ul>
+        </div>
+      </div>
+      <p class="block__actions">
+        <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_tg_premium" rel="noopener">Open the bot</a>
+        <a href="/en/voice-message-to-text/#groups">How the bot works in a group</a>
+      </p>
+    </div>
+  </section>
+
+  <p class="column updated">Updated <time datetime="2026-10-24">24 October 2026</time></p>
 </main>
 
-<footer class="colophon">
-  <div class="shell">
-    <div class="col">
-      <p class="colophon__brand"><svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg><strong>Voicepad</strong><span>Voice messages, audio and video to text, online and in Telegram.</span></p>
-      <ul class="colophon__links">
-        <li><a href="https://t.me/Voicepad_bot?start=src_en_tg_premium" rel="noopener">t.me/Voicepad_bot</a></li>
-        <li><a href="https://t.me/Voicepad_bot?startgroup=true" rel="noopener">Add to a group</a></li>
-        <li><a href="/privacy/#en">Privacy policy</a></li>
-        <li><a href="/rasshifrovka-golosovyh-bez-premium/" hreflang="ru" lang="ru">Русская версия</a></li>
-      </ul>
-      <p class="colophon__note">Speech recognition by ElevenLabs Scribe v2. Set in Literata and IBM Plex Mono.</p>
-      <p class="colophon__en"><strong>Guides in English:</strong> <a href="/en/voice-message-to-text/">voice message to text</a>, <a href="/en/youtube-to-text/">YouTube to text</a>, <a href="/en/meeting-notes/">meeting notes</a>, <a href="/en/podcast-transcript/">podcast transcript</a>, <a href="/en/lecture-notes-from-video/">lecture notes</a>, <a href="/en/transcribe-telegram-voice-without-premium/">Telegram voice messages without Premium</a>, <a href="/en/whatsapp-voice-message-to-text/">WhatsApp voice message to text</a>.</p>
-    </div>
+<footer class="foot">
+  <div class="column">
+    <p class="foot__brand"><svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg><strong>Voicepad</strong><span>Voice messages, audio and video to text.</span></p>
+    <ul class="foot__links">
+      <li><a href="https://t.me/Voicepad_bot?start=src_en_tg_premium" rel="noopener">@Voicepad_bot in Telegram</a></li>
+      <li><a href="/privacy/#en">Privacy policy</a></li>
+      <li><a href="/rasshifrovka-golosovyh-bez-premium/" hreflang="ru" lang="ru">Русская версия</a></li>
+    </ul>
   </div>
 </footer>
 
+<script src="/assets/tool.js" defer></script>
 <script>
 (function () {
   var params = new URLSearchParams(location.search);
@@ -234,6 +338,24 @@
   if (!raw || raw.length > 24) return;
   document.querySelectorAll('a[href*="t.me/Voicepad_bot?start=src_"]').forEach(function (link) {
     link.href = link.href.replace(/start=src_[a-z0-9_]+/, "start=src_" + raw);
+  });
+})();
+</script>
+<script>
+(function () {
+  var menu = document.querySelector(".menu");
+  if (!menu) return;
+  function close() { menu.open = false; }
+  menu.addEventListener("click", function (event) {
+    if (event.target.closest && event.target.closest("a")) close();
+  });
+  document.addEventListener("click", function (event) {
+    if (menu.open && !menu.contains(event.target)) close();
+  });
+  document.addEventListener("keydown", function (event) {
+    if (event.key !== "Escape" || !menu.open) return;
+    close();
+    menu.querySelector("summary").focus();
   });
 })();
 </script>

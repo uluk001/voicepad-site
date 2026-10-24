@@ -29,6 +29,7 @@
 <meta name="twitter:image" content="https://voicepad.qupport.io/assets/cover.jpg">
 <meta name="twitter:image:alt" content="Voicepad: голосовые, аудио и видео в текст с таймкодами и спикерами">
 <link rel="preload" href="/assets/fonts/literata.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://bot.voicepad.qupport.io" crossorigin>
 <link rel="stylesheet" href="/assets/site.css">
 <script type="application/ld+json">
 {
@@ -71,100 +72,105 @@
 <body>
 <a class="skip" href="#main">Перейти к сравнению</a>
 
-<header class="masthead">
-  <div class="shell">
-    <div class="col masthead__row">
-      <a class="brand" href="/" aria-label="Voicepad, главная">
-        <svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg>
-        <span>Voicepad</span>
-      </a>
-      <nav class="chapters" aria-label="Разделы страницы">
-        <ol>
-          <li><a href="#table">Таблица</a></li>
-          <li><a href="#bots">Боты</a></li>
-          <li><a href="#choose">Как выбрать</a></li>
-          <li><a href="#guides">Инструкции</a></li>
-        </ol>
+<header class="topbar">
+  <div class="column topbar__row">
+    <a class="brand" href="/" aria-label="Voicepad, главная">
+      <svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg>
+      <span>Voicepad</span>
+    </a>
+    <nav class="topbar__nav" aria-label="Основное меню">
+      <a href="/#pricing">Цены</a>
+      <a href="/#guides">Инструкции</a>
+      <a href="https://t.me/Voicepad_bot?start=src_compare" rel="noopener">Бот в Telegram</a>
+      <a href="/en/" hreflang="en" lang="en">EN</a>
+    </nav>
+    <details class="menu">
+      <summary>Меню</summary>
+      <nav class="menu__list" aria-label="Основное меню">
+        <a href="/#pricing">Цены</a>
+        <a href="/#guides">Инструкции</a>
+        <a href="https://t.me/Voicepad_bot?start=src_compare" rel="noopener">Бот в Telegram</a>
+        <a href="/en/" hreflang="en" lang="en">English</a>
       </nav>
-      <div class="masthead__aside">
-        <a class="lang" href="/en/" hreflang="en" lang="en">EN</a>
-        <a class="btn" href="https://t.me/Voicepad_bot?start=src_compare" rel="noopener">Открыть бота</a>
-      </div>
-    </div>
+    </details>
   </div>
 </header>
 
 <main id="main">
-  <section class="hero" aria-labelledby="page-title">
-    <div class="shell">
-      <div class="col">
-        <nav class="crumbs" aria-label="Навигационная цепочка"><ol><li><a href="/">Главная</a></li><li><span aria-current="page">Сравнение ботов</span></li></ol></nav>
-        <h1 id="page-title">Боты для расшифровки голосовых и&nbsp;видео в&nbsp;Telegram: сравнение 2026</h1>
-        <p class="lead">Голосовое, запись созвона или ролик с YouTube нужно превратить в текст, а лучше сразу в конспект. Боты в Telegram делают это по-разному: одни берут только короткие голосовые до 20&nbsp;МБ, другие большие файлы и ссылки на видео; одни отдают голый текст, другие конспект, задачи и субтитры. Ниже семь ботов, которые чаще всего встречаются в поиске.</p>
-        <p class="page-meta">Данные на <time datetime="2026-10-24">24 октября 2026</time>, цены могут меняться</p>
-        <p class="aside-link"><a href="#choose">Сразу к выводу: как выбрать</a></p>
+  <section class="opening" aria-labelledby="page-title">
+    <div class="column">
+      <nav class="crumbs" aria-label="Навигационная цепочка"><ol><li><a href="/">Главная</a></li><li><span aria-current="page">Сравнение ботов</span></li></ol></nav>
+      <h1 id="page-title">Боты для расшифровки голосовых и&nbsp;видео в&nbsp;Telegram: сравнение 2026</h1>
+      <p class="opening__line">Голосовое, запись созвона или ролик с YouTube нужно превратить в текст, а лучше сразу в конспект. Боты в Telegram делают это по-разному: одни берут только короткие голосовые до 20&nbsp;МБ, другие большие файлы и ссылки на видео; одни отдают голый текст, другие конспект, задачи и субтитры. Ниже семь ботов, которые чаще всего встречаются в поиске.</p>
+    </div>
+  </section>
 
-        <table class="book venues" id="table" role="table">
+  <section class="block" id="table" aria-labelledby="table-title">
+    <div class="column">
+      <h2 id="table-title">Сводная таблица</h2>
+      <p class="block__lead">Данные на <time datetime="2026-10-24">24 октября 2026</time>, цены могут меняться</p>
+      <div class="copy">
+        <table>
           <caption class="sr">Сводная таблица: что принимает каждый бот, лимиты, бесплатный объём, цены и что он делает поверх текста</caption>
-          <thead role="rowgroup">
-            <tr role="row"><th role="columnheader" scope="col">Бот</th><th role="columnheader" scope="col">Что принимает</th><th role="columnheader" scope="col">Лимиты</th><th role="columnheader" scope="col">Бесплатно</th><th role="columnheader" scope="col">Дальше</th><th role="columnheader" scope="col">Поверх текста</th></tr>
+          <thead>
+            <tr><th scope="col">Бот</th><th scope="col">Что принимает</th><th scope="col">Лимиты</th><th scope="col">Бесплатно</th><th scope="col">Дальше</th><th scope="col">Поверх текста</th></tr>
           </thead>
-          <tbody role="rowgroup">
-            <tr role="row">
-              <th role="rowheader" scope="row"><a href="https://t.me/Voicepad_bot?start=src_compare" rel="noopener">Voicepad</a></th>
-              <td role="cell" data-label="Принимает"><span>голосовые, кружочки, аудио и видео файлы, ссылки YouTube, VK Видео, RuTube, TikTok</span></td>
-              <td role="cell" data-label="Лимиты"><span>в Telegram файлы до&nbsp;20&nbsp;МБ, на сайте до&nbsp;50&nbsp;МБ без входа и до&nbsp;200&nbsp;МБ после входа, записи до&nbsp;3&nbsp;часов</span></td>
-              <td role="cell" data-label="Бесплатно"><span>15&nbsp;мин в месяц, на сайте 3&nbsp;расшифровки в день без входа</span></td>
-              <td role="cell" data-label="Дальше"><span>60&nbsp;мин 199&nbsp;₽, 300&nbsp;мин 690&nbsp;₽, 1000&nbsp;мин 1990&nbsp;₽</span></td>
-              <td role="cell" data-label="Поверх текста"><span>спикеры, таймкоды, конспект, задачи, статья, пост, вопросы, главы по YouTube, DOCX, TXT, SRT, работа в группах</span></td>
+          <tbody>
+            <tr>
+              <th scope="row"><a href="https://t.me/Voicepad_bot?start=src_compare" rel="noopener">Voicepad</a></th>
+              <td>голосовые, кружочки, аудио и видео файлы, ссылки YouTube, VK Видео, RuTube, TikTok</td>
+              <td>в Telegram файлы до&nbsp;20&nbsp;МБ, на сайте до&nbsp;50&nbsp;МБ без входа и до&nbsp;200&nbsp;МБ после входа, записи до&nbsp;3&nbsp;часов</td>
+              <td>15&nbsp;мин в месяц, на сайте 3&nbsp;расшифровки в день без входа</td>
+              <td>60&nbsp;мин 199&nbsp;₽, 300&nbsp;мин 690&nbsp;₽, 1000&nbsp;мин 1990&nbsp;₽</td>
+              <td>спикеры, таймкоды, конспект, задачи, статья, пост, вопросы, главы по YouTube, DOCX, TXT, SRT, работа в группах</td>
             </tr>
-            <tr role="row">
-              <th role="rowheader" scope="row">SaluteSpeech (Сбер)</th>
-              <td role="cell" data-label="Принимает"><span>голосовые, кружочки, аудио</span></td>
-              <td role="cell" data-label="Лимиты"><span>до 20&nbsp;МБ</span></td>
-              <td role="cell" data-label="Бесплатно"><span>да, для небольших файлов</span></td>
-              <td role="cell" data-label="Дальше"><span>нет данных</span></td>
-              <td role="cell" data-label="Поверх текста"><span>пунктуация, русский и многоязычный режим, в том числе казахский, групповые чаты</span></td>
+            <tr>
+              <th scope="row">SaluteSpeech (Сбер)</th>
+              <td>голосовые, кружочки, аудио</td>
+              <td>до 20&nbsp;МБ</td>
+              <td>да, для небольших файлов</td>
+              <td>нет данных</td>
+              <td>пунктуация, русский и многоязычный режим, в том числе казахский, групповые чаты</td>
             </tr>
-            <tr role="row">
-              <th role="rowheader" scope="row">Буквица</th>
-              <td role="cell" data-label="Принимает"><span>аудио и видео</span></td>
-              <td role="cell" data-label="Лимиты"><span>до 60 минут</span></td>
-              <td role="cell" data-label="Бесплатно"><span>пробный объём</span></td>
-              <td role="cell" data-label="Дальше"><span>платные пакеты</span></td>
-              <td role="cell" data-label="Поверх текста"><span>20+ языков, текст в редактируемом формате</span></td>
+            <tr>
+              <th scope="row">Буквица</th>
+              <td>аудио и видео</td>
+              <td>до 60 минут</td>
+              <td>пробный объём</td>
+              <td>платные пакеты</td>
+              <td>20+ языков, текст в редактируемом формате</td>
             </tr>
-            <tr role="row">
-              <th role="rowheader" scope="row">Memo AI</th>
-              <td role="cell" data-label="Принимает"><span>голосовые, аудио, видео, большие файлы</span></td>
-              <td role="cell" data-label="Лимиты"><span>большие файлы</span></td>
-              <td role="cell" data-label="Бесплатно"><span>пробный объём</span></td>
-              <td role="cell" data-label="Дальше"><span>подписка</span></td>
-              <td role="cell" data-label="Поверх текста"><span>AI-саммари, задачи, ключевые моменты, 99 языков</span></td>
+            <tr>
+              <th scope="row">Memo AI</th>
+              <td>голосовые, аудио, видео, большие файлы</td>
+              <td>большие файлы</td>
+              <td>пробный объём</td>
+              <td>подписка</td>
+              <td>AI-саммари, задачи, ключевые моменты, 99 языков</td>
             </tr>
-            <tr role="row">
-              <th role="rowheader" scope="row">Silero Audio Bot</th>
-              <td role="cell" data-label="Принимает"><span>короткие и средние аудио</span></td>
-              <td role="cell" data-label="Лимиты"><span>до 20&nbsp;МБ</span></td>
-              <td role="cell" data-label="Бесплатно"><span>да, полностью</span></td>
-              <td role="cell" data-label="Дальше"><span>нет</span></td>
-              <td role="cell" data-label="Поверх текста"><span>фильтрация шума, открытый код</span></td>
+            <tr>
+              <th scope="row">Silero Audio Bot</th>
+              <td>короткие и средние аудио</td>
+              <td>до 20&nbsp;МБ</td>
+              <td>да, полностью</td>
+              <td>нет</td>
+              <td>фильтрация шума, открытый код</td>
             </tr>
-            <tr role="row">
-              <th role="rowheader" scope="row">QuillAI</th>
-              <td role="cell" data-label="Принимает"><span>голосовые, аудио, видео, файлы до 2&nbsp;ГБ</span></td>
-              <td role="cell" data-label="Лимиты"><span>2&nbsp;ГБ</span></td>
-              <td role="cell" data-label="Бесплатно"><span>10 минут один раз</span></td>
-              <td role="cell" data-label="Дальше"><span>пакеты от 2,99&nbsp;$, безлимит от 4,99&nbsp;$ в неделю</span></td>
-              <td role="cell" data-label="Поверх текста"><span>саммари, DOCX, SRT, VTT, групповой режим</span></td>
+            <tr>
+              <th scope="row">QuillAI</th>
+              <td>голосовые, аудио, видео, файлы до 2&nbsp;ГБ</td>
+              <td>2&nbsp;ГБ</td>
+              <td>10 минут один раз</td>
+              <td>пакеты от 2,99&nbsp;$, безлимит от 4,99&nbsp;$ в неделю</td>
+              <td>саммари, DOCX, SRT, VTT, групповой режим</td>
             </tr>
-            <tr role="row">
-              <th role="rowheader" scope="row">Slovami</th>
-              <td role="cell" data-label="Принимает"><span>голосовые, аудио, видео</span></td>
-              <td role="cell" data-label="Лимиты"><span>2 часа, 2&nbsp;ГБ</span></td>
-              <td role="cell" data-label="Бесплатно"><span>1 час в месяц, 3 файла</span></td>
-              <td role="cell" data-label="Дальше"><span>20&nbsp;₽ за час, пополнение от 300&nbsp;₽ переводом</span></td>
-              <td role="cell" data-label="Поверх текста"><span>спикеры, саммари в DOCX</span></td>
+            <tr>
+              <th scope="row">Slovami</th>
+              <td>голосовые, аудио, видео</td>
+              <td>2 часа, 2&nbsp;ГБ</td>
+              <td>1 час в месяц, 3 файла</td>
+              <td>20&nbsp;₽ за час, пополнение от 300&nbsp;₽ переводом</td>
+              <td>спикеры, саммари в DOCX</td>
             </tr>
           </tbody>
         </table>
@@ -172,17 +178,13 @@
     </div>
   </section>
 
-  <div class="shell">
-    <div class="col">
-      <article class="prose" aria-labelledby="page-title">
+  <article class="block" id="article" aria-labelledby="bots">
+    <div class="column">
+      <div class="copy">
         <h2 id="bots">Коротко о каждом</h2>
 
         <h3>Voicepad (@Voicepad_bot)</h3>
-        <p>Берёт голосовые и кружочки, аудио и видео файлы, ссылки на YouTube, VK Видео, RuTube и TikTok. Внутри Telegram файл может весить до 20 МБ, это ограничение самого Telegram; файл больше загружается на сайте: без входа до 50 МБ, после входа через Telegram до 200 МБ. Записи до 3 часов. Распознавание на ElevenLabs Scribe v2 с разметкой по спикерам и таймкодами, язык определяется сам. Под каждой расшифровкой кнопки: конспект, задачи (кто что обещал и к какому сроку), статья, пост, вопрос по записи, файлы DOCX, TXT и SRT. Для YouTube конспект заканчивается главами с таймкодами. В группах бот сам расшифровывает голосовые и кружочки до 3 минут для всех участников, на каждый чат 30 бесплатных минут в месяц. 15 минут в месяц бесплатно, на сайте без входа 3 расшифровки в день; пакеты от 199 ₽ за 60 минут, оплата картой через Tribute, минуты не сгорают. Слабые места: внутри Telegram только файлы до 20 МБ, а статьи и посты открываются после покупки любого пакета.</p>
-        <p class="cta-pair">
-          <a class="btn" href="https://t.me/Voicepad_bot?start=src_compare" rel="noopener">Попробовать Voicepad</a>
-          <a class="btn btn-line" href="/#tool">Расшифровать на сайте</a>
-        </p>
+        <p>Берёт голосовые и кружочки, аудио и видео файлы, ссылки на YouTube, VK Видео, RuTube и TikTok. Внутри Telegram файл может весить до 20 МБ, это ограничение самого Telegram; файл больше загружается на сайте: без входа до 50 МБ, после входа через Telegram до 200 МБ. Записи до 3 часов. Распознавание с разметкой по спикерам и таймкодами, язык определяется сам. Под каждой расшифровкой кнопки: конспект, задачи (кто что обещал и к какому сроку), статья, пост, вопрос по записи, файлы DOCX, TXT и SRT. Для YouTube конспект заканчивается главами с таймкодами. В группах бот сам расшифровывает голосовые и кружочки до 3 минут для всех участников, на каждый чат 30 бесплатных минут в месяц. 15 минут в месяц бесплатно, на сайте без входа 3 расшифровки в день; пакеты от 199 ₽ за 60 минут, оплата картой через Tribute, минуты не сгорают. Слабые места: внутри Telegram только файлы до 20 МБ, а статьи и посты открываются после покупки любого пакета.</p>
 
         <h3>SaluteSpeech (@SaluteSpeechBot)</h3>
         <p>Официальный бот Сбера. Быстро переводит голосовые, кружочки и аудио в текст с пунктуацией, умеет русский и многоязычный режим, включая казахский и английский, работает в групповых чатах. Бесплатен для небольших файлов: лимит 20 МБ, то есть длинные записи встреч и видео сюда не отправить.</p>
@@ -204,50 +206,78 @@
 
         <h2 id="choose">Как выбрать</h2>
         <p>Если нужны только короткие голосовые на русском, хватит SaluteSpeech или Silero, они бесплатны. Если нужны длинные записи, видео по ссылке, спикеры и конспект с задачами, смотрите на Voicepad, Memo AI и QuillAI. QuillAI берёт файлы до 2 ГБ прямо в Telegram; Voicepad внутри Telegram ограничен 20 МБ, а большие файлы принимает на сайте, до 200 МБ после входа. У Voicepad конспект ролика с YouTube заканчивается главами с таймкодами. Если платите много часов и готовы к ручному пополнению, Slovami дешевле всех.</p>
-
-        <h2 id="guides">Другие инструкции</h2>
-        <ul>
-          <li><a href="/transkribaciya-audio-v-tekst/">Транскрибация аудио в текст онлайн</a>: что на самом деле значит «бесплатно» и где заканчиваются 15 минут.</li>
-          <li><a href="/golosovoe-v-tekst/">Голосовое в текст</a>: три шага, работа в группах, чем бот отличается от Premium.</li>
-          <li><a href="/youtube-v-tekst/">Видео с YouTube в конспект</a>: ссылка на вход, текст с таймкодами и главы на выход.</li>
-          <li><a href="/zapis-vstrechi-v-protokol/">Запись встречи в протокол</a>: спикеры, конспект созвона и список задач.</li>
-        </ul>
-
-        <p class="note">Материал подготовлен командой Voicepad; данные о других ботах взяты с их публичных страниц и из наших тестов. Опубликовано 20 октября 2026, обновлено 24 октября 2026. Ошибки присылайте в бота командой <code>/feedback</code>.</p>
-      </article>
+      </div>
     </div>
-  </div>
+  </article>
 
-  <section class="outro" aria-labelledby="outro-title">
-    <div class="shell">
-      <div class="col">
-        <h2 id="outro-title">Проверить Voicepad на своей записи</h2>
-        <p>Короткую запись можно расшифровать на сайте без регистрации, остальное удобнее в боте: 15 минут в месяц бесплатно.</p>
-        <p class="cta-pair">
-          <a class="btn" href="https://t.me/Voicepad_bot?start=src_compare" rel="noopener">Открыть @Voicepad_bot</a>
-          <a class="btn btn-line" href="/#tool">Расшифровать на сайте</a>
-        </p>
+  <section class="block" id="file" aria-labelledby="file-title">
+    <div class="column">
+      <h2 id="file-title">Проверить Voicepad на своей записи</h2>
+      <p class="block__lead">Короткую запись можно расшифровать прямо здесь, без регистрации.</p>
+      <div id="vp-tool" data-api="https://bot.voicepad.qupport.io" data-lang="ru" data-source="compare"><noscript><p class="vp-fallback">Форма расшифровки работает с включённым JavaScript. Без него отправьте запись боту <a href="https://t.me/Voicepad_bot?start=src_compare">@Voicepad_bot</a> в Telegram.</p></noscript></div>
+    </div>
+  </section>
+
+  <section class="block" id="related" aria-labelledby="related-title">
+    <div class="column">
+      <h2 id="related-title">Другие инструкции</h2>
+      <div class="links">
+        <ul>
+          <li><a href="/transkribaciya-audio-v-tekst/">Транскрибация аудио в текст</a></li>
+          <li><a href="/golosovoe-v-tekst/">Голосовое в текст</a></li>
+          <li><a href="/youtube-v-tekst/">Видео с YouTube в текст</a></li>
+          <li><a href="/zapis-vstrechi-v-protokol/">Запись встречи в протокол</a></li>
+          <li><a href="/bot-v-gruppovom-chate/">Бот в групповом чате</a></li>
+        </ul>
       </div>
     </div>
   </section>
+
+  <section class="block" id="bot" aria-labelledby="bot-title">
+    <div class="column">
+      <h2 id="bot-title">Сайт и бот в Telegram</h2>
+      <p class="block__lead">Один сервис и один баланс минут. Вход на сайте через Telegram связывает их.</p>
+      <div class="duo">
+        <div>
+          <h3>На сайте</h3>
+          <ul class="dots">
+            <li>Большие файлы и ссылки на видео</li>
+            <li>Текст можно скопировать или скачать</li>
+            <li>3 записи в день без входа</li>
+          </ul>
+        </div>
+        <div>
+          <h3>В боте @Voicepad_bot</h3>
+          <ul class="dots">
+            <li>Голосовые и кружочки пересылкой из любого чата</li>
+            <li>Конспект, задачи и ответы на вопросы по записи</li>
+            <li>Работает в групповых чатах</li>
+          </ul>
+        </div>
+      </div>
+      <p class="block__actions">
+        <a class="btn" href="https://t.me/Voicepad_bot?start=src_compare" rel="noopener">Открыть бота</a>
+        <a href="/bot-v-gruppovom-chate/">Как бот работает в группе</a>
+      </p>
+    </div>
+  </section>
+
+  <p class="column updated">Материал подготовлен командой Voicepad; данные о других ботах взяты с их публичных страниц и из наших тестов. Опубликовано <time datetime="2026-10-20">20 октября 2026</time>, обновлено <time datetime="2026-10-24">24 октября 2026</time>. Ошибки присылайте в бота командой <code>/feedback</code>.</p>
 </main>
 
-<footer class="colophon">
-  <div class="shell">
-    <div class="col">
-      <p class="colophon__brand"><svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg><strong>Voicepad</strong><span>Расшифровка голосовых, аудио и видео в текст онлайн и в Telegram.</span></p>
-      <ul class="colophon__links">
-        <li><a href="https://t.me/Voicepad_bot?start=src_compare" rel="noopener">t.me/Voicepad_bot</a></li>
-        <li><a href="https://t.me/Voicepad_bot?startgroup=true" rel="noopener">Добавить в чат</a></li>
-        <li><a href="/privacy/">Политика конфиденциальности</a></li>
-        <li><a href="/en/" hreflang="en" lang="en">English</a></li>
-      </ul>
-      <p class="colophon__note">Речь распознаёт ElevenLabs Scribe v2. Набрано шрифтами Literata и IBM Plex Mono.</p>
-      <p class="colophon__en" lang="en"><strong>Voicepad in English:</strong> <a href="/en/" hreflang="en">web tool and Telegram bot</a>, <a href="/en/voice-message-to-text/" hreflang="en">voice message to text</a>, <a href="/en/youtube-to-text/" hreflang="en">YouTube to text</a>, <a href="/en/meeting-notes/" hreflang="en">meeting notes</a>, <a href="/en/podcast-transcript/" hreflang="en">podcast transcript</a>, <a href="/en/lecture-notes-from-video/" hreflang="en">lecture notes</a>, <a href="/en/transcribe-telegram-voice-without-premium/" hreflang="en">Telegram voice messages without Premium</a>, <a href="/en/whatsapp-voice-message-to-text/" hreflang="en">WhatsApp voice message to text</a>.</p>
-    </div>
+<footer class="foot">
+  <div class="column">
+    <p class="foot__brand"><svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg><strong>Voicepad</strong><span>Голосовые, аудио и видео в текст.</span></p>
+    <ul class="foot__links">
+      <li><a href="https://t.me/Voicepad_bot?start=src_compare" rel="noopener">@Voicepad_bot в Telegram</a></li>
+      <li><a href="/privacy/">Политика конфиденциальности</a></li>
+      <li><a href="/en/" hreflang="en" lang="en">English</a></li>
+    </ul>
+    <p class="foot__more" lang="en">In English: <a href="/en/voice-message-to-text/" hreflang="en">voice message to text</a>, <a href="/en/youtube-to-text/" hreflang="en">YouTube to text</a>, <a href="/en/meeting-notes/" hreflang="en">meeting notes</a>, <a href="/en/podcast-transcript/" hreflang="en">podcast transcript</a>, <a href="/en/lecture-notes-from-video/" hreflang="en">lecture notes</a>, <a href="/en/transcribe-telegram-voice-without-premium/" hreflang="en">Telegram voice messages without Premium</a>, <a href="/en/whatsapp-voice-message-to-text/" hreflang="en">WhatsApp voice message to text</a>.</p>
   </div>
 </footer>
 
+<script src="/assets/tool.js" defer></script>
 <script>
 (function () {
   var params = new URLSearchParams(location.search);
@@ -255,6 +285,24 @@
   if (!raw || raw.length > 24) return;
   document.querySelectorAll('a[href*="t.me/Voicepad_bot?start=src_"]').forEach(function (link) {
     link.href = link.href.replace(/start=src_[a-z0-9_]+/, "start=src_" + raw);
+  });
+})();
+</script>
+<script>
+(function () {
+  var menu = document.querySelector(".menu");
+  if (!menu) return;
+  function close() { menu.open = false; }
+  menu.addEventListener("click", function (event) {
+    if (event.target.closest && event.target.closest("a")) close();
+  });
+  document.addEventListener("click", function (event) {
+    if (menu.open && !menu.contains(event.target)) close();
+  });
+  document.addEventListener("keydown", function (event) {
+    if (event.key !== "Escape" || !menu.open) return;
+    close();
+    menu.querySelector("summary").focus();
   });
 })();
 </script>

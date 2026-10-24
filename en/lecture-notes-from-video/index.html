@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lecture notes and chapters from a recording or YouTube video</title>
+<title>Lecture notes from a recording or YouTube video: Voicepad</title>
 <meta name="description" content="Turn a recorded lecture or a YouTube video into a transcript with timestamps and study notes; YouTube links also get chapters. 15 free minutes a month.">
 <link rel="canonical" href="https://voicepad.qupport.io/en/lecture-notes-from-video/">
 <link rel="alternate" hreflang="ru" href="https://voicepad.qupport.io/konspekt-lekcii/">
@@ -19,7 +19,7 @@
 <meta property="og:site_name" content="Voicepad">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="ru_RU">
-<meta property="og:title" content="Lecture notes and chapters from a recorded lecture or YouTube video">
+<meta property="og:title" content="Lecture notes from a recording or YouTube video">
 <meta property="og:description" content="A recording or a link in, a transcript with timestamps and notes out, with chapters for YouTube videos. 15 free minutes a month.">
 <meta property="og:url" content="https://voicepad.qupport.io/en/lecture-notes-from-video/">
 <meta property="og:image" content="https://voicepad.qupport.io/assets/cover.jpg">
@@ -33,6 +33,7 @@
 <meta name="twitter:image" content="https://voicepad.qupport.io/assets/cover.jpg">
 <meta name="twitter:image:alt" content="Voicepad: voice messages, audio and video to text with timestamps and speaker labels">
 <link rel="preload" href="/assets/fonts/literata.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://bot.voicepad.qupport.io" crossorigin>
 <link rel="stylesheet" href="/assets/site.css">
 <script type="application/ld+json">
 {
@@ -57,7 +58,7 @@
     {
       "@type": "Article",
       "@id": "https://voicepad.qupport.io/en/lecture-notes-from-video/#article",
-      "headline": "Lecture notes and chapters from a recorded lecture or YouTube video",
+      "headline": "Lecture notes from a recording or YouTube video",
       "description": "Turn a recorded lecture or a YouTube video into a transcript with timestamps and study notes; YouTube links also get chapters. 15 free minutes a month.",
       "image": "https://voicepad.qupport.io/assets/cover.jpg",
       "datePublished": "2026-10-21",
@@ -74,9 +75,8 @@
       "url": "https://voicepad.qupport.io/en/lecture-notes-from-video/",
       "inLanguage": "en",
       "mainEntity": [
-        {"@type": "Question", "name": "Are lecture notes free?", "acceptedAnswer": {"@type": "Answer", "text": "15 minutes of recording a month are free, and the Summary button is under every transcript. Enough for a short video or a segment of a lecture; a full one needs a pack."}},
-        {"@type": "Question", "name": "Will a lecture of an hour and a half work?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, recordings up to 3 hours are accepted, as a file or as a link. A file over 20 MB goes through the site: up to 200 MB after a Telegram login."}},
-        {"@type": "Question", "name": "Do I get chapters for a phone recording?", "acceptedAnswer": {"@type": "Answer", "text": "Chapters come with YouTube links. A file transcript has timestamps on every paragraph, so you can find the moment in your player by hand."}},
+        {"@type": "Question", "name": "Will a lecture of an hour and a half work?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, recordings up to 3 hours are accepted, as a file or as a link. The bot takes files up to 20 MB; upload a bigger file on the site."}},
+        {"@type": "Question", "name": "Do I get chapters for a phone recording?", "acceptedAnswer": {"@type": "Answer", "text": "Chapters come with YouTube links. A file transcript has a timestamp on every line, so you can find the moment in your player by hand."}},
         {"@type": "Question", "name": "Can I ask questions about the lecture?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, the Question button in the bot answers from the recording."}},
         {"@type": "Question", "name": "Does it work for lectures in Russian?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The language is detected automatically, Russian and English included."}},
         {"@type": "Question", "name": "Do the slides end up in the notes?", "acceptedAnswer": {"@type": "Answer", "text": "No, only speech is transcribed. Keep the slides next to the notes for formulas and diagrams."}}
@@ -87,131 +87,202 @@
 </script>
 </head>
 <body>
-<a class="skip" href="#main">Skip to the guide</a>
+<a class="skip" href="#vp-tool">Skip to transcription</a>
 
-<header class="masthead">
-  <div class="shell">
-    <div class="col masthead__row">
-      <a class="brand" href="/en/" aria-label="Voicepad, home">
-        <svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg>
-        <span>Voicepad</span>
-      </a>
-      <nav class="chapters" aria-label="Page sections">
-        <ol>
-          <li><a href="#how">How to</a></li>
-          <li><a href="#study">Studying</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#guides">Guides</a></li>
-        </ol>
+<header class="topbar">
+  <div class="column topbar__row">
+    <a class="brand" href="/en/" aria-label="Voicepad, home">
+      <svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg>
+      <span>Voicepad</span>
+    </a>
+    <nav class="topbar__nav" aria-label="Main menu">
+      <a href="#pricing">Pricing</a>
+      <a href="/en/#guides">Guides</a>
+      <a href="https://t.me/Voicepad_bot?start=src_en_lecture" rel="noopener">Telegram bot</a>
+      <a href="/konspekt-lekcii/" hreflang="ru" lang="ru">RU</a>
+    </nav>
+    <details class="menu">
+      <summary>Menu</summary>
+      <nav class="menu__list" aria-label="Main menu">
+        <a href="#pricing">Pricing</a>
+        <a href="/en/#guides">Guides</a>
+        <a href="https://t.me/Voicepad_bot?start=src_en_lecture" rel="noopener">Telegram bot</a>
+        <a href="/konspekt-lekcii/" hreflang="ru" lang="ru">Русская версия</a>
       </nav>
-      <div class="masthead__aside">
-        <a class="lang" href="/konspekt-lekcii/" hreflang="ru" lang="ru">RU</a>
-        <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_lecture" rel="noopener">Open the bot</a>
-      </div>
-    </div>
+    </details>
   </div>
 </header>
 
 <main id="main">
-  <article class="guide" aria-labelledby="page-title">
-  <header class="hero">
-    <div class="shell">
-      <div class="col">
-        <nav class="crumbs" aria-label="Breadcrumbs"><ol><li><a href="/en/">Home</a></li><li><span aria-current="page">Lecture notes</span></li></ol></nav>
-        <h1 id="page-title">Lecture notes and chapters from a recorded lecture or YouTube video</h1>
-        <p class="lead">A ninety-minute lecture recorded on a phone, or a whole course sitting on YouTube, and an exam next week. Rewatching everything is not realistic. What helps is a set of notes to study from and a way to jump straight to the part that did not make sense the first time. The Voicepad bot in Telegram turns the recording or the link into a transcript with timestamps and notes with the key points, and for a YouTube link the notes end with chapters and timecodes.</p>
-        <p class="page-meta">Updated <time datetime="2026-10-24">24 October 2026</time></p>
-        <p class="cta-pair hero__bot">
-          <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_lecture" rel="noopener">Send the lecture to&nbsp;the bot</a>
-          <a class="btn btn-line" href="/en/#tool">Upload a file on&nbsp;the site</a>
-        </p>
-      </div>
+  <section class="opening" aria-labelledby="page-title">
+    <div class="column">
+      <nav class="crumbs" aria-label="Breadcrumbs"><ol><li><a href="/en/">Home</a></li><li><span aria-current="page">Lecture notes</span></li></ol></nav>
+      <h1 id="page-title">Lecture notes from a recording or YouTube&nbsp;video</h1>
+      <p class="opening__line">Upload a lecture recording or paste a YouTube link and get the text with timestamps.</p>
+      <h2 class="sr">Transcribe a lecture</h2>
+      <div id="vp-tool" data-api="https://bot.voicepad.qupport.io" data-lang="en" data-source="site_en_lecture"><noscript><p class="vp-fallback">The transcription form needs JavaScript. Without it, send the lecture to <a href="https://t.me/Voicepad_bot?start=src_en_lecture">@Voicepad_bot</a> in Telegram.</p></noscript></div>
     </div>
-  </header>
+  </section>
 
-  <div class="shell">
-    <div class="col">
-      <div class="prose">
-        <h2 id="how">How to get the notes</h2>
+  <section class="block" id="how" aria-labelledby="how-title">
+    <div class="column">
+      <h2 id="how-title">How to get notes from a&nbsp;lecture</h2>
+      <div class="copy">
+        <p>A ninety-minute lecture recorded on a phone, or a whole course on YouTube, and an exam next week. Rewatching everything is not realistic. What helps is a set of notes to study from and a way to jump straight to the part that did not make sense the first time.</p>
         <ol>
-          <li>Open <a href="https://t.me/Voicepad_bot?start=src_en_lecture" rel="noopener">@Voicepad_bot</a> and tap Start.</li>
-          <li>Send the lecture: an audio or video file, or a YouTube link. VK Video and RuTube links work too. Inside Telegram a file can be up to 20 MB, which is a Telegram limit; a full lecture recording is usually bigger, so upload it on <a href="/en/#tool">the site</a>. Without a login the site transcribes only the first 3 minutes, so log in with Telegram (one button): files up to 200 MB, and the transcript is saved to your bot history.</li>
-          <li>Wait for the transcript. Processing time grows with the length; recordings up to 3 hours are accepted.</li>
-          <li>Tap Summary. You get the key points, and for a YouTube link, a list of chapters with timecodes at the end.</li>
+          <li>Choose the lecture recording in the form above, or paste a link to YouTube, VK Video or RuTube.</li>
+          <li>For a full lecture or a link, log in with Telegram: one button, no password. Recordings up to 3&nbsp;hours are transcribed in full.</li>
+          <li>Read the text with timestamps, then copy it or download DOCX or TXT.</li>
+          <li>For the notes, open the transcript in the <a href="https://t.me/Voicepad_bot?start=src_en_lecture" rel="noopener">@Voicepad_bot</a> bot and tap Summary. For a YouTube link, the notes end with chapters and timecodes.</li>
         </ol>
-        <figure>
-<pre><code>Chapters
-00:00 What a derivative actually measures
-13:40 Product rule and chain rule, worked examples
-31:05 The mistakes everyone makes on the test
-52:20 Problems to solve before next week</code></pre>
-          <figcaption>What the end of the notes looks like for a lecture sent as a YouTube link.</figcaption>
-        </figure>
-
-        <h2 id="study">Studying from the transcript</h2>
-        <p>The notes give you the structure; the details live in the full transcript, where every paragraph has a timestamp, so going back to a particular example takes seconds. The Question button answers from the recording: “what did the lecturer say the exam would cover?” or “list the three examples from the second half”. DOCX is handy for a paper, TXT for any notes app, and <code>/history</code> keeps your transcripts for 30 days if you come back to a lecture later.</p>
-
-        <h2>Recording a lecture yourself</h2>
-        <p>The quality of the notes follows the quality of the audio. A phone on the front desk gives a clean recording of the lecturer and a clean transcript. A phone in the back row, with chatter around it, gives gaps, and some terms will need to be filled in from memory. Anything on the board or on slides is not in the audio, so the notes cover what was said, not what was shown. Recognition runs on ElevenLabs Scribe v2, and the language is detected automatically.</p>
-        <p>To dictate a summary of your own, use the recorder on <a href="/en/#tool">the site</a>: it works in the browser, and after a Telegram login a recording can run up to 30 minutes.</p>
-
-        <h2>Lectures in a study group chat</h2>
-        <p>Add the bot to the group chat. Voice messages and video notes up to three minutes, such as questions before a seminar, are transcribed automatically for everyone. The chat gets 30 free minutes a month, then minutes come from the balance of whoever sent the recording, and an admin can switch automatic transcription off with <code>/mute</code>.</p>
-
-        <h2 id="pricing">Pricing</h2>
-        <p>15 minutes every month are free. A full lecture does not fit into that, so there are packs: 60 minutes for 199 RUB (one lecture), 300 minutes for 690 RUB (three ninety-minute lectures with room to spare), 1000 minutes for 1990 RUB. Minutes never expire, you pay for the actual length of the recording, and nothing is charged if recognition fails. Pay by card through Tribute with the <code>/buy</code> command in the bot.</p>
-
-        <h2 id="faq">FAQ</h2>
-        <details open><summary>Are lecture notes free?</summary><p>15 minutes of recording a month are free, and the Summary button is under every transcript. Enough for a short video or a segment of a lecture; a full one needs a pack.</p></details>
-        <details><summary>Will a lecture of an hour and a half work?</summary><p>Yes, recordings up to 3 hours are accepted, as a file or as a link. A file over 20 MB goes through the site: up to 200 MB after a Telegram login.</p></details>
-        <details><summary>Do I get chapters for a phone recording?</summary><p>Chapters come with YouTube links. A file transcript has timestamps on every paragraph, so you can find the moment in your player by hand.</p></details>
-        <details><summary>Can I ask questions about the lecture?</summary><p>Yes, the Question button in the bot answers from the recording.</p></details>
-        <details><summary>Does it work for lectures in Russian?</summary><p>Yes. The language is detected automatically, Russian and English included.</p></details>
-        <details><summary>Do the slides end up in the notes?</summary><p>No, only speech is transcribed. Keep the slides next to the notes for formulas and diagrams.</p></details>
-
-        <h2 id="guides">Other guides</h2>
-        <ul>
-          <li><a href="/en/youtube-to-text/">YouTube video to text with chapters</a></li>
-          <li><a href="/en/podcast-transcript/">Podcast episode transcript with speakers and timecodes</a></li>
-          <li><a href="/en/meeting-notes/">Meeting recording to notes and action items</a></li>
-          <li>In Russian: <a href="/konspekt-lekcii/" hreflang="ru" lang="ru">конспект лекции</a> and the general guide <a href="/transkribaciya-audio-v-tekst/" hreflang="ru" lang="ru">транскрибация аудио в текст</a>.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  </article>
-
-  <section class="outro" aria-labelledby="outro-title">
-    <div class="shell">
-      <div class="col">
-        <h2 id="outro-title">Send the next lecture to&nbsp;the bot</h2>
-        <p>Transcript, notes with chapters and answers to your questions come back in the chat with @Voicepad_bot. A file over 20 MB goes through the site.</p>
-        <p class="cta-pair">
-          <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_lecture" rel="noopener">Open @Voicepad_bot</a>
-          <a class="btn btn-line" href="/en/#tool">Upload on the site</a>
-        </p>
+        <h3 id="study">Studying from the transcript</h3>
+        <p>The notes give you the structure; the details live in the full transcript, where every line has a timestamp, so going back to a particular example takes seconds. The bot's Question button answers from the recording: “what did the lecturer say the exam would cover?” or “list the three examples from the second half”.</p>
+        <h3>Recording a lecture yourself</h3>
+        <p>A phone on the front desk gives a clean recording of the lecturer and a clean transcript. A phone in the back row, with chatter around it, gives gaps. Anything on the board or on slides is not in the audio, so the notes cover what was said, not what was shown.</p>
+        <p>To dictate a summary of your own, press Record your voice with the microphone in the form above. After a Telegram login a recording in the browser can run up to 30&nbsp;minutes.</p>
       </div>
     </div>
   </section>
+
+  <section class="block" id="result" aria-labelledby="result-title">
+    <div class="column">
+      <h2 id="result-title">What you get</h2>
+      <p class="block__lead">Text with timestamps on the site. For a YouTube lecture, the bot's notes end with chapters.</p>
+      <div class="example">
+        <div class="example__part">
+          <h3 class="example__title">Text on the site</h3>
+          <ol class="lines">
+            <li><time datetime="PT0S">00:00</time> <b>Speaker 1<span class="sr">:</span></b> Today: what a derivative actually measures, and why the chain rule is less scary than it looks.</li>
+            <li><time datetime="PT8S">00:08</time> <b>Speaker 1<span class="sr">:</span></b> Start with speed. You drive 120 kilometres in two hours. What was your speed at three o'clock?</li>
+            <li><time datetime="PT17S">00:17</time> <b>Speaker 2<span class="sr">:</span></b> The average is 60, but we can't tell the speed at one exact moment.</li>
+          </ol>
+        </div>
+        <div class="example__part">
+          <h3 class="example__title">Chapters in the bot's notes</h3>
+          <ol class="lines">
+            <li><time datetime="PT0S">00:00</time> What a derivative actually measures</li>
+            <li><time datetime="PT13M40S">13:40</time> Product rule and chain rule, worked examples</li>
+            <li><time datetime="PT31M5S">31:05</time> The mistakes everyone makes on the test</li>
+            <li><time datetime="PT52M20S">52:20</time> Problems to solve before next week</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="pricing" aria-labelledby="pricing-title">
+    <div class="column">
+      <h2 id="pricing-title">How much it costs</h2>
+      <p class="block__lead">Minutes are shared by the site and the bot. Bought minutes never expire.</p>
+      <ul class="plans">
+        <li class="plan">
+          <h3>Without logging in</h3>
+          <p>3 recordings a day, the first 3&nbsp;minutes of a long one, files up to 50&nbsp;MB.</p>
+        </li>
+        <li class="plan">
+          <h3>With a Telegram login</h3>
+          <p>15 free minutes a month, files up to 200&nbsp;MB, video links.</p>
+        </li>
+        <li class="plan plan-packs">
+          <h3>Minute packs</h3>
+          <ul class="packs">
+            <li><span>60 min</span> <b>199&nbsp;RUB</b></li>
+            <li><span>300 min</span> <b>690&nbsp;RUB</b></li>
+            <li><span>1000 min</span> <b>1990&nbsp;RUB</b></li>
+          </ul>
+          <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_lecture_buy" rel="noopener">Buy minutes in the bot</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" id="faq" aria-labelledby="faq-title">
+    <div class="column">
+      <h2 id="faq-title">Questions</h2>
+      <div class="faq">
+        <details>
+          <summary>Will a lecture of an hour and a half work?</summary>
+          <p>Yes, recordings up to 3 hours are accepted, as a file or as a link. The bot takes files up to 20 MB; upload a bigger file on the site.</p>
+        </details>
+        <details>
+          <summary>Do I get chapters for a phone recording?</summary>
+          <p>Chapters come with YouTube links. A file transcript has a timestamp on every line, so you can find the moment in your player by hand.</p>
+        </details>
+        <details>
+          <summary>Can I ask questions about the lecture?</summary>
+          <p>Yes, the Question button in the bot answers from the recording.</p>
+        </details>
+        <details>
+          <summary>Does it work for lectures in Russian?</summary>
+          <p>Yes. The language is detected automatically, Russian and English included.</p>
+        </details>
+        <details>
+          <summary>Do the slides end up in the notes?</summary>
+          <p>No, only speech is transcribed. Keep the slides next to the notes for formulas and diagrams.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="related" aria-labelledby="related-title">
+    <div class="column">
+      <h2 id="related-title">More guides</h2>
+      <div class="links">
+        <ul>
+          <li><a href="/en/youtube-to-text/">YouTube video to text with chapters</a></li>
+          <li><a href="/en/podcast-transcript/">Podcast episode transcript</a></li>
+          <li><a href="/en/meeting-notes/">Meeting recording to notes and action items</a></li>
+          <li><a href="/en/voice-message-to-text/">Voice message to text</a></li>
+          <li><a href="/en/whatsapp-voice-message-to-text/">WhatsApp voice message to text</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="bot" aria-labelledby="bot-title">
+    <div class="column">
+      <h2 id="bot-title">The site and the Telegram bot</h2>
+      <p class="block__lead">One service and one balance of minutes. Logging in on the site with Telegram links the two.</p>
+      <div class="duo">
+        <div>
+          <h3>On the site</h3>
+          <ul class="dots">
+            <li>Large files and video links</li>
+            <li>Copy or download the text</li>
+            <li>3 recordings a day without logging in</li>
+          </ul>
+        </div>
+        <div>
+          <h3>In @Voicepad_bot</h3>
+          <ul class="dots">
+            <li>Voice messages and video notes, forwarded from any chat</li>
+            <li>Summaries, tasks and answers to questions about a recording</li>
+            <li>Works in group chats</li>
+          </ul>
+        </div>
+      </div>
+      <p class="block__actions">
+        <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_lecture" rel="noopener">Open the bot</a>
+        <a href="/en/voice-message-to-text/#groups">How the bot works in a group</a>
+      </p>
+    </div>
+  </section>
+
+  <p class="column updated">Updated <time datetime="2026-10-24">24 October 2026</time></p>
 </main>
 
-<footer class="colophon">
-  <div class="shell">
-    <div class="col">
-      <p class="colophon__brand"><svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg><strong>Voicepad</strong><span>Voice messages, audio and video to text, online and in Telegram.</span></p>
-      <ul class="colophon__links">
-        <li><a href="https://t.me/Voicepad_bot?start=src_en_lecture" rel="noopener">t.me/Voicepad_bot</a></li>
-        <li><a href="https://t.me/Voicepad_bot?startgroup=true" rel="noopener">Add to a group</a></li>
-        <li><a href="/privacy/#en">Privacy policy</a></li>
-        <li><a href="/konspekt-lekcii/" hreflang="ru" lang="ru">Русская версия</a></li>
-      </ul>
-      <p class="colophon__note">Speech recognition by ElevenLabs Scribe v2. Set in Literata and IBM Plex Mono.</p>
-      <p class="colophon__en"><strong>Guides in English:</strong> <a href="/en/voice-message-to-text/">voice message to text</a>, <a href="/en/youtube-to-text/">YouTube to text</a>, <a href="/en/meeting-notes/">meeting notes</a>, <a href="/en/podcast-transcript/">podcast transcript</a>, <a href="/en/lecture-notes-from-video/">lecture notes</a>, <a href="/en/transcribe-telegram-voice-without-premium/">Telegram voice messages without Premium</a>, <a href="/en/whatsapp-voice-message-to-text/">WhatsApp voice message to text</a>.</p>
-    </div>
+<footer class="foot">
+  <div class="column">
+    <p class="foot__brand"><svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg><strong>Voicepad</strong><span>Voice messages, audio and video to text.</span></p>
+    <ul class="foot__links">
+      <li><a href="https://t.me/Voicepad_bot?start=src_en_lecture" rel="noopener">@Voicepad_bot in Telegram</a></li>
+      <li><a href="/privacy/#en">Privacy policy</a></li>
+      <li><a href="/konspekt-lekcii/" hreflang="ru" lang="ru">Русская версия</a></li>
+    </ul>
   </div>
 </footer>
 
+<script src="/assets/tool.js" defer></script>
 <script>
 (function () {
   var params = new URLSearchParams(location.search);
@@ -219,6 +290,24 @@
   if (!raw || raw.length > 24) return;
   document.querySelectorAll('a[href*="t.me/Voicepad_bot?start=src_"]').forEach(function (link) {
     link.href = link.href.replace(/start=src_[a-z0-9_]+/, "start=src_" + raw);
+  });
+})();
+</script>
+<script>
+(function () {
+  var menu = document.querySelector(".menu");
+  if (!menu) return;
+  function close() { menu.open = false; }
+  menu.addEventListener("click", function (event) {
+    if (event.target.closest && event.target.closest("a")) close();
+  });
+  document.addEventListener("click", function (event) {
+    if (menu.open && !menu.contains(event.target)) close();
+  });
+  document.addEventListener("keydown", function (event) {
+    if (event.key !== "Escape" || !menu.open) return;
+    close();
+    menu.querySelector("summary").focus();
   });
 })();
 </script>

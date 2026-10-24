@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>YouTube video to text with chapters: Voicepad bot for Telegram</title>
-<meta name="description" content="Paste a YouTube link on the site or send it to the Voicepad bot and get a transcript with timestamps plus a summary with chapters. 15 free minutes a month.">
+<title>YouTube video to text by link, summary with chapters: Voicepad</title>
+<meta name="description" content="Paste a YouTube link and get the video as text by speaker, with timestamps, plus a summary with chapters in the Telegram bot. 15 free minutes a month.">
 <link rel="canonical" href="https://voicepad.qupport.io/en/youtube-to-text/">
 <link rel="alternate" hreflang="ru" href="https://voicepad.qupport.io/youtube-v-tekst/">
 <link rel="alternate" hreflang="en" href="https://voicepad.qupport.io/en/youtube-to-text/">
@@ -19,8 +19,8 @@
 <meta property="og:site_name" content="Voicepad">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="ru_RU">
-<meta property="og:title" content="YouTube video to text with chapters">
-<meta property="og:description" content="A link in, a transcript with timestamps and a summary with chapters out. On the site or in the Telegram bot, 15 free minutes a month.">
+<meta property="og:title" content="YouTube video to text">
+<meta property="og:description" content="A YouTube link in, the text by speaker with timestamps out, and a summary with chapters in the Telegram bot. 15 free minutes a month.">
 <meta property="og:url" content="https://voicepad.qupport.io/en/youtube-to-text/">
 <meta property="og:image" content="https://voicepad.qupport.io/assets/cover.jpg">
 <meta property="og:image:type" content="image/jpeg">
@@ -58,8 +58,8 @@
     {
       "@type": "Article",
       "@id": "https://voicepad.qupport.io/en/youtube-to-text/#article",
-      "headline": "YouTube video to text with chapters",
-      "description": "Paste a YouTube link on the site or send it to the Voicepad bot and get a transcript with timestamps plus a summary with chapters. 15 free minutes a month.",
+      "headline": "YouTube video to text",
+      "description": "Paste a YouTube link and get the video as text by speaker, with timestamps, plus a summary with chapters in the Telegram bot. 15 free minutes a month.",
       "image": "https://voicepad.qupport.io/assets/cover.jpg",
       "datePublished": "2026-10-20",
       "dateModified": "2026-10-24",
@@ -75,11 +75,11 @@
       "url": "https://voicepad.qupport.io/en/youtube-to-text/",
       "inLanguage": "en",
       "mainEntity": [
-        {"@type": "Question", "name": "Is YouTube to text free?", "acceptedAnswer": {"@type": "Answer", "text": "15 minutes of video every month are free, with no card. Longer videos need a minute pack, the smallest is 60 minutes for 199 RUB."}},
-        {"@type": "Question", "name": "Do I need to download the video first?", "acceptedAnswer": {"@type": "Answer", "text": "No. Paste the link and the bot or the site does the rest. If the video only opens under your account, download it and upload the file: up to 20 MB in the bot, up to 200 MB on the site after a Telegram login."}},
-        {"@type": "Question", "name": "Can I get subtitles for the video?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, the SRT button under the transcript gives you a subtitle file with timestamps, in the bot and on the site."}},
-        {"@type": "Question", "name": "Which sites other than YouTube are supported?", "acceptedAnswer": {"@type": "Answer", "text": "VK Video, RuTube and TikTok links work the same way in the bot and on the site. After a Telegram login, the site also accepts Vimeo, Dzen, OK and Twitch links when the video has a known duration."}},
-        {"@type": "Question", "name": "Does it work with videos in Russian?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The language is detected automatically, Russian and English included."}}
+        {"@type": "Question", "name": "Why do links need a Telegram login?", "acceptedAnswer": {"@type": "Answer", "text": "A video by link is transcribed from your balance of minutes, and that balance is shared with the @Voicepad_bot bot. That is why the transcript is saved in the bot's history, where you can turn it into a summary. There is no password: you confirm the login in Telegram, and 15 minutes a month are free."}},
+        {"@type": "Question", "name": "How long can the video be?", "acceptedAnswer": {"@type": "Answer", "text": "Up to 3 hours at a time. Only the real length of the video is charged, and nothing is charged if recognition fails."}},
+        {"@type": "Question", "name": "Does it work with videos in Russian?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The language is detected automatically, and the text comes in the language of the video."}},
+        {"@type": "Question", "name": "Can I get subtitles for the video?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, on the site and in the bot you can download an SRT file with a timestamp for every phrase. Upload it to a video editor or to YouTube."}},
+        {"@type": "Question", "name": "What if the link does not open?", "acceptedAnswer": {"@type": "Answer", "text": "Check that the video is public. If it is private or its length is unknown, download the video and upload it as a file: up to 200 MB on the site after you log in. The bot takes files up to 20 MB; upload a bigger file on the site."}}
       ]
     }
   ]
@@ -87,143 +87,197 @@
 </script>
 </head>
 <body>
-<a class="skip" href="#tool">Skip to transcription</a>
+<a class="skip" href="#vp-tool">Skip to transcription</a>
 
-<header class="masthead">
-  <div class="shell">
-    <div class="col masthead__row">
-      <a class="brand" href="/en/" aria-label="Voicepad, home">
-        <svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg>
-        <span>Voicepad</span>
-      </a>
-      <nav class="chapters" aria-label="Page sections">
-        <ol>
-          <li><a href="#tool">Transcribe</a></li>
-          <li><a href="#how">How it works</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#guides">Guides</a></li>
-        </ol>
+<header class="topbar">
+  <div class="column topbar__row">
+    <a class="brand" href="/en/" aria-label="Voicepad, home">
+      <svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg>
+      <span>Voicepad</span>
+    </a>
+    <nav class="topbar__nav" aria-label="Main menu">
+      <a href="#pricing">Pricing</a>
+      <a href="/en/#guides">Guides</a>
+      <a href="https://t.me/Voicepad_bot?start=src_en_youtube" rel="noopener">Telegram bot</a>
+      <a href="/youtube-v-tekst/" hreflang="ru" lang="ru">RU</a>
+    </nav>
+    <details class="menu">
+      <summary>Menu</summary>
+      <nav class="menu__list" aria-label="Main menu">
+        <a href="#pricing">Pricing</a>
+        <a href="/en/#guides">Guides</a>
+        <a href="https://t.me/Voicepad_bot?start=src_en_youtube" rel="noopener">Telegram bot</a>
+        <a href="/youtube-v-tekst/" hreflang="ru" lang="ru">Русская версия</a>
       </nav>
-      <div class="masthead__aside">
-        <a class="lang" href="/youtube-v-tekst/" hreflang="ru" lang="ru">RU</a>
-        <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_youtube" rel="noopener">Open the bot</a>
-      </div>
-    </div>
+    </details>
   </div>
 </header>
 
 <main id="main">
-  <article class="guide" aria-labelledby="page-title">
-  <header class="hero">
-    <div class="shell">
-      <div class="col">
-        <nav class="crumbs" aria-label="Breadcrumbs"><ol><li><a href="/en/">Home</a></li><li><span aria-current="page">YouTube to text</span></li></ol></nav>
-        <h1 id="page-title">YouTube video to text with chapters</h1>
-        <p class="lead">No time to watch a two-hour lecture? Paste the link here or send it to the Voicepad bot in Telegram: you get the transcript with timestamps, and the bot's summary ends with chapters.</p>
-        <p class="page-meta">Updated <time datetime="2026-10-24">24 October 2026</time></p>
-
-        <div class="hero__grid">
-          <div class="desk" id="tool">
-            <div class="desk__head">
-              <h2 id="tool-title">Transcribe a YouTube video</h2>
-              <p>Paste the link and log in with Telegram: the text appears below with TXT, SRT and DOCX.</p>
-            </div>
-            <div id="vp-tool" data-api="https://bot.voicepad.qupport.io" data-lang="en" data-source="site_en_youtube" data-tab="link"><noscript><p class="vp-fallback">The transcription form needs JavaScript. Without it, send the link to <a href="https://t.me/Voicepad_bot?start=src_en_youtube">@Voicepad_bot</a> in Telegram.</p></noscript></div>
-          </div>
-
-          <div class="hero__aside">
-            <figure class="sample" aria-labelledby="sample-caption">
-              <figcaption class="sample__meta" id="sample-caption">
-                <span>End of a summary in the bot</span>
-                <span>1&nbsp;h talk · chapters</span>
-              </figcaption>
-              <ul class="toc">
-                <li><span class="tc">00:00</span>Why attention replaced recurrence</li>
-                <li><span class="tc">09:30</span>Queries, keys and values on a napkin</li>
-                <li><span class="tc">24:15</span>Positional encoding, and why it matters</li>
-                <li><span class="tc">41:50</span>Training tricks and the usual mistakes</li>
-                <li><span class="tc">58:05</span>Questions from the audience</li>
-              </ul>
-            </figure>
-            <p class="cta-pair hero__bot">
-              <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_youtube" rel="noopener"><span>Send the link to the bot<span class="wide-only"> in&nbsp;Telegram</span></span></a>
-            </p>
-          </div>
-        </div>
-      </div>
+  <section class="opening" aria-labelledby="page-title">
+    <div class="column">
+      <nav class="crumbs" aria-label="Breadcrumbs"><ol><li><a href="/en/">Home</a></li><li><span aria-current="page">YouTube to text</span></li></ol></nav>
+      <h1 id="page-title">YouTube video to&nbsp;text</h1>
+      <p class="opening__line">Paste a link to a video or a Short and get the text by speaker, with timestamps.</p>
+      <h2 class="sr">Transcribe a video by link</h2>
+      <div id="vp-tool" data-api="https://bot.voicepad.qupport.io" data-lang="en" data-source="site_en_youtube" data-tab="link"><noscript><p class="vp-fallback">The transcription form needs JavaScript. Without it, send the link to <a href="https://t.me/Voicepad_bot?start=src_en_youtube">@Voicepad_bot</a> in Telegram: it takes links right away.</p></noscript></div>
     </div>
-  </header>
+  </section>
 
-  <div class="shell">
-    <div class="col">
-      <div class="prose">
-        <h2 id="how">How it works</h2>
+  <section class="block" id="how" aria-labelledby="how-title">
+    <div class="column">
+      <h2 id="how-title">How to turn a YouTube video into&nbsp;text</h2>
+      <div class="copy">
+        <p>An hour-long lecture, a podcast or a long interview: reading is faster than watching, and search finds the right moment.</p>
         <ol>
-          <li>Copy the link to the video. YouTube, VK Video, RuTube and TikTok links all work the same way.</li>
-          <li>Paste it into the form above and log in with Telegram, or send it to <a href="https://t.me/Voicepad_bot?start=src_en_youtube" rel="noopener">@Voicepad_bot</a>. On the site, Vimeo, Dzen, OK and Twitch links work too when the video has a known duration.</li>
-          <li>Wait for the transcript. It arrives with timestamps, and the processing time grows with the length of the video.</li>
-          <li>In the bot, tap Summary. You get the key points and, for a YouTube video, a list of chapters with timecodes at the end.</li>
+          <li>Copy the link to the video, Shorts included.</li>
+          <li>Paste it into the field above and log in with Telegram. There is no password: you confirm the login in Telegram itself.</li>
+          <li>Get the text by speaker, with timestamps. Copy it or download TXT, DOCX or SRT.</li>
         </ol>
-
-        <h2>What else you can do with the transcript</h2>
-        <p>Ask a question about the recording (“what did she say about pricing in the second half?”) instead of reading the whole text. Pull out the tasks if it was a work webinar. Turn it into an article or a post for your channel, download SRT subtitles, or save the text as DOCX or TXT. The site gives you the text and the files; the summary, tasks, article, post and questions are buttons under the transcript in the bot.</p>
-
-        <h2>Recognition and languages</h2>
-        <p>The language is detected automatically, so there is nothing to set. Speech recognition runs on ElevenLabs Scribe v2. The quality still depends on the audio: a studio talk comes out clean, a phone recording of a noisy room will have gaps. Names, acronyms and rare terms are worth a quick check before you quote them.</p>
-
-        <h2>Long videos and private videos</h2>
-        <p>A video can run up to 3 hours. If it only opens under your account, download it and send it as a file. Inside Telegram the bot accepts files up to 20 MB, which is a Telegram limit; on the site you can upload up to 50 MB without a login and up to 200 MB after a Telegram login.</p>
-
-        <h2 id="pricing">Pricing</h2>
-        <p>15 minutes every month are free. Minute packs: 60 minutes for 199 RUB, 300 minutes for 690 RUB, 1000 minutes for 1990 RUB. Minutes never expire, you pay for the actual length of the video, and nothing is charged if recognition fails. Pay by card through Tribute with the <code>/buy</code> command in the bot. After a Telegram login, the site uses the same free minutes and balance.</p>
-
-        <h2 id="faq">FAQ</h2>
-        <details open><summary>Is YouTube to text free?</summary><p>15 minutes of video every month are free, with no card. Longer videos need a minute pack, the smallest is 60 minutes for 199 RUB.</p></details>
-        <details><summary>Do I need to download the video first?</summary><p>No. Paste the link and the bot or the site does the rest. If the video only opens under your account, download it and upload the file: up to 20 MB in the bot, up to 200 MB on the site after a Telegram login.</p></details>
-        <details><summary>Can I get subtitles for the video?</summary><p>Yes, the SRT button under the transcript gives you a subtitle file with timestamps, in the bot and on the site.</p></details>
-        <details><summary>Which sites other than YouTube are supported?</summary><p>VK Video, RuTube and TikTok links work the same way in the bot and on the site. After a Telegram login, the site also accepts Vimeo, Dzen, OK and Twitch links when the video has a known duration.</p></details>
-        <details><summary>Does it work with videos in Russian?</summary><p>Yes. The language is detected automatically, Russian and English included.</p></details>
-
-        <h2 id="guides">Other guides</h2>
-        <ul>
-          <li><a href="/en/lecture-notes-from-video/">Lecture notes from a recorded lecture or video</a></li>
-          <li><a href="/en/podcast-transcript/">Podcast episode transcript with speakers and timecodes</a></li>
-          <li><a href="/en/meeting-notes/">Meeting recording to notes and action items</a></li>
-          <li>In Russian: <a href="/youtube-v-tekst/" hreflang="ru" lang="ru">видео с YouTube в текст</a> and the general guide <a href="/transkribaciya-audio-v-tekst/" hreflang="ru" lang="ru">транскрибация аудио в текст</a>.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  </article>
-
-  <section class="outro" aria-labelledby="outro-title">
-    <div class="shell">
-      <div class="col">
-        <h2 id="outro-title">Prefer Telegram?</h2>
-        <p>Send the link to @Voicepad_bot: the transcript arrives in the chat, with the summary, chapters and the rest of the buttons under it.</p>
-        <p class="cta-pair">
-          <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_youtube" rel="noopener">Open @Voicepad_bot</a>
-          <a class="btn btn-line" href="#tool">Use the site</a>
-        </p>
+        <p>You do not need to download the video. It is transcribed in full if it runs up to 3&nbsp;hours and its length is known. Links from VK Video, RuTube, TikTok, Vimeo, Dzen, OK and Twitch work the same way.</p>
+        <h3>A summary with chapters</h3>
+        <p>The summary comes from the <a href="https://t.me/Voicepad_bot?start=src_en_youtube" rel="noopener">@Voicepad_bot</a> bot. After you log in on the site, the transcript is saved in the bot's history: open it there and tap Summary. For a YouTube video the summary ends with chapters and timecodes, so the right moment in the video is easy to find.</p>
+        <p>You can skip the site too: send the link to the bot, which takes YouTube, VK Video, RuTube and TikTok links. There you can also turn the recording into tasks, an article or a post, and ask a question about it, such as “what did she say about pricing in the second half?”</p>
       </div>
     </div>
   </section>
+
+  <section class="block" id="result" aria-labelledby="result-title">
+    <div class="column">
+      <h2 id="result-title">What you get</h2>
+      <p class="block__lead">Text on the site, a summary with chapters from it in the bot.</p>
+      <div class="example">
+        <div class="example__part">
+          <h3 class="example__title">Text on the site</h3>
+          <ol class="lines">
+            <li><time datetime="PT0S">00:00</time> <b>Speaker 1<span class="sr">:</span></b> Today we look at attention: why it replaced recurrence and where it still struggles.</li>
+            <li><time datetime="PT8S">00:08</time> <b>Speaker 1<span class="sr">:</span></b> Let's start with a simple case: translating one short sentence.</li>
+            <li><time datetime="PT15S">00:15</time> <b>Speaker 2<span class="sr">:</span></b> And what happens when the sentence is very long?</li>
+          </ol>
+        </div>
+        <div class="example__part">
+          <h3 class="example__title">Chapters in the bot's summary</h3>
+          <ol class="lines">
+            <li><time datetime="PT0S">00:00</time> Why attention replaced recurrence</li>
+            <li><time datetime="PT9M30S">09:30</time> Queries, keys and values on a napkin</li>
+            <li><time datetime="PT24M15S">24:15</time> Positional encoding, and why it matters</li>
+            <li><time datetime="PT41M50S">41:50</time> Training tricks and the usual mistakes</li>
+            <li><time datetime="PT58M5S">58:05</time> Questions from the audience</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="pricing" aria-labelledby="pricing-title">
+    <div class="column">
+      <h2 id="pricing-title">How much it costs</h2>
+      <p class="block__lead">Minutes are shared by the site and the bot. Bought minutes never expire.</p>
+      <ul class="plans">
+        <li class="plan">
+          <h3>Without logging in</h3>
+          <p>3 recordings a day, the first 3&nbsp;minutes of a long one, files up to 50&nbsp;MB.</p>
+        </li>
+        <li class="plan">
+          <h3>With a Telegram login</h3>
+          <p>15 free minutes a month, files up to 200&nbsp;MB, video links.</p>
+        </li>
+        <li class="plan plan-packs">
+          <h3>Minute packs</h3>
+          <ul class="packs">
+            <li><span>60 min</span> <b>199&nbsp;RUB</b></li>
+            <li><span>300 min</span> <b>690&nbsp;RUB</b></li>
+            <li><span>1000 min</span> <b>1990&nbsp;RUB</b></li>
+          </ul>
+          <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_youtube_buy" rel="noopener">Buy minutes in the bot</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" id="faq" aria-labelledby="faq-title">
+    <div class="column">
+      <h2 id="faq-title">Questions</h2>
+      <div class="faq">
+        <details>
+          <summary>Why do links need a Telegram login?</summary>
+          <p>A video by link is transcribed from your balance of minutes, and that balance is shared with the @Voicepad_bot bot. That is why the transcript is saved in the bot's history, where you can turn it into a summary. There is no password: you confirm the login in Telegram, and 15 minutes a month are free.</p>
+        </details>
+        <details>
+          <summary>How long can the video be?</summary>
+          <p>Up to 3 hours at a time. Only the real length of the video is charged, and nothing is charged if recognition fails.</p>
+        </details>
+        <details>
+          <summary>Does it work with videos in Russian?</summary>
+          <p>Yes. The language is detected automatically, and the text comes in the language of the video.</p>
+        </details>
+        <details>
+          <summary>Can I get subtitles for the video?</summary>
+          <p>Yes, on the site and in the bot you can download an SRT file with a timestamp for every phrase. Upload it to a video editor or to YouTube.</p>
+        </details>
+        <details>
+          <summary>What if the link does not open?</summary>
+          <p>Check that the video is public. If it is private or its length is unknown, download the video and upload it as a file: up to 200 MB on the site after you log in. The bot takes files up to 20 MB; upload a bigger file on the site.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="related" aria-labelledby="related-title">
+    <div class="column">
+      <h2 id="related-title">More guides</h2>
+      <div class="links">
+        <ul>
+          <li><a href="/en/lecture-notes-from-video/">Lecture notes from a recording or video</a></li>
+          <li><a href="/en/podcast-transcript/">Podcast episode transcript</a></li>
+          <li><a href="/en/meeting-notes/">Meeting recording to notes and action items</a></li>
+          <li><a href="/en/voice-message-to-text/">Voice message to text</a></li>
+          <li><a href="/en/whatsapp-voice-message-to-text/">WhatsApp voice message to text</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="bot" aria-labelledby="bot-title">
+    <div class="column">
+      <h2 id="bot-title">The site and the Telegram bot</h2>
+      <p class="block__lead">One service and one balance of minutes. Logging in on the site with Telegram links the two.</p>
+      <div class="duo">
+        <div>
+          <h3>On the site</h3>
+          <ul class="dots">
+            <li>Large files and video links</li>
+            <li>Copy or download the text</li>
+            <li>3 recordings a day without logging in</li>
+          </ul>
+        </div>
+        <div>
+          <h3>In @Voicepad_bot</h3>
+          <ul class="dots">
+            <li>Voice messages and video notes, forwarded from any chat</li>
+            <li>Summaries, tasks and answers to questions about a recording</li>
+            <li>Works in group chats</li>
+          </ul>
+        </div>
+      </div>
+      <p class="block__actions">
+        <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_youtube" rel="noopener">Open the bot</a>
+        <a href="/en/voice-message-to-text/#groups">How the bot works in a group</a>
+      </p>
+    </div>
+  </section>
+
+  <p class="column updated">Updated <time datetime="2026-10-24">24 October 2026</time></p>
 </main>
 
-<footer class="colophon">
-  <div class="shell">
-    <div class="col">
-      <p class="colophon__brand"><svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg><strong>Voicepad</strong><span>Voice messages, audio and video to text, online and in Telegram.</span></p>
-      <ul class="colophon__links">
-        <li><a href="https://t.me/Voicepad_bot?start=src_en_youtube" rel="noopener">t.me/Voicepad_bot</a></li>
-        <li><a href="https://t.me/Voicepad_bot?startgroup=true" rel="noopener">Add to a group</a></li>
-        <li><a href="/privacy/#en">Privacy policy</a></li>
-        <li><a href="/youtube-v-tekst/" hreflang="ru" lang="ru">Русская версия</a></li>
-      </ul>
-      <p class="colophon__note">Speech recognition by ElevenLabs Scribe v2. Set in Literata and IBM Plex Mono.</p>
-      <p class="colophon__en"><strong>Guides in English:</strong> <a href="/en/voice-message-to-text/">voice message to text</a>, <a href="/en/youtube-to-text/">YouTube to text</a>, <a href="/en/meeting-notes/">meeting notes</a>, <a href="/en/podcast-transcript/">podcast transcript</a>, <a href="/en/lecture-notes-from-video/">lecture notes</a>, <a href="/en/transcribe-telegram-voice-without-premium/">Telegram voice messages without Premium</a>, <a href="/en/whatsapp-voice-message-to-text/">WhatsApp voice message to text</a>.</p>
-    </div>
+<footer class="foot">
+  <div class="column">
+    <p class="foot__brand"><svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg><strong>Voicepad</strong><span>Voice messages, audio and video to text.</span></p>
+    <ul class="foot__links">
+      <li><a href="https://t.me/Voicepad_bot?start=src_en_youtube" rel="noopener">@Voicepad_bot in Telegram</a></li>
+      <li><a href="/privacy/#en">Privacy policy</a></li>
+      <li><a href="/youtube-v-tekst/" hreflang="ru" lang="ru">Русская версия</a></li>
+    </ul>
   </div>
 </footer>
 
@@ -235,6 +289,24 @@
   if (!raw || raw.length > 24) return;
   document.querySelectorAll('a[href*="t.me/Voicepad_bot?start=src_"]').forEach(function (link) {
     link.href = link.href.replace(/start=src_[a-z0-9_]+/, "start=src_" + raw);
+  });
+})();
+</script>
+<script>
+(function () {
+  var menu = document.querySelector(".menu");
+  if (!menu) return;
+  function close() { menu.open = false; }
+  menu.addEventListener("click", function (event) {
+    if (event.target.closest && event.target.closest("a")) close();
+  });
+  document.addEventListener("click", function (event) {
+    if (menu.open && !menu.contains(event.target)) close();
+  });
+  document.addEventListener("keydown", function (event) {
+    if (event.key !== "Escape" || !menu.open) return;
+    close();
+    menu.querySelector("summary").focus();
   });
 })();
 </script>

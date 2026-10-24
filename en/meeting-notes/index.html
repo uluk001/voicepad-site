@@ -33,6 +33,7 @@
 <meta name="twitter:image" content="https://voicepad.qupport.io/assets/cover.jpg">
 <meta name="twitter:image:alt" content="Voicepad: voice messages, audio and video to text with timestamps and speaker labels">
 <link rel="preload" href="/assets/fonts/literata.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://bot.voicepad.qupport.io" crossorigin>
 <link rel="stylesheet" href="/assets/site.css">
 <script type="application/ld+json">
 {
@@ -74,11 +75,11 @@
       "url": "https://voicepad.qupport.io/en/meeting-notes/",
       "inLanguage": "en",
       "mainEntity": [
-        {"@type": "Question", "name": "Does the bot know who is speaking?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, lines are labelled Speaker 1, Speaker 2 and so on. Replace the labels with names in the DOCX before sending the notes out."}},
+        {"@type": "Question", "name": "Does it know who is speaking?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, lines are labelled Speaker 1, Speaker 2 and so on, with a timestamp on each. Replace the labels with names in the DOCX before sending the notes out."}},
         {"@type": "Question", "name": "What goes into the action items?", "acceptedAnswer": {"@type": "Answer", "text": "What people promised, took on or asked someone to do, with the owner and the deadline when they were mentioned in the call."}},
-        {"@type": "Question", "name": "Which recording formats are accepted?", "acceptedAnswer": {"@type": "Answer", "text": "Common audio and video files: MP4, M4A, MP3, WAV and others. In the bot a file can be up to 20 MB; on the site, up to 200 MB after a Telegram login. Without a login the site takes files up to 50 MB but transcribes only the first 3 minutes."}},
-        {"@type": "Question", "name": "Can I ask a question about the meeting?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, the Question button in the bot answers from the recording, for example “what did we decide about the launch date?”."}},
-        {"@type": "Question", "name": "Is it safe for work recordings?", "acceptedAnswer": {"@type": "Answer", "text": "Audio is deleted right after recognition. Transcripts in the bot are kept for 30 days, and /delete removes them at once. The details are in the privacy policy."}}
+        {"@type": "Question", "name": "Which recording formats work?", "acceptedAnswer": {"@type": "Answer", "text": "Common audio and video files: MP4, M4A, MP3, WAV and others, so a Zoom or Meet recording goes in as it is. The bot takes files up to 20 MB; upload a bigger file on the site."}},
+        {"@type": "Question", "name": "How long can a recording be?", "acceptedAnswer": {"@type": "Answer", "text": "Up to 3 hours at a time after you log in with Telegram. Without logging in, the site transcribes the first 3 minutes of a recording, which is enough to check the quality."}},
+        {"@type": "Question", "name": "Is it safe for work recordings?", "acceptedAnswer": {"@type": "Answer", "text": "Audio is deleted right after recognition. A result made without logging in stays in server memory for one hour, transcripts in the bot for 30 days, and /delete removes them at once. More in the privacy policy."}}
       ]
     }
   ]
@@ -86,129 +87,203 @@
 </script>
 </head>
 <body>
-<a class="skip" href="#main">Skip to the guide</a>
+<a class="skip" href="#vp-tool">Skip to transcription</a>
 
-<header class="masthead">
-  <div class="shell">
-    <div class="col masthead__row">
-      <a class="brand" href="/en/" aria-label="Voicepad, home">
-        <svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg>
-        <span>Voicepad</span>
-      </a>
-      <nav class="chapters" aria-label="Page sections">
-        <ol>
-          <li><a href="#how">How to</a></li>
-          <li><a href="#chat">Team chat</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#guides">Guides</a></li>
-        </ol>
+<header class="topbar">
+  <div class="column topbar__row">
+    <a class="brand" href="/en/" aria-label="Voicepad, home">
+      <svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg>
+      <span>Voicepad</span>
+    </a>
+    <nav class="topbar__nav" aria-label="Main menu">
+      <a href="#pricing">Pricing</a>
+      <a href="/en/#guides">Guides</a>
+      <a href="https://t.me/Voicepad_bot?start=src_en_meeting" rel="noopener">Telegram bot</a>
+      <a href="/zapis-vstrechi-v-protokol/" hreflang="ru" lang="ru">RU</a>
+    </nav>
+    <details class="menu">
+      <summary>Menu</summary>
+      <nav class="menu__list" aria-label="Main menu">
+        <a href="#pricing">Pricing</a>
+        <a href="/en/#guides">Guides</a>
+        <a href="https://t.me/Voicepad_bot?start=src_en_meeting" rel="noopener">Telegram bot</a>
+        <a href="/zapis-vstrechi-v-protokol/" hreflang="ru" lang="ru">Русская версия</a>
       </nav>
-      <div class="masthead__aside">
-        <a class="lang" href="/zapis-vstrechi-v-protokol/" hreflang="ru" lang="ru">RU</a>
-        <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_meeting" rel="noopener">Open the bot</a>
-      </div>
-    </div>
+    </details>
   </div>
 </header>
 
 <main id="main">
-  <article class="guide" aria-labelledby="page-title">
-  <header class="hero">
-    <div class="shell">
-      <div class="col">
-        <nav class="crumbs" aria-label="Breadcrumbs"><ol><li><a href="/en/">Home</a></li><li><span aria-current="page">Meeting notes</span></li></ol></nav>
-        <h1 id="page-title">Meeting recording to notes and action items</h1>
-        <p class="lead">An hour-long call ends, and everyone leaves with a slightly different idea of who agreed to what. The recording exists, but nobody will watch it again. The Voicepad bot in Telegram turns that recording into a transcript by speaker, short meeting notes and a list of action items with owners and deadlines where they were said out loud.</p>
-        <p class="page-meta">Updated <time datetime="2026-10-24">24 October 2026</time></p>
-        <p class="cta-pair hero__bot">
-          <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_meeting" rel="noopener">Send the recording to&nbsp;the bot</a>
-          <a class="btn btn-line" href="/en/#tool">Upload a file on&nbsp;the site</a>
-        </p>
-      </div>
+  <section class="opening" aria-labelledby="page-title">
+    <div class="column">
+      <nav class="crumbs" aria-label="Breadcrumbs"><ol><li><a href="/en/">Home</a></li><li><span aria-current="page">Meeting notes</span></li></ol></nav>
+      <h1 id="page-title">Meeting recording to notes and action&nbsp;items</h1>
+      <p class="opening__line">Upload a call recording and get the text by speaker, with timestamps.</p>
+      <h2 class="sr">Transcribe a meeting recording</h2>
+      <div id="vp-tool" data-api="https://bot.voicepad.qupport.io" data-lang="en" data-source="site_en_meeting"><noscript><p class="vp-fallback">The transcription form needs JavaScript. Without it, send the recording to <a href="https://t.me/Voicepad_bot?start=src_en_meeting">@Voicepad_bot</a> in Telegram.</p></noscript></div>
     </div>
-  </header>
+  </section>
 
-  <div class="shell">
-    <div class="col">
-      <div class="prose">
-        <h2 id="how">How to do it</h2>
+  <section class="block" id="how" aria-labelledby="how-title">
+    <div class="column">
+      <h2 id="how-title">How to turn a meeting recording into&nbsp;notes</h2>
+      <div class="copy">
+        <p>An hour-long call ends, and everyone leaves with a slightly different idea of who agreed to what. The recording exists, but nobody will watch it again. A transcript by speaker and a short list of action items fix that.</p>
         <ol>
-          <li>Record the call. Zoom and Google Meet have built-in recording; for a Telegram or phone call, a voice recorder next to the speaker will do.</li>
-          <li>Send the file to <a href="https://t.me/Voicepad_bot?start=src_en_meeting" rel="noopener">@Voicepad_bot</a>. Inside Telegram a file can be up to 20 MB, which is a Telegram limit. An hour-long call is usually bigger: upload it on <a href="/en/#tool">the site</a> instead. Without a login the site transcribes only the first 3 minutes, so log in with Telegram (one button): files up to 200 MB, and the transcript is saved to your bot history.</li>
-          <li>Wait for the transcript. Processing time grows with the length of the recording; recordings up to 3 hours are accepted.</li>
-          <li>Read the text with timestamps and speaker labels. In the bot, tap Tasks for the action items and Summary for the notes. The DOCX button gives you a document to send to the participants.</li>
+          <li>Record the call. Zoom and Google Meet have built-in recording; for a phone call, a voice recorder next to the speaker will do.</li>
+          <li>Choose the file in the form above or drag it there. A full hour-long call needs a Telegram login: one button, no password, and recordings up to 3&nbsp;hours are transcribed in full.</li>
+          <li>Read the text with speaker labels and timestamps, then copy it or download DOCX to send to the participants.</li>
         </ol>
-        <figure>
-<pre><code>Speaker 1
-• Send the revised estimate to the client (by Thursday)
-• Call the contractor about the installation dates
-Speaker 2
-• Rewrite the landing page copy with the new wording (by Tuesday)
-Everyone
-• Next sync on Monday at 11:00</code></pre>
-          <figcaption>What the Tasks button returns for a weekly planning call.</figcaption>
-        </figure>
-
-        <h2 id="chat">If your team talks in a chat</h2>
-        <p>Add the bot to the team chat. Voice messages and video notes up to three minutes are transcribed automatically for everyone. The chat gets 30 free minutes a month, then minutes come from the balance of whoever sent the recording, and an admin can turn automatic transcription off with <code>/mute</code>. With chat premium (<code>/premium</code>, 500 Telegram Stars a month) voice messages of any length are transcribed, the replies come as bare text, and the chat gets 300 minutes a month.</p>
-
-        <h2>Quality and what affects it</h2>
-        <p>Speakers are labelled Speaker 1, Speaker 2 and so on, with a timestamp on every line. A Zoom recording with everyone on a headset comes out clean. A phone lying on the table in a meeting room gives more gaps, and when two people talk over each other the boundary between their lines can shift by a word. The language is detected automatically, and recognition runs on ElevenLabs Scribe v2. Check names and numbers before sending the notes around.</p>
-
-        <h2 id="pricing">Pricing</h2>
-        <p>15 minutes every month are free. A typical hour-long meeting needs a pack: 60 minutes for 199 RUB, 300 minutes for 690 RUB, 1000 minutes for 1990 RUB. Minutes never expire, you pay for the actual length of the recording, and nothing is charged if recognition fails. Pay by card through Tribute with the <code>/buy</code> command in the bot.</p>
-
-        <h2 id="faq">FAQ</h2>
-        <details open><summary>Does the bot know who is speaking?</summary><p>Yes, lines are labelled Speaker 1, Speaker 2 and so on. Replace the labels with names in the DOCX before sending the notes out.</p></details>
-        <details><summary>What goes into the action items?</summary><p>What people promised, took on or asked someone to do, with the owner and the deadline when they were mentioned in the call.</p></details>
-        <details><summary>Which recording formats are accepted?</summary><p>Common audio and video files: MP4, M4A, MP3, WAV and others. In the bot a file can be up to 20 MB; on the site, up to 200 MB after a Telegram login. Without a login the site takes files up to 50 MB but transcribes only the first 3 minutes.</p></details>
-        <details><summary>Can I ask a question about the meeting?</summary><p>Yes, the Question button in the bot answers from the recording, for example “what did we decide about the launch date?”.</p></details>
-        <details><summary>Is it safe for work recordings?</summary><p>Audio is deleted right after recognition. Transcripts in the bot are kept for 30 days, and /delete removes them at once. The details are in the privacy policy.</p></details>
-
-        <h2 id="guides">Other guides</h2>
-        <ul>
-          <li><a href="/en/voice-message-to-text/">Telegram voice message to text</a></li>
-          <li><a href="/en/podcast-transcript/">Podcast episode transcript with speakers and timecodes</a></li>
-          <li><a href="/en/lecture-notes-from-video/">Lecture notes from a recorded lecture or video</a></li>
-          <li>In Russian: <a href="/zapis-vstrechi-v-protokol/" hreflang="ru" lang="ru">запись встречи в протокол</a> and the general guide <a href="/transkribaciya-audio-v-tekst/" hreflang="ru" lang="ru">транскрибация аудио в текст</a>.</li>
-        </ul>
-        <p class="note">Privacy: <a href="/privacy/#en">how recordings and transcripts are handled</a>.</p>
-      </div>
-    </div>
-  </div>
-  </article>
-
-  <section class="outro" aria-labelledby="outro-title">
-    <div class="shell">
-      <div class="col">
-        <h2 id="outro-title">Send the next call to&nbsp;the bot</h2>
-        <p>Transcript, notes, tasks and a DOCX come back in the chat with @Voicepad_bot. A file over 20 MB goes through the site.</p>
-        <p class="cta-pair">
-          <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_meeting" rel="noopener">Open @Voicepad_bot</a>
-          <a class="btn btn-line" href="/en/#tool">Upload on the site</a>
-        </p>
+        <h3>Notes and action items</h3>
+        <p>The notes and the task list come from the <a href="https://t.me/Voicepad_bot?start=src_en_meeting" rel="noopener">@Voicepad_bot</a> bot. After you log in on the site, the transcript is saved in the bot's history: open it there and tap Tasks for the action items, with owners and deadlines where they were said out loud, or Summary for short notes. The Question button answers from the recording, for example “what did we decide about the launch date?”</p>
+        <h3>What affects quality</h3>
+        <p>A Zoom recording with everyone on a headset comes out clean. A phone lying on the table in a meeting room gives more gaps, and when two people talk over each other the boundary between their lines can shift by a word. Check names and numbers before sending the notes around.</p>
       </div>
     </div>
   </section>
+
+  <section class="block" id="result" aria-labelledby="result-title">
+    <div class="column">
+      <h2 id="result-title">What you get</h2>
+      <p class="block__lead">Text by speaker on the site, action items with owners and deadlines in the bot.</p>
+      <div class="example">
+        <div class="example__part">
+          <h3 class="example__title">Text on the site</h3>
+          <ol class="lines">
+            <li><time datetime="PT0S">00:00</time> <b>Speaker 1<span class="sr">:</span></b> Let's go through the week. Max, where is the revised estimate for the client?</li>
+            <li><time datetime="PT6S">00:06</time> <b>Speaker 2<span class="sr">:</span></b> Almost done, I'll send it by Thursday. Anna, can you call the contractor about the installation dates?</li>
+            <li><time datetime="PT14S">00:14</time> <b>Speaker 1<span class="sr">:</span></b> Yes, today. And Max, the landing page copy needs the new wording by Tuesday.</li>
+          </ol>
+        </div>
+        <div class="example__part">
+          <h3 class="example__title">Tasks in the bot</h3>
+          <table class="tasks">
+            <caption class="sr">Tasks from this call: who, what and by when</caption>
+            <thead><tr><th scope="col">Who</th><th scope="col">What</th><th scope="col">When</th></tr></thead>
+            <tbody>
+              <tr><td>Max</td><td>Send the revised estimate to the client</td><td>Thursday</td></tr>
+              <tr><td>Anna</td><td>Call the contractor about installation dates</td><td>today</td></tr>
+              <tr><td>Max</td><td>Rewrite the landing page copy</td><td>Tuesday</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="pricing" aria-labelledby="pricing-title">
+    <div class="column">
+      <h2 id="pricing-title">How much it costs</h2>
+      <p class="block__lead">Minutes are shared by the site and the bot. Bought minutes never expire.</p>
+      <ul class="plans">
+        <li class="plan">
+          <h3>Without logging in</h3>
+          <p>3 recordings a day, the first 3&nbsp;minutes of a long one, files up to 50&nbsp;MB.</p>
+        </li>
+        <li class="plan">
+          <h3>With a Telegram login</h3>
+          <p>15 free minutes a month, files up to 200&nbsp;MB, video links.</p>
+        </li>
+        <li class="plan plan-packs">
+          <h3>Minute packs</h3>
+          <ul class="packs">
+            <li><span>60 min</span> <b>199&nbsp;RUB</b></li>
+            <li><span>300 min</span> <b>690&nbsp;RUB</b></li>
+            <li><span>1000 min</span> <b>1990&nbsp;RUB</b></li>
+          </ul>
+          <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_meeting_buy" rel="noopener">Buy minutes in the bot</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" id="faq" aria-labelledby="faq-title">
+    <div class="column">
+      <h2 id="faq-title">Questions</h2>
+      <div class="faq">
+        <details>
+          <summary>Does it know who is speaking?</summary>
+          <p>Yes, lines are labelled Speaker 1, Speaker 2 and so on, with a timestamp on each. Replace the labels with names in the DOCX before sending the notes out.</p>
+        </details>
+        <details>
+          <summary>What goes into the action items?</summary>
+          <p>What people promised, took on or asked someone to do, with the owner and the deadline when they were mentioned in the call.</p>
+        </details>
+        <details>
+          <summary>Which recording formats work?</summary>
+          <p>Common audio and video files: MP4, M4A, MP3, WAV and others, so a Zoom or Meet recording goes in as it is. The bot takes files up to 20 MB; upload a bigger file on the site.</p>
+        </details>
+        <details>
+          <summary>How long can a recording be?</summary>
+          <p>Up to 3 hours at a time after you log in with Telegram. Without logging in, the site transcribes the first 3 minutes of a recording, which is enough to check the quality.</p>
+        </details>
+        <details>
+          <summary>Is it safe for work recordings?</summary>
+          <p>Audio is deleted right after recognition. A result made without logging in stays in server memory for one hour, transcripts in the bot for 30 days, and <code>/delete</code> removes them at once. More in the <a href="/privacy/#en">privacy policy</a>.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="related" aria-labelledby="related-title">
+    <div class="column">
+      <h2 id="related-title">More guides</h2>
+      <div class="links">
+        <ul>
+          <li><a href="/en/podcast-transcript/">Podcast episode transcript</a></li>
+          <li><a href="/en/lecture-notes-from-video/">Lecture notes from a recording or video</a></li>
+          <li><a href="/en/voice-message-to-text/">Voice message to text</a></li>
+          <li><a href="/en/youtube-to-text/">YouTube video to text with chapters</a></li>
+          <li><a href="/en/whatsapp-voice-message-to-text/">WhatsApp voice message to text</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="bot" aria-labelledby="bot-title">
+    <div class="column">
+      <h2 id="bot-title">The site and the Telegram bot</h2>
+      <p class="block__lead">One service and one balance of minutes. Logging in on the site with Telegram links the two.</p>
+      <div class="duo">
+        <div>
+          <h3>On the site</h3>
+          <ul class="dots">
+            <li>Large files and video links</li>
+            <li>Copy or download the text</li>
+            <li>3 recordings a day without logging in</li>
+          </ul>
+        </div>
+        <div>
+          <h3>In @Voicepad_bot</h3>
+          <ul class="dots">
+            <li>Voice messages and video notes, forwarded from any chat</li>
+            <li>Summaries, tasks and answers to questions about a recording</li>
+            <li>Works in group chats</li>
+          </ul>
+        </div>
+      </div>
+      <p class="block__actions">
+        <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_meeting" rel="noopener">Open the bot</a>
+        <a href="/en/voice-message-to-text/#groups">How the bot works in a group</a>
+      </p>
+    </div>
+  </section>
+
+  <p class="column updated">Updated <time datetime="2026-10-24">24 October 2026</time></p>
 </main>
 
-<footer class="colophon">
-  <div class="shell">
-    <div class="col">
-      <p class="colophon__brand"><svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg><strong>Voicepad</strong><span>Voice messages, audio and video to text, online and in Telegram.</span></p>
-      <ul class="colophon__links">
-        <li><a href="https://t.me/Voicepad_bot?start=src_en_meeting" rel="noopener">t.me/Voicepad_bot</a></li>
-        <li><a href="https://t.me/Voicepad_bot?startgroup=true" rel="noopener">Add to a group</a></li>
-        <li><a href="/privacy/#en">Privacy policy</a></li>
-        <li><a href="/zapis-vstrechi-v-protokol/" hreflang="ru" lang="ru">Русская версия</a></li>
-      </ul>
-      <p class="colophon__note">Speech recognition by ElevenLabs Scribe v2. Set in Literata and IBM Plex Mono.</p>
-      <p class="colophon__en"><strong>Guides in English:</strong> <a href="/en/voice-message-to-text/">voice message to text</a>, <a href="/en/youtube-to-text/">YouTube to text</a>, <a href="/en/meeting-notes/">meeting notes</a>, <a href="/en/podcast-transcript/">podcast transcript</a>, <a href="/en/lecture-notes-from-video/">lecture notes</a>, <a href="/en/transcribe-telegram-voice-without-premium/">Telegram voice messages without Premium</a>, <a href="/en/whatsapp-voice-message-to-text/">WhatsApp voice message to text</a>.</p>
-    </div>
+<footer class="foot">
+  <div class="column">
+    <p class="foot__brand"><svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg><strong>Voicepad</strong><span>Voice messages, audio and video to text.</span></p>
+    <ul class="foot__links">
+      <li><a href="https://t.me/Voicepad_bot?start=src_en_meeting" rel="noopener">@Voicepad_bot in Telegram</a></li>
+      <li><a href="/privacy/#en">Privacy policy</a></li>
+      <li><a href="/zapis-vstrechi-v-protokol/" hreflang="ru" lang="ru">Русская версия</a></li>
+    </ul>
   </div>
 </footer>
 
+<script src="/assets/tool.js" defer></script>
 <script>
 (function () {
   var params = new URLSearchParams(location.search);
@@ -216,6 +291,24 @@ Everyone
   if (!raw || raw.length > 24) return;
   document.querySelectorAll('a[href*="t.me/Voicepad_bot?start=src_"]').forEach(function (link) {
     link.href = link.href.replace(/start=src_[a-z0-9_]+/, "start=src_" + raw);
+  });
+})();
+</script>
+<script>
+(function () {
+  var menu = document.querySelector(".menu");
+  if (!menu) return;
+  function close() { menu.open = false; }
+  menu.addEventListener("click", function (event) {
+    if (event.target.closest && event.target.closest("a")) close();
+  });
+  document.addEventListener("click", function (event) {
+    if (menu.open && !menu.contains(event.target)) close();
+  });
+  document.addEventListener("keydown", function (event) {
+    if (event.key !== "Escape" || !menu.open) return;
+    close();
+    menu.querySelector("summary").focus();
   });
 })();
 </script>

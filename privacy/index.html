@@ -68,45 +68,42 @@
 <body>
 <a class="skip" href="#main">Перейти к тексту</a>
 
-<header class="masthead">
-  <div class="shell">
-    <div class="col masthead__row">
-      <a class="brand" href="/" aria-label="Voicepad, главная">
-        <svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg>
-        <span>Voicepad</span>
-      </a>
-      <nav class="chapters" aria-label="Разделы страницы">
-        <ol>
-          <li><a href="#data">Данные</a></li>
-          <li><a href="#transfer">Кому передаются</a></li>
-          <li><a href="#storage">Хранение</a></li>
-          <li><a href="#site">Сайт</a></li>
-          <li><a href="#en">English</a></li>
-        </ol>
+<header class="topbar">
+  <div class="column topbar__row">
+    <a class="brand" href="/" aria-label="Voicepad, главная">
+      <svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg>
+      <span>Voicepad</span>
+    </a>
+    <nav class="topbar__nav" aria-label="Основное меню">
+      <a href="/#pricing">Цены</a>
+      <a href="/#guides">Инструкции</a>
+      <a href="https://t.me/Voicepad_bot?start=src_privacy" rel="noopener">Бот в Telegram</a>
+      <a href="#en" hreflang="en" lang="en">EN</a>
+    </nav>
+    <details class="menu">
+      <summary>Меню</summary>
+      <nav class="menu__list" aria-label="Основное меню">
+        <a href="/#pricing">Цены</a>
+        <a href="/#guides">Инструкции</a>
+        <a href="https://t.me/Voicepad_bot?start=src_privacy" rel="noopener">Бот в Telegram</a>
+        <a href="#en" hreflang="en" lang="en">English</a>
       </nav>
-      <div class="masthead__aside">
-        <a class="lang" href="#en" hreflang="en" lang="en">EN</a>
-        <a class="btn" href="https://t.me/Voicepad_bot?start=src_privacy" rel="noopener">Открыть бота</a>
-      </div>
-    </div>
+    </details>
   </div>
 </header>
 
 <main id="main">
-  <section class="hero" aria-labelledby="page-title">
-    <div class="shell">
-      <div class="col">
-        <nav class="crumbs" aria-label="Навигационная цепочка"><ol><li><a href="/">Главная</a></li><li><span aria-current="page">Политика конфиденциальности</span></li></ol></nav>
-        <h1 id="page-title">Политика конфиденциальности</h1>
-        <p class="lead">Эта политика описывает, какие данные обрабатывает Telegram-бот <a href="https://t.me/Voicepad_bot">@Voicepad_bot</a> (далее «бот») и сайт voicepad.qupport.io, зачем, сколько хранит и как их удалить. Бота разрабатывает и поддерживает частное лицо, Улукман Жыргалбек уулу (Казахстан). Вопросы: команда /feedback в боте или сообщение в Telegram <a href="https://t.me/uluk001">@uluk001</a>.</p>
-        <p class="page-meta">Обновлено <time datetime="2026-10-24">24 октября 2026</time></p>
-      </div>
+  <section class="opening" aria-labelledby="page-title">
+    <div class="column">
+      <nav class="crumbs" aria-label="Навигационная цепочка"><ol><li><a href="/">Главная</a></li><li><span aria-current="page">Политика конфиденциальности</span></li></ol></nav>
+      <h1 id="page-title">Политика конфиденциальности</h1>
+      <p class="opening__line">Эта политика описывает, какие данные обрабатывает Telegram-бот <a href="https://t.me/Voicepad_bot">@Voicepad_bot</a> (далее «бот») и сайт voicepad.qupport.io, зачем, сколько хранит и как их удалить. Бота разрабатывает и поддерживает частное лицо, Улукман Жыргалбек уулу (Казахстан). Вопросы: команда /feedback в боте или сообщение в Telegram <a href="https://t.me/uluk001">@uluk001</a>.</p>
     </div>
   </section>
 
-  <div class="shell">
-    <div class="col">
-      <article class="prose" aria-labelledby="page-title">
+  <article class="block" id="policy" aria-labelledby="page-title">
+    <div class="column">
+      <div class="copy">
         <h2 id="data">Какие данные обрабатываются</h2>
         <ul>
           <li><b>Профиль Telegram</b>: числовой идентификатор, имя, username и язык интерфейса. Нужны, чтобы бот отвечал вам, считал минуты и показывал историю.</li>
@@ -152,31 +149,32 @@
 
         <h2>Изменения</h2>
         <p>Новая редакция публикуется на этой странице с датой обновления. Существенные изменения бот сообщит отдельным сообщением.</p>
-
-        <section id="en" lang="en" aria-labelledby="en-title">
-          <hr>
-          <p class="note">English summary</p>
-          <h2 id="en-title">Privacy policy (summary)</h2>
-          <p>@Voicepad_bot processes your Telegram id, name, username and language, the audio or video you send, and the transcripts and summaries made from them. Audio is deleted right after transcription. Transcripts and AI results are kept for 30 days so the buttons, /history and follow-up questions work, then deleted automatically. Speech recognition runs on ElevenLabs (Groq may serve as a fallback), summaries on Anthropic Claude; how each provider handles the data is set out in its own terms. Payments go through Tribute; the bot never sees card details. Usage events (start, file received, button pressed, purchase) are tied to your Telegram id, contain no message text, and are kept for 180 days. The bot sends at most one message per week (an onboarding hint, a free minutes reset notice or a single reactivation). /delete removes all your transcripts at once; to delete the profile and balance write to <a href="https://t.me/uluk001">@uluk001</a>. The website sets no cookies. Its transcription tool sends your recording, file or link to the Voicepad server and the same speech providers; the file is deleted right after recognition. Without a login the result stays only in server memory for one hour, and free tries are counted for 7 days against keyed hashes of your IP address and of a random device id kept in your browser storage. Logging in with Telegram shares your Telegram id, name and username; the browser keeps a 30 day session key until you log out, and transcripts go to your bot history like any bot transcript.</p>
-        </section>
-      </article>
+      </div>
     </div>
-  </div>
+  </article>
+
+  <section class="block" id="en" lang="en" aria-labelledby="en-title">
+    <div class="column">
+      <h2 id="en-title">Privacy policy (summary)</h2>
+      <p class="block__lead">English summary</p>
+      <div class="copy">
+        <p>@Voicepad_bot processes your Telegram id, name, username and language, the audio or video you send, and the transcripts and summaries made from them. Audio is deleted right after transcription. Transcripts and AI results are kept for 30 days so the buttons, /history and follow-up questions work, then deleted automatically. Speech recognition runs on ElevenLabs (Groq may serve as a fallback), summaries on Anthropic Claude; how each provider handles the data is set out in its own terms. Payments go through Tribute; the bot never sees card details. Usage events (start, file received, button pressed, purchase) are tied to your Telegram id, contain no message text, and are kept for 180 days. The bot sends at most one message per week (an onboarding hint, a free minutes reset notice or a single reactivation). /delete removes all your transcripts at once; to delete the profile and balance write to <a href="https://t.me/uluk001">@uluk001</a>. The website sets no cookies. Its transcription tool sends your recording, file or link to the Voicepad server and the same speech providers; the file is deleted right after recognition. Without a login the result stays only in server memory for one hour, and free tries are counted for 7 days against keyed hashes of your IP address and of a random device id kept in your browser storage. Logging in with Telegram shares your Telegram id, name and username; the browser keeps a 30 day session key until you log out, and transcripts go to your bot history like any bot transcript.</p>
+      </div>
+    </div>
+  </section>
+
+  <p class="column updated">Обновлено <time datetime="2026-10-24">24 октября 2026</time></p>
 </main>
 
-<footer class="colophon">
-  <div class="shell">
-    <div class="col">
-      <p class="colophon__brand"><svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg><strong>Voicepad</strong><span>Расшифровка голосовых, аудио и видео в текст онлайн и в Telegram.</span></p>
-      <ul class="colophon__links">
-        <li><a href="https://t.me/Voicepad_bot?start=src_privacy" rel="noopener">t.me/Voicepad_bot</a></li>
-        <li><a href="https://t.me/Voicepad_bot?startgroup=true" rel="noopener">Добавить в чат</a></li>
-        <li><a href="/privacy/">Политика конфиденциальности</a></li>
-        <li><a href="/en/" hreflang="en" lang="en">English</a></li>
-      </ul>
-      <p class="colophon__note">Речь распознаёт ElevenLabs Scribe v2. Набрано шрифтами Literata и IBM Plex Mono.</p>
-      <p class="colophon__en" lang="en"><strong>Voicepad in English:</strong> <a href="/en/" hreflang="en">web tool and Telegram bot</a>, <a href="/en/voice-message-to-text/" hreflang="en">voice message to text</a>, <a href="/en/youtube-to-text/" hreflang="en">YouTube to text</a>, <a href="/en/meeting-notes/" hreflang="en">meeting notes</a>, <a href="/en/podcast-transcript/" hreflang="en">podcast transcript</a>, <a href="/en/lecture-notes-from-video/" hreflang="en">lecture notes</a>, <a href="/en/transcribe-telegram-voice-without-premium/" hreflang="en">Telegram voice messages without Premium</a>, <a href="/en/whatsapp-voice-message-to-text/" hreflang="en">WhatsApp voice message to text</a>.</p>
-    </div>
+<footer class="foot">
+  <div class="column">
+    <p class="foot__brand"><svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg><strong>Voicepad</strong><span>Голосовые, аудио и видео в текст.</span></p>
+    <ul class="foot__links">
+      <li><a href="https://t.me/Voicepad_bot?start=src_privacy" rel="noopener">@Voicepad_bot в Telegram</a></li>
+      <li><a href="/privacy/">Политика конфиденциальности</a></li>
+      <li><a href="/en/" hreflang="en" lang="en">English</a></li>
+    </ul>
+    <p class="foot__more" lang="en">In English: <a href="/en/voice-message-to-text/" hreflang="en">voice message to text</a>, <a href="/en/youtube-to-text/" hreflang="en">YouTube to text</a>, <a href="/en/meeting-notes/" hreflang="en">meeting notes</a>, <a href="/en/podcast-transcript/" hreflang="en">podcast transcript</a>, <a href="/en/lecture-notes-from-video/" hreflang="en">lecture notes</a>, <a href="/en/transcribe-telegram-voice-without-premium/" hreflang="en">Telegram voice messages without Premium</a>, <a href="/en/whatsapp-voice-message-to-text/" hreflang="en">WhatsApp voice message to text</a>.</p>
   </div>
 </footer>
 
@@ -187,6 +185,24 @@
   if (!raw || raw.length > 24) return;
   document.querySelectorAll('a[href*="t.me/Voicepad_bot?start=src_"]').forEach(function (link) {
     link.href = link.href.replace(/start=src_[a-z0-9_]+/, "start=src_" + raw);
+  });
+})();
+</script>
+<script>
+(function () {
+  var menu = document.querySelector(".menu");
+  if (!menu) return;
+  function close() { menu.open = false; }
+  menu.addEventListener("click", function (event) {
+    if (event.target.closest && event.target.closest("a")) close();
+  });
+  document.addEventListener("click", function (event) {
+    if (menu.open && !menu.contains(event.target)) close();
+  });
+  document.addEventListener("keydown", function (event) {
+    if (event.key !== "Escape" || !menu.open) return;
+    close();
+    menu.querySelector("summary").focus();
   });
 })();
 </script>

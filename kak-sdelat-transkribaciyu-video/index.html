@@ -29,15 +29,58 @@
 <meta name="twitter:image" content="https://voicepad.qupport.io/assets/cover.jpg">
 <meta name="twitter:image:alt" content="Voicepad: голосовые, аудио и видео в текст с таймкодами и спикерами">
 <link rel="preload" href="/assets/fonts/literata.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://bot.voicepad.qupport.io" crossorigin>
 <link rel="stylesheet" href="/assets/site.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
-    {"@type": "Organization", "@id": "https://voicepad.qupport.io/#organization", "name": "Voicepad", "url": "https://voicepad.qupport.io/", "logo": {"@type": "ImageObject", "url": "https://voicepad.qupport.io/assets/logo-512.png", "width": 512, "height": 512}, "sameAs": ["https://t.me/Voicepad_bot"]},
-    {"@type": "BreadcrumbList", "@id": "https://voicepad.qupport.io/kak-sdelat-transkribaciyu-video/#breadcrumbs", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://voicepad.qupport.io/"}, {"@type": "ListItem", "position": 2, "name": "Транскрибация видео", "item": "https://voicepad.qupport.io/kak-sdelat-transkribaciyu-video/"}]},
-    {"@type": "BlogPosting", "@id": "https://voicepad.qupport.io/kak-sdelat-transkribaciyu-video/#article", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://voicepad.qupport.io/kak-sdelat-transkribaciyu-video/", "url": "https://voicepad.qupport.io/kak-sdelat-transkribaciyu-video/", "breadcrumb": {"@id": "https://voicepad.qupport.io/kak-sdelat-transkribaciyu-video/#breadcrumbs"}}, "url": "https://voicepad.qupport.io/kak-sdelat-transkribaciyu-video/", "headline": "Как сделать транскрибацию видео: файл, ссылка на YouTube и субтитры", "description": "Транскрибация видео по шагам: файл на сайт, ссылка на YouTube, VK или RuTube, текст с таймкодами и SRT. Что делать, если видео не помещается в лимит.", "image": {"@type": "ImageObject", "url": "https://voicepad.qupport.io/assets/cover.jpg", "width": 1200, "height": 630}, "datePublished": "2026-10-24", "dateModified": "2026-10-24", "author": {"@type": "Organization", "@id": "https://voicepad.qupport.io/#organization", "name": "Voicepad", "url": "https://voicepad.qupport.io/"}, "publisher": {"@id": "https://voicepad.qupport.io/#organization"}, "inLanguage": "ru", "wordCount": 1731, "isPartOf": {"@id": "https://voicepad.qupport.io/#website"}},
-    {"@type": "FAQPage", "@id": "https://voicepad.qupport.io/kak-sdelat-transkribaciyu-video/#faq", "url": "https://voicepad.qupport.io/kak-sdelat-transkribaciyu-video/", "inLanguage": "ru", "isPartOf": {"@id": "https://voicepad.qupport.io/kak-sdelat-transkribaciyu-video/#article"}, "mainEntity": [{"@type": "Question", "name": "Можно ли сделать транскрибацию видео бесплатно?", "acceptedAnswer": {"@type": "Answer", "text": "Да, с ограничениями. На сайте без входа доступны 3 расшифровки в день, но у записи длиннее 3 минут распознаются только первые 3 минуты. В боте и на сайте после входа через Telegram каждый месяц начисляется 15 бесплатных минут. Если у ролика на YouTube уже есть субтитры, текст можно бесплатно открыть в самом YouTube кнопкой «Показать текст видео»."}}, {"@type": "Question", "name": "Какой максимальный размер видеофайла?", "acceptedAnswer": {"@type": "Answer", "text": "Боту в Telegram можно отправить файл до 20 МБ, это ограничение самого Telegram. На сайте без входа принимаются файлы до 50 МБ, после входа через Telegram до 200 МБ. Длина записи до 3 часов. Если файл больше, извлеките из него звук: час речи в моно с битрейтом 64 кбит/с весит около 29 МБ."}}, {"@type": "Question", "name": "Нужно ли скачивать видео с YouTube, чтобы получить текст?", "acceptedAnswer": {"@type": "Answer", "text": "Нет. Отправьте ссылку боту @Voicepad_bot: он принимает ролики с YouTube, VK Видео, RuTube и TikTok длиной до 3 часов. На сайте ссылку можно вставить после входа через Telegram, там подходят ещё Vimeo, Дзен, OK и Twitch."}}, {"@type": "Question", "name": "Как получить субтитры SRT из видео?", "acceptedAnswer": {"@type": "Answer", "text": "После распознавания скачайте файл SRT: на сайте он лежит рядом с TXT и DOCX, в боте экспорт доступен под каждой расшифровкой. YouTube принимает SRT в базовом варианте в кодировке UTF-8, поэтому файл можно загрузить к ролику, предварительно проверив имена и термины."}}, {"@type": "Question", "name": "Хранит ли Voicepad запись после расшифровки?", "acceptedAnswer": {"@type": "Answer", "text": "Нет, видео и аудио удаляются сразу после распознавания. Готовые расшифровки в боте хранятся 30 дней, команда /delete удаляет их сразу."}}]}
+    {
+      "@type": "Organization",
+      "@id": "https://voicepad.qupport.io/#organization",
+      "name": "Voicepad",
+      "url": "https://voicepad.qupport.io/",
+      "logo": {"@type": "ImageObject", "url": "https://voicepad.qupport.io/assets/logo-512.png", "width": 512, "height": 512},
+      "sameAs": ["https://t.me/Voicepad_bot"]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://voicepad.qupport.io/kak-sdelat-transkribaciyu-video/#breadcrumbs",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://voicepad.qupport.io/"},
+        {"@type": "ListItem", "position": 2, "name": "Транскрибация видео", "item": "https://voicepad.qupport.io/kak-sdelat-transkribaciyu-video/"}
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://voicepad.qupport.io/kak-sdelat-transkribaciyu-video/#article",
+      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://voicepad.qupport.io/kak-sdelat-transkribaciyu-video/", "url": "https://voicepad.qupport.io/kak-sdelat-transkribaciyu-video/", "breadcrumb": {"@id": "https://voicepad.qupport.io/kak-sdelat-transkribaciyu-video/#breadcrumbs"}},
+      "url": "https://voicepad.qupport.io/kak-sdelat-transkribaciyu-video/",
+      "headline": "Как сделать транскрибацию видео: файл, ссылка на YouTube и субтитры",
+      "description": "Транскрибация видео по шагам: файл на сайт, ссылка на YouTube, VK или RuTube, текст с таймкодами и SRT. Что делать, если видео не помещается в лимит.",
+      "image": {"@type": "ImageObject", "url": "https://voicepad.qupport.io/assets/cover.jpg", "width": 1200, "height": 630},
+      "datePublished": "2026-10-24",
+      "dateModified": "2026-10-24",
+      "author": {"@type": "Organization", "@id": "https://voicepad.qupport.io/#organization", "name": "Voicepad", "url": "https://voicepad.qupport.io/"},
+      "publisher": {"@id": "https://voicepad.qupport.io/#organization"},
+      "inLanguage": "ru",
+      "wordCount": 1700,
+      "isPartOf": {"@id": "https://voicepad.qupport.io/#website"}
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://voicepad.qupport.io/kak-sdelat-transkribaciyu-video/#faq",
+      "url": "https://voicepad.qupport.io/kak-sdelat-transkribaciyu-video/",
+      "inLanguage": "ru",
+      "isPartOf": {"@id": "https://voicepad.qupport.io/kak-sdelat-transkribaciyu-video/#article"},
+      "mainEntity": [
+        {"@type": "Question", "name": "Можно ли сделать транскрибацию видео бесплатно?", "acceptedAnswer": {"@type": "Answer", "text": "Да, с ограничениями. На сайте без входа доступны 3 расшифровки в день, но у записи длиннее 3 минут распознаются только первые 3 минуты. В боте и на сайте после входа через Telegram каждый месяц начисляется 15 бесплатных минут. Если у ролика на YouTube уже есть субтитры, текст можно бесплатно открыть в самом YouTube кнопкой «Показать текст видео»."}},
+        {"@type": "Question", "name": "Какой максимальный размер видеофайла?", "acceptedAnswer": {"@type": "Answer", "text": "Боту в Telegram можно отправить файл до 20 МБ, это ограничение самого Telegram. На сайте без входа принимаются файлы до 50 МБ, после входа через Telegram до 200 МБ. Длина записи до 3 часов. Если файл больше, извлеките из него звук: час речи в моно с битрейтом 64 кбит/с весит около 29 МБ."}},
+        {"@type": "Question", "name": "Нужно ли скачивать видео с YouTube, чтобы получить текст?", "acceptedAnswer": {"@type": "Answer", "text": "Нет. Отправьте ссылку боту @Voicepad_bot: он принимает ролики с YouTube, VK Видео, RuTube и TikTok длиной до 3 часов. На сайте ссылку можно вставить после входа через Telegram, там подходят ещё Vimeo, Дзен, OK и Twitch."}},
+        {"@type": "Question", "name": "Как получить субтитры SRT из видео?", "acceptedAnswer": {"@type": "Answer", "text": "После распознавания скачайте файл SRT: на сайте он лежит рядом с TXT и DOCX, в боте экспорт доступен под каждой расшифровкой. YouTube принимает SRT в базовом варианте в кодировке UTF-8, поэтому файл можно загрузить к ролику, предварительно проверив имена и термины."}},
+        {"@type": "Question", "name": "Хранит ли Voicepad запись после расшифровки?", "acceptedAnswer": {"@type": "Answer", "text": "Нет, видео и аудио удаляются сразу после распознавания. Готовые расшифровки в боте хранятся 30 дней, команда /delete удаляет их сразу."}}
+      ]
+    }
   ]
 }
 </script>
@@ -45,195 +88,260 @@
 <body>
 <a class="skip" href="#main">Перейти к статье</a>
 
-<header class="masthead">
-  <div class="shell">
-    <div class="col masthead__row">
-      <a class="brand" href="/" aria-label="Voicepad, главная">
-        <svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg>
-        <span>Voicepad</span>
-      </a>
-      <nav class="chapters" aria-label="Разделы страницы">
-        <ol>
-          <li><a href="#vhod">На входе</a></li>
-          <li><a href="#fajl">Файл</a></li>
-          <li><a href="#ssylka">Ссылка</a></li>
-          <li><a href="#srt">Таймкоды и SRT</a></li>
-          <li><a href="#bolshoe">Большое видео</a></li>
-          <li><a href="#faq">Вопросы</a></li>
-        </ol>
+<header class="topbar">
+  <div class="column topbar__row">
+    <a class="brand" href="/" aria-label="Voicepad, главная">
+      <svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg>
+      <span>Voicepad</span>
+    </a>
+    <nav class="topbar__nav" aria-label="Основное меню">
+      <a href="#pricing">Цены</a>
+      <a href="/#guides">Инструкции</a>
+      <a href="https://t.me/Voicepad_bot?start=src_kak_sdelat_transkribaciyu_video" rel="noopener">Бот в Telegram</a>
+      <a href="/en/" hreflang="en" lang="en">EN</a>
+    </nav>
+    <details class="menu">
+      <summary>Меню</summary>
+      <nav class="menu__list" aria-label="Основное меню">
+        <a href="#pricing">Цены</a>
+        <a href="/#guides">Инструкции</a>
+        <a href="https://t.me/Voicepad_bot?start=src_kak_sdelat_transkribaciyu_video" rel="noopener">Бот в Telegram</a>
+        <a href="/en/" hreflang="en" lang="en">English</a>
       </nav>
-      <div class="masthead__aside">
-        <a class="lang" href="/en/" hreflang="en" lang="en">EN</a>
-        <a class="btn" href="https://t.me/Voicepad_bot?start=src_kak_sdelat_transkribaciyu_video" rel="noopener">Открыть бота</a>
-      </div>
-    </div>
+    </details>
   </div>
 </header>
 
 <main id="main">
-  <section class="hero" aria-labelledby="page-title">
-    <div class="shell">
-      <div class="col">
-        <nav class="crumbs" aria-label="Навигационная цепочка">
-          <ol>
-            <li><a href="/">Главная</a></li>
-            <li><span aria-current="page">Транскрибация видео</span></li>
-          </ol>
-        </nav>
-        <h1 id="page-title">Как сделать транскрибацию видео: <span class="h1__tail">файл, ссылка на YouTube и&nbsp;субтитры</span></h1>
-        <p class="lead">Как получить текст из видео: загрузить файл на сайт или боту в Telegram либо отправить ссылку на YouTube, VK Видео или RuTube, а потом забрать результат с таймкодами или субтитрами SRT. Плюс бесплатные способы уменьшить файл, если он не помещается в лимит.</p>
-        <p class="page-meta page-meta-list"><span>Voicepad</span><span><time datetime="2026-10-24">24&nbsp;октября&nbsp;2026</time></span><span>10&nbsp;минут&nbsp;чтения</span></p>
+  <section class="opening" aria-labelledby="page-title">
+    <div class="column">
+      <nav class="crumbs" aria-label="Навигационная цепочка"><ol><li><a href="/">Главная</a></li><li><span aria-current="page">Транскрибация видео</span></li></ol></nav>
+      <h1 id="page-title">Как сделать транскрибацию видео: файл, ссылка на&nbsp;YouTube и&nbsp;субтитры</h1>
+      <p class="opening__line">Как получить текст из видео: загрузить файл на сайт или боту в Telegram либо отправить ссылку на YouTube, VK Видео или RuTube, а потом забрать результат с таймкодами или субтитрами SRT. Плюс бесплатные способы уменьшить файл, если он не помещается в лимит.</p>
+    </div>
+  </section>
+
+  <article class="block" id="article" aria-labelledby="page-title">
+    <div class="column">
+      <div class="copy">
+        <p>Я делаю Voicepad, и по опыту сложность с видео обычно не в распознавании, а в том, как довезти ролик до сервиса: файл слишком тяжёлый, ссылку некуда вставить, а субтитры нужны отдельным файлом. Ниже по шагам: как сделать транскрибацию видео из файла и по ссылке, как забрать текст с таймкодами и SRT и что делать, если видео не помещается в лимит.</p>
+
+        <h2 id="vhod">Что нужно на входе: файл или ссылка</h2>
+        <p>Распознавание речи работает со звуковой дорожкой, картинка ему не нужна. Поэтому на входе подойдёт один из двух вариантов.</p>
+        <ul>
+          <li><strong>Файл</strong>: ролик с телефона, запись созвона, скачанная лекция. Его загружают на сайт или отправляют боту в Telegram.</li>
+          <li><strong>Ссылка</strong>: ролик уже опубликован. Бот принимает ссылки на YouTube, VK Видео, RuTube и TikTok. На сайте ссылку можно вставить после входа через Telegram, там подходят ещё Vimeo, Дзен, OK и Twitch, если у ролика известна длительность. Скачивать видео не нужно.</li>
+        </ul>
+        <table>
+          <caption class="sr">Куда отправить видео в зависимости от того, что у вас есть, и какие там ограничения</caption>
+          <thead><tr><th scope="col">Что у вас есть</th><th scope="col">Куда отправить</th><th scope="col">Ограничения</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Короткий файл, хочется просто попробовать</th><td>Сайт без входа</td><td>3 расшифровки в день, файл до 50 МБ, по одной за раз; у записи длиннее 3 минут расшифруются первые 3 минуты</td></tr>
+            <tr><th scope="row">Файл до 200 МБ на компьютере или телефоне</th><td>Сайт после входа через Telegram</td><td>Запись до 3 часов, минуты с того же баланса, что в боте</td></tr>
+            <tr><th scope="row">Видео, кружочек или аудио уже в Telegram</th><td>Бот @Voicepad_bot</td><td>Файл до 20 МБ, запись до 3 часов</td></tr>
+            <tr><th scope="row">Ролик на YouTube, VK Видео, RuTube или в TikTok</th><td>Ссылка боту или на сайт после входа</td><td>Запись до 3 часов</td></tr>
+            <tr><th scope="row">Файл больше 200 МБ</th><td>Сначала извлечь звук, потом на сайт</td><td>Как это сделать, ниже в разделе про большие видео</td></tr>
+          </tbody>
+        </table>
+        <p>После входа через Telegram баланс у сайта и бота общий, а бесплатные минуты и пакеты собраны ниже, в блоке «Сколько стоит». Язык записи определяется автоматически, выбирать его не нужно. Что именно бесплатно, подробно разобрано в инструкции <a href="/transkribaciya-audio-v-tekst/">транскрибация аудио в текст онлайн</a>.</p>
+
+        <h2 id="fajl">Видео с компьютера или телефона</h2>
+        <ol>
+          <li>Откройте форму расшифровки: она есть <a href="#vp-tool">ниже на этой странице</a> и на странице <a href="/video-v-tekst/">видео в текст онлайн</a>. Для первой пробы регистрация не нужна.</li>
+          <li>Загрузите файл. На том же экране можно записать голос с микрофона, а после входа через Telegram и вставить ссылку на видео.</li>
+          <li>Дождитесь текста и заберите его: скопируйте или скачайте в TXT, SRT или DOCX.</li>
+        </ol>
+        <p>Без входа сайт работает как проба: у записи длиннее 3 минут расшифруются первые 3 минуты. Этого хватает, чтобы проверить, как распознаётся именно ваш звук: лектор у доски, созвон с плохим микрофоном, интервью на улице. Для полной записи войдите через Telegram.</p>
+        <p>Из Telegram то же самое делается через <a href="https://t.me/Voicepad_bot?start=src_kak_sdelat_transkribaciyu_video" rel="noopener">бота @Voicepad_bot</a>: перешлите ему видео, кружочек или аудиофайл. Здесь ограничение жёстче, 20 МБ на файл. Это лимит не наш, а Telegram: в документации Bot API сказано, что бот может скачать файл размером не больше 20 МБ. Поэтому длинную запись удобнее загружать на сайт, а боту отправлять короткие ролики и ссылки.</p>
+        <h3>Какой файл у вас на руках</h3>
+        <p>Сайт и бот принимают аудио и видеофайлы, но перед загрузкой полезно понимать, что именно вы отправляете.</p>
+        <ul>
+          <li><strong>Видео с iPhone.</strong> Apple рекомендует снимать в форматах HEIF и HEVC, это режим «Высокоэффективный». В настройках «Камера», «Форматы» можно выбрать «Наиболее совместимый», и новые видео будут в H.264. По словам Apple, HEVC сжимает лучше H.264, поэтому такие файлы занимают меньше места при том же качестве картинки. Если файл всё равно не проходит по размеру, вытащите из него звук, как описано ниже.</li>
+          <li><strong>Записи Zoom.</strong> При локальной записи Zoom сохраняет видео MP4 и отдельный аудиофайл M4A (так описано в справке Иллинойсского университета). Для расшифровки берите M4A: речь в нём та же, а картинки нет, поэтому он легче видео.</li>
+          <li><strong>Всё остальное.</strong> Если файл в редком формате не принимается или весит слишком много, проще всего вытащить из него звук. Как это сделать бесплатно, разобрано ниже.</li>
+        </ul>
+
+        <h2 id="ssylka">Видео по ссылке: YouTube, VK, RuTube</h2>
+        <p>Если ролик уже опубликован, скачивать его не нужно. Лимит 20 МБ касается файлов, которые идут через Telegram, а для ссылки важна длительность записи: до 3 часов. Есть два способа.</p>
+        <ul>
+          <li><strong>В боте.</strong> Откройте <a href="https://t.me/Voicepad_bot?start=src_kak_sdelat_transkribaciyu_video" rel="noopener">@Voicepad_bot в Telegram</a> и пришлите ссылку обычным сообщением. Подходят ролики с YouTube, VK Видео, RuTube и TikTok.</li>
+          <li><strong>На сайте.</strong> Вставить ссылку можно только после входа через Telegram: кроме этих четырёх площадок там подходят Vimeo, Дзен, OK и Twitch, если у ролика известна длительность. Без входа на сайте доступны запись голоса и загрузка файла.</li>
+        </ul>
+        <p>Честно про YouTube: если у ролика есть субтитры, текст можно бесплатно посмотреть прямо там. В описании видео есть кнопка «Показать текст видео», расшифровка прокручивается вместе с роликом, а нажатие на строку переносит к нужному моменту. Автоматические субтитры YouTube поддерживают и русский язык, но сам YouTube предупреждает, что из-за произношения, акцента, диалекта или посторонних шумов в них бывают ошибки, и советует авторам такие субтитры проверять.</p>
+        <p>Voicepad пригодится, когда субтитров у ролика нет, когда важно, кто что сказал (реплики размечены по спикерам), когда нужен файл SRT или DOCX, а не текст в окне плеера, или когда из записи надо сделать краткое содержание, список задач или пост. Подробнее про каждую площадку: <a href="/youtube-v-tekst/">видео с YouTube в текст и конспект с главами</a> и <a href="/vk-video-v-tekst/">видео из VK Видео и RuTube в текст</a>.</p>
+
+        <h2 id="srt">Текст с таймкодами и субтитры SRT</h2>
+        <p>Бот присылает текст с таймкодами и метками спикеров. Под каждой расшифровкой в боте доступны краткое содержание, список задач, статья, пост, вопросы к записи и экспорт в DOCX, TXT и SRT. На сайте результат можно скопировать или скачать. Какой формат для чего:</p>
+        <table>
+          <caption class="sr">Форматы TXT, DOCX и SRT: где они есть и для чего нужны</caption>
+          <thead><tr><th scope="col">Формат</th><th scope="col">Где есть</th><th scope="col">Для чего</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">TXT</th><td>Сайт и бот</td><td>Простой текст: вставить в заметки, письмо или документ</td></tr>
+            <tr><th scope="row">DOCX</th><td>Сайт и бот</td><td>Документ для Word или Google Docs: отредактировать и отправить коллегам</td></tr>
+            <tr><th scope="row">SRT</th><td>Сайт и бот</td><td>Субтитры: загрузить к ролику на YouTube или поправить вручную</td></tr>
+          </tbody>
+        </table>
+        <p>SRT устроен просто, поэтому его легко проверить глазами. Каждая реплика состоит из порядкового номера, строки с временем начала и конца в формате часы:<wbr>минуты:<wbr>секунды,<wbr>миллисекунды (например, <code>00:00:04,160</code>) и самого текста, а между репликами стоит пустая строка. YouTube принимает SRT с оговорками: только базовый вариант без оформления и только в кодировке UTF-8. Открыть и исправить такой файл можно в любом текстовом редакторе.</p>
+        <p>Перед публикацией проверьте имена, названия и термины: исправить слово в SRT проще, чем перезаливать видео с вшитыми субтитрами. Подробнее о формате и загрузке в инструкции <a href="/subtitry-srt-iz-video/">субтитры SRT из видео и аудио</a>.</p>
+
+        <h2 id="bolshoe">Когда видео слишком большое</h2>
+        <p>Лимиты такие: 20 МБ на файл в боте, 50 МБ на сайте без входа и 200 МБ после входа через Telegram. Если ваш файл больше, есть несколько выходов, от самого простого к самому трудоёмкому.</p>
+        <h3>Отправить ссылку вместо файла</h3>
+        <p>Если видео уже лежит на YouTube, VK Видео, RuTube или в TikTok, размер файла не важен, важна только длительность (до 3 часов): отправьте ссылку боту или вставьте её на сайте после входа.</p>
+        <h3>Вытащить звук через FFmpeg</h3>
+        <p>FFmpeg бесплатный (лицензия LGPL, отдельные необязательные модули под GPL) и работает из командной строки. Первая команда отбрасывает видео и копирует звуковую дорожку без перекодирования, поэтому выполняется быстро и без потери качества:</p>
+        <pre><code>ffmpeg -i lekciya.mp4 -vn -c:a copy lekciya.m4a</code></pre>
+        <p>Ключ <code>-vn</code> отключает видео, <code>-c:a copy</code> копирует звук как есть. Документация FFmpeg предупреждает, что такое копирование срабатывает не всегда. Если команда ответит ошибкой, перекодируйте звук:</p>
+        <pre><code>ffmpeg -i lekciya.mp4 -vn -c:a aac -ac 1 -b:a 64k lekciya.m4a</code></pre>
+        <p>Здесь <code>-c:a aac</code> выбирает встроенный AAC-кодер FFmpeg, <code>-ac 1</code> сводит звук в моно, а <code>-b:a 64k</code> задаёт битрейт 64 кбит/с. Размер легко посчитать: 64 кбит/с равны 8 КБ в секунду, то есть около 0,5 МБ в минуту. Час записи займёт примерно 29 МБ, три часа около 86 МБ, так что даже самая длинная запись помещается в лимит сайта после входа, 200 МБ. В 20 МБ для бота при таком битрейте влезает около 40 минут, при 32 кбит/с около 80 минут. Я бы начинал с 64k и снижал битрейт, только если файл не помещается. Таймкоды считаются от начала записи, а длина дорожки при извлечении остаётся прежней, поэтому SRT, сделанный по звуку, обычно ложится на исходное видео без сдвига. Перед публикацией всё же сверьте пару реплик в начале и в конце.</p>
+        <h3>Без командной строки: VLC</h3>
+        <p>Бесплатный плеер VLC с открытым исходным кодом умеет то же самое через меню. По инструкции kod.ru в русской версии это выглядит так (в разных версиях VLC названия пунктов могут немного отличаться): откройте «Медиа», затем «Конвертировать/сохранить», нажмите «Добавить», выберите видео и снова нажмите «Конвертировать/сохранить». В поле «Профиль» выберите аудиопрофиль MP3 (его название начинается со слова Audio), укажите папку и имя файла с окончанием .mp3 и запустите конвертацию. Готовый файл загружайте на сайт или отправляйте боту.</p>
+        <h3>Если нужен именно видеофайл: HandBrake</h3>
+        <p>Когда хочется сохранить картинку, например чтобы потом наложить субтитры, видео можно пережать в бесплатном HandBrake, он работает на Windows, macOS и Linux. Нажмите «Open Source» и выберите ролик, в группе пресетов General возьмите вариант Very Fast с низким разрешением, например Very Fast 480p30, и нажмите «Start». В документации HandBrake у этого пресета указаны очень быстрое кодирование, небольшой размер файла и среднее качество картинки, для расшифровки этого достаточно. Таймкоды в SRT записаны во времени, а не в кадрах, поэтому смена частоты кадров их обычно не сдвигает, но пару реплик всё равно стоит сверить.</p>
+
+        <h2 id="sources">Источники</h2>
+        <ul>
+          <li><a href="https://core.telegram.org/bots/api#getfile">Telegram Bot API: getFile</a></li>
+          <li><a href="https://support.apple.com/ru-ru/116944">Apple: медиафайлы HEIF и HEVC</a></li>
+          <li><a href="https://answers.illinois.edu/98529">University of Illinois: локальная запись Zoom (англ.)</a></li>
+          <li><a href="https://support.google.com/youtube/answer/15930243?hl=ru">YouTube: как посмотреть расшифровку видео</a></li>
+          <li><a href="https://support.google.com/youtube/answer/6373554?hl=ru">YouTube: автоматические субтитры</a></li>
+          <li><a href="https://support.google.com/youtube/answer/2734698?hl=en">YouTube: поддерживаемые форматы субтитров (англ.)</a></li>
+          <li><a href="https://ffmpeg.org/ffmpeg.html">FFmpeg: документация ffmpeg (англ.)</a></li>
+          <li><a href="https://ffmpeg.org/ffmpeg-codecs.html">FFmpeg: кодеки (англ.)</a></li>
+          <li><a href="https://ffmpeg.org/legal.html">FFmpeg: лицензия (англ.)</a></li>
+          <li><a href="https://www.videolan.org/vlc/">VideoLAN: VLC</a></li>
+          <li><a href="https://kod.ru/kak-izvlech-zvuk-iz-video">kod.ru: как извлечь звук из видео</a></li>
+          <li><a href="https://handbrake.fr/">HandBrake</a></li>
+          <li><a href="https://handbrake.fr/docs/en/latest/introduction/quick-start.html">HandBrake: Quick start (англ.)</a></li>
+          <li><a href="https://handbrake.fr/docs/en/latest/technical/official-presets.html">HandBrake: Official presets (англ.)</a></li>
+        </ul>
+      </div>
+    </div>
+  </article>
+
+  <section class="block" id="file" aria-labelledby="file-title">
+    <div class="column">
+      <h2 id="file-title">Расшифровать видео</h2>
+      <p class="block__lead">Загрузите видео с компьютера или телефона и получите текст по репликам, со временем.</p>
+      <div id="vp-tool" data-api="https://bot.voicepad.qupport.io" data-lang="ru" data-source="kak_sdelat_transkribaciyu_video"><noscript><p class="vp-fallback">Форма расшифровки работает с включённым JavaScript. Без него отправьте видео или ссылку боту <a href="https://t.me/Voicepad_bot?start=src_kak_sdelat_transkribaciyu_video">@Voicepad_bot</a> в Telegram.</p></noscript></div>
+    </div>
+  </section>
+
+  <section class="block" id="pricing" aria-labelledby="pricing-title">
+    <div class="column">
+      <h2 id="pricing-title">Сколько стоит</h2>
+      <p class="block__lead">Минуты общие для сайта и бота. Купленные минуты не сгорают.</p>
+      <ul class="plans">
+        <li class="plan">
+          <h3>Без входа</h3>
+          <p>3 записи в день, у длинной записи первые 3&nbsp;минуты, файл до 50&nbsp;МБ.</p>
+        </li>
+        <li class="plan">
+          <h3>Со входом через Telegram</h3>
+          <p>15 минут в месяц бесплатно, файлы до 200&nbsp;МБ, ссылки на видео.</p>
+        </li>
+        <li class="plan plan-packs">
+          <h3>Пакеты минут</h3>
+          <ul class="packs">
+            <li><span>60 мин</span> <b>199&nbsp;₽</b></li>
+            <li><span>300 мин</span> <b>690&nbsp;₽</b></li>
+            <li><span>1000 мин</span> <b>1990&nbsp;₽</b></li>
+          </ul>
+          <a class="btn" href="https://t.me/Voicepad_bot?start=src_kak_sdelat_transkribaciyu_video" rel="noopener">Купить минуты в боте</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" id="faq" aria-labelledby="faq-title">
+    <div class="column">
+      <h2 id="faq-title">Вопросы</h2>
+      <div class="faq">
+        <details>
+          <summary>Можно ли сделать транскрибацию видео бесплатно?</summary>
+          <p>Да, с ограничениями. На сайте без входа доступны 3 расшифровки в день, но у записи длиннее 3 минут распознаются только первые 3 минуты. В боте и на сайте после входа через Telegram каждый месяц начисляется 15 бесплатных минут. Если у ролика на YouTube уже есть субтитры, текст можно бесплатно открыть в самом YouTube кнопкой «Показать текст видео».</p>
+        </details>
+        <details>
+          <summary>Какой максимальный размер видеофайла?</summary>
+          <p>Боту в Telegram можно отправить файл до 20 МБ, это ограничение самого Telegram. На сайте без входа принимаются файлы до 50 МБ, после входа через Telegram до 200 МБ. Длина записи до 3 часов. Если файл больше, извлеките из него звук: час речи в моно с битрейтом 64 кбит/с весит около 29 МБ.</p>
+        </details>
+        <details>
+          <summary>Нужно ли скачивать видео с YouTube, чтобы получить текст?</summary>
+          <p>Нет. Отправьте ссылку боту @Voicepad_bot: он принимает ролики с YouTube, VK Видео, RuTube и TikTok длиной до 3 часов. На сайте ссылку можно вставить после входа через Telegram, там подходят ещё Vimeo, Дзен, OK и Twitch.</p>
+        </details>
+        <details>
+          <summary>Как получить субтитры SRT из видео?</summary>
+          <p>После распознавания скачайте файл SRT: на сайте он лежит рядом с TXT и DOCX, в боте экспорт доступен под каждой расшифровкой. YouTube принимает SRT в базовом варианте в кодировке UTF-8, поэтому файл можно загрузить к ролику, предварительно проверив имена и термины.</p>
+        </details>
+        <details>
+          <summary>Хранит ли Voicepad запись после расшифровки?</summary>
+          <p>Нет, видео и аудио удаляются сразу после распознавания. Готовые расшифровки в боте хранятся 30 дней, команда <code>/delete</code> удаляет их сразу.</p>
+        </details>
       </div>
     </div>
   </section>
 
-  <div class="shell">
-    <div class="col">
-      <article class="prose" aria-labelledby="page-title">
-<p>Я делаю Voicepad, и по опыту сложность с видео обычно не в распознавании, а в том, как довезти ролик до сервиса: файл слишком тяжёлый, ссылку некуда вставить, а субтитры нужны отдельным файлом. Ниже по шагам: как сделать транскрибацию видео из файла и по ссылке, как забрать текст с таймкодами и SRT и что делать, если видео не помещается в лимит.</p>
-
-<h2 id="vhod">Что нужно на входе: файл или ссылка</h2>
-<p>Распознавание речи работает со звуковой дорожкой, картинка ему не нужна. Поэтому на входе подойдёт один из двух вариантов.</p>
-<ul>
-<li><strong>Файл</strong>: ролик с телефона, запись созвона, скачанная лекция. Его загружают на сайт или отправляют боту в Telegram.</li>
-<li><strong>Ссылка</strong>: ролик уже опубликован. Бот принимает ссылки на YouTube, VK Видео, RuTube и TikTok. На сайте ссылку можно вставить после входа через Telegram, там подходят ещё Vimeo, Дзен, OK и Twitch, если у ролика известна длительность. Скачивать видео не нужно.</li>
-</ul>
-<table class="book venues" role="table">
-<thead role="rowgroup"><tr role="row"><th role="columnheader" scope="col">Что у вас есть</th><th role="columnheader" scope="col">Куда отправить</th><th role="columnheader" scope="col">Ограничения</th></tr></thead>
-<tbody role="rowgroup">
-<tr role="row"><th role="rowheader" scope="row">Короткий файл, хочется просто попробовать</th><td role="cell" data-label="Куда отправить"><span>Сайт без входа</span></td><td role="cell" data-label="Ограничения"><span>3 расшифровки в день, файл до 50 МБ, по одной за раз; у записи длиннее 3 минут расшифруются первые 3 минуты</span></td></tr>
-<tr role="row"><th role="rowheader" scope="row">Файл до 200 МБ на компьютере или телефоне</th><td role="cell" data-label="Куда отправить"><span>Сайт после входа через Telegram</span></td><td role="cell" data-label="Ограничения"><span>Запись до 3 часов, минуты с того же баланса, что в боте</span></td></tr>
-<tr role="row"><th role="rowheader" scope="row">Видео, кружочек или аудио уже в Telegram</th><td role="cell" data-label="Куда отправить"><span>Бот @Voicepad_bot</span></td><td role="cell" data-label="Ограничения"><span>Файл до 20 МБ, запись до 3 часов</span></td></tr>
-<tr role="row"><th role="rowheader" scope="row">Ролик на YouTube, VK Видео, RuTube или в TikTok</th><td role="cell" data-label="Куда отправить"><span>Ссылка боту или на сайт после входа</span></td><td role="cell" data-label="Ограничения"><span>Запись до 3 часов</span></td></tr>
-<tr role="row"><th role="rowheader" scope="row">Файл больше 200 МБ</th><td role="cell" data-label="Куда отправить"><span>Сначала извлечь звук, потом на сайт</span></td><td role="cell" data-label="Ограничения"><span>Как это сделать, ниже в разделе про большие видео</span></td></tr>
-</tbody>
-</table>
-<p>После входа через Telegram баланс у сайта и бота общий: 15 бесплатных минут каждый месяц, дальше пакеты 60 минут за 199 ₽, 300 минут за 690 ₽ и 1000 минут за 1990 ₽. Оплата картой через Tribute, купленные минуты не сгорают, списывается только реальная длительность записи. Речь распознаёт ElevenLabs Scribe v2, язык записи определяется автоматически, выбирать его не нужно. Что именно бесплатно, подробно разобрано в инструкции <a href="/transkribaciya-audio-v-tekst/">транскрибация аудио в текст онлайн</a>.</p>
-
-<h2 id="fajl">Видео с компьютера или телефона</h2>
-<ol>
-<li>Откройте <a href="/video-v-tekst/#tool">транскрибацию видео прямо в браузере</a>. Для первой пробы регистрация не нужна.</li>
-<li>Загрузите файл. На том же экране можно записать голос с микрофона, а после входа через Telegram и вставить ссылку на видео.</li>
-<li>Дождитесь текста и заберите его: скопируйте или скачайте в TXT, SRT или DOCX.</li>
-</ol>
-<p>Без входа сайт работает как проба: три расшифровки в день, файл до 50 МБ, по одной за раз, а у записи длиннее 3 минут расшифруются первые 3 минуты. Этого хватает, чтобы проверить, как распознаётся именно ваш звук: лектор у доски, созвон с плохим микрофоном, интервью на улице. Для полной записи войдите через Telegram: лимит файла вырастает до 200 МБ, длина записи до 3 часов, становятся доступны ссылки, а минуты списываются с того же баланса, что и в боте.</p>
-<p>Из Telegram то же самое делается через <a href="https://t.me/Voicepad_bot?start=src_kak_sdelat_transkribaciyu_video" rel="noopener">бота @Voicepad_bot</a>: перешлите ему видео, кружочек или аудиофайл. Здесь ограничение жёстче, 20 МБ на файл. Это лимит не наш, а Telegram: в документации Bot API сказано, что бот может скачать файл размером не больше 20 МБ. Поэтому длинную запись удобнее загружать на сайт, а боту отправлять короткие ролики и ссылки.</p>
-<h3>Какой файл у вас на руках</h3>
-<p>Сайт и бот принимают аудио и видеофайлы, но перед загрузкой полезно понимать, что именно вы отправляете.</p>
-<ul>
-<li><strong>Видео с iPhone.</strong> Apple рекомендует снимать в форматах HEIF и HEVC, это режим «Высокоэффективный». В настройках «Камера», «Форматы» можно выбрать «Наиболее совместимый», и новые видео будут в H.264. По словам Apple, HEVC сжимает лучше H.264, поэтому такие файлы занимают меньше места при том же качестве картинки. Если файл всё равно не проходит по размеру, вытащите из него звук, как описано ниже.</li>
-<li><strong>Записи Zoom.</strong> При локальной записи Zoom сохраняет видео MP4 и отдельный аудиофайл M4A (так описано в справке Иллинойсского университета). Для расшифровки берите M4A: речь в нём та же, а картинки нет, поэтому он легче видео.</li>
-<li><strong>Всё остальное.</strong> Если файл в редком формате не принимается или весит слишком много, проще всего вытащить из него звук. Как это сделать бесплатно, разобрано ниже.</li>
-</ul>
-
-<h2 id="ssylka">Видео по ссылке: YouTube, VK, RuTube</h2>
-<p>Если ролик уже опубликован, скачивать его не нужно. Лимит 20 МБ касается файлов, которые идут через Telegram, а для ссылки важна длительность записи: до 3 часов. Есть два способа.</p>
-<ul>
-<li><strong>В боте.</strong> Откройте <a href="https://t.me/Voicepad_bot?start=src_kak_sdelat_transkribaciyu_video" rel="noopener">@Voicepad_bot в Telegram</a> и пришлите ссылку обычным сообщением. Подходят ролики с YouTube, VK Видео, RuTube и TikTok.</li>
-<li><strong>На сайте.</strong> Вставить ссылку можно только после входа через Telegram: кроме этих четырёх площадок там подходят Vimeo, Дзен, OK и Twitch, если у ролика известна длительность. Без входа на сайте доступны запись голоса и загрузка файла.</li>
-</ul>
-<p>Честно про YouTube: если у ролика есть субтитры, текст можно бесплатно посмотреть прямо там. В описании видео есть кнопка «Показать текст видео», расшифровка прокручивается вместе с роликом, а нажатие на строку переносит к нужному моменту. Автоматические субтитры YouTube поддерживают и русский язык, но сам YouTube предупреждает, что из-за произношения, акцента, диалекта или посторонних шумов в них бывают ошибки, и советует авторам такие субтитры проверять.</p>
-<p>Voicepad пригодится, когда субтитров у ролика нет, когда важно, кто что сказал (реплики размечены по спикерам), когда нужен файл SRT или DOCX, а не текст в окне плеера, или когда из записи надо сделать краткое содержание, список задач или пост. Подробнее про каждую площадку: <a href="/youtube-v-tekst/">видео с YouTube в текст и конспект с главами</a> и <a href="/vk-video-v-tekst/">видео из VK Видео и RuTube в текст</a>.</p>
-
-<h2 id="srt">Текст с таймкодами и субтитры SRT</h2>
-<p>Бот присылает текст с таймкодами и метками спикеров. Под каждой расшифровкой в боте доступны краткое содержание, список задач, статья, пост, вопросы к записи и экспорт в DOCX, TXT и SRT. На сайте результат можно скопировать или скачать. Какой формат для чего:</p>
-<table class="book venues" role="table">
-<thead role="rowgroup"><tr role="row"><th role="columnheader" scope="col">Формат</th><th role="columnheader" scope="col">Где есть</th><th role="columnheader" scope="col">Для чего</th></tr></thead>
-<tbody role="rowgroup">
-<tr role="row"><th role="rowheader" scope="row">TXT</th><td role="cell" data-label="Где есть"><span>Сайт и бот</span></td><td role="cell" data-label="Для чего"><span>Простой текст: вставить в заметки, письмо или документ</span></td></tr>
-<tr role="row"><th role="rowheader" scope="row">DOCX</th><td role="cell" data-label="Где есть"><span>Сайт и бот</span></td><td role="cell" data-label="Для чего"><span>Документ для Word или Google Docs: отредактировать и отправить коллегам</span></td></tr>
-<tr role="row"><th role="rowheader" scope="row">SRT</th><td role="cell" data-label="Где есть"><span>Сайт и бот</span></td><td role="cell" data-label="Для чего"><span>Субтитры: загрузить к ролику на YouTube или поправить вручную</span></td></tr>
-</tbody>
-</table>
-<p>SRT устроен просто, поэтому его легко проверить глазами. Каждая реплика состоит из порядкового номера, строки с временем начала и конца в формате часы:минуты:секунды,миллисекунды (например, <code>00:00:04,160</code>) и самого текста, а между репликами стоит пустая строка. YouTube принимает SRT с оговорками: только базовый вариант без оформления и только в кодировке UTF-8. Открыть и исправить такой файл можно в любом текстовом редакторе.</p>
-<p>Перед публикацией проверьте имена, названия и термины: исправить слово в SRT проще, чем перезаливать видео с вшитыми субтитрами. Подробнее о формате и загрузке в инструкции <a href="/subtitry-srt-iz-video/">субтитры SRT из видео и аудио</a>.</p>
-
-<h2 id="bolshoe">Когда видео слишком большое</h2>
-<p>Лимиты такие: 20 МБ на файл в боте, 50 МБ на сайте без входа и 200 МБ после входа через Telegram. Если ваш файл больше, есть несколько выходов, от самого простого к самому трудоёмкому.</p>
-<h3>Отправить ссылку вместо файла</h3>
-<p>Если видео уже лежит на YouTube, VK Видео, RuTube или в TikTok, размер файла не важен, важна только длительность (до 3 часов): отправьте ссылку боту или вставьте её на сайте после входа.</p>
-<h3>Вытащить звук через FFmpeg</h3>
-<p>FFmpeg бесплатный (лицензия LGPL, отдельные необязательные модули под GPL) и работает из командной строки. Первая команда отбрасывает видео и копирует звуковую дорожку без перекодирования, поэтому выполняется быстро и без потери качества:</p>
-<pre><code>ffmpeg -i lekciya.mp4 -vn -c:a copy lekciya.m4a</code></pre>
-<p>Ключ <code>-vn</code> отключает видео, <code>-c:a copy</code> копирует звук как есть. Документация FFmpeg предупреждает, что такое копирование срабатывает не всегда. Если команда ответит ошибкой, перекодируйте звук:</p>
-<pre><code>ffmpeg -i lekciya.mp4 -vn -c:a aac -ac 1 -b:a 64k lekciya.m4a</code></pre>
-<p>Здесь <code>-c:a aac</code> выбирает встроенный AAC-кодер FFmpeg, <code>-ac 1</code> сводит звук в моно, а <code>-b:a 64k</code> задаёт битрейт 64 кбит/с. Размер легко посчитать: 64 кбит/с равны 8 КБ в секунду, то есть около 0,5 МБ в минуту. Час записи займёт примерно 29 МБ, три часа около 86 МБ, так что даже самая длинная запись помещается в лимит сайта после входа, 200 МБ. В 20 МБ для бота при таком битрейте влезает около 40 минут, при 32 кбит/с около 80 минут. Я бы начинал с 64k и снижал битрейт, только если файл не помещается. Таймкоды считаются от начала записи, а длина дорожки при извлечении остаётся прежней, поэтому SRT, сделанный по звуку, обычно ложится на исходное видео без сдвига. Перед публикацией всё же сверьте пару реплик в начале и в конце.</p>
-<h3>Без командной строки: VLC</h3>
-<p>Бесплатный плеер VLC с открытым исходным кодом умеет то же самое через меню. По инструкции kod.ru в русской версии это выглядит так (в разных версиях VLC названия пунктов могут немного отличаться): откройте «Медиа», затем «Конвертировать/сохранить», нажмите «Добавить», выберите видео и снова нажмите «Конвертировать/сохранить». В поле «Профиль» выберите аудиопрофиль MP3 (его название начинается со слова Audio), укажите папку и имя файла с окончанием .mp3 и запустите конвертацию. Готовый файл загружайте на сайт или отправляйте боту.</p>
-<h3>Если нужен именно видеофайл: HandBrake</h3>
-<p>Когда хочется сохранить картинку, например чтобы потом наложить субтитры, видео можно пережать в бесплатном HandBrake, он работает на Windows, macOS и Linux. Нажмите «Open Source» и выберите ролик, в группе пресетов General возьмите вариант Very Fast с низким разрешением, например Very Fast 480p30, и нажмите «Start». В документации HandBrake у этого пресета указаны очень быстрое кодирование, небольшой размер файла и среднее качество картинки, для расшифровки этого достаточно. Таймкоды в SRT записаны во времени, а не в кадрах, поэтому смена частоты кадров их обычно не сдвигает, но пару реплик всё равно стоит сверить.</p>
-
-<h2 id="faq">Частые вопросы</h2>
-<h3>Можно ли сделать транскрибацию видео бесплатно?</h3>
-<p>Да, с ограничениями. На сайте без входа доступны 3 расшифровки в день, но у записи длиннее 3 минут распознаются только первые 3 минуты. В боте и на сайте после входа через Telegram каждый месяц начисляется 15 бесплатных минут. Если у ролика на YouTube уже есть субтитры, текст можно бесплатно открыть в самом YouTube кнопкой «Показать текст видео».</p>
-<h3>Какой максимальный размер видеофайла?</h3>
-<p>Боту в Telegram можно отправить файл до 20 МБ, это ограничение самого Telegram. На сайте без входа принимаются файлы до 50 МБ, после входа через Telegram до 200 МБ. Длина записи до 3 часов. Если файл больше, извлеките из него звук: час речи в моно с битрейтом 64 кбит/с весит около 29 МБ.</p>
-<h3>Нужно ли скачивать видео с YouTube, чтобы получить текст?</h3>
-<p>Нет. Отправьте ссылку боту @Voicepad_bot: он принимает ролики с YouTube, VK Видео, RuTube и TikTok длиной до 3 часов. На сайте ссылку можно вставить после входа через Telegram, там подходят ещё Vimeo, Дзен, OK и Twitch.</p>
-<h3>Как получить субтитры SRT из видео?</h3>
-<p>После распознавания скачайте файл SRT: на сайте он лежит рядом с TXT и DOCX, в боте экспорт доступен под каждой расшифровкой. YouTube принимает SRT в базовом варианте в кодировке UTF-8, поэтому файл можно загрузить к ролику, предварительно проверив имена и термины.</p>
-<h3>Хранит ли Voicepad запись после расшифровки?</h3>
-<p>Нет, видео и аудио удаляются сразу после распознавания. Готовые расшифровки в боте хранятся 30 дней, команда /delete удаляет их сразу.</p>
-
-<h2 id="related">Другие инструкции</h2>
-<ul>
-<li><a href="/youtube-v-tekst/">Видео с YouTube в текст и конспект</a>: ссылка на вход, текст с таймкодами и главы на выход.</li>
-<li><a href="/vk-video-v-tekst/">Видео из VK Видео и RuTube в текст</a>: ссылки VK, RuTube и TikTok принимаются так же, как YouTube.</li>
-<li><a href="/subtitry-srt-iz-video/">Субтитры SRT из видео</a>: файл или ссылка на вход, файл субтитров с таймкодами на выход.</li>
-<li><a href="/transkribaciya-audio-v-tekst/">Транскрибация аудио в текст онлайн</a>: что на самом деле значит «бесплатно» и где заканчиваются 15 минут.</li>
-</ul>
-
-<h2 id="sources">Источники</h2>
-<ol class="note">
-<li><a href="https://core.telegram.org/bots/api#getfile">Telegram Bot API: getFile</a></li>
-<li><a href="https://support.apple.com/ru-ru/116944">Apple: медиафайлы HEIF и HEVC</a></li>
-<li><a href="https://answers.illinois.edu/98529">University of Illinois: локальная запись Zoom (англ.)</a></li>
-<li><a href="https://support.google.com/youtube/answer/15930243?hl=ru">YouTube: как посмотреть расшифровку видео</a></li>
-<li><a href="https://support.google.com/youtube/answer/6373554?hl=ru">YouTube: автоматические субтитры</a></li>
-<li><a href="https://support.google.com/youtube/answer/2734698?hl=en">YouTube: поддерживаемые форматы субтитров (англ.)</a></li>
-<li><a href="https://ffmpeg.org/ffmpeg.html">FFmpeg: документация ffmpeg (англ.)</a></li>
-<li><a href="https://ffmpeg.org/ffmpeg-codecs.html">FFmpeg: кодеки (англ.)</a></li>
-<li><a href="https://ffmpeg.org/legal.html">FFmpeg: лицензия (англ.)</a></li>
-<li><a href="https://www.videolan.org/vlc/">VideoLAN: VLC</a></li>
-<li><a href="https://kod.ru/kak-izvlech-zvuk-iz-video">kod.ru: как извлечь звук из видео</a></li>
-<li><a href="https://handbrake.fr/">HandBrake</a></li>
-<li><a href="https://handbrake.fr/docs/en/latest/introduction/quick-start.html">HandBrake: Quick start (англ.)</a></li>
-<li><a href="https://handbrake.fr/docs/en/latest/technical/official-presets.html">HandBrake: Official presets (англ.)</a></li>
-</ol>
-      </article>
-    </div>
-  </div>
-
-  <section class="outro" aria-labelledby="outro-title">
-    <div class="shell">
-      <div class="col">
-        <h2 id="outro-title">Расшифруйте видео</h2>
-        <p>Файл до 50 МБ можно загрузить без входа, до 200 МБ после входа через Telegram. Ссылки на ролики принимает бот и сайт после входа.</p>
-        <p class="cta-pair">
-          <a class="btn" href="/video-v-tekst/#tool">Загрузить видео</a>
-          <a class="btn btn-line" href="https://t.me/Voicepad_bot?start=src_kak_sdelat_transkribaciyu_video" rel="noopener">Открыть @Voicepad_bot</a>
-        </p>
+  <section class="block" id="related" aria-labelledby="related-title">
+    <div class="column">
+      <h2 id="related-title">Другие инструкции</h2>
+      <div class="links">
+        <ul>
+          <li><a href="/video-v-tekst/">Видео в текст онлайн</a></li>
+          <li><a href="/youtube-v-tekst/">Видео с YouTube в текст</a></li>
+          <li><a href="/vk-video-v-tekst/">VK Видео и RuTube в текст</a></li>
+          <li><a href="/subtitry-srt-iz-video/">Субтитры SRT из видео</a></li>
+          <li><a href="/transkribaciya-audio-v-tekst/">Транскрибация аудио в текст</a></li>
+        </ul>
       </div>
     </div>
   </section>
+
+  <section class="block" id="bot" aria-labelledby="bot-title">
+    <div class="column">
+      <h2 id="bot-title">Сайт и бот в Telegram</h2>
+      <p class="block__lead">Один сервис и один баланс минут. Вход на сайте через Telegram связывает их.</p>
+      <div class="duo">
+        <div>
+          <h3>На сайте</h3>
+          <ul class="dots">
+            <li>Большие файлы и ссылки на видео</li>
+            <li>Текст можно скопировать или скачать</li>
+            <li>3 записи в день без входа</li>
+          </ul>
+        </div>
+        <div>
+          <h3>В боте @Voicepad_bot</h3>
+          <ul class="dots">
+            <li>Голосовые и кружочки пересылкой из любого чата</li>
+            <li>Конспект, задачи и ответы на вопросы по записи</li>
+            <li>Работает в групповых чатах</li>
+          </ul>
+        </div>
+      </div>
+      <p class="block__actions">
+        <a class="btn" href="https://t.me/Voicepad_bot?start=src_kak_sdelat_transkribaciyu_video" rel="noopener">Открыть бота</a>
+        <a href="/bot-v-gruppovom-chate/">Как бот работает в группе</a>
+      </p>
+    </div>
+  </section>
+
+  <p class="column updated">Обновлено <time datetime="2026-10-24">24 октября 2026</time></p>
 </main>
 
-<footer class="colophon">
-  <div class="shell">
-    <div class="col">
-      <p class="colophon__brand"><svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg><strong>Voicepad</strong><span>Расшифровка голосовых, аудио и видео в текст онлайн и в Telegram.</span></p>
-      <ul class="colophon__links">
-        <li><a href="https://t.me/Voicepad_bot?start=src_kak_sdelat_transkribaciyu_video" rel="noopener">t.me/Voicepad_bot</a></li>
-        <li><a href="https://t.me/Voicepad_bot?startgroup=true" rel="noopener">Добавить в чат</a></li>
-        <li><a href="/privacy/">Политика конфиденциальности</a></li>
-        <li><a href="/en/" hreflang="en" lang="en">English</a></li>
-      </ul>
-      <p class="colophon__note">Речь распознаёт ElevenLabs Scribe v2. Набрано шрифтами Literata и IBM Plex Mono.</p>
-      <p class="colophon__en" lang="en"><strong>Voicepad in English:</strong> <a href="/en/" hreflang="en">web tool and Telegram bot</a>, <a href="/en/voice-message-to-text/" hreflang="en">voice message to text</a>, <a href="/en/youtube-to-text/" hreflang="en">YouTube to text</a>, <a href="/en/meeting-notes/" hreflang="en">meeting notes</a>, <a href="/en/podcast-transcript/" hreflang="en">podcast transcript</a>, <a href="/en/lecture-notes-from-video/" hreflang="en">lecture notes</a>, <a href="/en/transcribe-telegram-voice-without-premium/" hreflang="en">Telegram voice messages without Premium</a>, <a href="/en/whatsapp-voice-message-to-text/" hreflang="en">WhatsApp voice message to text</a>.</p>
-    </div>
+<footer class="foot">
+  <div class="column">
+    <p class="foot__brand"><svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg><strong>Voicepad</strong><span>Голосовые, аудио и видео в текст.</span></p>
+    <ul class="foot__links">
+      <li><a href="https://t.me/Voicepad_bot?start=src_kak_sdelat_transkribaciyu_video" rel="noopener">@Voicepad_bot в Telegram</a></li>
+      <li><a href="/privacy/">Политика конфиденциальности</a></li>
+      <li><a href="/en/" hreflang="en" lang="en">English</a></li>
+    </ul>
+    <p class="foot__more" lang="en">In English: <a href="/en/voice-message-to-text/" hreflang="en">voice message to text</a>, <a href="/en/youtube-to-text/" hreflang="en">YouTube to text</a>, <a href="/en/meeting-notes/" hreflang="en">meeting notes</a>, <a href="/en/podcast-transcript/" hreflang="en">podcast transcript</a>, <a href="/en/lecture-notes-from-video/" hreflang="en">lecture notes</a>, <a href="/en/transcribe-telegram-voice-without-premium/" hreflang="en">Telegram voice messages without Premium</a>, <a href="/en/whatsapp-voice-message-to-text/" hreflang="en">WhatsApp voice message to text</a>.</p>
   </div>
 </footer>
 
+<script src="/assets/tool.js" defer></script>
 <script>
 (function () {
   var params = new URLSearchParams(location.search);
@@ -241,6 +349,24 @@
   if (!raw || raw.length > 24) return;
   document.querySelectorAll('a[href*="t.me/Voicepad_bot?start=src_"]').forEach(function (link) {
     link.href = link.href.replace(/start=src_[a-z0-9_]+/, "start=src_" + raw);
+  });
+})();
+</script>
+<script>
+(function () {
+  var menu = document.querySelector(".menu");
+  if (!menu) return;
+  function close() { menu.open = false; }
+  menu.addEventListener("click", function (event) {
+    if (event.target.closest && event.target.closest("a")) close();
+  });
+  document.addEventListener("click", function (event) {
+    if (menu.open && !menu.contains(event.target)) close();
+  });
+  document.addEventListener("keydown", function (event) {
+    if (event.key !== "Escape" || !menu.open) return;
+    close();
+    menu.querySelector("summary").focus();
   });
 })();
 </script>
