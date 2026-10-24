@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Voicepad: Telegram transcription bot for voice messages, audio, video and YouTube</title>
-<meta name="description" content="Voicepad turns Telegram voice messages, audio and video files up to 2 GB and YouTube links into text with timestamps and speaker labels, then writes a summary and action items. 15 free minutes a month.">
+<meta name="description" content="Voicepad turns Telegram voice messages, audio and video files up to 20 MB (larger files as a Google Drive or Yandex Disk link) and YouTube links into text with timestamps and speaker labels, then writes a summary and action items. 15 free minutes a month.">
 <link rel="canonical" href="https://voicepad.qupport.io/en/">
 <link rel="alternate" hreflang="ru" href="https://voicepad.qupport.io/">
 <link rel="alternate" hreflang="en" href="https://voicepad.qupport.io/en/">
@@ -37,7 +37,7 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "What can Voicepad transcribe?", "acceptedAnswer": {"@type": "Answer", "text": "Voice messages, video notes, audio and video files up to 2 GB, and links from YouTube, VK, RuTube and TikTok. The text comes with timestamps and speaker labels, with buttons for a summary, action items, an article, a post, questions about the recording and DOCX, TXT and SRT files."}},
+    {"@type": "Question", "name": "What can Voicepad transcribe?", "acceptedAnswer": {"@type": "Answer", "text": "Voice messages, video notes, audio and video files up to 20 MB (larger files as a Google Drive or Yandex Disk link), and links from YouTube, VK, RuTube and TikTok. The text comes with timestamps and speaker labels, with buttons for a summary, action items, an article, a post, questions about the recording and DOCX, TXT and SRT files."}},
     {"@type": "Question", "name": "Which languages are supported?", "acceptedAnswer": {"@type": "Answer", "text": "English, Russian and dozens of other languages, detected automatically. Mixed-language recordings work too."}},
     {"@type": "Question", "name": "How much does it cost?", "acceptedAnswer": {"@type": "Answer", "text": "15 minutes every month are free, including the summary and action items. Minute packs start at 199 RUB for 60 minutes, paid by card in rubles, dollars or euros. Minutes never expire."}},
     {"@type": "Question", "name": "Does it work in group chats?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Add @Voicepad_bot to a chat and it transcribes voice messages for everyone, offers a summary under video links and transcribes anything on request with the /text command."}}
@@ -74,7 +74,7 @@ footer{padding:36px 0 56px;border-top:1px solid var(--line);color:var(--muted);f
 <header>
   <img src="/avatar.png" alt="Voicepad" width="96" height="96">
   <h1>Voicepad: voice, audio, video and YouTube to text in Telegram</h1>
-  <p class="lead">A transcription bot that turns voice messages, files up to 2 GB and YouTube links into text with timestamps and speaker labels, then writes a summary and action items in one tap.</p>
+  <p class="lead">A transcription bot that turns voice messages, files up to 20 MB (larger files as a Google Drive or Yandex Disk link) and YouTube links into text with timestamps and speaker labels, then writes a summary and action items in one tap.</p>
   <a class="cta" href="https://t.me/Voicepad_bot?start=src_en" rel="noopener">Open @Voicepad_bot</a>
   <p class="note">15 free minutes every month, no sign-up, no card.</p>
 </header>
@@ -84,7 +84,7 @@ footer{padding:36px 0 56px;border-top:1px solid var(--line);color:var(--muted);f
   <div class="grid">
     <div class="card"><h3>Voice messages</h3><p>Forward a voice message from any chat and get the text with timestamps in seconds.</p></div>
     <div class="card"><h3>YouTube and other links</h3><p>Send a link to a lecture, podcast or interview. The summary ends with chapters, each timestamp opens the video at that moment.</p></div>
-    <div class="card"><h3>Files up to 2 GB</h3><p>Meeting recordings, lectures and calls in MP3, M4A, MP4, WAV and more, or links to Google Drive.</p></div>
+    <div class="card"><h3>Files and cloud links</h3><p>Meeting recordings, lectures and calls in MP3, M4A, MP4, WAV and more, or links to Google Drive.</p></div>
     <div class="card"><h3>Speakers and timestamps</h3><p>Dialogues are labelled by speaker, so you can see who said what and when.</p></div>
     <div class="card"><h3>Summary, tasks, article, post</h3><p>Buttons under every transcript. "Tasks" lists who promised what and by when. Ask any question about the recording.</p></div>
     <div class="card"><h3>DOCX, TXT, SRT</h3><p>A document for your notes, meeting minutes to send around, or subtitles for a video.</p></div>
@@ -100,7 +100,7 @@ footer{padding:36px 0 56px;border-top:1px solid var(--line);color:var(--muted);f
 
 <section>
   <h2>FAQ</h2>
-  <details open><summary>How is this different from Telegram Premium's built-in transcription?</summary><p>Premium transcribes only short voice messages and only for subscribers. Voicepad handles files up to 2 GB and video links, labels speakers, adds timestamps, writes summaries and action items, exports DOCX, TXT and SRT and works in group chats.</p></details>
+  <details open><summary>How is this different from Telegram Premium's built-in transcription?</summary><p>Premium transcribes only short voice messages and only for subscribers. Voicepad handles files up to 20 MB (larger files as a Google Drive or Yandex Disk link) and video links, labels speakers, adds timestamps, writes summaries and action items, exports DOCX, TXT and SRT and works in group chats.</p></details>
   <details><summary>Which languages are supported?</summary><p>English, Russian and dozens of others, detected automatically.</p></details>
   <details><summary>What happens to my data?</summary><p>Audio and video are deleted right after recognition, texts are kept for 30 days so the buttons keep working, and /delete wipes everything at once.</p></details>
   <details><summary>How do I use it in a group?</summary><p>Add @Voicepad_bot to the chat. Voice messages are transcribed automatically, video links get a button, and /text in a reply transcribes anything else. Admins can switch auto mode off with /mute.</p></details>

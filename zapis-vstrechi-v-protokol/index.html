@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Расшифровка записи встречи: протокол созвона и список задач за минуту</title>
-<meta name="description" content="Загрузите запись созвона в бота Voicepad в Telegram: текст по спикерам, конспект встречи и список задач с ответственными и сроками. Zoom, Google Meet, Telegram, файлы до 2 ГБ. 15 минут в месяц бесплатно.">
+<meta name="description" content="Загрузите запись созвона в бота Voicepad в Telegram: текст по спикерам, конспект встречи и список задач с ответственными и сроками. Zoom, Google Meet, Telegram, файлы до 20 МБ или ссылка на диск. 15 минут в месяц бесплатно.">
 <link rel="canonical" href="https://voicepad.qupport.io/zapis-vstrechi-v-protokol/">
 <link rel="alternate" hreflang="ru" href="https://voicepad.qupport.io/zapis-vstrechi-v-protokol/">
 <link rel="alternate" hreflang="en" href="https://voicepad.qupport.io/en/meeting-notes/">
@@ -19,7 +19,7 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Как записать созвон, чтобы потом расшифровать?", "acceptedAnswer": {"@type": "Answer", "text": "В Zoom и Google Meet есть встроенная запись, в Telegram и FaceTime подойдёт запись экрана со звуком или диктофон рядом с динамиком. Боту нужен любой аудио или видео файл до 2 ГБ, формат не важен."}},
+    {"@type": "Question", "name": "Как записать созвон, чтобы потом расшифровать?", "acceptedAnswer": {"@type": "Answer", "text": "В Zoom и Google Meet есть встроенная запись, в Telegram и FaceTime подойдёт запись экрана со звуком или диктофон рядом с динамиком. Боту нужен любой аудио или видео файл до 20 МБ, формат не важен; тяжелее ссылкой на Яндекс Диск или Google Drive."}},
     {"@type": "Question", "name": "Бот различает, кто говорит?", "acceptedAnswer": {"@type": "Answer", "text": "Да, реплики размечаются как Спикер 1, Спикер 2 и так далее. Если участники представляются по имени, конспект и задачи используют имена."}},
     {"@type": "Question", "name": "Что попадает в список задач?", "acceptedAnswer": {"@type": "Answer", "text": "Всё, что кто-то пообещал, взял на себя или попросил сделать, с ответственным и сроком, если они прозвучали. Если задач не было, бот так и скажет."}},
     {"@type": "Question", "name": "Это безопасно для рабочих записей?", "acceptedAnswer": {"@type": "Answer", "text": "Аудио удаляется сразу после распознавания, текст хранится 30 дней для кнопок под расшифровкой, команда /delete стирает всё немедленно."}}
@@ -55,7 +55,7 @@ pre{background:var(--card);border:1px solid var(--line);border-radius:12px;paddi
 <h2>Как сделать</h2>
 <ol>
   <li>Запишите созвон: в Zoom и Google Meet есть встроенная запись, для Telegram и FaceTime подойдёт запись экрана со звуком.</li>
-  <li>Отправьте файл в <a href="https://t.me/Voicepad_bot?start=src_meeting">@Voicepad_bot</a>. Подходят любые аудио и видео до 2 ГБ, ссылки на Яндекс Диск и Google Drive тоже.</li>
+  <li>Отправьте файл в <a href="https://t.me/Voicepad_bot?start=src_meeting">@Voicepad_bot</a>. Подходят любые аудио и видео до 20 МБ, длинные записи ссылкой на Яндекс Диск или Google Drive.</li>
   <li>Получите текст с таймкодами и спикерами. Нажмите «Задачи» для списка поручений и «Конспект» для протокола. Кнопка DOCX отдаёт документ для рассылки участникам.</li>
 </ol>
 <div class="card">Пример ответа кнопки «Задачи» по записи планёрки:
