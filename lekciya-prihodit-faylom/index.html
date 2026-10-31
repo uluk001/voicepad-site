@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Лекция в боте приходит файлом DOCX: разбор ошибки</title>
+<meta name="description" content="Разбор бота Voicepad: длинная лекция приходит файлом DOCX с кнопками под превью, 4 длинные расшифровки, 2 нажатия, 0 экспортов и возврат на седьмой день.">
+<link rel="canonical" href="https://voicepad.qupport.io/lekciya-prihodit-faylom/">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f3eee4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#191713" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Voicepad">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Я неделю думал, что студент не видит кнопку «Конспект». А он получал файл, которого нет в моей воронке">
+<meta property="og:description" content="Разбор бота Voicepad: длинная лекция приходит файлом DOCX с кнопками под превью, 4 длинные расшифровки, 2 нажатия, 0 экспортов и возврат на седьмой день.">
+<meta property="og:url" content="https://voicepad.qupport.io/lekciya-prihodit-faylom/">
+<meta property="og:image" content="https://voicepad.qupport.io/assets/cover.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Voicepad: голосовые, аудио и видео в текст с таймкодами и спикерами">
+<meta property="article:published_time" content="2026-10-31">
+<meta property="article:modified_time" content="2026-10-31">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://voicepad.qupport.io/assets/cover.jpg">
+<meta name="twitter:image:alt" content="Voicepad: голосовые, аудио и видео в текст с таймкодами и спикерами">
+<link rel="preload" href="/assets/fonts/literata.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://voicepad.qupport.io/#organization",
+      "name": "Voicepad",
+      "url": "https://voicepad.qupport.io/",
+      "logo": {"@type": "ImageObject", "url": "https://voicepad.qupport.io/assets/logo-512.png", "width": 512, "height": 512},
+      "sameAs": ["https://t.me/Voicepad_bot"]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://voicepad.qupport.io/lekciya-prihodit-faylom/#breadcrumb",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://voicepad.qupport.io/"},
+        {"@type": "ListItem", "position": 2, "name": "Лекция приходит файлом", "item": "https://voicepad.qupport.io/lekciya-prihodit-faylom/"}
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://voicepad.qupport.io/lekciya-prihodit-faylom/#article",
+      "headline": "Я неделю думал, что студент не видит кнопку «Конспект». А он получал файл, которого нет в моей воронке",
+      "description": "Разбор бота Voicepad: длинная лекция приходит файлом DOCX с кнопками под превью, 4 длинные расшифровки, 2 нажатия, 0 экспортов и возврат на седьмой день.",
+      "image": {"@type": "ImageObject", "url": "https://voicepad.qupport.io/assets/cover.jpg", "width": 1200, "height": 630},
+      "datePublished": "2026-10-31",
+      "dateModified": "2026-10-31",
+      "author": {"@type": "Person", "name": "Uluk Muratov"},
+      "publisher": {"@id": "https://voicepad.qupport.io/#organization"},
+      "mainEntityOfPage": "https://voicepad.qupport.io/lekciya-prihodit-faylom/",
+      "breadcrumb": {"@id": "https://voicepad.qupport.io/lekciya-prihodit-faylom/#breadcrumb"},
+      "inLanguage": "ru"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Перейти к статье</a>
+
+<header class="topbar">
+  <div class="column topbar__row">
+    <a class="brand" href="/" aria-label="Voicepad, главная">
+      <svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg>
+      <span>Voicepad</span>
+    </a>
+    <nav class="topbar__nav" aria-label="Основное меню">
+      <a href="/#pricing">Цены</a>
+      <a href="/#guides">Инструкции</a>
+      <a href="https://t.me/Voicepad_bot?start=src_site" rel="noopener">Бот в Telegram</a>
+      <a href="/en/" hreflang="en" lang="en">EN</a>
+    </nav>
+    <details class="menu">
+      <summary>Меню</summary>
+      <nav class="menu__list" aria-label="Основное меню">
+        <a href="/#pricing">Цены</a>
+        <a href="/#guides">Инструкции</a>
+        <a href="https://t.me/Voicepad_bot?start=src_site" rel="noopener">Бот в Telegram</a>
+        <a href="/en/" hreflang="en" lang="en">English</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<main id="main">
+  <section class="opening" aria-labelledby="page-title">
+    <div class="column">
+      <nav class="crumbs" aria-label="Навигационная цепочка"><ol><li><a href="/">Главная</a></li><li><span aria-current="page">Лекция приходит файлом</span></li></ol></nav>
+      <h1 id="page-title">Я неделю думал, что студент не видит кнопку «Конспект». А он получал файл, которого нет в моей воронке</h1>
+      <p class="opening__line">Я делаю Voicepad, Telegram-бота, который превращает голосовые, аудио, видео и ссылки на YouTube в текст с таймкодами, а по кнопке делает конспект, задачи, статью или пост. Два дня назад я написал <a href="/dve-lekcii-s-youtube/">разбор про двух людей</a>, которые прислали в бота лекции с YouTube. Один получил восемь минут текста и через 76 секунд нажал «Конспект». Второй получил 22,5 минуты лекции и не нажал ничего. Я объяснил это так: у длинной лекции текст уходит несколькими сообщениями, кнопки оказываются под последним, и человек их просто не видит. Пообещал проверить на своей лекции.</p>
+      <p class="opening__actions">
+        <a class="btn" href="https://t.me/Voicepad_bot?start=src_site" rel="noopener">Прислать лекцию в бота</a>
+        <a href="/">Попробовать на сайте</a>
+      </p>
+    </div>
+  </section>
+
+  <article class="block" id="article" aria-labelledby="page-title">
+    <div class="column">
+      <div class="copy">
+        <p>Проверка заняла десять минут и не потребовала никакой лекции: хватило открыть собственный код. Моя гипотеза была неправильной с первой строки. Эта статья про то, как я ошибся в описании своего же продукта, и про то, что вскрылось, когда я перестал гадать.</p>
+        <h2 id="code">Что бот делает на самом деле</h2>
+        <p>Когда расшифровка готова, бот собирает текст с таймкодами и смотрит на длину. Если текст короче 3 500 символов, он приходит одним сообщением, и под ним восемь кнопок: «Конспект», «Задачи», «Вопрос», «Статья», «Пост», DOCX, TXT, SRT. Если длиннее, бот вообще не режет текст на сообщения. Он сам присылает DOCX с полной расшифровкой, а следом одно сообщение «Текст длинный, полная расшифровка в файле. Начало:» с первыми 1 200 символами и теми же восемью кнопками.</p>
+        <p>То есть кнопки у длинной лекции стоят не в конце простыни, а прямо под коротким превью, на первом экране. Этот порог стоит в коде с первого коммита 20 октября. Я сам его писал и через девять дней уверенно описал в статье поведение, которого у бота никогда не было. Функция, которая режет текст на части, в боте есть, но она нужна для ответов нейросети и для групп, не для расшифровки в личке.</p>
+        <p>3 500 символов это мало. В моей базе на минуту речи приходится от 740 до 1 150 символов, так что в файл уходит всё, что длиннее примерно четырёх минут. Из пяти личных расшифровок за 12 дней в файл ушли четыре: 8 минут, 14,2 минуты и дважды по 22,5 минуты. Одним сообщением пришла только одна, на 36 секунд.</p>
+        <h2 id="numbers">Цифры, которые убивают мою гипотезу</h2>
+        <p>Раз все длинные записи приходят одинаково, файл плюс превью с кнопками, сравнивать можно честно. Вот все четыре:</p>
+        <ul>
+          <li>20 октября, ролик с YouTube на 8 минут, 8 274 символа: «Конспект» нажат;</li>
+          <li>20 октября, аудиофайл на 14,2 минуты, 16 258 символов: нажаты «Задачи»;</li>
+          <li>23 октября, лекция с YouTube на 22,5 минуты, 18 157 символов: ничего;</li>
+          <li>30 октября, следующая лекция того же цикла, тоже 22,5 минуты, 16 713 символов: снова ничего.</li>
+        </ul>
+        <p>Одна честная поправка. После самой первой расшифровки бот с вечера 20 октября шлёт под превью ещё два сообщения: приглашение и вопрос «для чего вам расшифровка». 23 октября кнопки у студента действительно уехали на два сообщения вверх. Но 30 октября лекция была не первой, кнопки стояли последними, и он снова ничего не нажал.</p>
+        <p>Два из четырёх нажали кнопку. Оба «ничего» у одного и того же человека. Значит, дело не в том, где кнопки, а в том, что этому человеку от бота нужно. Короткая расшифровка на 36 секунд тоже закончилась нажатием «Задачи», так что всего у меня 3 нажатия на 5 личных расшифровок, и ни одно не выпадает из картины «кнопки видно».</p>
+        <h2 id="back">Человек вернулся сам, и я чуть не прочитал это неправильно</h2>
+        <p>Второй человек, тот, что 23 октября шесть раз подряд получал ошибку на ссылке, вернулся 30 октября в 14:53. Это седьмой день после его первой расшифровки. Напоминаний он от меня не получал ни одного: бот не отправил ему ни «нет файла», ни чего либо ещё. Порядок событий в базе такой:</p>
+        <ul>
+          <li>14:53:10: ответил на вопрос «для чего вам расшифровка», выбрал «учёба». Вопрос бот задал ему неделю назад, после первой лекции, и всю неделю он висел без ответа;</li>
+          <li>14:53:16: /start;</li>
+          <li>14:53:24: ссылка на следующую лекцию той же серии;</li>
+          <li>14:54:31: готовый текст, 67 секунд на 22,5 минуты. В прошлый раз было 59 секунд.</li>
+        </ul>
+        <p>Кнопки он снова не нажал. По моей воронке он выглядит так: «старт, файл, расшифровка, дальше ноль». По той же воронке я 29 октября сделал вывод, что ценность бота в конспекте, а человек с длинной лекцией её не получил.</p>
+        <p>Но человек, который не получил ценности, не приходит через неделю со следующей лекцией из того же цикла. Он получил ровно то, за чем пришёл: DOCX с полной расшифровкой, который бот прислал сам, без единого нажатия. Скорее всего, этот файл он и читает. «Скорее всего», потому что проверить я это не могу.</p>
+        <p>Здесь нужна оговорка, без которой цифры врут. Этот человек у меня в списке бесплатного доступа, минуты у него не списываются. Поэтому его возвращение говорит о том, что сценарий «лекция в файл» работает, но ничего не говорит о том, готов ли кто то за него платить. Сигналом оплаты я его не считаю.</p>
+        <h2 id="blind">Слепое пятно в воронке</h2>
+        <p>Воронку в <code>/stats</code> я строил так: старт, первый файл, расшифровка, ИИ-кнопка или экспорт, лимит, открыл покупку, купил. Событие «экспорт» пишется, только когда человек нажимает DOCX, TXT или SRT. Файл, который бот присылает сам для любого текста длиннее четырёх минут, в воронку не попадает никак.</p>
+        <p>Итог за всё время, что события пишутся (с 21 октября): событий «экспорт» ноль. Ни одного. Это не значит, что файлы никому не нужны. Это значит, что для 80% личных расшифровок бот выдаёт файл до того, как человек успевает о нём попросить, и кнопка DOCX под превью просто не нужна. Я неделю смотрел на ноль в строке «экспорт» и на ноль в строке «ИИ-кнопка» у студента и читал это как «результат не дошёл». А результат доходил каждый раз, просто в форме, которую я не считаю.</p>
+        <p>Открыл ли человек файл, Telegram боту не сообщает, и событием это не починить. Остаётся смотреть, вернётся ли он, и на этой неделе он вернулся.</p>
+        <h2 id="cost">Чего стоила одна неправильная гипотеза</h2>
+        <p>Неправильное объяснение не осталось в статье. В тот же день оно попало в очередь задач как пункт для продукта: «проверить, где оказываются кнопки после длинного текста из нескольких сообщений, и для записей длиннее 10 минут предлагать конспект сразу». То есть я собирался менять бота, чтобы лечить проблему, которой нет, и при случайном нажатии записал бы рост себе в заслугу.</p>
+        <p>29 октября я написал «проверить это можно только на себе», хотя проверить можно было, открыв <code>jobs.go</code>. За неделю это уже третья вещь, которую я описал по памяти, а не по данным: веб-пробы на сайте считались втрое, активация показывала 4 из 8 вместо 5 из 8, теперь кнопки. Все три раза ошибка была в моём представлении о продукте, а не в продукте.</p>
+        <h2 id="next">Что я меняю</h2>
+        <ol>
+          <li>Убираю из очереди задачу «кнопки после длинного текста». Её заменяет другая: писать отдельное событие, когда бот сам присылает DOCX. Открытий оно не покажет, но в <code>/stats</code> появится строка «получил файл», и у студента воронка перестанет обрываться на расшифровке.</li>
+          <li>Для недели студентов меняю оффер на сайте и в постах с «лекция в конспект» на «лекция в файл DOCX за минуту, конспект по кнопке». Единственный человек из сегмента, который вернулся, вернулся за файлом. Конспект нажимал другой человек, и на ролике, а не на лекции.</li>
+          <li>Не трогаю порог в 3 500 символов. Два человека из четырёх нашли кнопки под превью, а единственный вернувшийся пользователь пользуется именно файлом. Менять работающее на восьми пользователях я не буду.</li>
+          <li>Перед каждым выводом о поведении бота в статье открываю код этого места. Это звучит глупо, но после трёх ошибок за неделю я готов выглядеть глупо.</li>
+        </ol>
+        <p>Итог проверки: 4 длинные расшифровки, 4 файла, 2 нажатия кнопок, 0 событий экспорта, 1 человек вернулся на седьмой день без единого напоминания и ни разу не нажал кнопку. Новых пользователей с 25 октября ноль, так что всё это пока про очень маленькие числа, и я пишу о них ровно потому, что других у меня нет.</p>
+        <p>Если у вас лекция на YouTube и нужен текст, пришлите ссылку в @Voicepad_bot: <a href="https://t.me/Voicepad_bot?start=src_site" rel="noopener">t.me/Voicepad_bot</a>. Длинная запись придёт файлом DOCX, конспект по кнопке, 15 минут в месяц бесплатно. Инструкции и расшифровка без регистрации на сайте: <a href="/">voicepad.qupport.io</a></p>
+      </div>
+    </div>
+  </article>
+
+  <section class="block" id="guides" aria-labelledby="guides-title">
+    <div class="column">
+      <h2 id="guides-title">Другие инструкции</h2>
+      <div class="copy">
+        <ul>
+          <li><a href="/dve-lekcii-s-youtube/">Две лекции с YouTube</a>: конспект через 76 секунд, ошибочное напоминание и 22 минуты ошибок.</li>
+          <li><a href="/youtube-v-tekst/">YouTube в текст</a>: ссылка на видео или лекцию, текст с таймкодами и конспект.</li>
+          <li><a href="/konspekt-lekcii/">Конспект лекции</a>: как получить выжимку из записи пары.</li>
+          <li><a href="/veb-rasshifrovka-pervye-dni/">Расшифровка на сайте</a>: 5 проб за три дня и метрика, которая врала втрое.</li>
+          <li><a href="/bot-v-gruppovom-chate/">Бот в групповом чате</a>: 13 голосовых за три дня в двух чатах и что сломалось.</li>
+          <li><a href="/kruzhochek-v-tekst/">Кружочек в текст</a>: видеосообщение из любого чата в текст, в личке и в группах.</li>
+          <li><a href="/transkribaciya-audio-v-tekst/">Транскрибация аудио в текст онлайн</a>: что на самом деле значит «бесплатно» и где заканчиваются 15 минут.</li>
+          <li><a href="/compare/">Сравнение ботов</a>: боты для расшифровки в Telegram, лимиты и цены.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <p class="column updated">Дневник проекта · <time datetime="2026-10-31">31 октября 2026</time></p>
+</main>
+
+<footer class="foot">
+  <div class="column">
+    <p class="foot__brand"><svg class="brand__mark" viewBox="0 0 30 20" width="30" height="20" aria-hidden="true"><circle class="mark-dot" cx="5.5" cy="10" r="4.5"/><path class="mark-lines" d="M15 4h13M15 10h10M15 16h12"/></svg><strong>Voicepad</strong><span>Голосовые, аудио и видео в текст.</span></p>
+    <ul class="foot__links">
+      <li><a href="https://t.me/Voicepad_bot?start=src_site" rel="noopener">@Voicepad_bot в Telegram</a></li>
+      <li><a href="/privacy/">Политика конфиденциальности</a></li>
+      <li><a href="/en/" hreflang="en" lang="en">English</a></li>
+    </ul>
+    <p class="foot__more" lang="en">In English: <a href="/en/voice-message-to-text/" hreflang="en">voice message to text</a>, <a href="/en/youtube-to-text/" hreflang="en">YouTube to text</a>, <a href="/en/meeting-notes/" hreflang="en">meeting notes</a>, <a href="/en/podcast-transcript/" hreflang="en">podcast transcript</a>, <a href="/en/lecture-notes-from-video/" hreflang="en">lecture notes</a>, <a href="/en/transcribe-telegram-voice-without-premium/" hreflang="en">Telegram voice messages without Premium</a>, <a href="/en/whatsapp-voice-message-to-text/" hreflang="en">WhatsApp voice message to text</a>.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var params = new URLSearchParams(location.search);
+  var raw = (params.get("ref") || params.get("utm_source") || "").toLowerCase().replace(/[^a-z0-9_]/g, "");
+  if (!raw || raw.length > 24) return;
+  document.querySelectorAll('a[href*="t.me/Voicepad_bot?start=src_"]').forEach(function (link) {
+    link.href = link.href.replace(/start=src_[a-z0-9_]+/, "start=src_" + raw);
+  });
+})();
+</script>
+<script>
+(function () {
+  var menu = document.querySelector(".menu");
+  if (!menu) return;
+  function close() { menu.open = false; }
+  menu.addEventListener("click", function (event) {
+    if (event.target.closest && event.target.closest("a")) close();
+  });
+  document.addEventListener("click", function (event) {
+    if (menu.open && !menu.contains(event.target)) close();
+  });
+  document.addEventListener("keydown", function (event) {
+    if (event.key !== "Escape" || !menu.open) return;
+    close();
+    menu.querySelector("summary").focus();
+  });
+})();
+</script>
+</body>
+</html>
