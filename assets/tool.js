@@ -16,7 +16,7 @@
   var TRIAL_UPLOAD_MB = 50;
   var TRIAL_SECONDS = 180;
   var FREE_MONTH_MINUTES = 120;
-  var PACKS = [{ minutes: 60, rubles: 199 }, { minutes: 300, rubles: 690 }, { minutes: 1000, rubles: 1990 }];
+  var PACKS = [{ minutes: 180, rubles: 199 }, { minutes: 720, rubles: 690 }, { minutes: 2160, rubles: 1990 }];
   var BUY_LINK = "https://t.me/" + BOT + "?start=src_" + (LANG === "en" ? "en" : "site") + "_buy";
   var LOGIN_SCRIPT = "https://telegram.org/js/telegram-widget.js?22";
   // A login redirected back into a new tab counts only if this browser started one shortly before.

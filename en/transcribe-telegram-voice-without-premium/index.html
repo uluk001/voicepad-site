@@ -82,7 +82,7 @@
         {"@type": "Question", "name": "Does Telegram Premium transcribe audio files and video links?", "acceptedAnswer": {"@type": "Answer", "text": "Telegram describes Premium voice-to-text for voice messages and video messages. I found no official wording that it covers audio files sent as documents or links to YouTube and other sites. For those, @Voicepad_bot accepts audio and video files and links to YouTube, VK Video, RuTube and TikTok, and the browser tool at voicepad.qupport.io accepts uploads and, after you log in with Telegram, links."}},
         {"@type": "Question", "name": "How can everyone in a Telegram group read voice messages without Premium?", "acceptedAnswer": {"@type": "Answer", "text": "There are two ways. The group can reach boost level 6, which unlocks unlimited voice-to-text for its members; boosts come from members with Premium or from giveaways, and the number needed depends on the group size. Or you add @Voicepad_bot to the chat: it transcribes voice messages and video notes up to 3 minutes long for everyone, and each chat gets 30 free minutes a month."}},
         {"@type": "Question", "name": "Is there a file size limit when I send a recording to a transcription bot?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Telegram's Bot API lets a bot download files of up to 20 MB, so files sent to Voicepad inside Telegram are limited to 20 MB. On the Voicepad website you can upload files up to 50 MB without login (a recording longer than 3 minutes is transcribed only for its first 3 minutes), or up to 200 MB after logging in with Telegram."}},
-        {"@type": "Question", "name": "Is Telegram Premium cheaper than a Voicepad minute pack?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on volume. On October 24, 2026 the App Store listed Telegram Premium at $4.99 in the US and 329 RUB in Russia, and Telegram Premium Annual at $35.99 and 2,390 RUB. A Voicepad pack of 60 minutes costs 199 RUB once, the minutes never expire, and there are also 120 free minutes (2 hours) every month. Premium suits many short voice messages every day; a pack suits uneven use, long recordings, files and exports."}}
+        {"@type": "Question", "name": "Is Telegram Premium cheaper than a Voicepad minute pack?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on volume. On October 24, 2026 the App Store listed Telegram Premium at $4.99 in the US and 329 RUB in Russia, and Telegram Premium Annual at $35.99 and 2,390 RUB. A Voicepad pack of 180 minutes (3 hours) costs 199 RUB once, the minutes never expire, and there are also 120 free minutes (2 hours) every month. Premium suits many short voice messages every day; a pack suits uneven use, long recordings, files and exports."}}
       ]
     }
   ]
@@ -170,7 +170,7 @@
         </ul>
         <p>Results can be copied or downloaded as TXT, SRT or DOCX. Logged in, the site is the way around the 20 MB bot limit. Without login it is a quick way to try the quality on a short clip. For a voice message already sitting in a Telegram chat, forwarding it to the bot is faster than saving and uploading it.</p>
 
-        <h2 id="prices">Premium or a pack of 60 minutes</h2>
+        <h2 id="prices">Premium or a pack of 180 minutes</h2>
         <p>Telegram prices below come from the App Store listings of the Telegram app in the US and Russian storefronts, checked on October 24, 2026. Neither listing names a billing period for the plain "Telegram Premium" item ($4.99 in the US, 329 RUB in Russia). I treat it as the monthly plan because Digital Trends reported Premium at $4.99 per month or $35.99 per year, which matches the US listing. Telegram's FAQ says prices vary slightly with local conditions and taxes, and that subscriptions bought through @PremiumBot are discounted, so your price may differ. Voicepad packs are paid by card via Tribute.</p>
         <table>
         <thead><tr><th scope="col">Option</th><th scope="col">Price</th><th scope="col">What you get for transcription</th></tr></thead>
@@ -179,9 +179,9 @@
         <tr><th scope="row">Telegram Premium, monthly</th><td>$4.99 (US App Store), 329 RUB (Russian App Store)</td><td>Unlimited voice-to-text for voice and video messages on your account, for as long as you pay</td></tr>
         <tr><th scope="row">Telegram Premium, annual</th><td>$35.99 (US App Store), 2,390 RUB (Russian App Store)</td><td>The same, paid once a year</td></tr>
         <tr><th scope="row">Voicepad, free</th><td>0</td><td>120 minutes (2 hours) every month</td></tr>
-        <tr><th scope="row">Voicepad, 60-minute pack</th><td>199 RUB</td><td>60 minutes with timestamps, speaker labels and exports; minutes never expire</td></tr>
-        <tr><th scope="row">Voicepad, 300-minute pack</th><td>690 RUB</td><td>300 minutes; minutes never expire</td></tr>
-        <tr><th scope="row">Voicepad, 1000-minute pack</th><td>1990 RUB</td><td>1000 minutes; minutes never expire</td></tr>
+        <tr><th scope="row">Voicepad, 180-minute pack</th><td>199 RUB</td><td>180 minutes (3 hours) with timestamps, speaker labels and exports; minutes never expire</td></tr>
+        <tr><th scope="row">Voicepad, 720-minute pack</th><td>690 RUB</td><td>720 minutes (12 hours); minutes never expire</td></tr>
+        <tr><th scope="row">Voicepad, 2160-minute pack</th><td>1990 RUB</td><td>2160 minutes (36 hours); minutes never expire</td></tr>
         </tbody>
         </table>
         <p>Voicepad charges only the real duration of each recording, and nothing is charged if recognition fails. How I would read this table:</p>
@@ -234,9 +234,9 @@
         <li class="plan plan-packs">
           <h3>Minute packs</h3>
           <ul class="packs">
-            <li><span>60 min</span> <b>199&nbsp;RUB</b></li>
-            <li><span>300 min</span> <b>690&nbsp;RUB</b></li>
-            <li><span>1000 min</span> <b>1990&nbsp;RUB</b></li>
+            <li><span>180 min</span> <b>199&nbsp;RUB</b></li>
+            <li><span>720 min</span> <b>690&nbsp;RUB</b></li>
+            <li><span>2160 min</span> <b>1990&nbsp;RUB</b></li>
           </ul>
           <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_tg_premium_buy" rel="noopener">Buy minutes in the bot</a>
         </li>
@@ -266,7 +266,7 @@
         </details>
         <details>
           <summary>Is Telegram Premium cheaper than a Voicepad minute pack?</summary>
-          <p>It depends on volume. On October 24, 2026 the App Store listed Telegram Premium at $4.99 in the US and 329 RUB in Russia, and Telegram Premium Annual at $35.99 and 2,390 RUB. A Voicepad pack of 60 minutes costs 199 RUB once, the minutes never expire, and there are also 120 free minutes (2 hours) every month. Premium suits many short voice messages every day; a pack suits uneven use, long recordings, files and exports.</p>
+          <p>It depends on volume. On October 24, 2026 the App Store listed Telegram Premium at $4.99 in the US and 329 RUB in Russia, and Telegram Premium Annual at $35.99 and 2,390 RUB. A Voicepad pack of 180 minutes (3 hours) costs 199 RUB once, the minutes never expire, and there are also 120 free minutes (2 hours) every month. Premium suits many short voice messages every day; a pack suits uneven use, long recordings, files and exports.</p>
         </details>
       </div>
     </div>

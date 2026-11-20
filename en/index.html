@@ -69,9 +69,9 @@
       "offers": [
         {"@type": "Offer", "price": "0", "priceCurrency": "RUB", "description": "3 recordings a day without logging in, the first 3 minutes of a long one"},
         {"@type": "Offer", "price": "0", "priceCurrency": "RUB", "description": "2 free hours (120 minutes) a month after logging in with Telegram"},
-        {"@type": "Offer", "price": "199", "priceCurrency": "RUB", "description": "60 minute pack"},
-        {"@type": "Offer", "price": "690", "priceCurrency": "RUB", "description": "300 minute pack"},
-        {"@type": "Offer", "price": "1990", "priceCurrency": "RUB", "description": "1000 minute pack"}
+        {"@type": "Offer", "price": "199", "priceCurrency": "RUB", "description": "180 minute pack (3 hours)"},
+        {"@type": "Offer", "price": "690", "priceCurrency": "RUB", "description": "720 minute pack (12 hours)"},
+        {"@type": "Offer", "price": "1990", "priceCurrency": "RUB", "description": "2160 minute pack (36 hours)"}
       ]
     },
     {
@@ -85,7 +85,7 @@
         {"@type": "Question", "name": "How do I get a voice message out of WhatsApp?", "acceptedAnswer": {"@type": "Answer", "text": "On iPhone, tap and hold the voice message, choose Forward, then the Share icon and Save to Files. On Android, tap and hold it, then Share, and save it to Files. Then press Choose a recording in the form at the top of the page. On a computer, choose Download in the message menu and drag the file into the form. The .opus or .m4a format works as it is. You can also forward the voice message to @Voicepad_bot in Telegram: the bot takes files up to 20 MB; upload a bigger file on the site."}},
         {"@type": "Question", "name": "Do I need to choose the language?", "acceptedAnswer": {"@type": "Answer", "text": "The language of the recording is detected automatically, so there is nothing to choose. It is shown in the result header next to the length."}},
         {"@type": "Question", "name": "What happens to recordings after transcription?", "acceptedAnswer": {"@type": "Answer", "text": "Audio and video are deleted right after recognition. A result made without logging in stays in server memory for one hour, and transcripts in the bot for 30 days. More in the privacy policy."}},
-        {"@type": "Question", "name": "How do I pay?", "acceptedAnswer": {"@type": "Answer", "text": "Minutes are bought in the bot with the /buy command, by card through Tribute. Packs: 60 minutes for 199 RUB, 300 minutes for 690 RUB, 1000 minutes for 1990 RUB. Minutes never expire. Only the real length of a recording is charged, and nothing is charged if recognition fails."}}
+        {"@type": "Question", "name": "How do I pay?", "acceptedAnswer": {"@type": "Answer", "text": "Minutes are bought in the bot with the /buy command, by card through Tribute. Packs: 3 hours (180 minutes) for 199 RUB, 12 hours (720 minutes) for 690 RUB, 36 hours (2160 minutes) for 1990 RUB. Minutes never expire. Only the real length of a recording is charged, and nothing is charged if recognition fails."}}
       ]
     }
   ]
@@ -203,9 +203,9 @@
         <li class="plan plan-packs">
           <h3>Minute packs</h3>
           <ul class="packs">
-            <li><span>60 min</span> <b>199&nbsp;RUB</b></li>
-            <li><span>300 min</span> <b>690&nbsp;RUB</b></li>
-            <li><span>1000 min</span> <b>1990&nbsp;RUB</b></li>
+            <li><span>180 min</span> <b>199&nbsp;RUB</b></li>
+            <li><span>720 min</span> <b>690&nbsp;RUB</b></li>
+            <li><span>2160 min</span> <b>1990&nbsp;RUB</b></li>
           </ul>
           <a class="btn" href="https://t.me/Voicepad_bot?start=src_en_buy" rel="noopener">Buy minutes in the bot</a>
         </li>
@@ -235,7 +235,7 @@
         </details>
         <details>
           <summary>How do I pay?</summary>
-          <p>Minutes are bought in the bot with the <code>/buy</code> command, by card through Tribute. Packs: 60 minutes for 199 RUB, 300 minutes for 690 RUB, 1000 minutes for 1990 RUB. Minutes never expire. Only the real length of a recording is charged, and nothing is charged if recognition fails.</p>
+          <p>Minutes are bought in the bot with the <code>/buy</code> command, by card through Tribute. Packs: 3 hours (180 minutes) for 199 RUB, 12 hours (720 minutes) for 690 RUB, 36 hours (2160 minutes) for 1990 RUB. Minutes never expire. Only the real length of a recording is charged, and nothing is charged if recognition fails.</p>
         </details>
       </div>
     </div>
