@@ -15,7 +15,7 @@
   var SIGNED_IN_UPLOAD_MB = 200;
   var TRIAL_UPLOAD_MB = 50;
   var TRIAL_SECONDS = 180;
-  var FREE_MONTH_MINUTES = 15;
+  var FREE_MONTH_MINUTES = 120;
   var PACKS = [{ minutes: 60, rubles: 199 }, { minutes: 300, rubles: 690 }, { minutes: 1000, rubles: 1990 }];
   var BUY_LINK = "https://t.me/" + BOT + "?start=src_" + (LANG === "en" ? "en" : "site") + "_buy";
   var LOGIN_SCRIPT = "https://telegram.org/js/telegram-widget.js?22";
@@ -37,7 +37,7 @@
       linkLabelFirst: "Вставьте ссылку на видео",
       linkPlaceholder: "https://youtu.be/…",
       linkButton: "Расшифровать",
-      linkNeedsLogin: "Ссылки расшифровываются после входа. 15 минут в месяц бесплатно.",
+      linkNeedsLogin: "Ссылки расшифровываются после входа. 2 часа в месяц бесплатно.",
       linkInvalid: "Вставьте ссылку на видео целиком, как в адресной строке.",
       linkEmpty: "Сюда вставляется ссылка на видео. Запись с телефона или компьютера выберите выше.",
       linkKind: "Ссылка на видео",
@@ -66,9 +66,9 @@
       },
       limitsLeft: function (left, perDay, cap) { return "Осталось бесплатно сегодня: " + left + " из " + perDay + ", " + t.firstPart(cap) + " каждой записи."; },
       limitsShort: function (left, perDay) { return "Осталось бесплатно сегодня: " + left + " из " + perDay + "."; },
-      trialSpent: "На сегодня бесплатные закончились. После входа 15 минут в месяц бесплатно.",
-      trialBusy: "Бесплатная расшифровка без входа сейчас перегружена. После входа 15 минут в месяц бесплатно.",
-      trialOff: "Без входа расшифровка сейчас недоступна. После входа 15 минут в месяц бесплатно.",
+      trialSpent: "На сегодня бесплатные закончились. После входа 2 часа в месяц бесплатно.",
+      trialBusy: "Бесплатная расшифровка без входа сейчас перегружена. После входа 2 часа в месяц бесплатно.",
+      trialOff: "Без входа расшифровка сейчас недоступна. После входа 2 часа в месяц бесплатно.",
       signedIn: function (account) {
         if (account.unlimited) return "Вы вошли: минуты без ограничений";
         var left = available(account);
@@ -89,7 +89,7 @@
       overCap: function (seconds, cap) { return "Запись " + roughDuration(seconds) + ". Без входа расшифруем " + t.firstPart(cap) + " бесплатно."; },
       overCapButton: function (cap) { return "Расшифровать " + t.firstPart(cap); },
       overTrialSize: function (size, limit, seconds) {
-        var text = "Файл " + size + " МБ, без входа можно до " + limit + " МБ. После входа до " + SIGNED_IN_UPLOAD_MB + " МБ и 15 минут в месяц бесплатно.";
+        var text = "Файл " + size + " МБ, без входа можно до " + limit + " МБ. После входа до " + SIGNED_IN_UPLOAD_MB + " МБ и 2 часа в месяц бесплатно.";
         var pack = packBeyondFree(seconds);
         return pack ? text + " Если бесплатных не хватит, пакет на " + pack.minutes + " мин стоит " + price(pack) + "." : text;
       },
@@ -123,7 +123,7 @@
       },
       truncatedLogin: "Войти и расшифровать целиком", truncatedSigned: "Расшифровать целиком",
       botText: "Конспект и задачи по этой записи сделает бот. Войдите через Telegram: запись расшифруется ещё раз и сохранится в боте.",
-      botCost: function (seconds) { return "Это " + duration(Math.ceil(seconds)) + " из 15 бесплатных минут в месяц."; },
+      botCost: function (seconds) { return "Это " + duration(Math.ceil(seconds)) + " из " + FREE_MONTH_MINUTES + " бесплатных минут в месяц."; },
       botLogin: "Войти и сохранить в боте",
       botSaved: "Открыть в боте: конспект и задачи",
       botPlain: "Конспект и задачи по записи делает бот.", botOpen: "Открыть @" + BOT,
@@ -159,7 +159,7 @@
       linkLabelFirst: "Paste a video link",
       linkPlaceholder: "https://youtu.be/…",
       linkButton: "Transcribe",
-      linkNeedsLogin: "Links need a Telegram login. 15 minutes a month are free.",
+      linkNeedsLogin: "Links need a Telegram login. 2 hours a month are free.",
       linkInvalid: "Paste the whole video link, as in the address bar.",
       linkEmpty: "This field takes a video link. To transcribe a recording from your phone or computer, choose it above.",
       linkKind: "Video link",
@@ -187,9 +187,9 @@
       },
       limitsLeft: function (left, perDay, cap) { return "Free recordings left today: " + left + " of " + perDay + ", " + t.firstPart(cap) + " of each."; },
       limitsShort: function (left, perDay) { return "Free recordings left today: " + left + " of " + perDay + "."; },
-      trialSpent: "Today's free recordings are used up. After you log in, 15 minutes a month are free.",
-      trialBusy: "Free transcription without logging in is overloaded right now. After you log in, 15 minutes a month are free.",
-      trialOff: "Transcription without logging in is unavailable right now. After you log in, 15 minutes a month are free.",
+      trialSpent: "Today's free recordings are used up. After you log in, 2 hours a month are free.",
+      trialBusy: "Free transcription without logging in is overloaded right now. After you log in, 2 hours a month are free.",
+      trialOff: "Transcription without logging in is unavailable right now. After you log in, 2 hours a month are free.",
       signedIn: function (account) {
         if (account.unlimited) return "Signed in: unlimited minutes";
         var left = available(account);
@@ -210,7 +210,7 @@
       overCap: function (seconds, cap) { return "The recording is " + roughDuration(seconds) + ". Without logging in we transcribe " + t.firstPart(cap) + " for free."; },
       overCapButton: function (cap) { return "Transcribe " + t.firstPart(cap); },
       overTrialSize: function (size, limit, seconds) {
-        var text = "The file is " + size + " MB, and without logging in the limit is " + limit + " MB. After you log in, files up to " + SIGNED_IN_UPLOAD_MB + " MB and 15 free minutes a month.";
+        var text = "The file is " + size + " MB, and without logging in the limit is " + limit + " MB. After you log in, files up to " + SIGNED_IN_UPLOAD_MB + " MB and 2 free hours a month.";
         var pack = packBeyondFree(seconds);
         return pack ? text + " If the free minutes are not enough, a " + pack.minutes + " min pack costs " + price(pack) + "." : text;
       },
@@ -243,7 +243,7 @@
       },
       truncatedLogin: "Log in and transcribe it all", truncatedSigned: "Transcribe it all",
       botText: "The bot makes a summary and tasks from this recording. Log in with Telegram: the recording is transcribed once more and saved in the bot.",
-      botCost: function (seconds) { return "That takes " + duration(Math.ceil(seconds)) + " of the 15 free minutes a month."; },
+      botCost: function (seconds) { return "That takes " + duration(Math.ceil(seconds)) + " of the " + FREE_MONTH_MINUTES + " free minutes a month."; },
       botLogin: "Log in and save in the bot",
       botSaved: "Open in the bot: summary and tasks",
       botPlain: "The bot makes a summary and tasks from the recording.", botOpen: "Open @" + BOT,
